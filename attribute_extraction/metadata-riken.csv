@@ -1,0 +1,905 @@
+class,classLabel,property,propertyLabel
+http://metadb.riken.jp/db/rikenbrc_cell/cell_0000001,Derives_from,http://www.w3.org/2000/01/rdf-schema#label,label
+http://metadb.riken.jp/db/rikenbrc_cell/cell_0000002,Donor,http://www.w3.org/2000/01/rdf-schema#label,label
+http://metadb.riken.jp/db/rikenbrc_cell/cell_0000002,ドナー,http://www.w3.org/2000/01/rdf-schema#label,label
+http://metadb.riken.jp/db/rikenbrc_cell/cell_0000001,Derives_from,http://metadb.riken.jp/db/bioresource_schema/brs_indicatesStage,
+http://metadb.riken.jp/db/rikenbrc_cell/cell_0000002,Donor,http://metadb.riken.jp/db/bioresource_schema/brs_indicatesStage,
+http://metadb.riken.jp/db/rikenbrc_cell/cell_0000002,ドナー,http://metadb.riken.jp/db/bioresource_schema/brs_indicatesStage,
+http://metadb.riken.jp/db/rikenbrc_cell/cell_0000001,Derives_from,http://metadb.riken.jp/db/rikenbrc_cell/cell_0000054,
+http://metadb.riken.jp/db/rikenbrc_cell/cell_0000001,Derives_from,http://metadb.riken.jp/terms/xsearch#donorNo,
+http://metadb.riken.jp/db/rikenbrc_cell/cell_0000001,Derives_from,http://metadb.riken.jp/terms/xsearch#isSickness,
+http://metadb.riken.jp/db/rikenbrc_cell/cell_0000001,Derives_from,http://purl.jp/bio/10/brso/extensions/indicates_stage,
+http://metadb.riken.jp/db/rikenbrc_cell/cell_0000002,Donor,http://metadb.riken.jp/db/rikenbrc_cell/cell_0000054,
+http://metadb.riken.jp/db/rikenbrc_cell/cell_0000002,ドナー,http://metadb.riken.jp/db/rikenbrc_cell/cell_0000054,
+http://metadb.riken.jp/db/rikenbrc_cell/cell_0000002,Donor,http://metadb.riken.jp/terms/xsearch#donorNo,
+http://metadb.riken.jp/db/rikenbrc_cell/cell_0000002,ドナー,http://metadb.riken.jp/terms/xsearch#donorNo,
+http://metadb.riken.jp/db/rikenbrc_cell/cell_0000002,Donor,http://metadb.riken.jp/terms/xsearch#isSickness,
+http://metadb.riken.jp/db/rikenbrc_cell/cell_0000002,ドナー,http://metadb.riken.jp/terms/xsearch#isSickness,
+http://metadb.riken.jp/db/rikenbrc_cell/cell_0000002,Donor,http://purl.jp/bio/10/brso/extensions/indicates_stage,
+http://metadb.riken.jp/db/rikenbrc_cell/cell_0000002,ドナー,http://purl.jp/bio/10/brso/extensions/indicates_stage,
+http://metadb.riken.jp/db/rikenbrc_cell/cell_0000003,Cell donor stage,http://www.w3.org/1999/02/22-rdf-syntax-ns#value,
+http://metadb.riken.jp/db/rikenbrc_cell/cell_0000003,ドナーの年齢,http://www.w3.org/1999/02/22-rdf-syntax-ns#value,
+http://metadb.riken.jp/db/rikenbrc_cell/cell_0000005,Cell type grouping,http://www.w3.org/2000/01/rdf-schema#label,label
+http://metadb.riken.jp/db/rikenbrc_cell/cell_0000005,細胞タイプ分類,http://www.w3.org/2000/01/rdf-schema#label,label
+http://metadb.riken.jp/db/rikenbrc_cell/cell_0000005,Cell type grouping,http://www.w3.org/2004/02/skos/core#altLabel,alternative label
+http://metadb.riken.jp/db/rikenbrc_cell/cell_0000005,細胞タイプ分類,http://www.w3.org/2004/02/skos/core#altLabel,alternative label
+http://metadb.riken.jp/db/rikenbrc_cell/cell_0000006,一般名称,http://www.w3.org/2000/01/rdf-schema#label,label
+http://metadb.riken.jp/db/rikenbrc_cell/cell_0000006,Cell common name,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.jp/bio/10/mccv#MCCV_000006,Sample,http://www.w3.org/2000/01/rdf-schema#label,label
+http://metadb.riken.jp/db/rikenbrc_jcm_microbe/mic_6,Sample,http://www.w3.org/2000/01/rdf-schema#label,label
+http://semanticscience.org/resource/SIO_001050,,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.jp/bio/10/mccv#MCCV_000006,Sample,http://purl.jp/bio/10/mccv#MCCV_000030,isolation source description
+http://metadb.riken.jp/db/rikenbrc_jcm_microbe/mic_6,Sample,http://purl.jp/bio/10/mccv#MCCV_000030,isolation source description
+http://semanticscience.org/resource/SIO_001050,,http://purl.jp/bio/10/mccv#MCCV_000030,isolation source description
+http://metadb.riken.jp/db/rikenbrc_jcm_microbe/mic_7,Habitat,http://www.w3.org/2000/01/rdf-schema#label,label
+http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25338,,http://www.w3.org/2000/01/rdf-schema#label,label
+http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25338,,http://www.w3.org/2000/01/rdf-schema#comment,comment
+http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25338,,http://purl.org/dc/terms/identifier,identifier
+http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25338,,http://purl.org/dc/terms/title,
+http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25338,,http://semanticscience.org/resource/SIO_000300,
+http://metadb.riken.jp/db/mgi_rdf/AlleleType,Type of allele,http://www.w3.org/2000/01/rdf-schema#label,label
+http://metadb.riken.jp/db/mgi_rdf/GeneticDistance,Genetic distance,http://www.w3.org/1999/02/22-rdf-syntax-ns#value,
+http://metadb.riken.jp/db/mgi_rdf/PhenotypeAnnotaition,MGI phenotype annotation,http://www.w3.org/2000/01/rdf-schema#label,label
+http://metadb.riken.jp/db/mgi_rdf/PhenotypeAnnotaition,MGI phenotype annotation,http://metadb.riken.jp/db/mgi_rdf/allele_composition,
+http://metadb.riken.jp/db/mgi_rdf/PhenotypeAnnotaition,MGI phenotype annotation,http://metadb.riken.jp/db/mgi_rdf/allele_symbol,
+http://metadb.riken.jp/db/mgi_rdf/PhenotypeAnnotaition,MGI phenotype annotation,http://metadb.riken.jp/db/mgi_rdf/genetic_background,
+http://metadb.riken.jp/db/mgi_rdf/PhysicalNucleotideDistance,Physical distance,http://www.w3.org/1999/02/22-rdf-syntax-ns#value,
+http://metadb.riken.jp/db/ibid_test/ibid_0000001,directory,http://www.w3.org/2000/01/rdf-schema#label,label
+http://metadb.riken.jp/db/ibid_test/ibid_0000001,directory,http://purl.org/dc/elements/1.1/description,description
+http://metadb.riken.jp/db/ibid_test/ibid_0000001,directory,http://purl.org/dc/elements/1.1/description,Description
+http://metadb.riken.jp/db/ibid_test/ibid_0000001,directory,http://purl.org/dc/elements/1.1/source,Source
+http://metadb.riken.jp/db/ibid_test/ibid_0000001,directory,http://purl.org/dc/elements/1.1/source,derived from resource
+http://metadb.riken.jp/db/ibid_test/ibid_0000001,directory,http://www.geneontology.org/formats/oboInOwl#hasDbXref,database_cross_reference
+http://metadb.riken.jp/db/ibid_test/ibid_0000001,directory,http://www.geneontology.org/formats/oboInOwl#hasDbXref,database cross reference
+http://purl.obolibrary.org/obo/OBI_0000658,data representational model,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/OBI_0000658,data representational model,http://purl.org/dc/elements/1.1/description,description
+http://purl.obolibrary.org/obo/OBI_0000658,data representational model,http://purl.org/dc/elements/1.1/description,Description
+http://purl.obolibrary.org/obo/OBI_0000658,data representational model,http://purl.org/dc/elements/1.1/source,Source
+http://purl.obolibrary.org/obo/OBI_0000658,data representational model,http://purl.org/dc/elements/1.1/source,derived from resource
+http://purl.obolibrary.org/obo/OBI_0000658,data representational model,http://www.geneontology.org/formats/oboInOwl#hasDbXref,database_cross_reference
+http://purl.obolibrary.org/obo/OBI_0000658,data representational model,http://www.geneontology.org/formats/oboInOwl#hasDbXref,database cross reference
+http://metadb.riken.jp/db/ibid_test/ibid_0000001,directory,http://metadb.riken.jp/db/ibid_test/schemaOLSP_public_availability,
+http://metadb.riken.jp/db/ibid_test/ibid_0000001,directory,http://metadb.riken.jp/db/ibid_test/ibid_0000029,
+http://purl.obolibrary.org/obo/OBI_0000658,data representational model,http://metadb.riken.jp/db/ibid_test/schemaOLSP_public_availability,
+http://purl.obolibrary.org/obo/OBI_0000658,data representational model,http://metadb.riken.jp/db/ibid_test/ibid_0000029,
+http://purl.obolibrary.org/obo/ERO_0000014,research project,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/ERO_0000014,research project,http://purl.org/dc/elements/1.1/description,description
+http://purl.obolibrary.org/obo/ERO_0000014,research project,http://purl.org/dc/elements/1.1/description,Description
+http://purl.obolibrary.org/obo/ERO_0000014,research project,http://www.geneontology.org/formats/oboInOwl#hasDbXref,database_cross_reference
+http://purl.obolibrary.org/obo/ERO_0000014,research project,http://www.geneontology.org/formats/oboInOwl#hasDbXref,database cross reference
+http://purl.obolibrary.org/obo/ERO_0000014,research project,http://metadb.riken.jp/db/ibid_test/ibid_0000029,
+http://www.w3.org/2002/07/owl#Class,,http://www.w3.org/2000/01/rdf-schema#label,label
+http://www.w3.org/2002/07/owl#DeprecatedClass,,http://www.w3.org/2000/01/rdf-schema#label,label
+http://www.w3.org/2002/07/owl#Class,,http://www.w3.org/2000/01/rdf-schema#comment,comment
+http://www.w3.org/2002/07/owl#DeprecatedClass,,http://www.w3.org/2000/01/rdf-schema#comment,comment
+http://www.w3.org/2002/07/owl#Class,,http://www.w3.org/2000/01/rdf-schema#seeAlso,seeAlso
+http://www.w3.org/2002/07/owl#Class,,http://www.w3.org/2000/01/rdf-schema#seeAlso,see also
+http://www.w3.org/2002/07/owl#Class,,http://www.w3.org/2000/01/rdf-schema#seeAlso,rdfs:seeAlso
+http://www.w3.org/2002/07/owl#DeprecatedClass,,http://www.w3.org/2000/01/rdf-schema#seeAlso,seeAlso
+http://www.w3.org/2002/07/owl#DeprecatedClass,,http://www.w3.org/2000/01/rdf-schema#seeAlso,see also
+http://www.w3.org/2002/07/owl#DeprecatedClass,,http://www.w3.org/2000/01/rdf-schema#seeAlso,rdfs:seeAlso
+http://www.w3.org/2002/07/owl#Class,,http://www.w3.org/2002/07/owl#deprecated,owl:deprecated
+http://www.w3.org/2002/07/owl#DeprecatedClass,,http://www.w3.org/2002/07/owl#deprecated,owl:deprecated
+http://www.w3.org/2002/07/owl#Class,,http://purl.jp/bio/11/meo/hasExactSynonym,hasExactSynonym
+http://www.w3.org/2002/07/owl#DeprecatedClass,,http://purl.jp/bio/11/meo/hasExactSynonym,hasExactSynonym
+http://www.w3.org/2002/07/owl#DeprecatedClass,,http://purl.jp/bio/11/meo/hasRelatedSynonym,hasRelatedSynonym
+http://purl.uniprot.org/core/Protein,,http://purl.org/dc/terms/identifier,identifier
+http://purl.obolibrary.org/obo/ENVO_00000015,ocean,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/ENVO_00000015,ocean,http://purl.obolibrary.org/obo/IAO_0000115,definition
+http://purl.obolibrary.org/obo/ENVO_00000015,ocean,http://purl.obolibrary.org/obo/IAO_0000115,textual definition
+http://www.w3.org/2002/07/owl#NamedIndividual,,http://www.w3.org/2000/01/rdf-schema#label,label
+http://www.w3.org/2002/07/owl#NamedIndividual,,http://purl.obolibrary.org/obo/IAO_0000115,definition
+http://www.w3.org/2002/07/owl#NamedIndividual,,http://purl.obolibrary.org/obo/IAO_0000115,textual definition
+http://purl.obolibrary.org/obo/ENVO_01000216,montane shrubland biome,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/ENVO_01000216,montane shrubland biome,http://www.geneontology.org/formats/oboInOwl#hasExactSynonym,has_exact_synonym
+http://purl.obolibrary.org/obo/ENVO_01000216,montane shrubland biome,http://purl.obolibrary.org/obo/IAO_0000115,definition
+http://purl.obolibrary.org/obo/ENVO_01000216,montane shrubland biome,http://purl.obolibrary.org/obo/IAO_0000115,textual definition
+nodeID://b451427388,,http://www.w3.org/2000/01/rdf-schema#label,label
+nodeID://b103032962,,http://www.w3.org/2000/01/rdf-schema#label,label
+http://www.w3.org/2002/07/owl#NamedIndividual,,http://www.geneontology.org/formats/oboInOwl#hasExactSynonym,has_exact_synonym
+nodeID://b103032962,,http://www.geneontology.org/formats/oboInOwl#hasExactSynonym,has_exact_synonym
+nodeID://b451427388,,http://www.geneontology.org/formats/oboInOwl#hasExactSynonym,has_exact_synonym
+nodeID://b103032962,,http://purl.obolibrary.org/obo/IAO_0000115,definition
+nodeID://b103032962,,http://purl.obolibrary.org/obo/IAO_0000115,textual definition
+nodeID://b451427388,,http://purl.obolibrary.org/obo/IAO_0000115,definition
+nodeID://b451427388,,http://purl.obolibrary.org/obo/IAO_0000115,textual definition
+http://purl.obolibrary.org/obo/ENVO_01000801,star,http://www.geneontology.org/formats/oboInOwl#hasExactSynonym,has_exact_synonym
+http://purl.obolibrary.org/obo/ENVO_01000801,star,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/ENVO_01000958,terrestrial planet,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/ENVO_01000958,terrestrial planet,http://purl.obolibrary.org/obo/IAO_0000115,definition
+http://purl.obolibrary.org/obo/ENVO_01000958,terrestrial planet,http://purl.obolibrary.org/obo/IAO_0000115,textual definition
+http://purl.obolibrary.org/obo/ENVO_01001211,stellar radiation,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/ENVO_01001211,stellar radiation,http://purl.org/dc/elements/1.1/date,dc:date
+http://purl.obolibrary.org/obo/ENVO_01001211,stellar radiation,http://purl.org/dc/elements/1.1/date,Date
+http://purl.obolibrary.org/obo/ENVO_01001211,stellar radiation,http://purl.obolibrary.org/obo/IAO_0000115,definition
+http://purl.obolibrary.org/obo/ENVO_01001211,stellar radiation,http://purl.obolibrary.org/obo/IAO_0000115,textual definition
+http://www.w3.org/2002/07/owl#NamedIndividual,,http://purl.org/dc/elements/1.1/date,dc:date
+http://www.w3.org/2002/07/owl#NamedIndividual,,http://purl.org/dc/elements/1.1/date,Date
+http://purl.obolibrary.org/obo/ENVO_01001570,terrestrial ecoregion,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/ENVO_01001570,terrestrial ecoregion,http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym,has_broad_synonym
+http://purl.obolibrary.org/obo/ENVO_01001780,desert ecosystem,http://www.w3.org/2000/01/rdf-schema#label,label
+http://www.w3.org/2002/07/owl#NamedIndividual,,http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym,has_broad_synonym
+http://purl.obolibrary.org/obo/ENVO_01001570,terrestrial ecoregion,http://www.geneontology.org/formats/oboInOwl#creation_date,creation_date
+http://purl.obolibrary.org/obo/ENVO_01001570,terrestrial ecoregion,http://www.geneontology.org/formats/oboInOwl#hasDbXref,database_cross_reference
+http://purl.obolibrary.org/obo/ENVO_01001570,terrestrial ecoregion,http://www.geneontology.org/formats/oboInOwl#hasDbXref,database cross reference
+http://purl.obolibrary.org/obo/ENVO_01001780,desert ecosystem,http://www.geneontology.org/formats/oboInOwl#creation_date,creation_date
+http://www.w3.org/2002/07/owl#NamedIndividual,,http://www.geneontology.org/formats/oboInOwl#creation_date,creation_date
+http://www.w3.org/2002/07/owl#NamedIndividual,,http://www.geneontology.org/formats/oboInOwl#hasDbXref,database_cross_reference
+http://www.w3.org/2002/07/owl#NamedIndividual,,http://www.geneontology.org/formats/oboInOwl#hasDbXref,database cross reference
+http://purl.obolibrary.org/obo/ENVO_01001570,terrestrial ecoregion,http://www.geneontology.org/formats/oboInOwl#hasExactSynonym,has_exact_synonym
+http://purl.obolibrary.org/obo/ENVO_01001570,terrestrial ecoregion,http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym,has_related_synonym
+http://purl.obolibrary.org/obo/ENVO_01001780,desert ecosystem,http://www.geneontology.org/formats/oboInOwl#hasDbXref,database_cross_reference
+http://purl.obolibrary.org/obo/ENVO_01001780,desert ecosystem,http://www.geneontology.org/formats/oboInOwl#hasDbXref,database cross reference
+http://purl.obolibrary.org/obo/ENVO_01001780,desert ecosystem,http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym,has_related_synonym
+http://www.w3.org/2002/07/owl#NamedIndividual,,http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym,has_related_synonym
+http://purl.obolibrary.org/obo/ENVO_01001698,polar front,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/ENVO_01001698,polar front,http://purl.org/dc/elements/1.1/date,dc:date
+http://purl.obolibrary.org/obo/ENVO_01001698,polar front,http://purl.org/dc/elements/1.1/date,Date
+http://purl.obolibrary.org/obo/ENVO_01001698,polar front,http://www.geneontology.org/formats/oboInOwl#inSubset,in_subset
+http://purl.obolibrary.org/obo/ENVO_01001698,polar front,http://purl.obolibrary.org/obo/IAO_0000115,definition
+http://purl.obolibrary.org/obo/ENVO_01001698,polar front,http://purl.obolibrary.org/obo/IAO_0000115,textual definition
+http://www.w3.org/2002/07/owl#NamedIndividual,,http://www.geneontology.org/formats/oboInOwl#inSubset,in_subset
+http://purl.obolibrary.org/obo/SO_0000110,sequence_feature,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_0000903,endogenous_retroviral_sequence,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_0000110,sequence_feature,http://purl.org/dc/terms/description,
+http://purl.obolibrary.org/obo/SO_0000110,sequence_feature,https://monarchinitiative.org/MONARCH_cliqueLeader,
+http://purl.obolibrary.org/obo/SO_0000903,endogenous_retroviral_sequence,http://purl.org/dc/terms/description,
+http://purl.obolibrary.org/obo/SO_0000903,endogenous_retroviral_sequence,https://monarchinitiative.org/MONARCH_cliqueLeader,
+http://www.w3.org/2002/07/owl#NamedIndividual,,http://purl.org/dc/terms/description,
+http://www.w3.org/2002/07/owl#NamedIndividual,,https://monarchinitiative.org/MONARCH_cliqueLeader,
+http://purl.obolibrary.org/obo/SO_0000110,sequence_feature,http://www.geneontology.org/formats/oboInOwl#hasExactSynonym,has_exact_synonym
+http://purl.obolibrary.org/obo/SO_0000903,endogenous_retroviral_sequence,http://www.geneontology.org/formats/oboInOwl#hasExactSynonym,has_exact_synonym
+http://purl.obolibrary.org/obo/SO_0001265,miRNA_gene,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_0001265,miRNA_gene,http://purl.org/dc/terms/description,
+http://purl.obolibrary.org/obo/SO_0001265,miRNA_gene,https://monarchinitiative.org/MONARCH_cliqueLeader,
+http://www.w3.org/2002/07/owl#Class,,http://purl.org/dc/terms/description,
+http://www.w3.org/2002/07/owl#Class,,https://monarchinitiative.org/MONARCH_cliqueLeader,
+http://purl.obolibrary.org/obo/SO_0001265,miRNA_gene,http://www.geneontology.org/formats/oboInOwl#hasExactSynonym,has_exact_synonym
+http://www.w3.org/2002/07/owl#Class,,http://www.geneontology.org/formats/oboInOwl#hasExactSynonym,has_exact_synonym
+http://purl.obolibrary.org/obo/SO_0001267,snoRNA_gene,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_0001267,snoRNA_gene,http://purl.org/dc/terms/description,
+http://purl.obolibrary.org/obo/SO_0001267,snoRNA_gene,https://monarchinitiative.org/MONARCH_cliqueLeader,
+http://purl.obolibrary.org/obo/SO_0001267,snoRNA_gene,http://www.geneontology.org/formats/oboInOwl#hasExactSynonym,has_exact_synonym
+http://purl.obolibrary.org/obo/SO_0001268,snRNA_gene,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_0001268,snRNA_gene,http://www.geneontology.org/formats/oboInOwl#hasExactSynonym,has_exact_synonym
+http://purl.obolibrary.org/obo/SO_0001268,snRNA_gene,http://purl.org/dc/terms/description,
+http://purl.obolibrary.org/obo/SO_0001268,snRNA_gene,https://monarchinitiative.org/MONARCH_cliqueLeader,
+http://purl.obolibrary.org/obo/SO_0001268,snRNA_gene,https://w3id.org/biolink/vocab/in_taxon,
+http://purl.obolibrary.org/obo/SO_0001268,snRNA_gene,https://w3id.org/biolink/vocab/provided_by,
+http://purl.obolibrary.org/obo/SO_0001268,snRNA_gene,https://w3id.org/biolink/vocab/symbol,
+http://purl.obolibrary.org/obo/SO_0001268,snRNA_gene,https://w3id.org/biolink/vocab/synonym,
+http://purl.obolibrary.org/obo/SO_0001268,snRNA_gene,https://w3id.org/biolink/vocab/xref,
+http://purl.obolibrary.org/obo/SO_0001272,tRNA_gene,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_0001272,tRNA_gene,http://www.geneontology.org/formats/oboInOwl#hasExactSynonym,has_exact_synonym
+http://purl.obolibrary.org/obo/SO_0001272,tRNA_gene,http://purl.org/dc/terms/description,
+http://purl.obolibrary.org/obo/SO_0001272,tRNA_gene,https://monarchinitiative.org/MONARCH_cliqueLeader,
+http://purl.obolibrary.org/obo/SO_0001272,tRNA_gene,https://w3id.org/biolink/vocab/in_taxon,
+http://purl.obolibrary.org/obo/SO_0001272,tRNA_gene,https://w3id.org/biolink/vocab/provided_by,
+http://purl.obolibrary.org/obo/SO_0001272,tRNA_gene,https://w3id.org/biolink/vocab/symbol,
+http://purl.obolibrary.org/obo/SO_0001272,tRNA_gene,https://w3id.org/biolink/vocab/synonym,
+http://purl.obolibrary.org/obo/SO_0001272,tRNA_gene,https://w3id.org/biolink/vocab/xref,
+http://purl.obolibrary.org/obo/SO_1000008,point_mutation,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_0000667,insertion,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_0000159,deletion,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_0001059,sequence_alteration,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_1000008,point_mutation,http://purl.org/dc/terms/description,
+http://purl.obolibrary.org/obo/SO_0000667,insertion,http://purl.org/dc/terms/description,
+http://purl.obolibrary.org/obo/SO_0000159,deletion,http://purl.org/dc/terms/description,
+http://purl.obolibrary.org/obo/SO_0001059,sequence_alteration,http://purl.org/dc/terms/description,
+http://purl.obolibrary.org/obo/SO_0000704,gene,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_0000704,Gene,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_0000704,gene,http://purl.org/dc/terms/identifier,identifier
+http://purl.obolibrary.org/obo/SO_0000704,Gene,http://purl.org/dc/terms/identifier,identifier
+http://purl.org/net/orth#Gene,Gene,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.org/net/orth#Gene,Gene,http://purl.org/dc/terms/identifier,identifier
+http://purl.obolibrary.org/obo/SO_0000704,gene,http://purl.org/dc/terms/description,
+http://purl.obolibrary.org/obo/SO_0000704,Gene,http://purl.org/dc/terms/description,
+http://purl.org/net/orth#Gene,Gene,http://purl.org/dc/terms/description,
+http://purl.obolibrary.org/obo/SO_0001500,heritable_phenotypic_marker,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_0001500,heritable_phenotypic_marker,http://purl.org/dc/terms/description,
+http://purl.obolibrary.org/obo/SO_0001500,heritable_phenotypic_marker,https://monarchinitiative.org/MONARCH_cliqueLeader,
+http://purl.obolibrary.org/obo/SO_0001500,heritable_phenotypic_marker,http://www.geneontology.org/formats/oboInOwl#hasExactSynonym,has_exact_synonym
+http://purl.obolibrary.org/obo/SO_0001637,rRNA_gene,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_0001637,rRNA_gene,http://www.geneontology.org/formats/oboInOwl#hasExactSynonym,has_exact_synonym
+http://purl.obolibrary.org/obo/SO_0001637,rRNA_gene,http://purl.org/dc/terms/description,
+http://purl.obolibrary.org/obo/SO_0001637,rRNA_gene,https://monarchinitiative.org/MONARCH_cliqueLeader,
+http://purl.obolibrary.org/obo/SO_0001637,rRNA_gene,https://w3id.org/biolink/vocab/in_taxon,
+http://purl.obolibrary.org/obo/SO_0001637,rRNA_gene,https://w3id.org/biolink/vocab/provided_by,
+http://purl.obolibrary.org/obo/SO_0001637,rRNA_gene,https://w3id.org/biolink/vocab/symbol,
+http://purl.obolibrary.org/obo/SO_0001637,rRNA_gene,https://w3id.org/biolink/vocab/synonym,
+http://purl.obolibrary.org/obo/SO_0001637,rRNA_gene,https://w3id.org/biolink/vocab/xref,
+http://purl.obolibrary.org/obo/SO_0001645,genetic_marker,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_1000030,chromosomal_inversion,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_1000043,Robertsonian_fusion,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_1000044,chromosomal_translocation,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_1000048,reciprocal_chromosomal_translocation,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_1000029,chromosomal_deletion,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_1000037,chromosomal_duplication,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_0001645,genetic_marker,http://purl.org/dc/terms/description,
+http://purl.obolibrary.org/obo/SO_0001645,genetic_marker,https://monarchinitiative.org/MONARCH_cliqueLeader,
+http://purl.obolibrary.org/obo/SO_0000667,insertion,https://monarchinitiative.org/MONARCH_cliqueLeader,
+http://purl.obolibrary.org/obo/SO_1000030,chromosomal_inversion,http://purl.org/dc/terms/description,
+http://purl.obolibrary.org/obo/SO_1000030,chromosomal_inversion,https://monarchinitiative.org/MONARCH_cliqueLeader,
+http://purl.obolibrary.org/obo/SO_1000043,Robertsonian_fusion,http://purl.org/dc/terms/description,
+http://purl.obolibrary.org/obo/SO_1000043,Robertsonian_fusion,https://monarchinitiative.org/MONARCH_cliqueLeader,
+http://purl.obolibrary.org/obo/SO_1000044,chromosomal_translocation,http://purl.org/dc/terms/description,
+http://purl.obolibrary.org/obo/SO_1000044,chromosomal_translocation,https://monarchinitiative.org/MONARCH_cliqueLeader,
+http://purl.obolibrary.org/obo/SO_1000048,reciprocal_chromosomal_translocation,http://purl.org/dc/terms/description,
+http://purl.obolibrary.org/obo/SO_1000048,reciprocal_chromosomal_translocation,https://monarchinitiative.org/MONARCH_cliqueLeader,
+http://purl.obolibrary.org/obo/SO_1000029,chromosomal_deletion,http://purl.org/dc/terms/description,
+http://purl.obolibrary.org/obo/SO_1000029,chromosomal_deletion,https://monarchinitiative.org/MONARCH_cliqueLeader,
+http://purl.obolibrary.org/obo/SO_1000037,chromosomal_duplication,http://purl.org/dc/terms/description,
+http://purl.obolibrary.org/obo/SO_1000037,chromosomal_duplication,https://monarchinitiative.org/MONARCH_cliqueLeader,
+http://purl.obolibrary.org/obo/SO_0001645,genetic_marker,http://www.geneontology.org/formats/oboInOwl#hasExactSynonym,has_exact_synonym
+http://purl.obolibrary.org/obo/SO_0000667,insertion,http://www.geneontology.org/formats/oboInOwl#hasExactSynonym,has_exact_synonym
+http://purl.obolibrary.org/obo/SO_1000030,chromosomal_inversion,http://www.geneontology.org/formats/oboInOwl#hasExactSynonym,has_exact_synonym
+http://purl.obolibrary.org/obo/SO_1000044,chromosomal_translocation,http://www.geneontology.org/formats/oboInOwl#hasExactSynonym,has_exact_synonym
+http://purl.obolibrary.org/obo/SO_1000048,reciprocal_chromosomal_translocation,http://www.geneontology.org/formats/oboInOwl#hasExactSynonym,has_exact_synonym
+http://purl.obolibrary.org/obo/SO_1000029,chromosomal_deletion,http://www.geneontology.org/formats/oboInOwl#hasExactSynonym,has_exact_synonym
+http://purl.obolibrary.org/obo/SO_1000037,chromosomal_duplication,http://www.geneontology.org/formats/oboInOwl#hasExactSynonym,has_exact_synonym
+http://purl.obolibrary.org/obo/SO_1000043,Robertsonian_fusion,http://www.geneontology.org/formats/oboInOwl#hasExactSynonym,has_exact_synonym
+http://www.geneontology.org/formats/oboInOwl#Subset,subset_oio,http://www.w3.org/2000/01/rdf-schema#label,label
+http://www.geneontology.org/formats/oboInOwl#Subset,subset_oio,http://purl.obolibrary.org/obo/IAO_0000117,term editor
+http://www.geneontology.org/formats/oboInOwl#Subset,subset_oio,http://www.w3.org/2002/07/owl#deprecated,owl:deprecated
+http://www.geneontology.org/formats/oboInOwl#Subset,subset_oio,http://purl.obolibrary.org/obo/IAO_0000115,definition
+http://www.geneontology.org/formats/oboInOwl#Subset,subset_oio,http://purl.obolibrary.org/obo/IAO_0000115,textual definition
+http://www.w3.org/2002/07/owl#NamedIndividual,,http://purl.obolibrary.org/obo/IAO_0000117,term editor
+http://www.w3.org/2002/07/owl#NamedIndividual,,http://www.w3.org/2002/07/owl#deprecated,owl:deprecated
+http://purl.obolibrary.org/obo/NCBITaxon_41269,Mus crociduroides,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/NCBITaxon_10090,Mus musculus,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/NCBITaxon_10090,マウス,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/NCBITaxon_10090,mus musculus,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/NCBITaxon_41270,Mus mattheyi,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/NCBITaxon_10090,Mus musculus,https://monarchinitiative.org/MONARCH_cliqueLeader,
+http://purl.obolibrary.org/obo/NCBITaxon_10090,マウス,https://monarchinitiative.org/MONARCH_cliqueLeader,
+http://purl.obolibrary.org/obo/NCBITaxon_10090,mus musculus,https://monarchinitiative.org/MONARCH_cliqueLeader,
+http://purl.obolibrary.org/obo/NCBITaxon_9606,Homo sapiens,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/NCBITaxon_9606,homo sapiens,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/NCBITaxon_9606,ヒト,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/NCBITaxon_9606,Homo sapiens,http://purl.org/dc/elements/1.1/description,description
+http://purl.obolibrary.org/obo/NCBITaxon_9606,homo sapiens,http://purl.org/dc/elements/1.1/description,description
+http://purl.obolibrary.org/obo/NCBITaxon_9606,ヒト,http://purl.org/dc/elements/1.1/description,description
+http://purl.obolibrary.org/obo/NCBITaxon_9606,Homo sapiens,http://purl.org/dc/elements/1.1/description,Description
+http://purl.obolibrary.org/obo/NCBITaxon_9606,homo sapiens,http://purl.org/dc/elements/1.1/description,Description
+http://purl.obolibrary.org/obo/NCBITaxon_9606,ヒト,http://purl.org/dc/elements/1.1/description,Description
+http://purl.obolibrary.org/obo/NCBITaxon_9606,Homo sapiens,http://www.w3.org/2000/01/rdfschema#label,
+http://purl.obolibrary.org/obo/NCBITaxon_9606,homo sapiens,http://www.w3.org/2000/01/rdfschema#label,
+http://purl.obolibrary.org/obo/NCBITaxon_9606,ヒト,http://www.w3.org/2000/01/rdfschema#label,
+http://purl.obolibrary.org/obo/NCBITaxon_10114,Rattus,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/NCBITaxon_10114,ラット,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/NCBITaxon_10114,rattus,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.jp/bio/10/mccv#MCCV_000001,Culture,http://purl.jp/bio/10/mccv#MCCV_000026,他機関での菌株番号
+http://purl.jp/bio/10/mccv#MCCV_000001,培養株,http://purl.jp/bio/10/mccv#MCCV_000026,他機関での菌株番号
+http://purl.jp/bio/10/mccv#MCCV_000001,Culture,http://purl.jp/bio/10/mccv#MCCV_000026,other culture collection number
+http://purl.jp/bio/10/mccv#MCCV_000001,培養株,http://purl.jp/bio/10/mccv#MCCV_000026,other culture collection number
+http://purl.jp/bio/10/mccv#MCCV_000009,Culture Collection,http://www.w3.org/2004/02/skos/core#prefLabel,preferred label
+http://purl.jp/bio/10/mccv#MCCV_000009,Culture Collection,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.jp/bio/10/mccv#MCCV_000009,Culture Collection,http://purl.org/dc/terms/title,
+http://purl.obolibrary.org/obo/NCBITaxon_10091,Mus musculus castaneus,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/GENO_0000611,,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/NCBITaxon_10096,Mus spretus,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/NCBITaxon_57486,Mus musculus molossinus,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/NCBITaxon_116058,Mus musculus brevirostris,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/NCBITaxon_1385377,Mus musculus gansuensis,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/NCBITaxon_887131,Mus emesi,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/NCBITaxon_10092,Mus musculus domesticus,http://www.w3.org/2000/01/rdf-schema#label,label
+http://semanticscience.org/resource/SIO_010046,,http://www.w3.org/2000/01/rdf-schema#label,label
+http://metadb.riken.jp/db/rikenbrc_cell/cell_0000001,Derives_from,http://purl.jp/brso/indicatesStage,
+http://metadb.riken.jp/db/rikenbrc_cell/cell_0000002,Donor,http://purl.jp/brso/indicatesStage,
+http://metadb.riken.jp/db/rikenbrc_cell/cell_0000002,ドナー,http://purl.jp/brso/indicatesStage,
+http://semanticscience.org/resource/SIO_010046,,http://purl.jp/brso/indicatesStage,
+http://purl.obolibrary.org/obo/SO_0002139,unconfirmed_transcript,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_0002139,unconfirmed_transcript,https://w3id.org/biolink/vocab/in_taxon,
+http://purl.obolibrary.org/obo/SO_0002139,unconfirmed_transcript,https://w3id.org/biolink/vocab/provided_by,
+http://purl.obolibrary.org/obo/SO_0002139,unconfirmed_transcript,https://w3id.org/biolink/vocab/symbol,
+http://purl.obolibrary.org/obo/SO_0002139,unconfirmed_transcript,https://w3id.org/biolink/vocab/xref,
+http://www.w3.org/2003/01/geo/wgs84_pos#Point,point,http://www.w3.org/2003/01/geo/wgs84_pos#lat,
+http://www.w3.org/2003/01/geo/wgs84_pos#Point,地点,http://www.w3.org/2003/01/geo/wgs84_pos#lat,
+http://www.w3.org/2003/01/geo/wgs84_pos#Point,point,http://www.w3.org/2003/01/geo/wgs84_pos#long,
+http://www.w3.org/2003/01/geo/wgs84_pos#Point,地点,http://www.w3.org/2003/01/geo/wgs84_pos#long,
+http://purl.obolibrary.org/obo/NCBITaxon_10089,Mus caroli,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/NCBITaxon_10088,Mus <genus>,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/NCBITaxon_10090,Mus musculus,http://www.geneontology.org/formats/oboInOwl#hasExactSynonym,has_exact_synonym
+http://purl.obolibrary.org/obo/NCBITaxon_10090,マウス,http://www.geneontology.org/formats/oboInOwl#hasExactSynonym,has_exact_synonym
+http://purl.obolibrary.org/obo/NCBITaxon_10090,mus musculus,http://www.geneontology.org/formats/oboInOwl#hasExactSynonym,has_exact_synonym
+http://purl.obolibrary.org/obo/NCBITaxon_10088,Mus <genus>,http://www.geneontology.org/formats/oboInOwl#hasExactSynonym,has_exact_synonym
+http://purl.obolibrary.org/obo/NCBITaxon_10093,Mus pahari,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/NCBITaxon_10094,Mus saxicola,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/NCBITaxon_10097,Mus cervicolor,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/NCBITaxon_10098,Mus cookii,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/NCBITaxon_10101,Mus platythrix,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/NCBITaxon_10102,Mus setulosus,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/NCBITaxon_10105,Mus minutoides,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/NCBITaxon_10108,Mus abbotti,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/NCBITaxon_862510,Nannomys,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/NCBITaxon_135827,Mus cervicolor cervicolor,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/NCBITaxon_135828,Mus cervicolor popaeus,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/NCBITaxon_254704,Mus terricolor,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/NCBITaxon_270352,Mus macedonicus spretoides,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/NCBITaxon_270353,Mus macedonicus macedonicus,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/NCBITaxon_273921,Mus indutus,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/NCBITaxon_273922,Mus haussa,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/NCBITaxon_27681,Mus booduga,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/NCBITaxon_35531,Mus musculus bactrianus,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/NCBITaxon_390847,Mus lepidoides,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/NCBITaxon_390848,Mus nitidulus,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/NCBITaxon_397330,Mus tenellus,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/NCBITaxon_468371,Mus cypriacus,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/NCBITaxon_473865,Mus triton,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/NCBITaxon_477815,Mus musculus musculus x M. m. domesticus,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/NCBITaxon_477816,Mus musculus musculus x Mus musculus castaneus,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/NCBITaxon_80274,Mus musculus gentilulus,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/PATO_0000165,time,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/PATO_0000165,time quality,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/PATO_0000165,時間（特性）,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/PATO_0000165,time,http://www.w3.org/1999/02/22-rdf-syntax-ns#value,
+http://purl.obolibrary.org/obo/PATO_0000165,time quality,http://www.w3.org/1999/02/22-rdf-syntax-ns#value,
+http://purl.obolibrary.org/obo/PATO_0000165,時間（特性）,http://www.w3.org/1999/02/22-rdf-syntax-ns#value,
+http://purl.obolibrary.org/obo/NCBITaxon_186193,Mus fragilicauda,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/NCBITaxon_229288,Mus gratus,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/NCBITaxon_544437,Mus baoulei,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_0000336,pseudogene,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_0000336,pseudogene,http://www.geneontology.org/formats/oboInOwl#hasExactSynonym,has_exact_synonym
+http://purl.obolibrary.org/obo/SO_0000336,pseudogene,http://purl.org/dc/terms/description,
+http://purl.obolibrary.org/obo/SO_0000336,pseudogene,https://monarchinitiative.org/MONARCH_cliqueLeader,
+http://purl.obolibrary.org/obo/SO_0000336,pseudogene,https://w3id.org/biolink/vocab/in_taxon,
+http://purl.obolibrary.org/obo/SO_0000336,pseudogene,https://w3id.org/biolink/vocab/provided_by,
+http://purl.obolibrary.org/obo/SO_0000336,pseudogene,https://w3id.org/biolink/vocab/symbol,
+http://purl.obolibrary.org/obo/SO_0000336,pseudogene,https://w3id.org/biolink/vocab/synonym,
+http://purl.obolibrary.org/obo/SO_0000336,pseudogene,https://w3id.org/biolink/vocab/xref,
+http://semanticscience.org/resource/SIO_010035,,http://www.w3.org/2000/01/rdf-schema#label,label
+http://semanticscience.org/resource/SIO_010035,,https://w3id.org/biolink/vocab/in_taxon,
+http://semanticscience.org/resource/SIO_010035,,https://w3id.org/biolink/vocab/provided_by,
+http://semanticscience.org/resource/SIO_010035,,https://w3id.org/biolink/vocab/symbol,
+http://semanticscience.org/resource/SIO_010035,,https://w3id.org/biolink/vocab/synonym,
+http://semanticscience.org/resource/SIO_010035,,https://w3id.org/biolink/vocab/xref,
+http://purl.obolibrary.org/obo/SO_0000340,chromosome,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_0000340,chromosome,http://purl.org/dc/terms/identifier,identifier
+http://purl.obolibrary.org/obo/CHR_10090chr1,,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/CHR_10090chr10,,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/CHR_10090chr11,,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/CHR_10090chr12,,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/CHR_10090chr13,,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/CHR_10090chr14,,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/CHR_10090chr15,,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/CHR_10090chr16,,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/CHR_10090chr17,,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/CHR_10090chr18,,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/CHR_10090chr19,,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/CHR_10090chr2,,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/CHR_10090chr3,,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/CHR_10090chr4,,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/CHR_10090chr5,,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/CHR_10090chr6,,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/CHR_10090chr7,,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/CHR_10090chr8,,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/CHR_10090chr9,,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/CHR_10090chrMT,,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/CHR_10090chrX,,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/CHR_10090chrY,,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_0001217,protein_coding_gene,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_0001217,protein_coding_gene,http://www.geneontology.org/formats/oboInOwl#hasExactSynonym,has_exact_synonym
+http://purl.obolibrary.org/obo/SO_0001217,protein_coding_gene,http://purl.org/dc/terms/description,
+http://purl.obolibrary.org/obo/SO_0001217,protein_coding_gene,https://monarchinitiative.org/MONARCH_cliqueLeader,
+http://purl.obolibrary.org/obo/SO_0001217,protein_coding_gene,https://w3id.org/biolink/vocab/in_taxon,
+http://purl.obolibrary.org/obo/SO_0001217,protein_coding_gene,https://w3id.org/biolink/vocab/provided_by,
+http://purl.obolibrary.org/obo/SO_0001217,protein_coding_gene,https://w3id.org/biolink/vocab/symbol,
+http://purl.obolibrary.org/obo/SO_0001217,protein_coding_gene,https://w3id.org/biolink/vocab/synonym,
+http://purl.obolibrary.org/obo/SO_0001217,protein_coding_gene,https://w3id.org/biolink/vocab/xref,
+http://purl.obolibrary.org/obo/SO_0001263,ncRNA_gene,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_0001263,ncRNA_gene,https://w3id.org/biolink/vocab/in_taxon,
+http://purl.obolibrary.org/obo/SO_0001263,ncRNA_gene,https://w3id.org/biolink/vocab/provided_by,
+http://purl.obolibrary.org/obo/SO_0001263,ncRNA_gene,https://w3id.org/biolink/vocab/symbol,
+http://purl.obolibrary.org/obo/SO_0001263,ncRNA_gene,https://w3id.org/biolink/vocab/synonym,
+http://purl.obolibrary.org/obo/SO_0001263,ncRNA_gene,https://w3id.org/biolink/vocab/xref,
+http://biohackathon.org/resource/faldo#ExactPosition,Exact position,http://www.w3.org/2000/01/rdf-schema#label,label
+http://biohackathon.org/resource/faldo#ExactPosition,Exact position,http://biohackathon.org/resource/faldo#position,position
+http://biohackathon.org/resource/faldo#ExactPosition,Exact position,http://purl.org/dc/terms/identifier,identifier
+http://biohackathon.org/resource/faldo#Region,Region,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/UO_0000001,length unit,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/UO_0000001,length unit,http://www.geneontology.org/formats/oboInOwl#hasExactSynonym,has_exact_synonym
+http://purl.obolibrary.org/obo/UO_0000001,length unit,http://purl.obolibrary.org/obo/IAO_0000115,definition
+http://purl.obolibrary.org/obo/UO_0000001,length unit,http://purl.obolibrary.org/obo/IAO_0000115,textual definition
+http://www.w3.org/2002/07/owl#Class,,http://purl.obolibrary.org/obo/IAO_0000115,definition
+http://www.w3.org/2002/07/owl#Class,,http://purl.obolibrary.org/obo/IAO_0000115,textual definition
+http://purl.obolibrary.org/obo/UO_0000002,mass unit,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/UO_0000002,mass unit,http://www.geneontology.org/formats/oboInOwl#hasExactSynonym,has_exact_synonym
+http://purl.obolibrary.org/obo/UO_0000002,mass unit,http://purl.obolibrary.org/obo/IAO_0000115,definition
+http://purl.obolibrary.org/obo/UO_0000002,mass unit,http://purl.obolibrary.org/obo/IAO_0000115,textual definition
+http://purl.obolibrary.org/obo/UO_0000003,time unit,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/UO_0000003,time unit,http://www.geneontology.org/formats/oboInOwl#hasExactSynonym,has_exact_synonym
+http://purl.obolibrary.org/obo/UO_0000003,time unit,http://purl.obolibrary.org/obo/IAO_0000115,definition
+http://purl.obolibrary.org/obo/UO_0000003,time unit,http://purl.obolibrary.org/obo/IAO_0000115,textual definition
+http://purl.obolibrary.org/obo/UO_0000005,temperature unit,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/UO_0000005,temperature unit,http://www.geneontology.org/formats/oboInOwl#hasExactSynonym,has_exact_synonym
+http://purl.obolibrary.org/obo/UO_0000005,temperature unit,http://purl.obolibrary.org/obo/IAO_0000115,definition
+http://purl.obolibrary.org/obo/UO_0000005,temperature unit,http://purl.obolibrary.org/obo/IAO_0000115,textual definition
+http://purl.obolibrary.org/obo/UO_0000051,concentration unit,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/UO_0000051,concentration unit,http://www.geneontology.org/formats/oboInOwl#hasExactSynonym,has_exact_synonym
+http://purl.obolibrary.org/obo/UO_0000051,concentration unit,http://purl.obolibrary.org/obo/IAO_0000115,definition
+http://purl.obolibrary.org/obo/UO_0000051,concentration unit,http://purl.obolibrary.org/obo/IAO_0000115,textual definition
+http://purl.org/net/orth#Protein,Protein,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.org/net/orth#Protein,Protein,http://www.w3.org/2000/01/rdf-schema#comment,comment
+http://purl.org/net/orth#Protein,Protein,http://purl.org/dc/terms/identifier,identifier
+http://purl.org/net/orth#Protein,Protein,http://metadb.riken.jp/terms/xsearch#count_dna,
+http://purl.org/net/orth#Protein,Protein,http://omabrowser.org/ontology/oma#swissProtId,
+http://purl.obolibrary.org/obo/SO_0000043,processed_pseudogene,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_0000043,processed_pseudogene,https://w3id.org/biolink/vocab/in_taxon,
+http://purl.obolibrary.org/obo/SO_0000043,processed_pseudogene,https://w3id.org/biolink/vocab/provided_by,
+http://purl.obolibrary.org/obo/SO_0000043,processed_pseudogene,https://w3id.org/biolink/vocab/symbol,
+http://purl.obolibrary.org/obo/SO_0000043,processed_pseudogene,https://w3id.org/biolink/vocab/xref,
+http://purl.obolibrary.org/obo/SO_0000077,antisense,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_0000077,antisense,https://w3id.org/biolink/vocab/in_taxon,
+http://purl.obolibrary.org/obo/SO_0000077,antisense,https://w3id.org/biolink/vocab/provided_by,
+http://purl.obolibrary.org/obo/SO_0000077,antisense,https://w3id.org/biolink/vocab/symbol,
+http://purl.obolibrary.org/obo/SO_0000077,antisense,https://w3id.org/biolink/vocab/synonym,
+http://purl.obolibrary.org/obo/SO_0000077,antisense,https://w3id.org/biolink/vocab/xref,
+http://purl.obolibrary.org/obo/SO_0000111,transposable_element_gene,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_0000111,transposable_element_gene,https://w3id.org/biolink/vocab/in_taxon,
+http://purl.obolibrary.org/obo/SO_0000111,transposable_element_gene,https://w3id.org/biolink/vocab/provided_by,
+http://purl.obolibrary.org/obo/SO_0000111,transposable_element_gene,https://w3id.org/biolink/vocab/symbol,
+http://purl.obolibrary.org/obo/SO_0000111,transposable_element_gene,https://w3id.org/biolink/vocab/synonym,
+http://purl.obolibrary.org/obo/SO_0000111,transposable_element_gene,https://w3id.org/biolink/vocab/xref,
+http://purl.obolibrary.org/obo/SO_0000150,read,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_0000150,read,http://purl.org/dc/terms/description,
+http://purl.obolibrary.org/obo/SO_0000150,read,https://monarchinitiative.org/MONARCH_cliqueLeader,
+http://purl.obolibrary.org/obo/SO_0000150,read,http://www.geneontology.org/formats/oboInOwl#hasExactSynonym,has_exact_synonym
+http://purl.obolibrary.org/obo/SO_0000167,promoter,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_0000167,promoter,http://www.geneontology.org/formats/oboInOwl#hasExactSynonym,has_exact_synonym
+http://purl.obolibrary.org/obo/SO_0000167,promoter,https://monarchinitiative.org/MONARCH_cliqueLeader,
+http://purl.obolibrary.org/obo/SO_0000167,promoter,http://purl.org/dc/terms/description,
+http://purl.obolibrary.org/obo/SO_0000180,retrotransposon,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_0000180,retrotransposon,http://www.geneontology.org/formats/oboInOwl#hasExactSynonym,has_exact_synonym
+http://purl.obolibrary.org/obo/SO_0000180,retrotransposon,http://purl.org/dc/terms/description,
+http://purl.obolibrary.org/obo/SO_0000180,retrotransposon,https://monarchinitiative.org/MONARCH_cliqueLeader,
+http://purl.obolibrary.org/obo/SO_0000183,non_transcribed_region,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_0000183,non_transcribed_region,https://w3id.org/biolink/vocab/symbol,
+http://purl.obolibrary.org/obo/SO_0000183,non_transcribed_region,https://w3id.org/biolink/vocab/xref,
+http://purl.obolibrary.org/obo/SO_0000183,non_transcribed_region,https://w3id.org/biolink/vocab/provided_by,
+http://purl.obolibrary.org/obo/SO_0000183,non_transcribed_region,https://w3id.org/biolink/vocab/synonym,
+http://purl.obolibrary.org/obo/SO_0000183,non_transcribed_region,https://w3id.org/biolink/vocab/in_taxon,
+http://purl.obolibrary.org/obo/SO_0000199,translocation,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_0000199,translocation,http://www.w3.org/2000/01/rdf-schema#comment,comment
+http://purl.obolibrary.org/obo/SO_0000667,insertion,http://www.w3.org/2000/01/rdf-schema#comment,comment
+http://purl.obolibrary.org/obo/SO_1000036,inversion,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_0000159,deletion,http://www.w3.org/2000/01/rdf-schema#comment,comment
+http://purl.obolibrary.org/obo/SO_0001059,sequence_alteration,http://www.w3.org/2000/01/rdf-schema#comment,comment
+http://purl.obolibrary.org/obo/GENO_0000002,,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/GENO_0000512,,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/GENO_0000002,,http://www.w3.org/2000/01/rdf-schema#comment,comment
+http://purl.obolibrary.org/obo/GENO_0000512,,http://www.w3.org/2000/01/rdf-schema#comment,comment
+http://purl.obolibrary.org/obo/SO_0000199,translocation,http://purl.org/dc/terms/description,
+http://purl.obolibrary.org/obo/GENO_0000002,,http://purl.org/dc/terms/description,
+http://purl.obolibrary.org/obo/GENO_0000512,,http://purl.org/dc/terms/description,
+http://purl.obolibrary.org/obo/SO_0000199,translocation,https://monarchinitiative.org/MONARCH_cliqueLeader,
+http://purl.obolibrary.org/obo/SO_1000036,inversion,http://purl.org/dc/terms/description,
+http://purl.obolibrary.org/obo/SO_0000159,deletion,https://monarchinitiative.org/MONARCH_cliqueLeader,
+http://purl.obolibrary.org/obo/SO_0001059,sequence_alteration,https://monarchinitiative.org/MONARCH_cliqueLeader,
+http://purl.obolibrary.org/obo/GENO_0000002,,https://monarchinitiative.org/MONARCH_cliqueLeader,
+http://purl.obolibrary.org/obo/GENO_0000512,,https://monarchinitiative.org/MONARCH_cliqueLeader,
+http://purl.obolibrary.org/obo/SO_0000307,CpG_island,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_0000307,CpG_island,http://purl.org/dc/terms/description,
+http://purl.obolibrary.org/obo/SO_0000307,CpG_island,https://monarchinitiative.org/MONARCH_cliqueLeader,
+http://purl.obolibrary.org/obo/SO_0000307,CpG_island,http://www.geneontology.org/formats/oboInOwl#hasExactSynonym,has_exact_synonym
+http://purl.obolibrary.org/obo/SO_0000405,Y_RNA,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_0000405,Y_RNA,https://w3id.org/biolink/vocab/symbol,
+http://purl.obolibrary.org/obo/SO_0000405,Y_RNA,https://w3id.org/biolink/vocab/provided_by,
+http://purl.obolibrary.org/obo/SO_0000405,Y_RNA,https://w3id.org/biolink/vocab/xref,
+http://purl.obolibrary.org/obo/SO_0000405,Y_RNA,https://w3id.org/biolink/vocab/in_taxon,
+http://purl.obolibrary.org/obo/SO_0000453,chromosomal_transposition,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_0000453,chromosomal_transposition,http://www.geneontology.org/formats/oboInOwl#hasExactSynonym,has_exact_synonym
+http://purl.obolibrary.org/obo/SO_0000453,chromosomal_transposition,http://purl.org/dc/terms/description,
+http://purl.obolibrary.org/obo/SO_0000453,chromosomal_transposition,https://monarchinitiative.org/MONARCH_cliqueLeader,
+http://purl.obolibrary.org/obo/SO_0000624,telomere,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_0000624,telomere,http://purl.org/dc/terms/description,
+http://purl.obolibrary.org/obo/SO_0000624,telomere,https://monarchinitiative.org/MONARCH_cliqueLeader,
+http://purl.obolibrary.org/obo/SO_0000624,telomere,http://www.geneontology.org/formats/oboInOwl#hasExactSynonym,has_exact_synonym
+http://purl.obolibrary.org/obo/SO_0000643,minisatellite,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_0000643,minisatellite,http://purl.org/dc/terms/description,
+http://purl.obolibrary.org/obo/SO_0000643,minisatellite,https://monarchinitiative.org/MONARCH_cliqueLeader,
+http://purl.obolibrary.org/obo/SO_0000643,minisatellite,http://www.geneontology.org/formats/oboInOwl#hasExactSynonym,has_exact_synonym
+http://purl.obolibrary.org/obo/SO_0002007,MNV,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_0002007,MNV,http://purl.org/dc/terms/description,
+http://purl.obolibrary.org/obo/SO_0000718,blocked_reading_frame,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_0000718,blocked_reading_frame,https://w3id.org/biolink/vocab/in_taxon,
+http://purl.obolibrary.org/obo/SO_0000718,blocked_reading_frame,https://w3id.org/biolink/vocab/provided_by,
+http://purl.obolibrary.org/obo/SO_0000718,blocked_reading_frame,https://w3id.org/biolink/vocab/symbol,
+http://purl.obolibrary.org/obo/SO_0000718,blocked_reading_frame,https://w3id.org/biolink/vocab/synonym,
+http://purl.obolibrary.org/obo/SO_0000718,blocked_reading_frame,https://w3id.org/biolink/vocab/xref,
+http://purl.obolibrary.org/obo/SO_0000771,QTL,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_0000771,QTL,http://purl.org/dc/terms/description,
+http://purl.obolibrary.org/obo/SO_0000771,QTL,https://monarchinitiative.org/MONARCH_cliqueLeader,
+http://purl.obolibrary.org/obo/SO_0000771,QTL,http://www.geneontology.org/formats/oboInOwl#hasExactSynonym,has_exact_synonym
+http://purl.obolibrary.org/obo/SO_0000830,chromosome_part,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_0000830,chromosome_part,http://www.geneontology.org/formats/oboInOwl#hasExactSynonym,has_exact_synonym
+http://purl.obolibrary.org/obo/SO_0000830,chromosome_part,http://purl.org/dc/terms/description,
+http://purl.obolibrary.org/obo/SO_0000830,chromosome_part,https://monarchinitiative.org/MONARCH_cliqueLeader,
+http://purl.obolibrary.org/obo/SO_0001027,genotype,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_0001060,sequence_variant,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_0001060,sequence_variant,http://www.geneontology.org/formats/oboInOwl#hasExactSynonym,has_exact_synonym
+http://purl.obolibrary.org/obo/SO_0001060,sequence_variant,https://monarchinitiative.org/MONARCH_cliqueLeader,
+http://purl.obolibrary.org/obo/SO_0001060,sequence_variant,http://purl.org/dc/terms/description,
+http://purl.obolibrary.org/obo/SO_0001218,transgenic_insertion,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_0001218,transgenic_insertion,http://www.geneontology.org/formats/oboInOwl#hasExactSynonym,has_exact_synonym
+http://purl.obolibrary.org/obo/SO_0001218,transgenic_insertion,http://purl.org/dc/terms/description,
+http://purl.obolibrary.org/obo/SO_0001218,transgenic_insertion,https://monarchinitiative.org/MONARCH_cliqueLeader,
+http://purl.obolibrary.org/obo/SO_0001240,TSS_region,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_0001240,TSS_region,http://purl.org/dc/terms/description,
+http://purl.obolibrary.org/obo/SO_0001240,TSS_region,https://monarchinitiative.org/MONARCH_cliqueLeader,
+http://purl.obolibrary.org/obo/SO_0001240,TSS_region,http://www.geneontology.org/formats/oboInOwl#hasExactSynonym,has_exact_synonym
+http://purl.obolibrary.org/obo/SO_0001266,scRNA_gene,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_0001266,scRNA_gene,http://www.geneontology.org/formats/oboInOwl#hasExactSynonym,has_exact_synonym
+http://purl.obolibrary.org/obo/SO_0001266,scRNA_gene,http://purl.org/dc/terms/description,
+http://purl.obolibrary.org/obo/SO_0001266,scRNA_gene,https://monarchinitiative.org/MONARCH_cliqueLeader,
+http://purl.obolibrary.org/obo/SO_0001266,scRNA_gene,https://w3id.org/biolink/vocab/in_taxon,
+http://purl.obolibrary.org/obo/SO_0001266,scRNA_gene,https://w3id.org/biolink/vocab/provided_by,
+http://purl.obolibrary.org/obo/SO_0001266,scRNA_gene,https://w3id.org/biolink/vocab/symbol,
+http://purl.obolibrary.org/obo/SO_0001266,scRNA_gene,https://w3id.org/biolink/vocab/synonym,
+http://purl.obolibrary.org/obo/SO_0001266,scRNA_gene,https://w3id.org/biolink/vocab/xref,
+http://purl.obolibrary.org/obo/SO_0001269,SRP_RNA_gene,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_0001269,SRP_RNA_gene,http://www.geneontology.org/formats/oboInOwl#hasExactSynonym,has_exact_synonym
+http://purl.obolibrary.org/obo/SO_0001269,SRP_RNA_gene,http://purl.org/dc/terms/description,
+http://purl.obolibrary.org/obo/SO_0001269,SRP_RNA_gene,https://monarchinitiative.org/MONARCH_cliqueLeader,
+http://purl.obolibrary.org/obo/SO_0001269,SRP_RNA_gene,https://w3id.org/biolink/vocab/in_taxon,
+http://purl.obolibrary.org/obo/SO_0001269,SRP_RNA_gene,https://w3id.org/biolink/vocab/provided_by,
+http://purl.obolibrary.org/obo/SO_0001269,SRP_RNA_gene,https://w3id.org/biolink/vocab/symbol,
+http://purl.obolibrary.org/obo/SO_0001269,SRP_RNA_gene,https://w3id.org/biolink/vocab/synonym,
+http://purl.obolibrary.org/obo/SO_0001269,SRP_RNA_gene,https://w3id.org/biolink/vocab/xref,
+http://purl.obolibrary.org/obo/SO_0001503,processed_transcript,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_0001503,processed_transcript,https://w3id.org/biolink/vocab/in_taxon,
+http://purl.obolibrary.org/obo/SO_0001503,processed_transcript,https://w3id.org/biolink/vocab/provided_by,
+http://purl.obolibrary.org/obo/SO_0001503,processed_transcript,https://w3id.org/biolink/vocab/symbol,
+http://purl.obolibrary.org/obo/SO_0001503,processed_transcript,https://w3id.org/biolink/vocab/synonym,
+http://purl.obolibrary.org/obo/SO_0001503,processed_transcript,https://w3id.org/biolink/vocab/xref,
+http://purl.obolibrary.org/obo/SO_0001638,piRNA_gene,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_0001638,piRNA_gene,https://w3id.org/biolink/vocab/in_taxon,
+http://purl.obolibrary.org/obo/SO_0001638,piRNA_gene,https://w3id.org/biolink/vocab/provided_by,
+http://purl.obolibrary.org/obo/SO_0001638,piRNA_gene,https://w3id.org/biolink/vocab/symbol,
+http://purl.obolibrary.org/obo/SO_0001638,piRNA_gene,https://w3id.org/biolink/vocab/synonym,
+http://purl.obolibrary.org/obo/SO_0001638,piRNA_gene,https://w3id.org/biolink/vocab/xref,
+http://purl.obolibrary.org/obo/SO_0001639,RNase_P_RNA_gene,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_0001639,RNase_P_RNA_gene,http://www.geneontology.org/formats/oboInOwl#hasExactSynonym,has_exact_synonym
+http://purl.obolibrary.org/obo/SO_0001639,RNase_P_RNA_gene,http://purl.org/dc/terms/description,
+http://purl.obolibrary.org/obo/SO_0001639,RNase_P_RNA_gene,https://monarchinitiative.org/MONARCH_cliqueLeader,
+http://purl.obolibrary.org/obo/SO_0001639,RNase_P_RNA_gene,https://w3id.org/biolink/vocab/in_taxon,
+http://purl.obolibrary.org/obo/SO_0001639,RNase_P_RNA_gene,https://w3id.org/biolink/vocab/provided_by,
+http://purl.obolibrary.org/obo/SO_0001639,RNase_P_RNA_gene,https://w3id.org/biolink/vocab/symbol,
+http://purl.obolibrary.org/obo/SO_0001639,RNase_P_RNA_gene,https://w3id.org/biolink/vocab/synonym,
+http://purl.obolibrary.org/obo/SO_0001639,RNase_P_RNA_gene,https://w3id.org/biolink/vocab/xref,
+http://purl.obolibrary.org/obo/SO_0001640,RNase_MRP_RNA_gene,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_0001640,RNase_MRP_RNA_gene,http://www.geneontology.org/formats/oboInOwl#hasExactSynonym,has_exact_synonym
+http://purl.obolibrary.org/obo/SO_0001640,RNase_MRP_RNA_gene,http://purl.org/dc/terms/description,
+http://purl.obolibrary.org/obo/SO_0001640,RNase_MRP_RNA_gene,https://monarchinitiative.org/MONARCH_cliqueLeader,
+http://purl.obolibrary.org/obo/SO_0001640,RNase_MRP_RNA_gene,https://w3id.org/biolink/vocab/in_taxon,
+http://purl.obolibrary.org/obo/SO_0001640,RNase_MRP_RNA_gene,https://w3id.org/biolink/vocab/provided_by,
+http://purl.obolibrary.org/obo/SO_0001640,RNase_MRP_RNA_gene,https://w3id.org/biolink/vocab/symbol,
+http://purl.obolibrary.org/obo/SO_0001640,RNase_MRP_RNA_gene,https://w3id.org/biolink/vocab/synonym,
+http://purl.obolibrary.org/obo/SO_0001640,RNase_MRP_RNA_gene,https://w3id.org/biolink/vocab/xref,
+http://purl.obolibrary.org/obo/SO_0001641,lincRNA_gene,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_0001641,lincRNA_gene,http://www.geneontology.org/formats/oboInOwl#hasExactSynonym,has_exact_synonym
+http://purl.obolibrary.org/obo/SO_0001641,lincRNA_gene,http://purl.org/dc/terms/description,
+http://purl.obolibrary.org/obo/SO_0001641,lincRNA_gene,https://monarchinitiative.org/MONARCH_cliqueLeader,
+http://purl.obolibrary.org/obo/SO_0001641,lincRNA_gene,https://w3id.org/biolink/vocab/in_taxon,
+http://purl.obolibrary.org/obo/SO_0001641,lincRNA_gene,https://w3id.org/biolink/vocab/provided_by,
+http://purl.obolibrary.org/obo/SO_0001641,lincRNA_gene,https://w3id.org/biolink/vocab/symbol,
+http://purl.obolibrary.org/obo/SO_0001641,lincRNA_gene,https://w3id.org/biolink/vocab/synonym,
+http://purl.obolibrary.org/obo/SO_0001641,lincRNA_gene,https://w3id.org/biolink/vocab/xref,
+http://purl.obolibrary.org/obo/SO_0001643,telomerase_RNA_gene,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_0001643,telomerase_RNA_gene,http://www.geneontology.org/formats/oboInOwl#hasExactSynonym,has_exact_synonym
+http://purl.obolibrary.org/obo/SO_0001643,telomerase_RNA_gene,https://w3id.org/biolink/vocab/synonym,
+http://purl.obolibrary.org/obo/SO_0001643,telomerase_RNA_gene,https://w3id.org/biolink/vocab/provided_by,
+http://purl.obolibrary.org/obo/SO_0001643,telomerase_RNA_gene,https://w3id.org/biolink/vocab/xref,
+http://purl.obolibrary.org/obo/SO_0001643,telomerase_RNA_gene,http://purl.org/dc/terms/description,
+http://purl.obolibrary.org/obo/SO_0001643,telomerase_RNA_gene,https://w3id.org/biolink/vocab/symbol,
+http://purl.obolibrary.org/obo/SO_0001643,telomerase_RNA_gene,https://monarchinitiative.org/MONARCH_cliqueLeader,
+http://purl.obolibrary.org/obo/SO_0001643,telomerase_RNA_gene,https://w3id.org/biolink/vocab/in_taxon,
+http://purl.obolibrary.org/obo/SO_0001741,pseudogenic_gene_segment,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_0001741,pseudogenic_gene_segment,http://www.geneontology.org/formats/oboInOwl#hasExactSynonym,has_exact_synonym
+http://purl.obolibrary.org/obo/SO_0001741,pseudogenic_gene_segment,http://purl.org/dc/terms/description,
+http://purl.obolibrary.org/obo/SO_0001741,pseudogenic_gene_segment,https://monarchinitiative.org/MONARCH_cliqueLeader,
+http://purl.obolibrary.org/obo/SO_0001741,pseudogenic_gene_segment,https://w3id.org/biolink/vocab/in_taxon,
+http://purl.obolibrary.org/obo/SO_0001741,pseudogenic_gene_segment,https://w3id.org/biolink/vocab/provided_by,
+http://purl.obolibrary.org/obo/SO_0001741,pseudogenic_gene_segment,https://w3id.org/biolink/vocab/symbol,
+http://purl.obolibrary.org/obo/SO_0001741,pseudogenic_gene_segment,https://w3id.org/biolink/vocab/synonym,
+http://purl.obolibrary.org/obo/SO_0001741,pseudogenic_gene_segment,https://w3id.org/biolink/vocab/xref,
+http://purl.obolibrary.org/obo/SO_0001760,non_processed_pseudogene,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_0001760,non_processed_pseudogene,https://w3id.org/biolink/vocab/in_taxon,
+http://purl.obolibrary.org/obo/SO_0001760,non_processed_pseudogene,https://w3id.org/biolink/vocab/provided_by,
+http://purl.obolibrary.org/obo/SO_0001760,non_processed_pseudogene,https://w3id.org/biolink/vocab/symbol,
+http://purl.obolibrary.org/obo/SO_0001760,non_processed_pseudogene,https://w3id.org/biolink/vocab/synonym,
+http://purl.obolibrary.org/obo/SO_0001760,non_processed_pseudogene,https://w3id.org/biolink/vocab/xref,
+http://purl.obolibrary.org/obo/SO_0001837,mobile_element_insertion,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_0001837,mobile_element_insertion,http://www.w3.org/2000/01/rdf-schema#comment,comment
+http://purl.obolibrary.org/obo/SO_1000036,inversion,http://www.w3.org/2000/01/rdf-schema#comment,comment
+http://purl.obolibrary.org/obo/SO_0001837,mobile_element_insertion,http://purl.org/dc/terms/description,
+http://purl.obolibrary.org/obo/SO_0001837,mobile_element_insertion,https://monarchinitiative.org/MONARCH_cliqueLeader,
+http://purl.obolibrary.org/obo/SO_1000036,inversion,https://monarchinitiative.org/MONARCH_cliqueLeader,
+http://purl.obolibrary.org/obo/SO_0001838,novel_sequence_insertion,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_0001838,novel_sequence_insertion,http://www.w3.org/2000/01/rdf-schema#comment,comment
+http://purl.obolibrary.org/obo/SO_0001838,novel_sequence_insertion,http://purl.org/dc/terms/description,
+http://purl.obolibrary.org/obo/SO_0001838,novel_sequence_insertion,https://monarchinitiative.org/MONARCH_cliqueLeader,
+http://purl.obolibrary.org/obo/SO_0001841,polymorphic_pseudogene,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_0001841,polymorphic_pseudogene,http://purl.org/dc/terms/description,
+http://purl.obolibrary.org/obo/SO_0001841,polymorphic_pseudogene,https://monarchinitiative.org/MONARCH_cliqueLeader,
+http://purl.obolibrary.org/obo/SO_0001841,polymorphic_pseudogene,http://www.geneontology.org/formats/oboInOwl#hasExactSynonym,has_exact_synonym
+http://purl.obolibrary.org/obo/SO_0001841,polymorphic_pseudogene,https://w3id.org/biolink/vocab/in_taxon,
+http://purl.obolibrary.org/obo/SO_0001841,polymorphic_pseudogene,https://w3id.org/biolink/vocab/provided_by,
+http://purl.obolibrary.org/obo/SO_0001841,polymorphic_pseudogene,https://w3id.org/biolink/vocab/symbol,
+http://purl.obolibrary.org/obo/SO_0001841,polymorphic_pseudogene,https://w3id.org/biolink/vocab/synonym,
+http://purl.obolibrary.org/obo/SO_0001841,polymorphic_pseudogene,https://w3id.org/biolink/vocab/xref,
+http://purl.obolibrary.org/obo/SO_0001904,antisense_lncRNA,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_0001904,antisense_lncRNA,http://purl.org/dc/terms/description,
+http://purl.obolibrary.org/obo/SO_0001904,antisense_lncRNA,https://monarchinitiative.org/MONARCH_cliqueLeader,
+http://purl.obolibrary.org/obo/SO_0001904,antisense_lncRNA,http://www.geneontology.org/formats/oboInOwl#hasExactSynonym,has_exact_synonym
+http://purl.obolibrary.org/obo/SO_0002095,scaRNA,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_0002095,scaRNA,https://w3id.org/biolink/vocab/in_taxon,
+http://purl.obolibrary.org/obo/SO_0002095,scaRNA,https://w3id.org/biolink/vocab/provided_by,
+http://purl.obolibrary.org/obo/SO_0002095,scaRNA,https://w3id.org/biolink/vocab/symbol,
+http://purl.obolibrary.org/obo/SO_0002095,scaRNA,https://w3id.org/biolink/vocab/synonym,
+http://purl.obolibrary.org/obo/SO_0002095,scaRNA,https://w3id.org/biolink/vocab/xref,
+http://purl.obolibrary.org/obo/SO_0002107,transcribed_unprocessed_pseudogene,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_0002107,transcribed_unprocessed_pseudogene,https://w3id.org/biolink/vocab/provided_by,
+http://purl.obolibrary.org/obo/SO_0002107,transcribed_unprocessed_pseudogene,https://w3id.org/biolink/vocab/xref,
+http://purl.obolibrary.org/obo/SO_0002107,transcribed_unprocessed_pseudogene,https://w3id.org/biolink/vocab/in_taxon,
+http://purl.obolibrary.org/obo/SO_0002107,transcribed_unprocessed_pseudogene,https://w3id.org/biolink/vocab/symbol,
+http://purl.obolibrary.org/obo/SO_0002109,transcribed_processed_pseudogene,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_0002109,transcribed_processed_pseudogene,https://w3id.org/biolink/vocab/symbol,
+http://purl.obolibrary.org/obo/SO_0002109,transcribed_processed_pseudogene,https://w3id.org/biolink/vocab/provided_by,
+http://purl.obolibrary.org/obo/SO_0002109,transcribed_processed_pseudogene,https://w3id.org/biolink/vocab/xref,
+http://purl.obolibrary.org/obo/SO_0002109,transcribed_processed_pseudogene,https://w3id.org/biolink/vocab/in_taxon,
+http://purl.obolibrary.org/obo/SO_0002126,IG_V_gene,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_0002126,IG_V_gene,https://w3id.org/biolink/vocab/in_taxon,
+http://purl.obolibrary.org/obo/SO_0002126,IG_V_gene,https://w3id.org/biolink/vocab/provided_by,
+http://purl.obolibrary.org/obo/SO_0002126,IG_V_gene,https://w3id.org/biolink/vocab/symbol,
+http://purl.obolibrary.org/obo/SO_0002126,IG_V_gene,https://w3id.org/biolink/vocab/xref,
+http://purl.obolibrary.org/obo/SO_0002127,lncRNA_gene,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_0002127,lncRNA_gene,http://purl.org/dc/terms/description,
+http://purl.obolibrary.org/obo/SO_0002127,lncRNA_gene,https://monarchinitiative.org/MONARCH_cliqueLeader,
+http://purl.obolibrary.org/obo/SO_0002127,lncRNA_gene,http://www.geneontology.org/formats/oboInOwl#hasExactSynonym,has_exact_synonym
+http://purl.obolibrary.org/obo/SO_0002128,mt_rRNA,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_0002128,mt_rRNA,https://w3id.org/biolink/vocab/provided_by,
+http://purl.obolibrary.org/obo/SO_0002128,mt_rRNA,https://w3id.org/biolink/vocab/xref,
+http://purl.obolibrary.org/obo/SO_0002128,mt_rRNA,https://w3id.org/biolink/vocab/in_taxon,
+http://purl.obolibrary.org/obo/SO_0002128,mt_rRNA,https://w3id.org/biolink/vocab/symbol,
+http://purl.obolibrary.org/obo/SO_0002129,mt_tRNA,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_0002129,mt_tRNA,https://w3id.org/biolink/vocab/in_taxon,
+http://purl.obolibrary.org/obo/SO_0002129,mt_tRNA,https://w3id.org/biolink/vocab/provided_by,
+http://purl.obolibrary.org/obo/SO_0002129,mt_tRNA,https://w3id.org/biolink/vocab/symbol,
+http://purl.obolibrary.org/obo/SO_0002129,mt_tRNA,https://w3id.org/biolink/vocab/xref,
+http://purl.obolibrary.org/obo/SO_0002134,TR_C_Gene,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_0002134,TR_C_Gene,https://w3id.org/biolink/vocab/xref,
+http://purl.obolibrary.org/obo/SO_0002134,TR_C_Gene,https://w3id.org/biolink/vocab/provided_by,
+http://purl.obolibrary.org/obo/SO_0002134,TR_C_Gene,https://w3id.org/biolink/vocab/in_taxon,
+http://purl.obolibrary.org/obo/SO_0002134,TR_C_Gene,https://w3id.org/biolink/vocab/symbol,
+http://purl.obolibrary.org/obo/SO_0002136,TR_J_Gene,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_0002136,TR_J_Gene,https://w3id.org/biolink/vocab/xref,
+http://purl.obolibrary.org/obo/SO_0002136,TR_J_Gene,https://w3id.org/biolink/vocab/provided_by,
+http://purl.obolibrary.org/obo/SO_0002136,TR_J_Gene,https://w3id.org/biolink/vocab/in_taxon,
+http://purl.obolibrary.org/obo/SO_0002136,TR_J_Gene,https://w3id.org/biolink/vocab/symbol,
+http://purl.obolibrary.org/obo/SO_0002137,TR_V_Gene,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_0002137,TR_V_Gene,https://w3id.org/biolink/vocab/xref,
+http://purl.obolibrary.org/obo/SO_0002137,TR_V_Gene,https://w3id.org/biolink/vocab/provided_by,
+http://purl.obolibrary.org/obo/SO_0002137,TR_V_Gene,https://w3id.org/biolink/vocab/in_taxon,
+http://purl.obolibrary.org/obo/SO_0002137,TR_V_Gene,https://w3id.org/biolink/vocab/symbol,
+http://purl.obolibrary.org/obo/SO_0002181,ribozyme_gene,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_0002181,ribozyme_gene,http://www.geneontology.org/formats/oboInOwl#hasExactSynonym,has_exact_synonym
+http://purl.obolibrary.org/obo/SO_0002181,ribozyme_gene,http://purl.org/dc/terms/description,
+http://purl.obolibrary.org/obo/SO_0002181,ribozyme_gene,https://monarchinitiative.org/MONARCH_cliqueLeader,
+http://purl.obolibrary.org/obo/SO_0002181,ribozyme_gene,https://w3id.org/biolink/vocab/in_taxon,
+http://purl.obolibrary.org/obo/SO_0002181,ribozyme_gene,https://w3id.org/biolink/vocab/provided_by,
+http://purl.obolibrary.org/obo/SO_0002181,ribozyme_gene,https://w3id.org/biolink/vocab/symbol,
+http://purl.obolibrary.org/obo/SO_0002181,ribozyme_gene,https://w3id.org/biolink/vocab/xref,
+http://purl.obolibrary.org/obo/SO_0002182,antisense_lncRNA_gene,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_0002182,antisense_lncRNA_gene,https://w3id.org/biolink/vocab/in_taxon,
+http://purl.obolibrary.org/obo/SO_0002182,antisense_lncRNA_gene,https://w3id.org/biolink/vocab/provided_by,
+http://purl.obolibrary.org/obo/SO_0002182,antisense_lncRNA_gene,https://w3id.org/biolink/vocab/symbol,
+http://purl.obolibrary.org/obo/SO_0002182,antisense_lncRNA_gene,https://w3id.org/biolink/vocab/synonym,
+http://purl.obolibrary.org/obo/SO_0002182,antisense_lncRNA_gene,https://w3id.org/biolink/vocab/xref,
+http://purl.obolibrary.org/obo/SO_0002183,sense_overlap_lncRNA_gene,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_0002183,sense_overlap_lncRNA_gene,http://www.geneontology.org/formats/oboInOwl#hasExactSynonym,has_exact_synonym
+http://purl.obolibrary.org/obo/SO_0002183,sense_overlap_lncRNA_gene,https://w3id.org/biolink/vocab/provided_by,
+http://purl.obolibrary.org/obo/SO_0002183,sense_overlap_lncRNA_gene,https://w3id.org/biolink/vocab/xref,
+http://purl.obolibrary.org/obo/SO_0002183,sense_overlap_lncRNA_gene,https://w3id.org/biolink/vocab/in_taxon,
+http://purl.obolibrary.org/obo/SO_0002183,sense_overlap_lncRNA_gene,https://w3id.org/biolink/vocab/synonym,
+http://purl.obolibrary.org/obo/SO_0002183,sense_overlap_lncRNA_gene,http://purl.org/dc/terms/description,
+http://purl.obolibrary.org/obo/SO_0002183,sense_overlap_lncRNA_gene,https://monarchinitiative.org/MONARCH_cliqueLeader,
+http://purl.obolibrary.org/obo/SO_0002183,sense_overlap_lncRNA_gene,https://w3id.org/biolink/vocab/symbol,
+http://purl.obolibrary.org/obo/SO_0002184,sense_intronic_lncRNA_gene,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_0002184,sense_intronic_lncRNA_gene,http://www.geneontology.org/formats/oboInOwl#hasExactSynonym,has_exact_synonym
+http://purl.obolibrary.org/obo/SO_0002184,sense_intronic_lncRNA_gene,http://purl.org/dc/terms/description,
+http://purl.obolibrary.org/obo/SO_0002184,sense_intronic_lncRNA_gene,https://monarchinitiative.org/MONARCH_cliqueLeader,
+http://purl.obolibrary.org/obo/SO_0002184,sense_intronic_lncRNA_gene,https://w3id.org/biolink/vocab/in_taxon,
+http://purl.obolibrary.org/obo/SO_0002184,sense_intronic_lncRNA_gene,https://w3id.org/biolink/vocab/provided_by,
+http://purl.obolibrary.org/obo/SO_0002184,sense_intronic_lncRNA_gene,https://w3id.org/biolink/vocab/symbol,
+http://purl.obolibrary.org/obo/SO_0002184,sense_intronic_lncRNA_gene,https://w3id.org/biolink/vocab/synonym,
+http://purl.obolibrary.org/obo/SO_0002184,sense_intronic_lncRNA_gene,https://w3id.org/biolink/vocab/xref,
+http://purl.obolibrary.org/obo/SO_0002185,bidirectional_promoter_lncRNA_gene,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_0002185,bidirectional_promoter_lncRNA_gene,http://www.geneontology.org/formats/oboInOwl#hasExactSynonym,has_exact_synonym
+http://purl.obolibrary.org/obo/SO_0002185,bidirectional_promoter_lncRNA_gene,http://purl.org/dc/terms/description,
+http://purl.obolibrary.org/obo/SO_0002185,bidirectional_promoter_lncRNA_gene,https://monarchinitiative.org/MONARCH_cliqueLeader,
+http://purl.obolibrary.org/obo/SO_0002185,bidirectional_promoter_lncRNA_gene,https://w3id.org/biolink/vocab/in_taxon,
+http://purl.obolibrary.org/obo/SO_0002185,bidirectional_promoter_lncRNA_gene,https://w3id.org/biolink/vocab/provided_by,
+http://purl.obolibrary.org/obo/SO_0002185,bidirectional_promoter_lncRNA_gene,https://w3id.org/biolink/vocab/symbol,
+http://purl.obolibrary.org/obo/SO_0002185,bidirectional_promoter_lncRNA_gene,https://w3id.org/biolink/vocab/synonym,
+http://purl.obolibrary.org/obo/SO_0002185,bidirectional_promoter_lncRNA_gene,https://w3id.org/biolink/vocab/xref,
+http://purl.obolibrary.org/obo/SO_0002236,cytosolic_rRNA_18S_gene,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_0002236,cytosolic_rRNA_18S_gene,https://w3id.org/biolink/vocab/synonym,
+http://purl.obolibrary.org/obo/SO_0002236,cytosolic_rRNA_18S_gene,https://w3id.org/biolink/vocab/xref,
+http://purl.obolibrary.org/obo/SO_0002236,cytosolic_rRNA_18S_gene,https://w3id.org/biolink/vocab/provided_by,
+http://purl.obolibrary.org/obo/SO_0002236,cytosolic_rRNA_18S_gene,https://w3id.org/biolink/vocab/in_taxon,
+http://purl.obolibrary.org/obo/SO_0002236,cytosolic_rRNA_18S_gene,https://w3id.org/biolink/vocab/symbol,
+http://purl.obolibrary.org/obo/SO_0002238,cytosolic_rRNA_5S_gene,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_0002238,cytosolic_rRNA_5S_gene,https://w3id.org/biolink/vocab/in_taxon,
+http://purl.obolibrary.org/obo/SO_0002238,cytosolic_rRNA_5S_gene,https://w3id.org/biolink/vocab/provided_by,
+http://purl.obolibrary.org/obo/SO_0002238,cytosolic_rRNA_5S_gene,https://w3id.org/biolink/vocab/symbol,
+http://purl.obolibrary.org/obo/SO_0002238,cytosolic_rRNA_5S_gene,https://w3id.org/biolink/vocab/synonym,
+http://purl.obolibrary.org/obo/SO_0002238,cytosolic_rRNA_5S_gene,https://w3id.org/biolink/vocab/xref,
+http://purl.obolibrary.org/obo/SO_0002239,cytosolic_rRNA_28S_gene,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_0002239,cytosolic_rRNA_28S_gene,https://w3id.org/biolink/vocab/synonym,
+http://purl.obolibrary.org/obo/SO_0002239,cytosolic_rRNA_28S_gene,https://w3id.org/biolink/vocab/xref,
+http://purl.obolibrary.org/obo/SO_0002239,cytosolic_rRNA_28S_gene,https://w3id.org/biolink/vocab/symbol,
+http://purl.obolibrary.org/obo/SO_0002239,cytosolic_rRNA_28S_gene,https://w3id.org/biolink/vocab/provided_by,
+http://purl.obolibrary.org/obo/SO_0002239,cytosolic_rRNA_28S_gene,https://w3id.org/biolink/vocab/in_taxon,
+http://purl.obolibrary.org/obo/SO_0002240,cytosolic_rRNA_5_8S_gene,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_0002240,cytosolic_rRNA_5_8S_gene,https://w3id.org/biolink/vocab/synonym,
+http://purl.obolibrary.org/obo/SO_0002240,cytosolic_rRNA_5_8S_gene,https://w3id.org/biolink/vocab/xref,
+http://purl.obolibrary.org/obo/SO_0002240,cytosolic_rRNA_5_8S_gene,https://w3id.org/biolink/vocab/provided_by,
+http://purl.obolibrary.org/obo/SO_0002240,cytosolic_rRNA_5_8S_gene,https://w3id.org/biolink/vocab/in_taxon,
+http://purl.obolibrary.org/obo/SO_0002240,cytosolic_rRNA_5_8S_gene,https://w3id.org/biolink/vocab/symbol,
+http://purl.obolibrary.org/obo/SO_1000035,duplication,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_1000035,duplication,http://www.w3.org/2000/01/rdf-schema#comment,comment
+http://purl.obolibrary.org/obo/SO_1000035,duplication,http://purl.org/dc/terms/description,
+http://purl.obolibrary.org/obo/SO_1000035,duplication,https://monarchinitiative.org/MONARCH_cliqueLeader,
+http://purl.obolibrary.org/obo/SO_1000039,direct_tandem_duplication,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_1000039,direct_tandem_duplication,http://purl.org/dc/terms/description,
+http://purl.obolibrary.org/obo/NCBITaxon_39442,Mus musculus musculus,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/NCBITaxon_186842,Mus musculus x Mus spretus,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/NCBITaxon_83773,Mus famulus,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/NCBITaxon_10103,Mus spicilegus,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_3000000,gene_segment,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_3000000,gene_segment,http://purl.org/dc/terms/description,
+http://purl.obolibrary.org/obo/SO_3000000,gene_segment,https://monarchinitiative.org/MONARCH_cliqueLeader,
+http://purl.obolibrary.org/obo/SO_3000000,gene_segment,http://www.geneontology.org/formats/oboInOwl#hasExactSynonym,has_exact_synonym
+http://biohackathon.org/resource/faldo#FuzzyPosition,Fuzzy position,http://www.w3.org/2000/01/rdf-schema#label,label
+http://biohackathon.org/resource/faldo#Position,Position,http://www.w3.org/2000/01/rdf-schema#label,label
+http://biohackathon.org/resource/faldo#Position,Position,http://biohackathon.org/resource/faldo#position,position
+http://purl.obolibrary.org/obo/UO_0000095,volume unit,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/UO_0000095,volume unit,http://www.geneontology.org/formats/oboInOwl#hasExactSynonym,has_exact_synonym
+http://purl.obolibrary.org/obo/UO_0000095,volume unit,http://purl.obolibrary.org/obo/IAO_0000115,definition
+http://purl.obolibrary.org/obo/UO_0000095,volume unit,http://purl.obolibrary.org/obo/IAO_0000115,textual definition
+http://purl.obolibrary.org/obo/UO_0000270,volumetric flow rate unit,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/UO_0000270,volumetric flow rate unit,http://www.geneontology.org/formats/oboInOwl#hasExactSynonym,has_exact_synonym
+http://purl.obolibrary.org/obo/UO_0000270,volumetric flow rate unit,http://purl.obolibrary.org/obo/IAO_0000115,definition
+http://purl.obolibrary.org/obo/UO_0000270,volumetric flow rate unit,http://purl.obolibrary.org/obo/IAO_0000115,textual definition
+http://purl.org/net/orth#OrthologsCluster,Cluster of orthologs,http://purl.org/dc/terms/identifier,identifier
+http://purl.obolibrary.org/obo/IAO_0000078,curation status specification,http://www.w3.org/2000/01/rdf-schema#label,label
+http://www.w3.org/2002/07/owl#AnnotationProperty,,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/IAO_0000078,curation status specification,http://purl.obolibrary.org/obo/IAO_0000111,editor preferred term
+http://purl.obolibrary.org/obo/IAO_0000078,curation status specification,http://purl.obolibrary.org/obo/IAO_0000111,editor preferred term~editor preferred label
+http://www.w3.org/2002/07/owl#NamedIndividual,,http://purl.obolibrary.org/obo/IAO_0000111,editor preferred term
+http://www.w3.org/2002/07/owl#NamedIndividual,,http://purl.obolibrary.org/obo/IAO_0000111,editor preferred term~editor preferred label
+http://www.w3.org/2002/07/owl#AnnotationProperty,,http://purl.obolibrary.org/obo/IAO_0000111,editor preferred term
+http://www.w3.org/2002/07/owl#AnnotationProperty,,http://purl.obolibrary.org/obo/IAO_0000111,editor preferred term~editor preferred label
+http://purl.obolibrary.org/obo/IAO_0000078,curation status specification,http://purl.obolibrary.org/obo/IAO_0000117,term editor
+http://purl.obolibrary.org/obo/IAO_0000078,curation status specification,http://purl.obolibrary.org/obo/IAO_0000119,definition source
+http://www.w3.org/2002/07/owl#NamedIndividual,,http://purl.obolibrary.org/obo/IAO_0000119,definition source
+http://purl.obolibrary.org/obo/IAO_0000078,curation status specification,http://www.geneontology.org/formats/oboInOwl#shorthand,shorthand
+http://purl.obolibrary.org/obo/IAO_0000078,curation status specification,http://www.geneontology.org/formats/oboInOwl#hasDbXref,database_cross_reference
+http://purl.obolibrary.org/obo/IAO_0000078,curation status specification,http://www.geneontology.org/formats/oboInOwl#hasDbXref,database cross reference
+http://purl.obolibrary.org/obo/IAO_0000078,curation status specification,http://www.geneontology.org/formats/oboInOwl#id,id
+http://purl.obolibrary.org/obo/IAO_0000078,curation status specification,http://purl.obolibrary.org/obo/IAO_0000115,definition
+http://www.w3.org/2002/07/owl#AnnotationProperty,,http://www.geneontology.org/formats/oboInOwl#shorthand,shorthand
+http://www.w3.org/2002/07/owl#NamedIndividual,,http://www.geneontology.org/formats/oboInOwl#shorthand,shorthand
+http://www.w3.org/2002/07/owl#AnnotationProperty,,http://www.geneontology.org/formats/oboInOwl#hasDbXref,database_cross_reference
+http://www.w3.org/2002/07/owl#AnnotationProperty,,http://www.geneontology.org/formats/oboInOwl#hasDbXref,database cross reference
+http://www.w3.org/2002/07/owl#AnnotationProperty,,http://www.geneontology.org/formats/oboInOwl#id,id
+http://www.w3.org/2002/07/owl#NamedIndividual,,http://www.geneontology.org/formats/oboInOwl#id,id
+http://purl.obolibrary.org/obo/IAO_0000078,curation status specification,http://purl.obolibrary.org/obo/IAO_0000115,textual definition
+http://www.w3.org/2002/07/owl#AnnotationProperty,,http://purl.obolibrary.org/obo/IAO_0000115,definition
+http://www.w3.org/2002/07/owl#AnnotationProperty,,http://purl.obolibrary.org/obo/IAO_0000115,textual definition
+http://purl.obolibrary.org/obo/IAO_0000078,curation status specification,http://www.geneontology.org/formats/oboInOwl#is_metadata_tag,
+http://www.w3.org/2002/07/owl#AnnotationProperty,,http://www.geneontology.org/formats/oboInOwl#is_metadata_tag,
+http://www.w3.org/2002/07/owl#NamedIndividual,,http://www.geneontology.org/formats/oboInOwl#is_metadata_tag,
+http://purl.obolibrary.org/obo/IAO_0000225,obsolescence reason specification,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/IAO_0000225,obsolescence reason specification,http://purl.obolibrary.org/obo/IAO_0000111,editor preferred term
+http://purl.obolibrary.org/obo/IAO_0000225,obsolescence reason specification,http://purl.obolibrary.org/obo/IAO_0000111,editor preferred term~editor preferred label
+http://www.w3.org/2002/07/owl#NamedIndividual,,http://purl.obolibrary.org/obo/IAO_0000116,editor note
+http://purl.obolibrary.org/obo/IAO_0000225,obsolescence reason specification,http://purl.obolibrary.org/obo/IAO_0000116,editor note
+http://purl.obolibrary.org/obo/IAO_0000225,obsolescence reason specification,http://purl.obolibrary.org/obo/IAO_0000117,term editor
+http://purl.obolibrary.org/obo/IAO_0000225,obsolescence reason specification,http://purl.obolibrary.org/obo/IAO_0000115,definition
+http://purl.obolibrary.org/obo/IAO_0000225,obsolescence reason specification,http://purl.obolibrary.org/obo/IAO_0000115,textual definition
+http://purl.obolibrary.org/obo/IAO_0000409,denotator type,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/IAO_0000409,denotator type,http://purl.obolibrary.org/obo/IAO_0000111,editor preferred term
+http://purl.obolibrary.org/obo/IAO_0000409,denotator type,http://purl.obolibrary.org/obo/IAO_0000111,editor preferred term~editor preferred label
+http://purl.obolibrary.org/obo/IAO_0000409,denotator type,http://purl.obolibrary.org/obo/IAO_0000116,editor note
+http://purl.obolibrary.org/obo/IAO_0000409,denotator type,http://purl.obolibrary.org/obo/IAO_0000117,term editor
+http://purl.obolibrary.org/obo/IAO_0000409,denotator type,http://purl.obolibrary.org/obo/IAO_0000119,definition source
+http://purl.obolibrary.org/obo/IAO_0000409,denotator type,http://purl.obolibrary.org/obo/IAO_0000115,definition
+http://purl.obolibrary.org/obo/IAO_0000409,denotator type,http://purl.obolibrary.org/obo/IAO_0000115,textual definition
+http://purl.obolibrary.org/obo/SO_0000673,transcript,http://purl.org/dc/terms/identifier,identifier
+http://purl.obolibrary.org/obo/SO_0000673,Transcript,http://purl.org/dc/terms/identifier,identifier
+http://purl.jp/knapsack/resource#KnapsackMetaboliteActivity,(Obsolete)KnapsackMetaboliteActivity,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.jp/knapsack/resource#KnapsackMetaboliteActivity,(Obsolete)KnapsackMetaboliteActivity,http://www.w3.org/2004/02/skos/core#altLabel,alternative label
+http://purl.jp/knapsack/resource#KnapsackNaturalActivity,(Obsolete)KnapsackNaturalActivity,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.jp/knapsack/resource#KnapsackNaturalActivity,(Obsolete)KnapsackNaturalActivity,http://www.w3.org/2004/02/skos/core#altLabel,alternative label
+http://purl.jp/knapsack/resource#KnapsackMetaboliteActivity,(Obsolete)KnapsackMetaboliteActivity,http://purl.jp/knapsack/property/sp2,
+http://purl.jp/knapsack/resource#KnapsackNaturalActivity,(Obsolete)KnapsackNaturalActivity,http://purl.jp/knapsack/property/sp2,
+http://purl.org/net/orth#HierarchicalGeneTree,Hierarchical gene tree ,http://purl.org/dc/terms/identifier,identifier
+http://purl.uniprot.org/core/Rank,Taxon rank,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.uniprot.org/core/Rank,Taxon rank,http://www.w3.org/2000/01/rdf-schema#isDefinedBy,rdfs:isDefinedBy
+http://purl.uniprot.org/core/Rank,Taxon rank,http://www.w3.org/2000/01/rdf-schema#isDefinedBy,isDefinedBy
+http://www.w3.org/2002/07/owl#NamedIndividual,,http://www.w3.org/2000/01/rdf-schema#isDefinedBy,isDefinedBy
+http://www.w3.org/2002/07/owl#NamedIndividual,,http://www.w3.org/2000/01/rdf-schema#isDefinedBy,rdfs:isDefinedBy
+http://purl.uniprot.org/core/Taxon,Taxon,http://purl.uniprot.org/core/mnemonic,Mnemonic
+http://purl.uniprot.org/core/Taxon,Taxon,http://purl.org/net/orth#taxRange,taxonomic level
+http://purl.org/net/orth#TaxonomicRange,Taxonomic level,http://purl.uniprot.org/core/mnemonic,Mnemonic
+http://purl.org/net/orth#TaxonomicRange,Taxonomic level,http://purl.org/net/orth#taxRange,taxonomic level
+http://purl.uniprot.org/core/Taxon,Taxon,http://purl.uniprot.org/core/scientificName,
+http://purl.org/net/orth#TaxonomicRange,Taxonomic level,http://purl.uniprot.org/core/scientificName,
+http://purl.uniprot.org/core/Taxon,Taxon,http://purl.org/net/orth#taxRangeId,taxonomic level identifier
+http://purl.org/net/orth#TaxonomicRange,Taxonomic level,http://purl.org/net/orth#taxRangeId,taxonomic level identifier
+http://purl.uniprot.org/core/Taxon,Taxon,http://purl.uniprot.org/core/commonName,
+http://purl.org/net/orth#TaxonomicRange,Taxonomic level,http://purl.uniprot.org/core/commonName,
+http://semanticscience.org/resource/SIO_000750,database,http://www.w3.org/2000/01/rdf-schema#comment,comment
+http://semanticscience.org/resource/SIO_000750,database,http://purl.org/pav/version,Version
+http://purl.org/net/orth#OrthologyDataset,Orthology datasource,http://purl.org/pav/version,Version
+http://purl.obolibrary.org/obo/SO_0002336,cytosolic_rRNA_2S_gene,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_0002336,cytosolic_rRNA_2S_gene,https://w3id.org/biolink/vocab/synonym,
+http://purl.obolibrary.org/obo/SO_0002336,cytosolic_rRNA_2S_gene,https://w3id.org/biolink/vocab/provided_by,
+http://purl.obolibrary.org/obo/SO_0002336,cytosolic_rRNA_2S_gene,https://w3id.org/biolink/vocab/xref,
+http://purl.obolibrary.org/obo/SO_0002336,cytosolic_rRNA_2S_gene,https://w3id.org/biolink/vocab/in_taxon,
+http://purl.obolibrary.org/obo/SO_0002336,cytosolic_rRNA_2S_gene,https://w3id.org/biolink/vocab/symbol,
+http://purl.obolibrary.org/obo/SO_0002341,RNA_7SK_gene,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_0002341,RNA_7SK_gene,https://w3id.org/biolink/vocab/synonym,
+http://purl.obolibrary.org/obo/SO_0002341,RNA_7SK_gene,https://w3id.org/biolink/vocab/xref,
+http://purl.obolibrary.org/obo/SO_0002341,RNA_7SK_gene,https://w3id.org/biolink/vocab/provided_by,
+http://purl.obolibrary.org/obo/SO_0002341,RNA_7SK_gene,https://w3id.org/biolink/vocab/in_taxon,
+http://purl.obolibrary.org/obo/SO_0002341,RNA_7SK_gene,https://w3id.org/biolink/vocab/symbol,
+http://purl.obolibrary.org/obo/SO_0002353,sbRNA_gene,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_0002353,sbRNA_gene,https://w3id.org/biolink/vocab/synonym,
+http://purl.obolibrary.org/obo/SO_0002353,sbRNA_gene,https://w3id.org/biolink/vocab/xref,
+http://purl.obolibrary.org/obo/SO_0002353,sbRNA_gene,https://w3id.org/biolink/vocab/provided_by,
+http://purl.obolibrary.org/obo/SO_0002353,sbRNA_gene,https://w3id.org/biolink/vocab/in_taxon,
+http://purl.obolibrary.org/obo/SO_0002353,sbRNA_gene,https://w3id.org/biolink/vocab/symbol,
+http://purl.obolibrary.org/obo/SO_0002355,hpRNA_gene,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_0002355,hpRNA_gene,https://w3id.org/biolink/vocab/in_taxon,
+http://purl.obolibrary.org/obo/SO_0002355,hpRNA_gene,https://w3id.org/biolink/vocab/provided_by,
+http://purl.obolibrary.org/obo/SO_0002355,hpRNA_gene,https://w3id.org/biolink/vocab/symbol,
+http://purl.obolibrary.org/obo/SO_0002355,hpRNA_gene,https://w3id.org/biolink/vocab/synonym,
+http://purl.obolibrary.org/obo/SO_0002355,hpRNA_gene,https://w3id.org/biolink/vocab/xref,
+http://purl.obolibrary.org/obo/SO_0002364,mt_LSU_rRNA_gene,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_0002364,mt_LSU_rRNA_gene,https://w3id.org/biolink/vocab/synonym,
+http://purl.obolibrary.org/obo/SO_0002364,mt_LSU_rRNA_gene,https://w3id.org/biolink/vocab/xref,
+http://purl.obolibrary.org/obo/SO_0002364,mt_LSU_rRNA_gene,https://w3id.org/biolink/vocab/provided_by,
+http://purl.obolibrary.org/obo/SO_0002364,mt_LSU_rRNA_gene,https://w3id.org/biolink/vocab/in_taxon,
+http://purl.obolibrary.org/obo/SO_0002364,mt_LSU_rRNA_gene,https://w3id.org/biolink/vocab/symbol,
+http://purl.obolibrary.org/obo/SO_0002365,mt_SSU_rRNA_gene,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_0002365,mt_SSU_rRNA_gene,https://w3id.org/biolink/vocab/synonym,
+http://purl.obolibrary.org/obo/SO_0002365,mt_SSU_rRNA_gene,https://w3id.org/biolink/vocab/provided_by,
+http://purl.obolibrary.org/obo/SO_0002365,mt_SSU_rRNA_gene,https://w3id.org/biolink/vocab/xref,
+http://purl.obolibrary.org/obo/SO_0002365,mt_SSU_rRNA_gene,https://w3id.org/biolink/vocab/in_taxon,
+http://purl.obolibrary.org/obo/SO_0002365,mt_SSU_rRNA_gene,https://w3id.org/biolink/vocab/symbol,
+http://purl.obolibrary.org/obo/SO_0002372,C_D_box_scaRNA_gene,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_0002372,C_D_box_scaRNA_gene,https://w3id.org/biolink/vocab/in_taxon,
+http://purl.obolibrary.org/obo/SO_0002372,C_D_box_scaRNA_gene,https://w3id.org/biolink/vocab/provided_by,
+http://purl.obolibrary.org/obo/SO_0002372,C_D_box_scaRNA_gene,https://w3id.org/biolink/vocab/symbol,
+http://purl.obolibrary.org/obo/SO_0002372,C_D_box_scaRNA_gene,https://w3id.org/biolink/vocab/synonym,
+http://purl.obolibrary.org/obo/SO_0002372,C_D_box_scaRNA_gene,https://w3id.org/biolink/vocab/xref,
+http://purl.obolibrary.org/obo/SO_0002373,H_ACA_box_scaRNA_gene,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_0002373,H_ACA_box_scaRNA_gene,https://w3id.org/biolink/vocab/in_taxon,
+http://purl.obolibrary.org/obo/SO_0002373,H_ACA_box_scaRNA_gene,https://w3id.org/biolink/vocab/provided_by,
+http://purl.obolibrary.org/obo/SO_0002373,H_ACA_box_scaRNA_gene,https://w3id.org/biolink/vocab/symbol,
+http://purl.obolibrary.org/obo/SO_0002373,H_ACA_box_scaRNA_gene,https://w3id.org/biolink/vocab/synonym,
+http://purl.obolibrary.org/obo/SO_0002373,H_ACA_box_scaRNA_gene,https://w3id.org/biolink/vocab/xref,
+http://purl.obolibrary.org/obo/SO_0002375,C_D_box_snoRNA_gene,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_0002375,C_D_box_snoRNA_gene,https://w3id.org/biolink/vocab/in_taxon,
+http://purl.obolibrary.org/obo/SO_0002375,C_D_box_snoRNA_gene,https://w3id.org/biolink/vocab/provided_by,
+http://purl.obolibrary.org/obo/SO_0002375,C_D_box_snoRNA_gene,https://w3id.org/biolink/vocab/symbol,
+http://purl.obolibrary.org/obo/SO_0002375,C_D_box_snoRNA_gene,https://w3id.org/biolink/vocab/synonym,
+http://purl.obolibrary.org/obo/SO_0002375,C_D_box_snoRNA_gene,https://w3id.org/biolink/vocab/xref,
+http://purl.obolibrary.org/obo/SO_0002376,H_ACA_box_snoRNA_gene,http://www.w3.org/2000/01/rdf-schema#label,label
+http://purl.obolibrary.org/obo/SO_0002376,H_ACA_box_snoRNA_gene,https://w3id.org/biolink/vocab/in_taxon,
+http://purl.obolibrary.org/obo/SO_0002376,H_ACA_box_snoRNA_gene,https://w3id.org/biolink/vocab/provided_by,
+http://purl.obolibrary.org/obo/SO_0002376,H_ACA_box_snoRNA_gene,https://w3id.org/biolink/vocab/symbol,
+http://purl.obolibrary.org/obo/SO_0002376,H_ACA_box_snoRNA_gene,https://w3id.org/biolink/vocab/synonym,
+http://purl.obolibrary.org/obo/SO_0002376,H_ACA_box_snoRNA_gene,https://w3id.org/biolink/vocab/xref,

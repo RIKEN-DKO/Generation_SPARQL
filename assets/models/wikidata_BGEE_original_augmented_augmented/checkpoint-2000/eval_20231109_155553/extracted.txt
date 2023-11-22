@@ -1,0 +1,2734 @@
+0:
+orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up: <http://purl.uniprot.org/core/>
+SELECT DISTINCT ?expressioncondition ?organism ?taxon ?anat ?anatName ?efo_0000399 ?efo_0005135 ?efo_0005135_label ?taxon_scientificname ?gene ?taxon_commonname ?gene_identifier WHERE { 
+	?gene a orth:Gene .
+	?gene genex:isExpressedIn ?expressioncondition.
+	?expressioncondition a genex:ExpressionCondition.
+	?gene rdfs:label "APOC1" .
+	?expressioncondition genex:hasAnatomicalEntity ?anat .
+	?anat rdfs:label ?anatName .
+	?expressioncondition genex:hasAnatomicalEntity obo:GO_0005575 .
+	?expressioncondition genex:hasDevelopmentalStage ?efo_0000399 .
+	?efo_0000399 a efo:EFO_0000399 .
+	?efo_0000399 rdfs:label "post-juvenile" .
+	?expressioncondition genex:hasSex "any".
+	?expressioncondition genex:hasStrain ?efo_0005135 .
+	?efo_0005135 a efo:EFO_0005135.
+	?efo_0005135 rdfs:label "wild-type" .
+	?gene orth:organism ?organism .
+	?organism obo:RO_0002162  ?taxon .
+	?taxon a up:Taxon .
+	?taxon up:commonName "human" .
+	?taxon <http://purl.uniprot.org/core/scientificName> ?taxon_scientificname.
+	?taxon <http://purl.uniprot.org/core/commonName> ?taxon_commonname.
+	?efo_0005135 <http://www.w3.org/2000/01/rdf-schema#label> ?efo_0005135_label.
+	?gene <http://purl.org/dc/terms/identifier> ?gene_identifier.
+} ORDER BY DESC(?efo_0000399),?anatName
+
+--
+
+1:
+thood?
+	?x a efo:EFO_0005135.
+	?x rdfs:label "human" .
+	?x rdfs:seeAlso ?human .
+	?human a wikibase:WikibaseItem.
+	?human wikibase:label "human" .
+	?cond a efo:EFO_0005135.
+	?cond rdfs:label "post-juvenile" .
+	?appoc1 a efo:EFO_0005135.
+	?appoc1 rdfs:label "APOC1" .
+	?gene a efo:EFO_0005135.
+	?gene rdfs:label "gene" .
+	?taxon a wikibase:Taxon.
+	?taxon wikibase:rank wikibase:TaxonRank.
+	?taxon wikibase:TaxonRank species .
+	?taxon <http://purl.org/dc/terms/scientificName> ?sci.
+	?sci a <http://purl.org/dc/terms/ScientificName>.
+	?sci wikibase:label "human" .
+	?appoc1 <http://www.w3.org/2000/01/rdf-schema#label> ?name.
+	?name a <http://www.w3.org/2000/01/rdf-schema#label>.
+	?name wikibase:language "en".
+	?gene <http://www.w3.org/2000/01/rdf-schema#label> ?gene_label.
+	?gene <http://purl.org/dc/terms/label> ?gene_label.
+	?gene <http://purl.org/dc/terms/description> ?gene_description.
+	?gene <http://purl.org/dc/terms/identifier> ?gene_identifier.
+	?gene <http://purl.org/dc/terms/source> ?gene_source.
+	?gene <http://purl.org/dc/terms/reference> ?gene_reference.
+	?sci <http://purl.org/dc/terms/reference> ?sci_reference.
+	?sci <http://purl.org/dc/terms/source> ?sci_source.
+	?sci <http://purl.org/dc/terms/description> ?sci_description.
+	?sci <http://purl.org/dc/terms/identifier> ?sci_identifier.
+	?taxon <http://purl.org/dc/terms/scientificName> ?sci.
+	?taxon <http://purl.org/dc/terms/identifier> ?taxon_identifier.
+	?taxon <http://purl.org/dc/terms/label> ?taxon_label.
+	?taxon <http://purl.org/dc/terms/name> ?taxon_name.
+	?taxon <http://purl.org/dc/terms/description> ?taxon_description.
+	?taxon <http://purl.org/dc/terms/source> ?taxon_source.
+	?taxon <http://purl.org/dc/terms/reference> ?taxon_reference.
+	?gene <http://purl.org/dc/terms/source> ?gene_source.
+	?gene <http://purl.org/dc/terms/reference> ?gene_reference.
+	?sci <http://purl.org/dc/terms/source> ?sci_source.
+	?sci <http://purl.org/dc/terms/reference> ?sci_reference.
+	?gene <http://purl.org/dc/terms/identifier> ?gene_identifier.
+	?sci <http://purl.org/dc/terms/identifier> ?sci_identifier.
+	?gene <http://purl.org/dc/terms/description> ?gene_description.
+	?sci <http://p
+
+--
+
+2:
+thood?
+
+--
+
+3:
+thood?
+	?x a efo:EFO_0005135.
+	?x rdfs:label "human" .
+	?x rdfs:seeAlso ?human .
+	?human a efo:EFO_0005135.
+	?human rdfs:label "human" .
+	?condition a efo:EFO_0005135.
+	?condition rdfs:label "post-juvenile" .
+	?anat a efo:EFO_0005135.
+	?anat rdfs:label ?anatName .
+	?apoc1 a efo:EFO_0005135.
+	?apoc1 rdfs:label "APOC1" .
+	?gene a efo:EFO_0005135.
+	?gene rdfs:label ?geneName .
+	?gene seealso ?apoc1 .
+	?apoc1 seealso ?gene .
+	?gene <http://purl.org/dc/terms/identifier> ?gene_identifier .
+	?gene <http://purl.org/dc/terms/label> ?gene_label .
+	?apoc1 <http://purl.org/dc/terms/identifier> ?apoc1_identifier .
+	?apoc1 <http://purl.org/dc/terms/label> ?apoc1_label.
+	?anat <http://purl.org/dc/terms/identifier> ?anat_identifier .
+	?anat <http://purl.org/dc/terms/label> ?anat_label.
+	?gene_identifier dct:identifier ?gene_identifier_value .
+	?gene_identifier_value dct:value "118011119" .
+	?gene_label rdfs:label ?gene_label_value .
+	?gene_label_value rdfs:label "human" .
+	?apoc1_identifier dct:identifier ?apoc1_identifier_value .
+	?apoc1_identifier_value dct:value "118011119" .
+	?apoc1_label rdfs:label ?apoc1_label_value .
+	?apoc1_label_value rdfs:label "human" .
+	?anat_identifier dct:identifier ?anat_identifier_value .
+	?anat_identifier_value dct:value ?anatName .
+	?anat <http://purl.org/dc/terms/label> ?anat_label.
+	?condition <http://purl.org/dc/terms/label> ?condition_label.
+	?condition <http://purl.org/dc/terms/description> ?condition_description.
+	?gene <http://purl.org/dc/terms/description> ?gene_description.
+	?gene <http://purl.org/dc/terms/identifier> ?gene_identifier.
+	?gene <http://purl.org/dc/terms/label> ?gene_label.
+	?gene seealso ?apoc1 .
+	?apoc1 seealso ?gene .
+	?condition <http://purl.org/dc/terms/description> ?condition_description.
+	?condition <http://purl.org/dc/terms/identifier> ?condition_identifier.
+	?condition <http://purl.org/dc/terms/label> ?condition_label.
+	?anat <http://purl.org/dc/terms/description> ?anat_description.
+	?anat <http://purl.org/dc/terms/identifier> ?anat_identifier.
+	?anat <http://purl.org/dc/terms/label> ?anat_label.
+	?gene <http://purl.org/dc/terms/identifier> ?gene_identifier.
+	?gene <http://purl.org/dc/terms/label> ?gene_label.
+	?gene seealso ?apoc1 .
+	?apoc1 seealso ?gene .
+	?gene <http://p
+
+--
+
+4:
+opponens_left?expression?score?strain?expression?strain_label?efo_0005135?efo_0005135_label?expression?anatomical_entity?anatomical_entity_label?gene?expression?hasefdiscoveryratep_value where { 
+	?gene a oppo:Gene .
+	?expression a sp:Expression .
+	?expression sp:hasExpressionCondition ?condition .
+	?expression sp:hasExpressionLevel ?score .
+	?expression sp:hasSequenceUnit ?sequenceUnit .
+	?sequenceUnit a gen:SequenceUnit.
+	?condition a gen:ExpressionCondition.
+	?condition gen:hasDevelopmentalStage ?efo_0005135 .
+	?efo_0005135 a efo:EFO_0005135.
+	?efo_0005135 rdfs:label "life cycle" .
+	?condition gen:hasAnatomicalEntity ?anatomicalEntity .
+	?anatomicalEntity a gen:AnatomicalEntity.
+	?anatomicalEntity rdfs:label ?anatomicalEntity_label .
+	?expression sp:hasExpressionLevel ?efo_0005135_label .
+	?efo_0005135_label a efo:EFO_0005135.
+	?efo_0005135_label rdfs:label "life cycle" .
+	?expression <http://www.w3.org/2000/01/rdf-schema#hasFalseDiscoveryRatePValue> ?hasefdiscoveryratep_value.
+	?sequenceUnit <http://www.w3.org/2000/01/rdf-schema#label> ?anatomicalEntity_label.
+	?anatomicalEntity <http://www.w3.org/2000/01/rdf-schema#label> ?anatomicalEntity_label.
+	?gene <http://www.w3.org/2000/01/rdf-schema#label> ?gene_label.
+	?gene <http://purl.org/dc/terms/label> ?gene_label.
+	?condition <http://purl.org/dc/terms/label> ?efo_0005135_label.
+	?efo_0005135 <http://purl.org/dc/terms/label> ?efo_0005135_label.
+}
+
+--
+
+5:
+orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX efo: <http://www.ebi.ac.uk/efo/>
+SELECT DISTINCT ?expressioncondition ?efo_0000399_label ?strain ?anatomicalentity_label ?anatomicalentity_description ?anatomicalentity ?anatomicalentityName ?efo_0000399 ?efo_0000399_description ?gene_description ?gene ?gene_seealso ?gene_label WHERE { 
+	?gene a orth:Gene .
+	?gene genex:isExpressedIn ?expressioncondition.
+	?expressioncondition a genex:ExpressionCondition.
+	?gene rdfs:label "APOC1" .
+	?expressioncondition genex:hasAnatomicalEntity ?anatomicalentity .
+	?anatomicalentity a genex:AnatomicalEntity.
+	?expressioncondition genex:hasAnatomicalEntity obo:GO_0005575 .
+	?anatomicalentity rdfs:label ?anatomicalentityName .
+	?expressioncondition genex:hasDevelopmentalStage ?efo_0000399 .
+	?efo_0000399 a efo:EFO_0000399 .
+	?efo_0000399 rdfs:label "life cycle" .
+	?expressioncondition genex:hasSex "any".
+	?expressioncondition genex:hasStrain ?strain .
+	?strain rdfs:label "wild-type" .
+	?efo_0000399 <http://www.w3.org/2000/01/rdf-schema#label> ?efo_0000399_label.
+	?efo_0000399 <http://purl.org/dc/terms/description> ?efo_0000399_description.
+	?anatomicalentity <http://www.w3.org/2000/01/rdf-schema#label> ?anatomicalentity_label.
+	?anatomicalentity <http://purl.org/dc/terms/description> ?anatomicalentity_description.
+	?gene <http://www.w3.org/2000/01/rdf-schema#seeAlso> ?gene_seealso.
+	?gene <http://purl.org/dc/terms/description> ?gene_description.
+	?gene <http://www.w3.org/2000/01/rdf-schema#label> ?gene_label.
+} ORDER BY DESC(?strain)
+
+--
+
+6:
+orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up: <http://purl.uniprot.org/core/>
+SELECT DISTINCT ?cellType ?efo_0000399_label ?expressioncondition ?organism ?taxon ?anatomicalentity_label ?anatomicalentity_description ?anatomicalentity ?anatomicalentityName ?cellTypeName ?efo_0000399 ?score ?expression ?taxon_scientificname ?efo_0000399_description ?gene ?taxon_commonname ?gene_identifier WHERE { 
+	?gene a orth:Gene .
+	?expression a genex:Expression .
+	?expression genex:hasExpressionCondition ?expressioncondition .
+	?expression genex:hasExpressionLevel ?score .
+	?expression genex:hasSequenceUnit ?gene .
+	?gene rdfs:label "APOC1" .
+	?expressioncondition a genex:ExpressionCondition.
+	?expressioncondition genex:hasAnatomicalEntity ?anatomicalentity .
+	?anatomicalentity a genex:AnatomicalEntity.
+	?anatomicalentity rdfs:label ?anatomicalentityName .
+	?expressioncondition genex:hasAnatomicalEntity ?cellType .
+	?cellType rdfs:label ?cellTypeName .
+	?expressioncondition genex:hasDevelopmentalStage ?efo_0000399 .
+	?efo_0000399 rdf:type efo:EFO_0000399 .
+	?efo_0000399 rdfs:label "post-juvenile" .
+	?gene orth:organism ?organism .
+	?organism obo:RO_0002162  ?taxon .
+	?taxon a up:Taxon .
+	?taxon up:commonName "human" .
+	?taxon <http://purl.uniprot.org/core/scientificName> ?taxon_scientificname.
+	?taxon <http://purl.uniprot.org/core/commonName> ?taxon_commonname.
+	?efo_0000399 <http://www.w3.org/2000/01/rdf-schema#label> ?efo_0000399_label.
+	?efo_0000399 <http://purl.org/dc/terms/description> ?efo_0000399_description.
+	?anatomicalentity <http://www.w3.org/2000/01/rdf-schema#label> ?anatomicalentity_label.
+	?anatomicalentity <http://purl.org/dc/terms/description> ?anatomicalentity_description.
+	?gene <http://purl.org/dc/terms/identifier> ?gene_identifier.
+	FILTER(              ?anatomicalentity !=  obo:GO_0005575              )
+	FILTER(              ?anatomicalentity != ?cellType              )
+} ORDER BY DESC(?score)
+
+--
+
+7:
+thood?
+	?expression   a   anatomicalentity.
+	?expression ?anatomicalEntity ?cellType ?anatomicalEntityName ?cellTypeName ?expression_score ?expression_id ?gene ?taxon ?anatomicalEntity_label ?cellType_label ?gene_label ?taxon_commonname.
+	FILTER:  ?expression   NOT  ?anatomicalEntity .
+	FILTER:  ?expression ?anatomicalEntity ?cellType ?anatomicalEntityName ?cellTypeName ?expression_score ?expression_id ?gene ?taxon ?anatomicalEntity_label ?cellType_label ?gene_label ?taxon_commonname  WHERE
+		?expression a anatomicalentity
+		?expression ?anatomicalEntity ?cellType ?anatomicalEntityName ?cellTypeName ?expression_score ?expression_id ?gene ?taxon ?anatomicalEntity_label ?cellType_label ?gene_label ?taxon_commonname
+		FILTER:  ?anatomicalEntity !=  ?cellType
+		FILTER:  ?anatomicalEntity != ?gene
+		FILTER:  ?anatomicalEntity != ?taxon
+		FILTER:  ?cellType   NOT  ?gene
+		FILTER:  ?cellType   NOT  ?taxon
+		FILTER:  ?gene   NOT  ?taxon
+		FILTER:  ?taxon  IN  (  ?human  ?mouse  ?rat  ?fish  ?cattle  ?pig  ?chicken  ?worm  ?fly  ?guinea_pig  ?hsapiens  ?mus_musculus  ?rattus_novegicus  ?fecampus  ?efo_0005135  ?efo_0005135  ?efo_0005135  ?efo_0005135  ?efo_0005135  ?efo_0005135  ?efo_0005135  ?efo_0005135  ?efo_0005135  ?efo_0005135  ?efo_0005135  ?efo_0005135  ?efo_0005135  ?efo_0005135  ?efo_0005135  ?efo_0005135  ?efo_0005135  ?efo_0005135  ?efo_0005135  ?efo_0005135  ?efo_0005135  ?efo_0005135  ?efo_0005135  ?efo_0005135  ?efo_0005135  ?efo_0005135  ?efo_0005135  ?efo_0005135  ?efo_0005135  ?efo_0005135  ?efo_0005135  ?efo_0005135  ?efo_0005135  ?efo_0005135  ?efo_0005135  ?efo_0005135  ?efo_0005135  ?efo_0005135  ?efo_0005135  ?efo_0005135  ?efo_0005135  ?efo_0005135  ?efo_0005135  ?efo_0005135  ?efo_0005135  ?efo_0005135  ?efo_0005135  ?efo_0005135  ?efo_0005135  ?efo_0005135  ?efo_0005135  ?efo_0005
+
+--
+
+8:
+orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up: <http://purl.uniprot.org/core/>
+SELECT DISTINCT ?expressioncondition ?organism ?taxon ?strain ?anatomicalentity_label ?anatomicalentity_description ?anatomicalentity ?anatomicalentityName ?expression_hasexpressionlevelscore ?expression ?score ?taxon_scientificname ?stage ?gene ?gene_seealso ?expression_hasfalsediscoveryratep_value ?taxon_commonname ?gene_label WHERE { 
+	?gene a orth:Gene .
+	?expression a genex:Expression .
+	?expression genex:hasExpressionCondition ?expressioncondition .
+	?expression genex:hasExpressionLevel ?score .
+	?expression genex:hasSequenceUnit ?gene .
+	?gene rdfs:label "APOC1" .
+	?expressioncondition a genex:ExpressionCondition.
+	?expressioncondition genex:hasAnatomicalEntity ?anatomicalentity .
+	?expressioncondition genex:hasAnatomicalEntity obo:GO_0005575 .
+	?anatomicalentity a genex:AnatomicalEntity.
+	?anatomicalentity rdfs:label ?anatomicalentityName .
+	?expressioncondition genex:hasDevelopmentalStage ?stage .
+	?stage rdfs:label "post-juvenile" .
+	?expressioncondition genex:hasSex "any".
+	?expressioncondition genex:hasStrain ?strain .
+	?strain rdfs:label "wild-type" .
+	?gene orth:organism ?organism .
+	?organism obo:RO_0002162  ?taxon .
+	?taxon a up:Taxon .
+	?taxon up:commonName "human" .
+	?taxon <http://purl.uniprot.org/core/scientificName> ?taxon_scientificname.
+	?taxon <http://purl.uniprot.org/core/commonName> ?taxon_commonname.
+	?anatomicalentity <http://www.w3.org/2000/01/rdf-schema#label> ?anatomicalentity_label.
+	?anatomicalentity <http://purl.org/dc/terms/description> ?anatomicalentity_description.
+	?expression <http://purl.org/genex#hasExpressionLevel> ?expression_hasexpressionlevelscore.
+	?expression <http://purl.org/genex#hasFDRpvalue> ?expression_hasfalsediscoveryratep_value.
+	?gene <http://www.w3.org/2000/01/rdf-schema#seeAlso> ?gene_seealso.
+	?gene <http://www.w3.org/2000/01/rdf-schema#label> ?gene_label.
+	FILTER(                  ?anatomicalentity !=  obo:GO_0005575                  )
+} ORDER BY DESC(?score)
+
+--
+
+9:
+thood?cell_type?anatomical_entity?anatomical_entity?anatomical_entity?cell?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?
+
+--
+
+10:
+thood?
+    ?expression_x_efo_0000399 ?efo_0000399_label ?anatomicalentity ?anatomicalentityName ?efo_0000399_description ?gene ?gene_identifier.
+    ?gene a apoc:Gene .
+    ?gene rdfs:label "APOC1" .
+    ?expression_x_efo_0000399 a efo:EFO_0000399 .
+    ?expression_x_efo_0000399 rdfs:label ?efo_0000399_label .
+    ?expression_x_efo_0000399 <http://www.w3.org/2000/01/rdf-schema#description> ?efo_0000399_description.
+    ?gene <http://purl.org/dc/terms/identifier> ?gene_identifier.
+    OPTIONAL { ?expression <http://purl.org/dc/terms/label> ?efo_0000399_label. }
+    OPTIONAL { ?expression <http://purl.org/dc/terms/description> ?efo_0000399_description. }
+    OPTIONAL { ?expression <http://purl.org/dc/terms/identifier> ?gene_identifier. }
+    FILTER(      ?anatomicalentity != obo:GO_0005575      )
+    FILTER(      ?anatomicalentity != ?efo_0000399      )
+    FILTER(      ?anatomicalentity != ?ncbi_0005035      )
+    FILTER(      ?anatomicalentity != ?uniprot_uniprotkb      )
+    FILTER(      ?anatomicalentity != ?lscr_0000006      )
+    FILTER(      ?anatomicalentity != ?ncbi_0006605      )
+    FILTER(      ?anatomicalentity != ?uniprot_uniprot_uniprot      )
+    FILTER(      ?anatomicalentity != ?lscr_0000007      )
+    FILTER(      ?anatomicalentity != ?ncbi_0006805      )
+    FILTER(      ?anatomicalentity != ?uniprot_uniprot_uniprot_uniprot      )
+    FILTER(      ?anatomicalentity != ?lscr_0000008      )
+    FILTER(      ?anatomicalentity != ?ncbi_0006812      )
+    FILTER(      ?anatomicalentity != ?uniprot_uniprot_uniprot_uniprot_uniprot      )
+    FILTER(      ?anatomicalentity != ?lscr_0000009      )
+    FILTER(      ?anatomicalentity != ?ncbi_0006813      )
+    FILTER(      ?anatomicalentity != ?uniprot_uniprot_uniprot_uniprot_uniprot_uniprot      )
+    FILTER(      ?anatomicalentity != ?lscr_0000010      )
+    FILTER(      ?anatomicalentity != ?ncbi_0006820      )
+    FILTER(      ?anatomicalentity != ?uniprot_uniprot_uniprot_uniprot_uniprot_uniprot_uniprot      )
+    FILTER(      ?anatomicalentity != ?lscr_0000011      )
+    FILTER(      ?anatomicalentity != ?ncbi_0006821      )
+    FILTER(      ?anatomicalentity != ?uniprot_uniprot_uniprot_uniprot_uniprot_uniprot_uniprot_uniprot      )
+    FILTER(      ?anatomicalentity != ?lscr_0000012      )
+    FILTER(      ?anatomicalentity != ?ncbi_0006822      )
+    FILTER(      ?anatomical
+
+--
+
+11:
+thood?
+
+--
+
+12:
+thood? provide also the developmental stage label and the developmental stage description and the anatomical entity label and the anatomical entity description and the gene see also and the gene label.
+
+--
+
+13:
+orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up: <http://purl.uniprot.org/core/>
+SELECT DISTINCT ?cellType ?efo_0000399_description ?expression ?score ?expressioncondition ?anatomicalentity_description ?efo_0000399 ?taxon_scientificname ?expression_hasfalsediscoveryratep_value ?organism ?anatomicalentity_label ?expression_hasexpressionlevelscore ?efo_0000399_label ?taxon ?anatomicalentity ?anatomicalentityName ?cellTypeName ?gene ?taxon_commonname ?gene_description WHERE { 
+	?gene a orth:Gene .
+	?expression a genex:Expression .
+	?expression genex:hasExpressionCondition ?expressioncondition .
+	?expression genex:hasExpressionLevel ?score .
+	?expression genex:hasSequenceUnit ?gene .
+	?gene rdfs:label "APOC1" .
+	?expressioncondition a genex:ExpressionCondition.
+	?expressioncondition genex:hasAnatomicalEntity ?anatomicalentity .
+	?anatomicalentity a genex:AnatomicalEntity.
+	?anatomicalentity rdfs:label ?anatomicalentityName .
+	?expressioncondition genex:hasAnatomicalEntity ?cellType .
+	?cellType rdfs:label ?cellTypeName .
+	?expressioncondition genex:hasDevelopmentalStage ?efo_0000399 .
+	?efo_0000399 rdf:type efo:EFO_0000399 .
+	?efo_0000399 rdfs:label "post-juvenile" .
+	?gene orth:organism ?organism .
+	?organism obo:RO_0002162  ?taxon .
+	?taxon a up:Taxon .
+	?taxon up:commonName "human" .
+	?taxon <http://purl.uniprot.org/core/scientificName> ?taxon_scientificname.
+	?taxon <http://purl.uniprot.org/core/commonName> ?taxon_commonname.
+	?efo_0000399 <http://www.w3.org/2000/01/rdf-schema#label> ?efo_0000399_label.
+	?efo_0000399 <http://purl.org/dc/terms/description> ?efo_0000399_description.
+	?anatomicalentity <http://www.w3.org/2000/01/rdf-schema#label> ?anatomicalentity_label.
+	?anatomicalentity <http://purl.org/dc/terms/description> ?anatomicalentity_description.
+	?expression <http://purl.org/genex#hasExpressionLevel> ?expression_hasexpressionlevelscore.
+	?expression <http://purl.org/genex#hasFDRpvalue> ?expression_hasfalsediscoveryratep_value.
+	?gene <http://purl.org/dc/terms/description> ?gene_description.
+	FILTER(                  ?anatomicalentity !=  obo:GO_0005575                  )
+	FILTER(                  ?anatomicalentity != ?cellType                  )
+}
+ORDER BY DESC(?score)
+
+--
+
+14:
+thood?
+
+--
+
+15:
+orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up: <http://purl.uniprot.org/core/>
+PREFIX up-taxon:<http://purl.uniprot.org/taxonomy/>
+PREFIX ensembl: <http://rdf.ebi.ac.uk/resource/ensembl/>
+PREFIX lscr: <http://purl.org/lscr#>
+SELECT DISTINCT ?expressioncondition ?anatomicalentity ?anatomicalentityName ?expression ?score ?efo_0005135 ?efo_0005135_label ?gene ?gene_identifier WHERE { 
+	?gene a orth:Gene .
+	?expression a genex:Expression .
+	?expression genex:hasExpressionCondition ?expressioncondition .
+	?expression genex:hasExpressionLevel ?score .
+	?expression genex:hasSequenceUnit ?gene .
+	?gene lscr:xrefEnsemblGene ensembl:ENSG00000130208 .
+	?expressioncondition a genex:ExpressionCondition.
+	?expressioncondition genex:hasAnatomicalEntity ?anatomicalentity .
+	?anatomicalentity a genex:AnatomicalEntity.
+	?anatomicalentity rdfs:label ?anatomicalentityName .
+	?expressioncondition genex:hasDevelopmentalStage obo:UBERON_0000113 .
+	?expressioncondition genex:hasSex "any".
+	?expressioncondition genex:hasStrain ?efo_0005135 .
+	?efo_0005135 a efo:EFO_0005135.
+	?efo_0005135 rdfs:label "wild-type" .
+	?efo_0005135 <http://www.w3.org/2000/01/rdf-schema#label> ?efo_0005135_label.
+	?gene <http://purl.org/dc/terms/identifier> ?gene_identifier.
+	FILTER(    ?anatomicalentity !=  obo:GO_0005575    )
+} ORDER BY DESC(?score)
+
+--
+
+16:
+thood  efg   Gene see anatomical entity.
+?x a efg .
+?x expression "post-juvenile" .
+?x taxonomiccommonname ?tco .
+?x taxonscientificname ?tss .
+?x developmentalstage ?efg .
+?efg label "post-juvenile" .
+?gene a genus.
+?gene genus ?x .
+?x description "APOC1 is a protein that in humans is encoded by the APOC1 gene. APOC1 is a member of the apoC family of proteins. The apoC family of proteins includes the apoC1 and apoC2 genes. APOC1 is expressed in the post-juvenile stage. In humans the gene is located on the human chromosome 10." .
+?gene identifier ?y .
+?y a gene .
+?y number "10" .
+?y label "APOC1" .
+?y description "APOC1 is a protein that in humans is encoded by the APOC1 gene. APOC1 is a member of the apoC family of proteins. The apoC family of proteins includes the apoC1 and apoC2 genes. APOC1 is expressed in the post-juvenile stage. In humans the gene is located on the human chromosome 10." .
+?tco a common name .
+?tco label "post-juvenile" .
+?tss a scientific name .
+?tss label "human" .
+?efg <http://www.w3.org/2000/01/rdf-schema#label> ?efg_ .
+?efg <http://purl.org/dc/terms/label> ?efg_ .
+?y <http://purl.org/dc/terms/label> ?y_ .
+?y <http://www.w3.org/2000/01/rdf-schema#label> ?y_ .
+?gene <http://www.w3.org/2000/01/rdf-schema#label> ?gene_ .
+?gene <http://purl.org/dc/terms/label> ?gene_ .
+?x <http://purl.org/dc/terms/label> ?x_ .
+?x <http://www.w3.org/2000/01/rdf-schema#label> ?x_ .
+?tco <http://purl.org/dc/terms/label> ?tco_ .
+?tco <http://www.w3.org/2000/01/rdf-schema#label> ?tco_ .
+?tss <http://purl.org/dc/terms/label> ?tss_ .
+?tss <http://www.w3.org/2000/01/rdf-schema#label> ?tss_ .
+?efg <http://www.w3.org/2000/01/rdf-schema#label> ?efg_ .
+?efg <http://purl.org/dc/terms/label> ?efg_ .
+?gene <http://www.w3.org/2000/01/rdf-schema#label> ?gene_ .
+?gene <http://purl.org/dc/terms/label> ?gene_ .
+?x <http://www.w3.org/2000/01/rdf-schema#label> ?x_ .
+?x <http://purl.org/dc/terms/label> ?x_ .
+?tco <http://www.w3.org/2000/01/rdf-schema#label> ?tco_ .
+?tco <http://purl.org/dc/terms/label> ?tco_ .
+?tss <http://www.w3.org/2000/01/rdf-schema#label> ?tss_ .
+?tss <http://purl.org/dc/terms/label> ?tss_ .
+?efg <http://www.w3.org/2000/01/rdf-schema#label> ?efg_ .
+?efg <http://purl.org/dc/terms/label> ?efg_ .
+?g
+
+--
+
+17:
+thood?
+
+--
+
+18:
+orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up: <http://purl.uniprot.org/core/>
+SELECT DISTINCT ?expressioncondition ?organism ?taxon ?anatomicalentity ?anatomicalentityName ?efo_0000399 ?taxon_scientificname ?gene ?taxon_commonname WHERE { 
+	?gene a orth:Gene .
+	?gene genex:hasExpressionCondition ?expressioncondition.
+	?expressioncondition a genex:ExpressionCondition.
+	?gene rdfs:label "APOC1" .
+	?expressioncondition genex:hasAnatomicalEntity ?anatomicalentity .
+	?anatomicalentity a genex:AnatomicalEntity.
+	?expressioncondition genex:hasAnatomicalEntity obo:GO_0005575 .
+	?anatomicalentity rdfs:label ?anatomicalentityName .
+	?expressioncondition genex:hasDevelopmentalStage ?efo_0000399 .
+	?efo_0000399 a efo:EFO_0000399 .
+	?efo_0000399 rdfs:label "post-juvenile" .
+	?gene orth:organism ?organism .
+	?organism obo:RO_0002162  ?taxon .
+	?taxon a up:Taxon .
+	?taxon up:commonName "human" .
+	?taxon <http://purl.uniprot.org/core/scientificName> ?taxon_scientificname.
+	?taxon <http://purl.uniprot.org/core/commonName> ?taxon_commonname.
+} ORDER BY DESC(?efo_0000399)
+```
+
+--
+
+19:
+thood  expression  ?expression_condition ?expression_score ?organism ?taxon ?anatomical_entity_label ?anatomical_entity ?anatomical_entityName ?expression ?gene ?gene_expression ?gene_expression_condition ?gene_expression_score ?gene_label ?stage ?cell_type ?efo_0005135 ?efo_0005135_label ?score ?anatomical_entity_label_label ?link ?player ?player_name ?expression_condition_label ?efo ?taxon_label ?anatomical_entityName_label ?gene_label_falseDiscoveryRate ?gene ?expression ?expression_condition ?expression_score ?gene_expression ?gene_expression_condition ?gene_expression_score ?gene_label ?expression ?expression_condition ?expression_score ?gene_expression ?gene_expression_condition ?gene_expression_score ?gene ?expression ?expression_condition ?expression_score ?gene_expression ?gene_expression_condition ?gene_expression_score ?gene ?expression ?expression_condition ?expression_score ?gene_expression ?gene_expression_condition ?gene_expression_score ?gene ?expression ?expression_condition ?expression_score ?gene_expression ?gene_expression_condition ?gene_expression_score ?gene ?expression ?expression_condition ?expression_score ?gene_expression ?gene_expression_condition ?gene_expression_score ?gene ?expression ?expression_condition ?expression_score ?gene_expression ?gene_expression_condition ?gene_expression_score ?gene ?expression ?expression_condition ?expression_score ?gene_expression ?gene_expression_condition ?gene_expression_score ?gene ?expression ?expression_condition ?expression_score ?gene_expression ?gene_expression_condition ?gene_expression_score ?gene ?expression ?expression_condition ?expression_score ?gene_expression ?gene_expression_condition ?gene_expression_score ?gene ?expression ?expression_condition ?expression_score ?gene_expression ?gene_expression_condition ?gene_expression_score ?gene ?expression ?expression_condition ?expression_score ?gene_expression ?gene_expression_condition ?gene_expression_score ?gene ?expression ?expression_condition ?expression_score ?gene_expression ?gene_expression_condition ?gene_expression_score ?gene ?expression ?expression_condition ?expression_score ?gene_expression ?gene_expression_condition ?gene_expression_score ?gene ?expression ?expression_condition ?expression_score ?gene_expression ?gene_expression_condition ?gene_expression_score ?gene ?expression ?expression_condition ?expression_score ?gene_expression ?gene_expression_condition ?gene_expression_score ?gene ?expression ?expression_condition ?expression_score ?gene_expression ?gene_expression_condition ?gene_expression_score ?gene ?expression ?expression_condition ?expression_score ?gene_expression ?gene_expression_condition ?gene_expression_score ?gene ?expression ?expression_condition ?expression_score ?gene_expression ?gene_expression_condition ?gene_expression_score ?gene ?expression ?expression_condition ?expression_score ?gene_expression ?gene_expression_condition ?gene_expression_score ?gene ?expression ?expression_condition ?expression_score ?gene_expression ?gene_expression_condition ?gene_expression_score ?gene ?expression ?expression_condition ?expression_score ?gene_expression ?gene_expression_condition ?gene_expression_score ?gene ?expression ?expression_condition ?expression_score ?gene_expression ?gene_expression_condition ?gene_expression_score ?gene ?expression ?expression_condition ?expression_score ?gene_expression ?gene_expression_condition ?gene_expression_score ?gene ?expression ?expression_condition ?expression_score ?gene_expression ?gene_expression_condition ?gene_expression_score ?gene ?expression ?expression_condition ?expression_score ?gene_expression ?gene_expression_condition ?gene_expression_score ?gene ?expression ?expression_condition ?expression_score ?gene_expression ?gene_expression_condition ?gene_expression_score ?gene ?expression ?expression
+
+--
+
+20:
+opponens longus?
+    expression_score:?exression_level_score
+    expression_level_score:1
+    fill:false
+    id:eel-expression-1
+    link:http://www.ebi.ac.uk/ebisearch/Search?query=eel&button=search&ebi_search_field=allfields&ebi_search_string=
+    score:1
+    expression_condition:
+        expression_condition_label:developmental_stage
+        expression_condition_description:adult
+        expression_condition_expression:?efo_0000399
+        expression_condition_expression_label:efo_0000399
+        expression_condition_expression_description:adult eel
+    expression:
+        expression_score:?exression_level_score
+        expression_condition:
+            expression_condition_expression:?apoc1
+        expression_condition_label:anatomical_entity
+        anatomical_entity_label:?anat
+        anatomical_entity_description:?anat_desc
+        anatomical_entity:
+            id:?anat
+            label:?anat_label
+            description:?anat_desc
+        expression_condition_expression:?efo_0005135
+        efo_0005135:
+            label:anatomical entity
+            description:Anatomical entity is a concept that can be used to describe an entity in an anatomical context.
+        expression_condition_expression_label:efo_0005135
+        expression_condition_expression_description:anatomical entity eel
+    gene:
+        gene_seealso:
+            gene:?g1
+            gene_label:?g1_label
+        gene_label:
+            id:?g1
+            label:?g1_label
+        expression_haspredictivelevel:?exression_haspredictivelevel
+        expression_haspredictivelevel:false
+        expression_condition:
+            expression_condition_expression:?apoc1
+        expression_condition_expression:?efo_0005135
+        efo_0005135:
+            label:anatomical entity
+            description:Anatomical entity is a concept that can be used to describe an entity in an anatomical context.
+        anatomical_entity:
+            id:?anat
+            label:?anat_label
+            description:?anat_desc
+        expression_condition_expression_label:efo_0005135
+        expression_condition_expression_description:anatomical entity eel
+    efo_0005135:
+        label:anatomical entity
+        description:Anatomical entity is a concept that can be used to describe an entity in an anatomical context.
+    gene:?g1
+    g1:
+        gene_seealso:?g1
+        gene_label:?g1_label
+    g1_label:
+        id:?g1
+        label:?g1_label
+    expression_haspredictivelevel:?exression_haspredictivelevel
+    exression_haspredictivelevel:false
+    expression_level_score:?exression_level_score
+    exression_level_score:1
+    efo_0000399:
+        label:developmental stage
+        description:Adult eel.
+    anat:?anat
+    anat_label:?anat_label
+    anat_desc:?anat_desc
+    g1_label:
+        id:?g1
+        label:?g1_label
+    gene:?g1
+    expression:
+        expression_condition:
+            expression_condition_expression:?apoc1
+        expression_condition_expression_label:efo_0005135
+        expression_condition_expression_description:anatomical entity eel
+    efo_0005135:
+        label:anatomical entity
+        description:Anatomical entity is a concept that can be used to describe an entity in an anatomical context.
+    expression_condition:
+        expression_condition_expression:?efo_0005135
+        efo_0005
+
+--
+
+21:
+orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up: <http://purl.uniprot.org/core/>
+SELECT DISTINCT ?cellType ?expression ?score ?expressioncondition ?anatomicalentity_description ?taxon_scientificname ?efo_0005135_label ?expression_hasfalsediscoveryratep_value ?organism ?anatomicalentity_label ?expression_hasexpressionlevelscore ?stage ?taxon ?anatomicalentity ?anatomicalentityName ?cellTypeName ?efo_0005135 ?gene ?gene_seealso ?taxon_commonname ?gene_description WHERE { 
+	?gene a orth:Gene .
+	?expression a genex:Expression .
+	?expression genex:hasExpressionCondition ?expressioncondition .
+	?expression genex:hasExpressionLevel ?score .
+	?expression genex:hasSequenceUnit ?gene .
+	?gene rdfs:label "APOC1" .
+	?expressioncondition a genex:ExpressionCondition.
+	?expressioncondition genex:hasAnatomicalEntity ?anatomicalentity .
+	?anatomicalentity a genex:AnatomicalEntity.
+	?anatomicalentity rdfs:label ?anatomicalentityName .
+	?expressioncondition genex:hasAnatomicalEntity ?cellType .
+	?cellType rdfs:label ?cellTypeName .
+	?expressioncondition genex:hasDevelopmentalStage ?stage .
+	?stage rdfs:label "post-juvenile" .
+	?expressioncondition genex:hasSex "any".
+	?expressioncondition genex:hasStrain ?efo_0005135 .
+	?efo_0005135 a efo:EFO_0005135.
+	?efo_0005135 rdfs:label "wild-type" .
+	?gene orth:organism ?organism .
+	?organism obo:RO_0002162  ?taxon .
+	?taxon a up:Taxon .
+	?taxon up:commonName "human" .
+	?taxon <http://purl.uniprot.org/core/scientificName> ?taxon_scientificname.
+	?taxon <http://purl.uniprot.org/core/commonName> ?taxon_commonname.
+	?efo_0005135 <http://www.w3.org/2000/01/rdf-schema#label> ?efo_0005135_label.
+	?anatomicalentity <http://www.w3.org/2000/01/rdf-schema#label> ?anatomicalentity_label.
+	?anatomicalentity <http://purl.org/dc/terms/description> ?anatomicalentity_description.
+	?expression <http://purl.org/genex#hasExpressionLevel> ?expression_hasexpressionlevelscore.
+	?expression <http://purl.org/genex#hasFDRpvalue> ?expression_hasfalsediscoveryratep_value.
+	?gene <http://www.w3.org/2000/01/rdf-schema#seeAlso> ?gene_seealso.
+	?gene <http://purl.org/dc/terms/description> ?gene_description.
+	FILTER(                  ?anatomicalentity != obo:GO_0005575                  )
+	FILTER(                  ?anatomicalentity != ?cellType                  )
+}
+ORDER BY DESC(?score)
+
+--
+
+22:
+orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up: <http://purl.uniprot.org/core/>
+SELECT DISTINCT ?cellType ?efo_0000399_description ?expression ?score ?expressioncondition ?anatomicalentity_description ?efo_0000399 ?taxon_scientificname ?expression_hasfalsediscoveryratep_value ?organism ?anatomicalentity_label ?expression_hasexpressionlevelscore ?efo_0000399_label ?taxon ?anatomicalentity ?anatomicalentityName ?cellTypeName ?gene ?gene_seealso ?taxon_commonname ?gene_description WHERE { 
+	?gene a orth:Gene .
+	?expression a genex:Expression .
+	?expression genex:hasExpressionCondition ?expressioncondition .
+	?expression genex:hasExpressionLevel ?score .
+	?expression genex:hasSequenceUnit ?gene .
+	?gene rdfs:label "APOC1" .
+	?expressioncondition a genex:ExpressionCondition.
+	?expressioncondition genex:hasAnatomicalEntity ?anatomicalentity .
+	?anatomicalentity a genex:AnatomicalEntity.
+	?anatomicalentity rdfs:label ?anatomicalentityName .
+	?expressioncondition genex:hasAnatomicalEntity ?cellType .
+	?cellType rdfs:label ?cellTypeName .
+	?expressioncondition genex:hasDevelopmentalStage ?efo_0000399 .
+	?efo_0000399 rdf:type efo:EFO_0000399 .
+	?efo_0000399 rdfs:label "post-juvenile" .
+	?gene orth:organism ?organism .
+	?organism obo:RO_0002162  ?taxon .
+	?taxon a up:Taxon .
+	?taxon up:commonName "human" .
+	?taxon <http://purl.uniprot.org/core/scientificName> ?taxon_scientificname.
+	?taxon <http://purl.uniprot.org/core/commonName> ?taxon_commonname.
+	?efo_0000399 <http://www.w3.org/2000/01/rdf-schema#label> ?efo_0000399_label.
+	?efo_0000399 <http://purl.org/dc/terms/description> ?efo_0000399_description.
+	?anatomicalentity <http://www.w3.org/2000/01/rdf-schema#label> ?anatomicalentity_label.
+	?anatomicalentity <http://purl.org/dc/terms/description> ?anatomicalentity_description.
+	?expression <http://purl.org/genex#hasExpressionLevel> ?expression_hasexpressionlevelscore.
+	?expression <http://purl.org/genex#hasFDRpvalue> ?expression_hasfalsediscoveryratep_value.
+	?gene <http://www.w3.org/2000/01/rdf-schema#seeAlso> ?gene_seealso.
+	?gene <http://purl.org/dc/terms/description> ?gene_description.
+	FILTER(                  ?anatomicalentity !=  obo:GO_0005575                  )
+	FILTER(                  ?anatomicalentity != ?cellType                  )
+}
+ORDER BY DESC(?score)
+
+--
+
+23:
+thood?
+
+--
+
+24:
+opponin
+expression_at_post_juvenile_stage?
+
+--
+
+25:
+http: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX efo: <http://www.ebi.ac.uk/efo/>
+PREFIX obo: <http://www.obo.org/obo/>
+SELECT DISTINCT ?anatomicalentity ?anatomicalentity_description ?anatomicalentity_label ?expression ?efo_0000399 ?efo_0005135 ?efo_0000399_description ?efo_0000399_label ?gene ?gene_description ?gene_seealso ?gene_identifier ?taxon ?taxon_scientificname ?taxon_commonname ?efo_0000399 ?anatomicalentity ?anatomicalentity_description ?anatomicalentity_label ?gene ?gene_seealso ?gene_identifier ?taxon ?taxon_scientificname ?taxon_commonname ?efo_0000399_description ?efo_0000399_label ?gene_description ?gene_identifier
+WHERE { ?anatomicalentity a http:anatomicalentity .
+?anatomicalentity rdfs:label ?anatomicalentity_label .
+?anatomicalentity rdfs:seeAlso ?anatomicalentity_description .
+?anatomicalentity <http://www.w3.org/2000/01/rdf-schema#label> ?anatomicalentity_label.
+?anatomicalentity <http://purl.org/dc/terms/description> ?anatomicalentity_description.
+?anatomicalentity <http://www.w3.org/2000/01/rdf-schema#label> ?anatomicalentity_label.
+?expression a http:expression .
+?expression <http://purl.org/dc/terms/description> ?expression_description.
+?expression <http://purl.org/dc/terms/label> ?expression_label.
+?efo_0000399 a efo:EFO_0000399 .
+?efo_0000399 <http://www.w3.org/2000/01/rdf-schema#label> ?efo_0000399_label.
+?efo_0000399 <http://purl.org/dc/terms/description> ?efo_0000399_description.
+?gene a http:genome .
+?gene <http://purl.org/dc/terms/description> ?gene_description.
+?gene <http://purl.org/dc/terms/label> ?gene_seealso.
+?gene <http://purl.org/dc/terms/identifier> ?
+
+--
+
+26:
+fundamento?anatomicalentity?anatomicalentity?gene?gene?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?anatomicalentity?
+
+--
+
+27:
+thood?
+
+--
+
+28:
+up: <http://purl.uniprot.org/core/>
+PREFIX up-taxon:<http://purl.uniprot.org/taxonomy/>
+PREFIX up-species:<http://purl.uniprot.org/species/>
+SELECT DISTINCT ?common_name ?sci_name ?taxon ?taxon_scientificName ?common ?sci ?taxon_commonName WHERE { 
+	?taxon a up-taxon .
+	?taxon up-species up-species_scientificName ?sci_name .
+	?taxon up-species up-species_commonName ?common_name .
+	?taxon <http://purl.uniprot.org/core/scientificName> ?taxon_scientificName.
+	?taxon <http://purl.uniprot.org/core/commonName> ?taxon_commonName.
+}
+ORDER BY DESC(?sci_name)
+
+--
+
+29:
+��ннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннн...
+
+--
+
+30:
+thood  ?anat ?human ?gene ?anatName ?taxon ?efo_0000399 ?efo_0005135 ?efo_0005135_label.
+
+--
+
+31:
+orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up: <http://purl.uniprot.org/core/>
+SELECT DISTINCT ?cellType ?expressioncondition ?organism ?taxon ?anatomicalentity ?anatomicalentityName ?cellTypeName ?efo_0000399 ?score ?expression ?gene ?efo_0000399_label WHERE { 
+	?gene a orth:Gene .
+	?expression a genex:Expression .
+	?expression genex:hasExpressionCondition ?expressioncondition .
+	?expression genex:hasExpressionLevel ?score .
+	?expression genex:hasSequenceUnit ?gene .
+	?gene rdfs:label "APOC1" .
+	?expressioncondition a genex:ExpressionCondition.
+	?expressioncondition genex:hasAnatomicalEntity ?anatomicalentity .
+	?anatomicalentity a genex:AnatomicalEntity.
+	?anatomicalentity rdfs:label ?anatomicalentityName .
+	?expressioncondition genex:hasAnatomicalEntity ?cellType .
+	?cellType rdfs:label ?cellTypeName .
+	?expressioncondition genex:hasDevelopmentalStage ?efo_0000399 .
+	?efo_0000399 rdf:type efo:EFO_0000399 .
+	?efo_0000399 rdfs:label "post-juvenile" .
+	?gene orth:organism ?organism .
+	?organism obo:RO_0002162  ?taxon .
+	?taxon a up:Taxon .
+	?taxon up:commonName "human" .
+	?efo_0000399 <http://www.w3.org/2000/01/rdf-schema#label> ?efo_0000399_label.
+	FILTER(  ?anatomicalentity !=  obo:GO_0005575  )
+	FILTER(  ?anatomicalentity != ?cellType  )
+}
+ORDER BY DESC(?score)
+
+--
+
+32:
+thood  ?anatomicalentity_label ?anatomicalentity_description ?anatomicalentity ?anatomicalentityName ?gene ?gene_label WHERE { 
+	?gene a apoc:Gene .
+	?gene rdfs:label "APOC1" .
+	?anatomicalentity a efo:AnatomicalEntity .
+	?anatomicalentity rdfs:label ?anatomicalentityName .
+	?anatomicalentity <http://www.w3.org/2000/01/rdf-schema#label> ?anatomicalentity_label.
+	?anatomicalentity <http://purl.org/dc/terms/description> ?anatomicalentity_description.
+	?gene <http://www.w3.org/2000/01/rdf-schema#label> ?gene_label.
+}
+
+--
+
+33:
+orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up: <http://purl.uniprot.org/core/>
+SELECT DISTINCT ?organism ?taxon ?anatomicalentity_label ?anatomicalentity ?anatomicalentityName ?taxon_scientificname ?gene ?taxon_commonname ?anatomicalentity_description WHERE { 
+	?gene a orth:Gene .
+	?gene genex:isExpressedIn ?anatomicalentity.
+	?gene rdfs:label "APOC1" .
+	?anatomicalentity a genex:AnatomicalEntity .
+	?anatomicalentity rdfs:label ?anatomicalentityName .
+
+--
+
+34:
+thood?
+
+--
+
+35:
+orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up: <http://purl.uniprot.org/core/>
+SELECT DISTINCT ?expressioncondition ?efo_0000399_label ?organism ?taxon ?anatomicalentity_label ?anatomicalentity_description ?anatomicalentity ?anatomicalentityName ?efo_0000399 ?efo_0000399_description ?taxon_scientificname ?gene_description ?gene ?gene_seealso ?gene_identifier ?gene_label WHERE { 
+	?gene a orth:Gene .
+	?gene genex:isExpressedIn ?expressioncondition.
+	?gene rdfs:label "APOC1" .
+	?expressioncondition a genex:ExpressionCondition.
+	?expressioncondition genex:hasAnatomicalEntity ?anatomicalentity .
+	?anatomicalentity a genex:AnatomicalEntity.
+	?anatomicalentity rdfs:label ?anatomicalentityName .
+	?expressioncondition genex:hasAnatomicalEntity obo:GO_0005575 .
+	?expressioncondition genex:hasDevelopmentalStage ?efo_0000399 .
+	?efo_0000399 a efo:EFO_0000399 .
+	?efo_0000399 rdfs:label "post-juvenile" .
+	?gene orth:organism ?organism .
+	?organism obo:RO_0002162  ?taxon .
+	?taxon a up:Taxon .
+	?taxon up:commonName "human" .
+	?taxon <http://purl.uniprot.org/core/scientificName> ?taxon_scientificname.
+	?taxon <http://purl.uniprot.org/core/commonName> ?taxon_commonname.
+	?efo_0000399 <http://www.w3.org/2000/01/rdf-schema#label> ?efo_0000399_label.
+	?efo_0000399 <http://purl.org/dc/terms/description> ?efo_0000399_description.
+	?anatomicalentity <http://www.w3.org/2000/01/rdf-schema#label> ?anatomicalentity_label.
+	?anatomicalentity <http://purl.org/dc/terms/description> ?anatomicalentity_description.
+	?gene <http://www.w3.org/2000/01/rdf-schema#seeAlso> ?gene_seealso.
+	?gene <http://purl.org/dc/terms/description> ?gene_description.
+	?gene <http://purl.org/dc/terms/identifier> ?gene_identifier.
+	?gene <http://www.w3.org/2000/01/rdf-schema#label> ?gene_label.
+} ORDER BY DESC(?efo_0000399)
+
+--
+
+36:
+thood?
+
+--
+
+37:
+orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up: <http://purl.uniprot.org/core/>
+SELECT DISTINCT ?cellType ?expressioncondition ?organism ?taxon ?anatomicalentity ?anatomicalentityName ?cellTypeName ?expression ?score ?efo_0005135 ?taxon_scientificname ?gene ?anatomicalentity_description WHERE { 
+	?gene a orth:Gene .
+	?expression a genex:Expression .
+	?expression genex:hasExpressionCondition ?expressioncondition .
+	?expression genex:hasExpressionLevel ?score .
+	?expression genex:hasSequenceUnit ?gene .
+	?gene rdfs:label "APOC1" .
+	?expressioncondition a genex:ExpressionCondition.
+	?expressioncondition genex:hasAnatomicalEntity ?anatomicalentity .
+	?anatomicalentity a genex:AnatomicalEntity.
+	?anatomicalentity rdfs:label ?anatomicalentityName .
+	?expressioncondition genex:hasAnatomicalEntity ?cellType .
+	?cellType rdfs:label ?cellTypeName .
+	?expressioncondition genex:hasDevelopmentalStage ?efo_0005135 .
+	?efo_0005135 rdf:type efo:EFO_0005135.
+	?efo_0005135 rdfs:label "post-juvenile" .
+	?gene orth:organism ?organism .
+	?organism obo:RO_0002162  ?taxon .
+	?taxon a up:Taxon .
+	?taxon up:commonName "human" .
+	?taxon <http://purl.uniprot.org/core/scientificName> ?taxon_scientificname.
+	?anatomicalentity <http://purl.org/dc/terms/description> ?anatomicalentity_description.
+	FILTER(    ?anatomicalentity !=  obo:GO_0005575    )
+	FILTER(    ?anatomicalentity != ?cellType    )
+} ORDER BY DESC(?score)
+
+--
+
+38:
+orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up: <http://purl.uniprot.org/core/>
+
+SELECT DISTINCT ?organism ?taxon ?anatomicalEntity ?anatomicalEntityName ?taxon_scientificName ?gene ?taxon_commonName ?gene_description ?anatomicalEntity_description WHERE { 
+	?gene a orth:Gene .
+	?gene genex:isExpressedIn ?anatomicalEntity.
+	?gene rdfs:label "APOC1" .
+	?anatomicalEntity a genex:AnatomicalEntity .
+	?anatomicalEntity rdfs:label ?anatomicalEntityName .
+
+--
+
+39:
+orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up: <http://purl.uniprot.org/core/>
+SELECT DISTINCT ?expressioncondition ?efo_0000399_label ?organism ?taxon ?anatName ?efo_0000399 ?efo_0005135 ?efo_0005135_label ?anat ?taxon_scientificname ?gene ?taxon_commonname ?efo_0000399_description WHERE { 
+	?gene a orth:Gene .
+	?gene genex:isExpressedIn ?expressioncondition.
+	?expressioncondition a genex:ExpressionCondition.
+	?gene rdfs:label "APOC1" .
+	?expressioncondition genex:hasAnatomicalEntity ?anat .
+	?anat rdfs:label ?anatName .
+	?expressioncondition genex:hasAnatomicalEntity obo:GO_0005575 .
+	?expressioncondition genex:hasDevelopmentalStage ?efo_0000399 .
+	?efo_0000399 a efo:EFO_0000399 .
+	?efo_0000399 rdfs:label "post-juvenile" .
+	?expressioncondition genex:hasSex "any".
+	?expressioncondition genex:hasStrain ?efo_0005135 .
+	?efo_0005135 a efo:EFO_0005135.
+	?efo_0005135 rdfs:label "wild-type" .
+	?gene orth:organism ?organism .
+	?organism obo:RO_0002162  ?taxon .
+	?taxon a up:Taxon .
+	?taxon up:commonName "human" .
+	?taxon <http://purl.uniprot.org/core/scientificName> ?taxon_scientificname.
+	?taxon <http://purl.uniprot.org/core/commonName> ?taxon_commonname.
+	?efo_0005135 <http://www.w3.org/2000/01/rdf-schema#label> ?efo_0005135_label.
+	?efo_0000399 <http://www.w3.org/2000/01/rdf-schema#label> ?efo_0000399_label.
+	?efo_0000399 <http://purl.org/dc/terms/description> ?efo_0000399_description.
+} ORDER BY DESC(?efo_0000399)
+```
+
+--
+
+40:
+orth: <http://purl.org/net/orth#>
+PREFIX lscr: <http://purl.org/lscr#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+SELECT DISTINCT ?ncbi ?organism ?symbol ?description ?id ?ensembl ?gene_seealso ?gene ?gene_description ?uniprot ?links ?gene_identifier WHERE { 
+	?gene a orth:Gene .
+	?gene rdfs:label ?symbol .
+	?gene rdfs:seeAlso ?links .
+	?gene dcterms:description ?description .
+	?gene dcterms:identifier ?id .
+	?gene orth:organism ?organism .
+	?gene <http://purl.org/dc/terms/seeAlso> ?gene_seealso.
+	?gene <http://purl.org/dc/terms/description> ?gene_description.
+	?gene <http://purl.org/dc/terms/identifier> ?gene_identifier.
+	OPTIONAL { ?gene lscr:xrefUniprot ?uniprot . } 
+	OPTIONAL { ?gene lscr:xrefEnsemblGene ?ensembl . } 
+	OPTIONAL { ?gene lscr:xrefNCBIGene ?ncbi . } 
+	FILTER(    ?id = "ENSG00000130208"    )
+} ORDER BY DESC(?id)
+
+--
+
+41:
+orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up: <http://purl.uniprot.org/core/>
+SELECT DISTINCT ?organism ?anatomicalentity ?anatomicalentityName ?taxon ?gene ?anatomicalentity_description WHERE { 
+	?gene a orth:Gene .
+	?gene genex:isExpressedIn ?anatomicalentity.
+	?gene rdfs:label "APOC1" .
+	?anatomicalentity a genex:AnatomicalEntity .
+	?anatomicalentity rdfs:label ?anatomicalentityName .
+
+--
+
+42:
+thood?
+
+--
+
+43:
+fundamento?
+
+--
+
+44:
+orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up: <http://purl.uniprot.org/core/>
+SELECT DISTINCT ?cellType ?expressioncondition ?organism ?taxon ?anatomicalentity ?anatomicalentity_description ?celltype ?expression ?score ?efo_0005135 ?taxon_scientificname ?gene ?gene_label WHERE { 
+	?gene a orth:Gene .
+	?expression a genex:Expression .
+	?expression genex:hasExpressionCondition ?expressioncondition .
+	?expression genex:hasExpressionLevel ?score .
+	?expression genex:hasSequenceUnit ?gene .
+	?gene rdfs:label "APOC1" .
+	?expressioncondition a genex:ExpressionCondition.
+	?expressioncondition genex:hasAnatomicalEntity ?anatomicalentity .
+	?anatomicalentity a genex:AnatomicalEntity.
+	?anatomicalentity rdfs:label ?anatomicalentity_description .
+	?expressioncondition genex:hasAnatomicalEntity ?cellType .
+	?cellType rdfs:label "cell type" .
+	?expressioncondition genex:hasDevelopmentalStage ?efo_0005135 .
+	?efo_0005135 rdfs:label "post-juvenile" .
+	?gene orth:organism ?organism .
+	?organism obo:RO_0002162  ?taxon .
+	?taxon a up:Taxon .
+	?taxon up:commonName "human" .
+	?taxon <http://purl.uniprot.org/core/scientificName> ?taxon_scientificname.
+	?gene <http://www.w3.org/2000/01/rdf-schema#label> ?gene_label.
+	FILTER(    ?anatomicalentity != obo:GO_0005575    )
+	FILTER(    ?anatomicalentity != ?cellType    )
+} ORDER BY DESC(?score)
+
+--
+
+45:
+thood?cell_type?anatomical_entity?anatomical_entity?anatomical_entity?cell?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?
+
+--
+
+46:
+orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up: <http://purl.uniprot.org/core/>
+PREFIX up-taxon:<http://purl.uniprot.org/taxonomy/>
+PREFIX ensembl: <http://rdf.ebi.ac.uk/resource/ensembl/>
+PREFIX lscr: <http://purl.org/lscr#>
+SELECT DISTINCT ?expressioncondition ?anatomical_entity_label ?anatomical_entity ?anatomical_entityName ?expression ?score ?efo_0005135 ?efo_0005135_label ?gene ?seealso WHERE { 
+	?gene a orth:Gene .
+	?expression a genex:Expression .
+	?expression genex:hasExpressionCondition ?expressioncondition .
+	?expression genex:hasExpressionLevel ?score .
+	?expression genex:hasSequenceUnit ?gene .
+	?gene lscr:xrefEnsemblGene ensembl:ENSG00000130208 .
+	?expressioncondition a genex:ExpressionCondition.
+	?expressioncondition genex:hasAnatomicalEntity ?anatomical_entity .
+	?anatomical_entity a genex:AnatomicalEntity.
+	?anatomical_entity rdfs:label ?anatomical_entityName .
+	?expressioncondition genex:hasDevelopmentalStage obo:UBERON_0000113 .
+	?expressioncondition genex:hasSex "any".
+	?expressioncondition genex:hasStrain ?efo_0005135 .
+	?efo_0005135 a efo:EFO_0005135.
+	?efo_0005135 rdfs:label "post-juvenile".
+	?efo_0005135 <http://www.w3.org/2000/01/rdf-schema#label> ?efo_0005135_label.
+	?anatomical_entity <http://www.w3.org/2000/01/rdf-schema#label> ?anatomical_entity_label.
+	?seealso a obo:RO_0002175.
+	?seealso rdfs:label "see also".
+	?gene <http://purl.org/dc/terms/seeAlso> ?seealso.
+	FILTER(        ?anatomical_entity !=  obo:GO_0005575        )
+} ORDER BY DESC(?score)
+
+--
+
+47:
+orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up: <http://purl.uniprot.org/core/>
+SELECT DISTINCT ?cellType ?expression ?score ?expressioncondition ?anatomicalentity_description ?taxon_scientificname ?efo_0005135_label ?expression_hasfalsediscoveryratep_value ?organism ?anatomicalentity_label ?expression_hasexpressionlevelscore ?stage ?taxon ?anatomicalentity ?anatomicalentityName ?cellTypeName ?efo_0005135 ?gene ?taxon_commonname ?gene_description WHERE { 
+	?gene a orth:Gene .
+	?expression a genex:Expression .
+	?expression genex:hasExpressionCondition ?expressioncondition .
+	?expression genex:hasExpressionLevel ?score .
+	?expression genex:hasSequenceUnit ?gene .
+	?gene rdfs:label "APOC1" .
+	?expressioncondition a genex:ExpressionCondition.
+	?expressioncondition genex:hasAnatomicalEntity ?anatomicalentity .
+	?anatomicalentity a genex:AnatomicalEntity.
+	?anatomicalentity rdfs:label ?anatomicalentityName .
+	?expressioncondition genex:hasAnatomicalEntity ?cellType .
+	?cellType rdfs:label ?cellTypeName .
+	?expressioncondition genex:hasDevelopmentalStage ?stage .
+	?stage rdfs:label "post-juvenile" .
+	?expressioncondition genex:hasSex "any".
+	?expressioncondition genex:hasStrain ?efo_0005135 .
+	?efo_0005135 a efo:EFO_0005135.
+	?efo_0005135 rdfs:label "wild-type" .
+	?gene orth:organism ?organism .
+	?organism obo:RO_0002162  ?taxon .
+	?taxon a up:Taxon .
+	?taxon up:commonName "human" .
+	?taxon <http://purl.uniprot.org/core/scientificName> ?taxon_scientificname.
+	?taxon <http://purl.uniprot.org/core/commonName> ?taxon_commonname.
+	?efo_0005135 <http://www.w3.org/2000/01/rdf-schema#label> ?efo_0005135_label.
+	?anatomicalentity <http://www.w3.org/2000/01/rdf-schema#label> ?anatomicalentity_label.
+	?anatomicalentity <http://purl.org/dc/terms/description> ?anatomicalentity_description.
+	?expression <http://purl.org/genex#hasExpressionLevel> ?expression_hasexpressionlevelscore.
+	?expression <http://purl.org/genex#hasFDRpvalue> ?expression_hasfalsediscoveryratep_value.
+	?gene <http://purl.org/dc/terms/description> ?gene_description.
+	FILTER(                ?anatomicalentity != obo:GO_0005575                )
+	FILTER(                ?anatomicalentity != ?cellType                )
+}
+ORDER BY DESC(?score)
+
+--
+
+48:
+opponin
+expression_at_postjuvenile_stage?
+
+--
+
+49:
+thood?
+    ?x a efo:EFO_0005135.
+    ?x rdfs:label "human" .
+    ?x rdfs:seeAlso ?human .
+    ?human a efo:EFO_0005135.
+    ?human rdfs:label "human" .
+    ?condition a efo:EFO_0005135.
+    ?condition rdfs:label "post-juvenile" .
+    ?anat a efo:EFO_0005135.
+    ?anat rdfs:label ?anatName .
+    ?stage a efo:EFO_0005135.
+    ?stage rdfs:label "expression" .
+    ?apoc1 a efo:EFO_0005135.
+    ?apoc1 rdfs:label "APOC1" .
+    ?taxon a efo:EFO_0005135.
+    ?taxon rdfs:label "human" .
+    ?efo_0005135 a rdfs:Class.
+        rdfs:label "post-juvenile stage" .
+    ?efo_0005135 <http://www.w3.org/2000/01/rdf-schema#label> ?stage .
+    ?efo_0005135 <http://purl.org/dc/terms/description> ?description .
+    ?description a lang:English.
+    ?description rdfs:label ?description .
+    ?taxon <http://purl.org/dc/terms/scientificName> ?taxonName .
+    ?taxonName a lang:English.
+    ?taxonName rdfs:label "human" .
+    ?apoc1 <http://purl.org/dc/terms/description> ?apoc1Description .
+    ?apoc1Description a lang:English.
+    ?apoc1Description rdfs:label "APOC1" .
+    ?condition <http://purl.org/dc/terms/description> ?conditionDescription .
+    ?conditionDescription a lang:English.
+    ?conditionDescription rdfs:label "post-juvenile" .
+    ?anat <http://purl.org/dc/terms/description> ?anatDescription .
+    ?anatDescription a lang:English.
+    ?anatDescription rdfs:label ?anatName .
+    ?efo_0005135 <http://purl.org/dc/terms/description> ?stageDescription .
+    ?stageDescription a lang:English.
+    ?stageDescription rdfs:label ?stage .
+    ?stage <http://purl.org/dc/terms/description> ?description .
+    ?description a lang:English.
+    ?description rdfs:label ?description .
+    ?taxon <http://purl.org/dc/terms/scientificName> ?taxonName .
+    ?taxonName a lang:English.
+    ?taxonName rdfs:label "human" .
+    ?apoc1 <http://purl.org/dc/terms/description> ?apoc1Description .
+    ?apoc1Description a lang:English.
+    ?apoc1Description rdfs:label "APOC1" .
+    ?condition <http://purl.org/dc/terms/description> ?conditionDescription .
+    ?conditionDescription a lang:English.
+    ?conditionDescription rdfs:label "post-juvenile" .
+    ?anat <http://purl.org/dc/terms/description> ?anatDescription .
+    ?anatDescription a lang:English.
+    ?anatDescription rdfs:label ?anatName .
+    ?efo_0005135 <http://purl.org/dc/terms/description> ?stageDescription .
+    ?stageDescription a lang:English.
+    ?stageDescription rdfs:label ?stage .
+    ?stage <http://purl.org/dc/terms/description> ?description .
+    ?description a lang:English.
+    ?description rdfs:label ?description .
+    ?taxon <http://purl.org/dc/terms/scientific
+
+--
+
+50:
+thood?
+
+--
+
+51:
+orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up: <http://purl.uniprot.org/core/>
+PREFIX up-taxon:<http://purl.uniprot.org/taxonomy/>
+PREFIX lscr: <http://purl.org/lscr#>
+SELECT DISTINCT ?expressioncondition ?efo_0000399_label ?anatomicalentity_label ?anatomicalentity ?anatomicalentityName ?efo_0000399 ?score ?efo_0005135 ?efo_0005135_label ?expression ?efo_0000399_description ?gene ?gene_label WHERE { 
+	?gene a orth:Gene .
+	?expression a genex:Expression .
+	?expression genex:hasExpressionCondition ?expressioncondition .
+	?expression genex:hasExpressionLevel ?score .
+	?expression genex:hasSequenceUnit ?gene .
+	?gene lscr:xrefNCBIGene <https://www.ncbi.nlm.nih.gov/gene/118230125> .
+	?expressioncondition genex:hasAnatomicalEntity ?anatomicalentity .
+	?anatomicalentity a genex:AnatomicalEntity.
+	?anatomicalentity rdfs:label ?anatomicalentityName .
+	?expressioncondition a genex:ExpressionCondition.
+	?expressioncondition genex:hasDevelopmentalStage ?efo_0000399 .
+	?efo_0000399 rdf:type efo:EFO_0000399 .
+	?expressioncondition genex:hasSex "any".
+	?expressioncondition genex:hasStrain ?efo_0005135 .
+	?efo_0005135 a efo:EFO_0005135.
+	?efo_0005135 rdfs:label "wild-type" .
+	?efo_0005135 <http://www.w3.org/2000/01/rdf-schema#label> ?efo_0005135_label.
+	?efo_0000399 <http://www.w3.org/2000/01/rdf-schema#label> ?efo_0000399_label.
+	?efo_0000399 <http://purl.org/dc/terms/description> ?efo_0000399_description.
+	?anatomicalentity <http://www.w3.org/2000/01/rdf-schema#label> ?anatomicalentity_label.
+	?gene <http://www.w3.org/2000/01/rdf-schema#label> ?gene_label.
+	FILTER(          ?anatomicalentity != obo:GO_0005575          )
+} ORDER BY DESC(?score)
+
+--
+
+52:
+opponens_left?expression?score?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression
+
+--
+
+53:
+thood?
+
+--
+
+54:
+orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up: <http://purl.uniprot.org/core/>
+SELECT DISTINCT ?cellType ?expressioncondition ?organism ?taxon ?anatomicalentity ?anatomicalentityName ?cellTypeName ?expression ?score ?efo_0005135 ?taxon_scientificname ?gene ?expression_hasexpressionlevelscore WHERE { 
+	?gene a orth:Gene .
+	?expression a genex:Expression .
+	?expression genex:hasExpressionCondition ?expressioncondition .
+	?expression genex:hasExpressionLevel ?score .
+	?expression genex:hasSequenceUnit ?gene .
+	?gene rdfs:label "APOC1" .
+	?expressioncondition a genex:ExpressionCondition.
+	?expressioncondition genex:hasAnatomicalEntity ?anatomicalentity .
+	?anatomicalentity a genex:AnatomicalEntity.
+	?anatomicalentity rdfs:label ?anatomicalentityName .
+	?expressioncondition genex:hasAnatomicalEntity ?cellType .
+	?cellType rdfs:label ?cellTypeName .
+	?expressioncondition genex:hasDevelopmentalStage ?efo_0005135 .
+	?efo_0005135 rdfs:label "post-juvenile" .
+	?gene orth:organism ?organism .
+	?organism obo:RO_0002162  ?taxon .
+	?taxon a up:Taxon .
+	?taxon up:commonName "human" .
+	?taxon <http://purl.uniprot.org/core/scientificName> ?taxon_scientificname.
+	?expression <http://purl.org/genex#hasExpressionLevel> ?expression_hasexpressionlevelscore.
+	FILTER(    ?anatomicalentity != obo:GO_0005575    )
+	FILTER(    ?anatomicalentity != ?cellType    )
+} ORDER BY DESC(?score)
+
+--
+
+55:
+ership efo_0000311 ?expression ?organism ?taxon ?anat ?anatName ?efo_0005135 ?efo_0005135_label ?taxon_scientificname ?gene ?taxon_commonname ?gene_description.
+
+--
+
+56:
+thood?
+	?expression a efo:Expression.
+	?expression rdfs:label "expression" .
+	?expression rdfs:seeAlso ?expression_seeAlso .
+	?expression_seeAlso a rdf:Property.
+	?expression_seeAlso rdfs:label "see also" .
+	?expression_seeAlso has rdfs:seeAlso ?expression .
+	?expression ?efo ?anatomicalEntity ?anatomicalEntityName ?cellType ?expression_score ?gene ?expression_has ?expression ?score ?strain ?efo_0005135 ?stage .
+	?gene a efo:EFO_0005135.
+	?gene rdfs:label "human" .
+	?stage a efo:EFO_0000399.
+	?stage rdfs:label "post-juvenile" .
+	?expression <http://purl.org/dc/terms/seeAlso> ?expression_seeAlso .
+	?expression_seeAlso <http://purl.org/dc/terms/seeAlso> ?expression .
+	?expression <http://purl.org/dc/terms/hasExpressionLevelExpression> ?expression_has .
+	?expression_has a efo:EFO_0005135.
+	?expression_has rdfs:label "expression" .
+	?expression <http://purl.org/dc/terms/hasExpressionLevelExpression> ?expression .
+	?expression <http://purl.org/dc/terms/hasExpressionLevelExpression> ?expression_has .
+	?expression_has a efo:EFO_0005135.
+	?expression_has rdfs:label "expression" .
+	?expression <http://purl.org/dc/terms/hasExpressionLevelExpression> ?expression .
+	?expression <http://purl.org/dc/terms/hasExpressionLevelExpression> ?expression_has .
+	?expression_has a efo:EFO_0005135.
+	?expression_has rdfs:label "expression" .
+	?expression <http://purl.org/dc/terms/hasExpressionLevelExpression> ?expression .
+	?expression <http://purl.org/dc/terms/hasExpressionLevelExpression> ?expression_has .
+	?expression_has a efo:EFO_0005135.
+	?expression_has rdfs:label "expression" .
+	?expression <http://purl.org/dc/terms/hasExpressionLevelExpression> ?expression .
+	?expression <http://purl.org/dc/terms/hasExpressionLevelExpression> ?expression_has .
+	?expression_has a efo:EFO_0005135.
+	?expression_has rdfs:label "expression" .
+	?expression <http://purl.org/dc/terms/hasExpressionLevelExpression> ?expression .
+	?expression <http://purl.org/dc/terms/hasExpressionLevelExpression> ?expression_has .
+	?expression_has a efo:EFO_0005135.
+	?expression_has rdfs:label "expression" .
+	?expression <http://purl.org/dc/terms/hasExpressionLevelExpression> ?expression .
+	?expression <http://purl.org/dc/terms/hasExpressionLevelExpression> ?expression_has .
+	?expression_has a efo:EFO_0005135.
+	?expression_has rdfs:label "expression" .
+	?expression <http://purl.org/dc/terms/hasExpressionLevelExpression> ?expression .
+	?expression <http://purl.org/dc/terms/hasExpressionLevelExpression> ?expression_has .
+	?expression_has a efo:EFO_0005135.
+	?expression_has rdfs:label "expression" .
+	?expression <http://purl.org/dc/terms/hasExpressionLevelExpression> ?expression .
+	?expression <http://purl.org/dc/terms/hasExpressionLevelExpression> ?expression_has .
+	?expression_has a efo:EFO_0005135.
+	?expression_has rdfs:
+
+--
+
+57:
+ership expression. Provide also the gene expression has expression level score.
+
+--
+
+58:
+orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up: <http://purl.uniprot.org/core/>
+SELECT DISTINCT ?expressioncondition ?efo_0000399_label ?organism ?taxon ?anatName ?efo_0000399 ?efo_0005135 ?efo_0005135_label ?anat ?taxon_scientificname ?gene ?efo_0000399_description ?taxon_commonname ?gene_identifier WHERE { 
+	?gene a orth:Gene .
+	?gene genex:isExpressedIn ?expressioncondition.
+	?expressioncondition a genex:ExpressionCondition.
+	?gene rdfs:label "APOC1" .
+	?expressioncondition genex:hasAnatomicalEntity ?anat .
+	?anat rdfs:label ?anatName .
+	?expressioncondition genex:hasAnatomicalEntity obo:GO_0005575 .
+	?expressioncondition genex:hasDevelopmentalStage ?efo_0000399 .
+	?efo_0000399 a efo:EFO_0000399 .
+	?efo_0000399 rdfs:label "post-juvenile" .
+	?expressioncondition genex:hasSex "any".
+	?expressioncondition genex:hasStrain ?efo_0005135 .
+	?efo_0005135 a efo:EFO_0005135.
+	?efo_0005135 rdfs:label "wild-type" .
+	?gene orth:organism ?organism .
+	?organism obo:RO_0002162  ?taxon .
+	?taxon a up:Taxon .
+	?taxon up:commonName "human" .
+	?taxon <http://purl.uniprot.org/core/scientificName> ?taxon_scientificname.
+	?taxon <http://purl.uniprot.org/core/commonName> ?taxon_commonname.
+	?efo_0005135 <http://www.w3.org/2000/01/rdf-schema#label> ?efo_0005135_label.
+	?efo_0000399 <http://www.w3.org/2000/01/rdf-schema#label> ?efo_0000399_label.
+	?efo_0000399 <http://purl.org/dc/terms/description> ?efo_0000399_description.
+	?gene <http://purl.org/dc/terms/identifier> ?gene_identifier.
+} ORDER BY DESC(?efo_0000399)
+```
+
+--
+
+59:
+orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up: <http://purl.uniprot.org/core/>
+SELECT DISTINCT ?cellType ?efo_0000399_label ?expressioncondition ?organism ?taxon ?anatomicalentity_label ?anatomicalentity_description ?anatomicalentity ?anatomicalentityName ?cellTypeName ?efo_0000399 ?score ?expression ?taxon_scientificname ?efo_0000399_description ?gene ?taxon_commonname ?gene_seealso WHERE { 
+	?gene a orth:Gene .
+	?expression a genex:Expression .
+	?expression genex:hasExpressionCondition ?expressioncondition .
+	?expression genex:hasExpressionLevel ?score .
+	?expression genex:hasSequenceUnit ?gene .
+	?gene rdfs:label "APOC1" .
+	?expressioncondition a genex:ExpressionCondition.
+	?expressioncondition genex:hasAnatomicalEntity ?anatomicalentity .
+	?anatomicalentity a genex:AnatomicalEntity.
+	?anatomicalentity rdfs:label ?anatomicalentityName .
+	?expressioncondition genex:hasAnatomicalEntity ?cellType .
+	?cellType rdfs:label ?cellTypeName .
+	?expressioncondition genex:hasDevelopmentalStage ?efo_0000399 .
+	?efo_0000399 rdf:type efo:EFO_0000399 .
+	?efo_0000399 rdfs:label "post-juvenile" .
+	?gene orth:organism ?organism .
+	?organism obo:RO_0002162  ?taxon .
+	?taxon a up:Taxon .
+	?taxon up:commonName "human" .
+	?taxon <http://purl.uniprot.org/core/scientificName> ?taxon_scientificname.
+	?taxon <http://purl.uniprot.org/core/commonName> ?taxon_commonname.
+	?efo_0000399 <http://www.w3.org/2000/01/rdf-schema#label> ?efo_0000399_label.
+	?efo_0000399 <http://purl.org/dc/terms/description> ?efo_0000399_description.
+	?anatomicalentity <http://www.w3.org/2000/01/rdf-schema#label> ?anatomicalentity_label.
+	?anatomicalentity <http://purl.org/dc/terms/description> ?anatomicalentity_description.
+	?gene <http://www.w3.org/2000/01/rdf-schema#seeAlso> ?gene_seealso.
+	FILTER(              ?anatomicalentity !=  obo:GO_0005575              )
+	FILTER(              ?anatomicalentity != ?cellType              )
+}
+ORDER BY DESC(?score)
+
+--
+
+60:
+orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up: <http://purl.uniprot.org/core/>
+SELECT DISTINCT ?expressioncondition ?efo_0000399_label ?organism ?taxon ?anatName ?efo_0000399 ?efo_0005135 ?efo_0005135_label ?anat ?taxon_scientificname ?gene ?efo_0000399_description ?gene_seealso ?gene_description ?gene_identifier ?gene_label WHERE { 
+	?gene a orth:Gene .
+	?gene genex:isExpressedIn ?expressioncondition.
+	?expressioncondition a genex:ExpressionCondition.
+	?gene rdfs:label "APOC1" .
+	?expressioncondition genex:hasAnatomicalEntity ?anat .
+	?anat rdfs:label ?anatName .
+	?expressioncondition genex:hasAnatomicalEntity obo:GO_0005575 .
+	?expressioncondition genex:hasDevelopmentalStage ?efo_0000399 .
+	?efo_0000399 a efo:EFO_0000399 .
+	?efo_0000399 rdfs:label "post-juvenile" .
+	?expressioncondition genex:hasSex "any".
+	?expressioncondition genex:hasStrain ?efo_0005135 .
+	?efo_0005135 a efo:EFO_0005135.
+	?efo_0005135 rdfs:label "wild-type" .
+	?gene orth:organism ?organism .
+	?organism obo:RO_0002162  ?taxon .
+	?taxon a up:Taxon .
+	?taxon up:commonName "human" .
+	?taxon <http://purl.uniprot.org/core/scientificName> ?taxon_scientificname.
+	?taxon <http://purl.uniprot.org/core/commonName> ?taxon_commonname.
+	?efo_0005135 <http://www.w3.org/2000/01/rdf-schema#label> ?efo_0005135_label.
+	?efo_0000399 <http://www.w3.org/2000/01/rdf-schema#label> ?efo_0000399_label.
+	?efo_0000399 <http://purl.org/dc/terms/description> ?efo_0000399_description.
+	?gene <http://www.w3.org/2000/01/rdf-schema#seeAlso> ?gene_seealso.
+	?gene <http://purl.org/dc/terms/description> ?gene_description.
+	?gene <http://purl.org/dc/terms/identifier> ?gene_identifier.
+	?gene <http://www.w3.org/2000/01/rdf-schema#label> ?gene_label.
+} ORDER BY DESC(?efo_0000399)
+
+--
+
+61:
+orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up: <http://purl.uniprot.org/core/>
+SELECT DISTINCT ?cellType ?efo_0000399_label ?expressioncondition ?organism ?taxon ?anatomicalentity ?anatomicalentityName ?cellTypeName ?efo_0000399 ?score ?expression ?taxon_scientificname ?efo_0000399_description ?gene ?taxon_commonname ?gene_identifier WHERE { 
+	?gene a orth:Gene .
+	?expression a genex:Expression .
+	?expression genex:hasExpressionCondition ?expressioncondition .
+	?expression genex:hasExpressionLevel ?score .
+	?expression genex:hasSequenceUnit ?gene .
+	?gene rdfs:label "APOC1" .
+	?expressioncondition a genex:ExpressionCondition.
+	?expressioncondition genex:hasAnatomicalEntity ?anatomicalentity .
+	?anatomicalentity a genex:AnatomicalEntity.
+	?anatomicalentity rdfs:label ?anatomicalentityName .
+	?expressioncondition genex:hasAnatomicalEntity ?cellType .
+	?cellType rdfs:label ?cellTypeName .
+	?expressioncondition genex:hasDevelopmentalStage ?efo_0000399 .
+	?efo_0000399 rdf:type efo:EFO_0000399 .
+	?efo_0000399 rdfs:label "post-juvenile" .
+	?gene orth:organism ?organism .
+	?organism obo:RO_0002162  ?taxon .
+	?taxon a up:Taxon .
+	?taxon up:commonName "human" .
+	?taxon <http://purl.uniprot.org/core/scientificName> ?taxon_scientificname.
+	?taxon <http://purl.uniprot.org/core/commonName> ?taxon_commonname.
+	?efo_0000399 <http://www.w3.org/2000/01/rdf-schema#label> ?efo_0000399_label.
+	?efo_0000399 <http://purl.org/dc/terms/description> ?efo_0000399_description.
+	?gene <http://purl.org/dc/terms/identifier> ?gene_identifier.
+	FILTER(          ?anatomicalentity !=  obo:GO_0005575          )
+	FILTER(          ?anatomicalentity != ?cellType          )
+} ORDER BY DESC(?score)
+
+--
+
+62:
+ership eel gene apoc1 expression?score?independent?of ?strain ?sex ?celltype ?efo_0005135 ?efo_0005135_label ?expression_stage ?anatomicalentity ?anatomicalentity_label WHERE { 
+	?gene a pto:Gene .
+	?expression a pto:Expression .
+	?expression pto:hasExpressionCondition ?condition .
+	?expression pto:hasExpressionLevel ?score .
+	?expression pto:hasSequenceUnit ?sequnit .
+	?sequnit a pto:SequenceUnit.
+	?sequnit pto:hasGenome ?genome .
+	?genome a efo:EFO_0005135.
+	?efo_0005135 a efo:EFO_0005135.
+	?efo_0005135_label a efo:EFO_0005135_label.
+	?expression_stage a efo:EFO_0000399 .
+	?expression_stage rdfs:label "expression condition" .
+	?anatomicalentity a efo:EFO_0000367 .
+	?anatomicalentity rdfs:label "anatomical entity" .
+	?anatomicalentity_label a efo:EFO_0000367_label.
+	?condition a pto:ExpressionCondition.
+	?condition pto:hasDevelopmentalStage ?expression_stage .
+	?condition pto:hasAnatomicalEntity ?anatomicalentity .
+	?condition pto:hasAnatomicalEntity ?anatomicalentity .
+	?condition pto:hasAnatomicalEntity ?anatomicalentity .
+	?condition pto:hasAnatomicalEntity ?anatomicalentity .
+	?condition pto:hasAnatomicalEntity ?anatomicalentity .
+	?condition pto:hasAnatomicalEntity ?anatomicalentity .
+	?condition pto:hasAnatomicalEntity ?anatomicalentity .
+	?condition pto:hasAnatomicalEntity ?anatomicalentity .
+	?condition pto:hasAnatomicalEntity ?anatomicalentity .
+	?condition pto:hasAnatomicalEntity ?anatomicalentity .
+	?condition pto:hasAnatomicalEntity ?anatomicalentity .
+	?condition pto:hasAnatomicalEntity ?anatomicalentity .
+	?condition pto:hasAnatomicalEntity ?anatomicalentity .
+	?condition pto:hasAnatomicalEntity ?anatomicalentity .
+	?condition pto:hasAnatomicalEntity ?anatomicalentity .
+	?condition pto:hasAnatomicalEntity ?anatomicalentity .
+	?condition pto:hasAnatomicalEntity ?anatomicalentity .
+	?condition pto:hasAnatomicalEntity ?anatomicalentity .
+	?condition pto:hasAnatomicalEntity ?anatomicalentity .
+	?condition pto:hasAnatomicalEntity ?anatomicalentity .
+	?condition pto:hasAnatomicalEntity ?anatomicalentity .
+	?condition pto:hasAnatomicalEntity ?anatomicalentity .
+	?condition pto:hasAnatomicalEntity ?anatomicalentity .
+	?condition pto:hasAnatomicalEntity ?anatomicalentity .
+	?condition pto:hasAnatomicalEntity ?anatomicalentity .
+	?condition pto:hasAnatomicalEntity ?anatomicalentity .
+	?condition pto:hasAnatomicalEntity ?anatomicalentity .
+	?condition pto:hasAnatomicalEntity ?anatomicalentity .
+	?condition pto:hasAnatomicalEntity ?anatomicalentity .
+	?condition pto:hasAnatomicalEntity ?anatomicalentity .
+	?condition pto:hasAnatomicalEntity ?anatomicalentity .
+	?condition pto:hasAnatomicalEntity ?anatomicalentity .
+	?condition pto:hasAnatomicalEntity ?anatomicalentity .
+	?condition pto:hasAnatomicalEntity ?anatomicalentity .
+	?condition pto:hasAnatomicalEntity ?anatomicalentity .
+	?condition pto:hasAnatomicalEntity ?anatomicalentity .
+	?condition pto:hasAn
+
+--
+
+63:
+orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up: <http://purl.uniprot.org/core/>
+SELECT DISTINCT ?cellType ?expressioncondition ?organism ?taxon ?anatomicalentity ?anatomicalentityName ?cellTypeName ?expression ?score ?efo_0005135 ?taxon_scientificname ?stage ?gene ?taxon_commonname ?gene_label WHERE { 
+	?gene a orth:Gene .
+	?expression a genex:Expression .
+	?expression genex:hasExpressionCondition ?expressioncondition .
+	?expression genex:hasExpressionLevel ?score .
+	?expression genex:hasSequenceUnit ?gene .
+	?gene rdfs:label "APOC1" .
+	?expressioncondition a genex:ExpressionCondition.
+	?expressioncondition genex:hasAnatomicalEntity ?anatomicalentity .
+	?anatomicalentity a genex:AnatomicalEntity.
+	?anatomicalentity rdfs:label ?anatomicalentityName .
+	?expressioncondition genex:hasAnatomicalEntity ?cellType .
+	?cellType rdfs:label ?cellTypeName .
+	?expressioncondition genex:hasDevelopmentalStage ?stage .
+	?stage rdfs:label "post-juvenile" .
+	?expressioncondition genex:hasSex "any".
+	?expressioncondition genex:hasStrain ?efo_0005135 .
+	?efo_0005135 a efo:EFO_0005135.
+	?efo_0005135 rdfs:label "wild-type" .
+	?gene orth:organism ?organism .
+	?organism obo:RO_0002162  ?taxon .
+	?taxon a up:Taxon .
+	?taxon up:commonName "human" .
+	?taxon <http://purl.uniprot.org/core/scientificName> ?taxon_scientificname.
+	?taxon <http://purl.uniprot.org/core/commonName> ?taxon_commonname.
+	?gene <http://www.w3.org/2000/01/rdf-schema#label> ?gene_label.
+	FILTER(      ?anatomicalentity != obo:GO_0005575      )
+	FILTER(      ?anatomicalentity != ?cellType      )
+} ORDER BY DESC(?score)
+
+--
+
+64:
+thood? provide also the taxon scientific name and the taxon common name and the developmental stage label and the developmental stage description and the anatomical entity description.
+
+--
+
+65:
+thood? Provide also the taxon scientific name and the taxon common name and the strain label and the developmental stage label and the gene identifier.
+
+--
+
+66:
+orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up: <http://purl.uniprot.org/core/>
+PREFIX up-taxon:<http://purl.uniprot.org/taxonomy/>
+PREFIX ensembl: <http://rdf.ebi.ac.uk/resource/ensembl/>
+PREFIX lscr: <http://purl.org/lscr#>
+SELECT DISTINCT ?expressioncondition ?anatomicalentity_label ?anatomicalentity_description ?anatomicalentity ?anatomicalentityName ?expression_hasexpressionlevelscore ?expression ?score ?efo_0005135 ?efo_0005135_label ?gene ?gene_seealso ?expression_hasfalsediscoveryratep_value ?gene_description WHERE { 
+	?gene a orth:Gene .
+	?expression a genex:Expression .
+	?expression genex:hasExpressionCondition ?expressioncondition .
+	?expression genex:hasExpressionLevel ?score .
+	?expression genex:hasSequenceUnit ?gene .
+	?gene lscr:xrefEnsemblGene ensembl:ENSG00000130208 .
+	?expressioncondition a genex:ExpressionCondition.
+	?expressioncondition genex:hasAnatomicalEntity ?anatomicalentity .
+	?anatomicalentity a genex:AnatomicalEntity.
+	?anatomicalentity rdfs:label ?anatomicalentityName .
+	?expressioncondition genex:hasDevelopmentalStage obo:UBERON_0000113 .
+	?expressioncondition genex:hasSex "any".
+	?expressioncondition genex:hasStrain ?efo_0005135 .
+	?efo_0005135 a efo:EFO_0005135.
+	?efo_0005135 rdfs:label "wild-type" .
+	?efo_0005135 <http://www.w3.org/2000/01/rdf-schema#label> ?efo_0005135_label.
+	?anatomicalentity <http://www.w3.org/2000/01/rdf-schema#label> ?anatomicalentity_label.
+	?anatomicalentity <http://purl.org/dc/terms/description> ?anatomicalentity_description.
+	?expression <http://purl.org/genex#hasExpressionLevel> ?expression_hasexpressionlevelscore.
+	?expression <http://purl.org/genex#hasFDRpvalue> ?expression_hasfalsediscoveryratep_value.
+	?gene <http://www.w3.org/2000/01/rdf-schema#seeAlso> ?gene_seealso.
+	?gene <http://purl.org/dc/terms/description> ?gene_description.
+	FILTER(              ?anatomicalentity !=  obo:GO_0005575              )
+} ORDER BY DESC(?score)
+
+--
+
+67:
+orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up: <http://purl.uniprot.org/core/>
+SELECT DISTINCT ?cellType ?efo_0000399_label ?expressioncondition ?organism ?taxon ?anatomicalentity ?anatomicalentityName ?cellTypeName ?efo_0000399 ?score ?expression ?taxon_scientificname ?efo_0000399_description ?gene ?taxon_commonname ?anatomicalentity_description WHERE { 
+	?gene a orth:Gene .
+	?expression a genex:Expression .
+	?expression genex:hasExpressionCondition ?expressioncondition .
+	?expression genex:hasExpressionLevel ?score .
+	?expression genex:hasSequenceUnit ?gene .
+	?gene rdfs:label "APOC1" .
+	?expressioncondition a genex:ExpressionCondition.
+	?expressioncondition genex:hasAnatomicalEntity ?anatomicalentity .
+	?anatomicalentity a genex:AnatomicalEntity.
+	?anatomicalentity rdfs:label ?anatomicalentityName .
+	?expressioncondition genex:hasAnatomicalEntity ?cellType .
+	?cellType rdfs:label ?cellTypeName .
+	?expressioncondition genex:hasDevelopmentalStage ?efo_0000399 .
+	?efo_0000399 rdf:type efo:EFO_0000399 .
+	?efo_0000399 rdfs:label "post-juvenile" .
+	?gene orth:organism ?organism .
+	?organism obo:RO_0002162  ?taxon .
+	?taxon a up:Taxon .
+	?taxon up:commonName "human" .
+	?taxon <http://purl.uniprot.org/core/scientificName> ?taxon_scientificname.
+	?taxon <http://purl.uniprot.org/core/commonName> ?taxon_commonname.
+	?efo_0000399 <http://www.w3.org/2000/01/rdf-schema#label> ?efo_0000399_label.
+	?efo_0000399 <http://purl.org/dc/terms/description> ?efo_0000399_description.
+	?anatomicalentity <http://purl.org/dc/terms/description> ?anatomicalentity_description.
+	FILTER(          ?anatomicalentity !=  obo:GO_0005575          )
+	FILTER(          ?anatomicalentity != ?cellType          )
+} ORDER BY DESC(?score)
+
+--
+
+68:
+orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up: <http://purl.uniprot.org/core/>
+SELECT DISTINCT ?cellType ?expressioncondition ?organism ?taxon ?anatomicalentity ?anatomicalentityName ?cellTypeName ?expression ?score ?efo_0005135 ?taxon_scientificname ?stage ?gene ?taxon_commonname ?anatomicalentity_description WHERE { 
+	?gene a orth:Gene .
+	?expression a genex:Expression .
+	?expression genex:hasExpressionCondition ?expressioncondition .
+	?expression genex:hasExpressionLevel ?score .
+	?expression genex:hasSequenceUnit ?gene .
+	?gene rdfs:label "APOC1" .
+	?expressioncondition a genex:ExpressionCondition.
+	?expressioncondition genex:hasAnatomicalEntity ?anatomicalentity .
+	?anatomicalentity a genex:AnatomicalEntity.
+	?anatomicalentity rdfs:label ?anatomicalentityName .
+	?expressioncondition genex:hasAnatomicalEntity ?cellType .
+	?cellType rdfs:label ?cellTypeName .
+	?expressioncondition genex:hasDevelopmentalStage ?stage .
+	?stage rdfs:label "post-juvenile" .
+	?expressioncondition genex:hasSex "any".
+	?expressioncondition genex:hasStrain ?efo_0005135 .
+	?efo_0005135 a efo:EFO_0005135.
+	?efo_0005135 rdfs:label "wild-type" .
+	?gene orth:organism ?organism .
+	?organism obo:RO_0002162  ?taxon .
+	?taxon a up:Taxon .
+	?taxon up:commonName "human" .
+	?taxon <http://purl.uniprot.org/core/scientificName> ?taxon_scientificname.
+	?taxon <http://purl.uniprot.org/core/commonName> ?taxon_commonname.
+	?anatomicalentity <http://purl.org/dc/terms/description> ?anatomicalentity_description.
+	FILTER(      ?anatomicalentity != obo:GO_0005575      )
+	FILTER(      ?anatomicalentity != ?cellType      )
+} ORDER BY DESC(?score)
+
+--
+
+69:
+thood?
+	?expression   a   efo:Expression .
+	?expression   efo:hasExpressionCondition ?condition .
+	?expression   efo:hasExpressionLevel ?score .
+	?expression   efo:hasAnatomicalEntity ?anatomicalEntity .
+	?anatomicalEntity a   efo:AnatomicalEntity .
+	?anatomicalEntity rdfs:label "cell type" .
+	?condition a   efo:EFO_EXPRESSION CONDITION.
+	?condition efo:hasExpressionCondition ?anatomicalEntity .
+	?anatomicalEntity a   efo:AnatomicalEntity .
+	?anatomicalEntity rdfs:label "cell type" .
+	?score a   efo:EFO_EXPRESSION_LEVEL.
+	?score efo:hasExpressionLevel ?expression .
+	?expression a   efo:Expression .
+	?expression rdfs:label "expression" .
+	?expression ?expression_?condition ?condition .
+	?condition a   efo:EFO_EXPRESSION CONDITION.
+	?condition efo:hasExpressionCondition ?anatomicalEntity .
+	?anatomicalEntity a   efo:AnatomicalEntity .
+	?anatomicalEntity rdfs:label "cell type" .
+	?expression ?expression_?anatomicalEntity ?anatomicalEntity .
+	?anatomicalEntity a   efo:AnatomicalEntity .
+	?anatomicalEntity rdfs:label "cell type" .
+	?expression ?expression_?stage ?stage .
+	?stage a   efo:EFO_STAGE.
+	?stage rdfs:label "post-juvenile" .
+	?expression ?expression_?sex ?sex .
+	?sex a   efo:EFO_SEX.
+	?sex rdfs:label "male" .
+	?expression ?expression_?strain ?strain .
+	?strain a   efo:EFO_STRAIN.
+	?strain rdfs:label "wild-type" .
+	?anatomicalEntity ?anatomicalEntity_?cellType ?cellType .
+	?cellType a   efo:EFO_CELL_TYPE.
+	?cellType rdfs:label "gene expression" .
+	?expression ?expression_?gene ?gene .
+	?gene a   efo:EFO_GENE .
+	?gene rdfs:label "APOC1" .
+	?anatomicalEntity ?anatomicalEntity_?anatomicalEntity ?anatomicalEntity .
+	?anatomicalEntity a   efo:AnatomicalEntity .
+	?anatomicalEntity rdfs:label "cell type" .
+	?expression ?expression_?expression ?expression .
+	?expression a   efo:Expression .
+	?expression rdfs:label "expression" .
+	?expression ?expression_?condition ?condition .
+	?condition a   efo:EFO_EXPRESSION CONDITION.
+	?condition efo:hasExpressionCondition ?anatomicalEntity .
+	?anatomicalEntity a   efo:AnatomicalEntity .
+	?anatomicalEntity rdfs:label "cell type" .
+	?expression ?expression_?anatomicalEntity ?anatomicalEntity .
+	?anatomicalEntity a   efo:AnatomicalEntity .
+	?anatomicalEntity rdfs:label "cell type" .
+	?expression ?expression_?stage ?stage .
+	?stage a   efo:EFO_STAGE.
+	?stage rdfs:label "post-juvenile" .
+	?expression ?expression_?sex ?sex .
+	?sex a   efo:EFO_SEX.
+	?sex rdfs:label "male" .
+	?expression ?expression_?strain ?strain .
+	?strain a   efo:EFO_STRAIN.
+	?strain rdfs:label "wild-type" .
+	?anatomicalEntity ?anatomicalEntity_?cellType ?cellType .
+	?cellType a   efo:EFO_CELL_TYPE.
+	?cellType rdfs:label "gene expression" .
+	?expression ?expression_?gene ?gene .
+	?gene a   efo:EFO_GENE .
+	?g
+
+--
+
+70:
+orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up: <http://purl.uniprot.org/core/>
+SELECT DISTINCT ?cellType ?expressioncondition ?organism ?taxon ?anatomicalentity ?anatomicalentityName ?cellTypeName ?expression ?score ?efo_0005135 ?stage ?gene ?anatomicalentity_label WHERE { 
+	?gene a orth:Gene .
+	?expression a genex:Expression .
+	?expression genex:hasExpressionCondition ?expressioncondition .
+	?expression genex:hasExpressionLevel ?score .
+	?expression genex:hasSequenceUnit ?gene .
+	?gene rdfs:label "APOC1" .
+	?expressioncondition a genex:ExpressionCondition.
+	?expressioncondition genex:hasAnatomicalEntity ?anatomicalentity .
+	?anatomicalentity a genex:AnatomicalEntity.
+	?anatomicalentity rdfs:label ?anatomicalentityName .
+	?expressioncondition genex:hasAnatomicalEntity ?cellType .
+	?cellType rdfs:label ?cellTypeName .
+	?expressioncondition genex:hasDevelopmentalStage ?stage .
+	?stage rdfs:label "post-juvenile" .
+	?expressioncondition genex:hasSex "any".
+	?expressioncondition genex:hasStrain ?efo_0005135 .
+	?efo_0005135 a efo:EFO_0005135.
+	?efo_0005135 rdfs:label "wild-type" .
+	?gene orth:organism ?organism .
+	?organism obo:RO_0002162  ?taxon .
+	?taxon a up:Taxon .
+	?taxon up:commonName "human" .
+	?anatomicalentity <http://www.w3.org/2000/01/rdf-schema#label> ?anatomicalentity_label.
+	FILTER(  ?anatomicalentity != obo:GO_0005575  )
+	FILTER(  ?anatomicalentity != ?cellType  )
+} ORDER BY DESC(?score)
+
+--
+
+71:
+orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up: <http://purl.uniprot.org/core/>
+PREFIX up-taxon:<http://purl.uniprot.org/taxonomy/>
+PREFIX ensembl: <http://rdf.ebi.ac.uk/resource/ensembl/>
+PREFIX lscr: <http://purl.org/lscr#>
+SELECT DISTINCT ?expressioncondition ?anatomicalentity_label ?anatomicalentity ?anatomicalentityName ?expression ?score ?efo_0005135 ?efo_0005135_label ?gene ?gene_identifier WHERE { 
+	?gene a orth:Gene .
+	?expression a genex:Expression .
+	?expression genex:hasExpressionCondition ?expressioncondition .
+	?expression genex:hasExpressionLevel ?score .
+	?expression genex:hasSequenceUnit ?gene .
+	?gene lscr:xrefEnsemblGene ensembl:ENSG00000130208 .
+	?expressioncondition a genex:ExpressionCondition.
+	?expressioncondition genex:hasAnatomicalEntity ?anatomicalentity .
+	?anatomicalentity a genex:AnatomicalEntity.
+	?anatomicalentity rdfs:label ?anatomicalentityName .
+	?expressioncondition genex:hasDevelopmentalStage obo:UBERON_0000113 .
+	?expressioncondition genex:hasSex "any".
+	?expressioncondition genex:hasStrain ?efo_0005135 .
+	?efo_0005135 a efo:EFO_0005135.
+	?efo_0005135 rdfs:label "wild-type" .
+	?efo_0005135 <http://www.w3.org/2000/01/rdf-schema#label> ?efo_0005135_label.
+	?anatomicalentity <http://www.w3.org/2000/01/rdf-schema#label> ?anatomicalentity_label.
+	?gene <http://purl.org/dc/terms/identifier> ?gene_identifier.
+	FILTER(      ?anatomicalentity !=  obo:GO_0005575      )
+} ORDER BY DESC(?score)
+
+--
+
+72:
+orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+SELECT DISTINCT ?anatomicalentity_label ?anatomicalentity_description ?anatomicalentity ?anatomicalentityName ?gene_description ?gene ?gene_seealso ?gene_label WHERE { 
+	?gene a orth:Gene .
+	?gene genex:isExpressedIn ?anatomicalentity .
+	?gene rdfs:label "APOC1" .
+	?anatomicalentity a genex:AnatomicalEntity .
+	?anatomicalentity rdfs:label ?anatomicalentityName .
+	?anatomicalentity <http://www.w3.org/2000/01/rdf-schema#label> ?anatomicalentity_label.
+	?anatomicalentity <http://purl.org/dc/terms/description> ?anatomicalentity_description.
+	?gene <http://www.w3.org/2000/01/rdf-schema#seeAlso> ?gene_seealso.
+	?gene <http://purl.org/dc/terms/description> ?gene_description.
+	?gene <http://www.w3.org/2000/01/rdf-schema#label> ?gene_label.
+} ORDER BY DESC(?anatomicalentityName)
+
+--
+
+73:
+orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX efo: <http://www.ebi.ac.uk/efo/>
+SELECT DISTINCT ?expressioncondition ?efo_0000399_label ?strain ?anatomicalentity_label ?anatomicalentity_description ?anatomicalentity ?anatomicalentityName ?efo_0000399 ?efo_0000399_description ?gene_description ?gene ?gene_seealso ?gene_identifier WHERE { 
+	?gene a orth:Gene .
+	?gene genex:isExpressedIn ?expressioncondition.
+	?expressioncondition a genex:ExpressionCondition.
+	?gene rdfs:label "APOC1" .
+	?expressioncondition genex:hasAnatomicalEntity ?anatomicalentity .
+	?anatomicalentity a genex:AnatomicalEntity.
+	?expressioncondition genex:hasAnatomicalEntity obo:GO_0005575 .
+	?anatomicalentity rdfs:label ?anatomicalentityName .
+	?expressioncondition genex:hasDevelopmentalStage ?efo_0000399 .
+	?efo_0000399 a efo:EFO_0000399 .
+	?efo_0000399 rdfs:label "life cycle" .
+	?expressioncondition genex:hasSex "any".
+	?expressioncondition genex:hasStrain ?strain .
+	?strain rdfs:label "wild-type" .
+	?efo_0000399 <http://www.w3.org/2000/01/rdf-schema#label> ?efo_0000399_label.
+	?efo_0000399 <http://purl.org/dc/terms/description> ?efo_0000399_description.
+	?anatomicalentity <http://www.w3.org/2000/01/rdf-schema#label> ?anatomicalentity_label.
+	?anatomicalentity <http://purl.org/dc/terms/description> ?anatomicalentity_description.
+	?gene <http://www.w3.org/2000/01/rdf-schema#seeAlso> ?gene_seealso.
+	?gene <http://purl.org/dc/terms/description> ?gene_description.
+	?gene <http://purl.org/dc/terms/identifier> ?gene_identifier.
+} ORDER BY DESC(?strain)
+
+--
+
+74:
+thood? provide also the developmental stage label and the developmental stage description and the anatomical entity description.
+
+--
+
+75:
+orth: <http://purl.org/net/orth#>
+    PREFIX genex: <http://purl.org/genex#>
+    PREFIX obo: <http://purl.obolibrary.org/obo/>
+    PREFIX up: <http://purl.uniprot.org/core/>
+    SELECT DISTINCT ?expressioncondition ?organism ?taxon ?anatomicalentity ?anatomicalentityName ?efo_0000399 ?taxon_scientificname ?gene ?taxon_commonname ?gene_label WHERE { 
+	?gene a orth:Gene .
+	?gene genex:isExpressedIn ?expressioncondition.
+	?expressioncondition a genex:ExpressionCondition.
+	?gene rdfs:label "APOC1" .
+	?expressioncondition genex:hasAnatomicalEntity ?anatomicalentity .
+	?anatomicalentity a genex:AnatomicalEntity.
+	?expressioncondition genex:hasAnatomicalEntity obo:GO_0005575 .
+	?anatomicalentity rdfs:label ?anatomicalentityName .
+	?expressioncondition genex:hasDevelopmentalStage ?efo_0000399 .
+	?efo_0000399 a efo:EFO_0000399 .
+	?efo_0000399 rdfs:label "post-juvenile" .
+	?gene orth:organism ?organism .
+	?organism obo:RO_0002162  ?taxon .
+	?taxon a up:Taxon .
+	?taxon up:commonName "human" .
+	?taxon <http://purl.uniprot.org/core/scientificName> ?taxon_scientificname.
+	?taxon <http://purl.uniprot.org/core/commonName> ?taxon_commonname.
+	?gene <http://www.w3.org/2000/01/rdf-schema#label> ?gene_label.
+    } ORDER BY DESC(?efo_0000399)
+
+--
+
+76:
+orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up: <http://purl.uniprot.org/core/>
+SELECT DISTINCT ?cellType ?expressioncondition ?organism ?taxon ?anatomicalentity ?anatomicalentityName ?cellTypeName ?expression ?score ?efo_0005135 ?taxon_scientificname ?gene ?gene_label WHERE { 
+	?gene a orth:Gene .
+	?gene genex:hasExpressionCondition ?expressioncondition.
+	?gene genex:hasExpression ?expression .
+	?expression a genex:Expression.
+	?expression genex:hasExpressionCondition ?expressioncondition .
+	?expression genex:hasExpressionLevel ?score .
+	?expression genex:hasSequenceUnit ?synteny_block .
+	?synteny_block a genex:SyntenyBlock.
+	?synteny_block genex:hasSequenceUnit ?gene .
+	?gene rdfs:label "APOC1" .
+	?expressioncondition a genex:ExpressionCondition.
+	?expressioncondition genex:hasAnatomicalEntity ?anatomicalentity .
+	?anatomicalentity a genex:AnatomicalEntity.
+	?anatomicalentity rdfs:label ?anatomicalentityName .
+	?expressioncondition genex:hasAnatomicalEntity ?cellType .
+	?cellType rdfs:label ?cellTypeName .
+	?expressioncondition genex:hasDevelopmentalStage ?efo_0005135 .
+	?efo_0005135 rdf:type efo:EFO_0005135.
+	?efo_0005135 rdfs:label "post-juvenile" .
+	?gene orth:organism ?organism .
+	?organism obo:RO_0002162  ?taxon .
+	?taxon a up:Taxon .
+	?taxon up:commonName "human" .
+	?taxon <http://purl.uniprot.org/core/scientificName> ?taxon_scientificname.
+	?gene <http://www.w3.org/2000/01/rdf-schema#label> ?gene_label.
+	FILTER(    ?anatomicalentity !=  obo:GO_0005575    )
+	FILTER(    ?anatomicalentity != ?cellType    )
+} ORDER BY DESC(?score)
+
+--
+
+77:
+orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up: <http://purl.uniprot.org/core/>
+PREFIX up-taxon:<http://purl.uniprot.org/taxonomy/>
+PREFIX lscr: <http://purl.org/lscr#>
+SELECT DISTINCT ?expressioncondition ?efo_0000399_label ?anatomicalentity_label ?anatomicalentity_description ?anatomicalentity ?anatomicalentityName ?expression_hasexpressionlevelscore ?efo_0000399 ?score ?efo_0005135 ?efo_0005135_label ?expression ?efo_0000399_description ?gene ?gene_identifier WHERE { 
+	?gene a orth:Gene .
+	?expression a genex:Expression .
+	?expression genex:hasExpressionCondition ?expressioncondition .
+	?expression genex:hasExpressionLevel ?score .
+	?expression genex:hasSequenceUnit ?gene .
+	?gene lscr:xrefNCBIGene <https://www.ncbi.nlm.nih.gov/gene/118230125> .
+	?expressioncondition genex:hasAnatomicalEntity ?anatomicalentity .
+	?anatomicalentity a genex:AnatomicalEntity.
+	?anatomicalentity rdfs:label ?anatomicalentityName .
+	?expressioncondition a genex:ExpressionCondition.
+	?expressioncondition genex:hasDevelopmentalStage ?efo_0000399 .
+	?efo_0000399 rdf:type efo:EFO_0000399 .
+	?expressioncondition genex:hasSex "any".
+	?expressioncondition genex:hasStrain ?efo_0005135 .
+	?efo_0005135 a efo:EFO_0005135.
+	?efo_0005135 rdfs:label "wild-type" .
+	?efo_0005135 <http://www.w3.org/2000/01/rdf-schema#label> ?efo_0005135_label.
+	?efo_0000399 <http://www.w3.org/2000/01/rdf-schema#label> ?efo_0000399_label.
+	?efo_0000399 <http://purl.org/dc/terms/description> ?efo_0000399_description.
+	?anatomicalentity <http://www.w3.org/2000/01/rdf-schema#label> ?anatomicalentity_label.
+	?anatomicalentity <http://purl.org/dc/terms/description> ?anatomicalentity_description.
+	?expression <http://purl.org/genex#hasExpressionLevel> ?expression_hasexpressionlevelscore.
+	?gene <http://purl.org/dc/terms/identifier> ?gene_identifier.
+	FILTER(              ?anatomicalentity != obo:GO_0005575              )
+} ORDER BY DESC(?score)
+
+--
+
+78:
+orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up: <http://purl.uniprot.org/core/>
+SELECT DISTINCT ?cellType ?expressioncondition ?organism ?taxon ?anatomicalentity ?anatomicalentityName ?cellTypeName ?expression ?score ?efo_0005135 ?stage ?gene ?gene_seealso WHERE { 
+	?gene a orth:Gene .
+	?expression a genex:Expression .
+	?expression genex:hasExpressionCondition ?expressioncondition .
+	?expression genex:hasExpressionLevel ?score .
+	?expression genex:hasSequenceUnit ?gene .
+	?gene rdfs:label "APOC1" .
+	?expressioncondition a genex:ExpressionCondition.
+	?expressioncondition genex:hasAnatomicalEntity ?anatomicalentity .
+	?anatomicalentity a genex:AnatomicalEntity.
+	?anatomicalentity rdfs:label ?anatomicalentityName .
+	?expressioncondition genex:hasAnatomicalEntity ?cellType .
+	?cellType rdfs:label ?cellTypeName .
+	?expressioncondition genex:hasDevelopmentalStage ?stage .
+	?stage rdfs:label "post-juvenile" .
+	?expressioncondition genex:hasSex "any".
+	?expressioncondition genex:hasStrain ?efo_0005135 .
+	?efo_0005135 a efo:EFO_0005135.
+	?efo_0005135 rdfs:label "wild-type" .
+	?gene orth:organism ?organism .
+	?organism obo:RO_0002162  ?taxon .
+	?taxon a up:Taxon .
+	?taxon up:commonName "human" .
+	?gene <http://www.w3.org/2000/01/rdf-schema#seeAlso> ?gene_seealso.
+	FILTER(  ?anatomicalentity != obo:GO_0005575  )
+	FILTER(  ?anatomicalentity != ?cellType  )
+} ORDER BY DESC(?score)
+
+--
+
+79:
+orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up: <http://purl.uniprot.org/core/>
+SELECT DISTINCT ?expressioncondition ?organism ?taxon ?anatomicalentity ?anatomicalentityName ?efo_0000399 ?taxon_scientificname ?gene ?anatomicalentity_description WHERE { 
+	?gene a orth:Gene .
+	?gene genex:isExpressedIn ?expressioncondition.
+	?gene rdfs:label "APOC1" .
+	?expressioncondition a genex:ExpressionCondition.
+	?expressioncondition genex:hasAnatomicalEntity ?anatomicalentity .
+	?anatomicalentity a genex:AnatomicalEntity.
+	?anatomicalentity rdfs:label ?anatomicalentityName .
+	?expressioncondition genex:hasAnatomicalEntity obo:GO_0005575 .
+	?expressioncondition genex:hasDevelopmentalStage ?efo_0000399 .
+	?efo_0000399 a efo:EFO_0000399 .
+	?efo_0000399 rdfs:label "post-juvenile" .
+	?gene orth:organism ?organism .
+	?organism obo:RO_0002162  ?taxon .
+	?taxon a up:Taxon .
+	?taxon up:commonName "human" .
+	?taxon <http://purl.uniprot.org/core/scientificName> ?taxon_scientificname.
+	?anatomicalentity <http://purl.org/dc/terms/description> ?anatomicalentity_description.
+} ORDER BY DESC(?anatomicalentityName)
+
+--
+
+80:
+thood?
+	anatomicalentity_label	Anatomical entity
+	anatomicalentity_description	Skeletal system.
+	gene	APOC1
+	anatomicalentity	bill
+	anatomicalentity	fly
+	anatomicalentity	lizard
+	anatomicalentity	mouse
+	anatomicalentity	octopus
+	anatomicalentity	human
+	anatomicalentity	worm
+	anatomicalentity	cattle
+	anatomicalentity	chicken
+	anatomicalentity	fish
+	anatomicalentity	pig
+	anatomicalentity	rabbit
+	anatomicalentity	sheep
+	anatomicalentity	cranioParsFrontalis
+	anatomicalentity	cranioParsOrbitalis
+	anatomicalentity	cranioParsSpinosum
+	anatomicalentity	cranioParsSupraOrbitalis
+	anatomicalentity	cranioParsSupraTemporalis
+	anatomicalentity	cranioParsTemporalis
+	anatomicalentity	cranioParsVerticalis
+	anatomicalentity	lumendistal
+	anatomicalentity	lumenspan
+	anatomicalentity	muscle
+	anatomicalentity	nervoussystem
+	anatomicalentity	tendon
+	anatomicalentity	tissue
+	anatomicalentity	vessel
+	anatomicalentity	cartilage
+	anatomicalentity	cell
+	anatomicalentity	organ
+	anatomicalentity	node
+	anatomicalentity	protein
+	anatomicalentity	skeleton
+	anatomicalentity	anatomicalentity
+	anatomicalentity	anatomicalentity_label
+	anatomicalentity	anatomicalentity_description
+
+--
+
+81:
+thood?
+	?x a efo:EFO_0005135.
+	?x rdfs:label "human" .
+	?x rdfs:seeAlso ?human .
+	?human a efo:EFO_0005135.
+	?human rdfs:label "human" .
+	?condition a efo:EFO_0005135.
+	?condition rdfs:label "post-juvenile" .
+	?anat a efo:EFO_0005135.
+	?anat rdfs:label ?anatName .
+	?apoc1 a efo:EFO_0005135.
+	?apoc1 rdfs:label "APOC1" .
+	?taxon a efo:EFO_0005135.
+	?taxon rdfs:label "human" .
+	?taxon <http://purl.org/dc/terms/scientificName> ?human .
+	?human <http://purl.org/dc/terms/scientificName> ?taxon .
+	?taxon <http://purl.org/dc/terms/commonName> ?anatName .
+	?anat <http://purl.org/dc/terms/commonName> ?anatName .
+	?apoc1 <http://purl.org/dc/terms/commonName> ?anatName .
+	?anatName a lscr:Lscr_commonName .
+	?anatName <http://purl.org/dc/terms/label> ?anatName .
+	?anatName <http://purl.org/dc/terms/description> ?anatName .
+	?condition <http://purl.org/dc/terms/label> "post-juvenile" .
+	?condition <http://purl.org/dc/terms/description> "After juvenile stage." .
+	?condition <http://purl.org/dc/terms/comment> "After juvenile stage." .
+	?condition <http://purl.org/dc/terms/identifier> ?condition .
+	?condition <http://purl.org/dc/terms/identifier> <http://purl.org/dc/terms/identifier> .
+	?condition <http://purl.org/dc/terms/identifier> <http://purl.org/dc/terms/identifier> .
+	?condition <http://purl.org/dc/terms/identifier> <http://purl.org/dc/terms/identifier> .
+	?condition <http://purl.org/dc/terms/identifier> <http://purl.org/dc/terms/identifier> .
+	?condition <http://purl.org/dc/terms/identifier> <http://purl.org/dc/terms/identifier> .
+	?condition <http://purl.org/dc/terms/identifier> <http://purl.org/dc/terms/identifier> .
+	?condition <http://purl.org/dc/terms/identifier> <http://purl.org/dc/terms/identifier> .
+	?condition <http://purl.org/dc/terms/identifier> <http://purl.org/dc/terms/identifier> .
+	?condition <http://purl.org/dc/terms/identifier> <http://purl.org/dc/terms/identifier> .
+	?condition <http://purl.org/dc/terms/identifier> <http://purl.org/dc/terms/identifier> .
+	?condition <http://purl.org/dc/terms/identifier> <http://purl.org/dc/terms/identifier> .
+	?condition <http://purl.org/dc/terms/identifier> <http://purl.org/dc/terms/identifier> .
+	?condition <http://purl.org/dc/terms/identifier> <http://purl.org/dc/terms/identifier> .
+	?condition <http://purl.org/dc/terms/identifier> <http://purl.org/dc/terms/identifier> .
+	?condition <http://purl.org/dc/
+
+--
+
+82:
+thood?  where 
+			anatomicalentity <http://purl.org/net/nori#cellType> ?cellType ?anatomicalentityName ?anatomicalentity ?cellTypeName ?expression ?score ?gene ?gene_label.
+			Optional {
+				?gene <http://www.w3.org/2000/01/rdf-schema#label> ?gene_label.
+			} 1000
+			Optional {
+				?anatomicalentity <http://purl.org/dc/terms/label> ?anatomicalentityName.
+			} 1000
+			Optional {
+				?cellType <http://purl.org/dc/terms/label> ?cellTypeName.
+			} 1000
+			Optional {
+				?expression <http://purl.org/dc/terms/label> "expression".
+			} 1000
+			Optional {
+				?score <http://purl.org/dc/terms/label> "expression".
+			} 1000
+			Optional {
+				?gene <http://purl.org/dc/terms/label> ?gene_label.
+			} 1000
+			Optional {
+				?anatomicalentity <http://purl.org/dc/terms/label> ?anatomicalentityName.
+			} 1000
+			Optional {
+				?cellType <http://purl.org/dc/terms/label> ?cellTypeName.
+			} 1000
+			Optional {
+				?expression <http://purl.org/dc/terms/label> "developmental stage".
+			} 1000
+			Optional {
+				?expression <http://purl.org/dc/terms/label> "post-juvenile".
+			} 1000
+			Optional {
+				?anatomicalentity <http://purl.org/dc/terms/label> ?anatomicalentityName.
+			} 1000
+			Optional {
+				?cellType <http://purl.org/dc/terms/label> ?cellTypeName.
+			} 1000
+			Optional {
+				?gene <http://purl.org/dc/terms/label> ?gene_label.
+			} 1000
+			Optional {
+				?anatomicalentity <http://purl.org/dc/terms/label> ?anatomicalentityName.
+			} 1000
+			Optional {
+				?cellType <http://purl.org/dc/terms/label> ?cellTypeName.
+			} 1000
+			Optional {
+				?expression <http://purl.org/dc/terms/label> "life stage".
+			} 1000
+			Optional {
+				?expression <http://purl.org/dc/terms/label> "post-juvenile".
+			} 1000
+			Optional {
+				?anatomicalentity <http://purl.org/dc/terms/label> ?anatomicalentityName.
+			} 1000
+			Optional {
+				?cellType <http://purl.org/dc/terms/label> ?cellTypeName.
+			} 1000
+			Optional {
+				?gene <http://purl.org/dc/terms/label> ?gene_label.
+			} 1000
+			Optional {
+				?anatomicalentity <http://purl.org/dc/terms/label> ?anatomicalentityName.
+			} 1000
+			Optional {
+
+--
+
+83:
+p: <http://purl.org/net/p>
+PREFIX efo: <http://www.ebi.ac.uk/efo/>
+PREFIX dct: <http://purl.org/dc/terms/>
+SELECT ?anatomicalentity ?anatomicalentity_label ?anatomicalentity_description ?efo_0005135 ?efo_0005135_label ?efo_0005135_description WHERE { 
+	?gene a p:Gene .
+	?gene pf:isExpressedIn ?anatomicalentity.
+	?anatomicalentity a efo:EFO_0005135.
+	?anatomicalentity rdfs:label ?anatomicalentity_label.
+	?anatomicalentity rdfs:description ?anatomicalentity_description.
+	?efo_0005135 a efo:EFO_0005135.
+	?efo_0005135 rdfs:label ?efo_0005135_label.
+	?efo_0005135 rdfs:description ?efo_0005135_description.
+	?gene dct:identifier "APOC1" .
+}
+
+--
+
+84:
+anatomicalentity: <http://rdf.ebi.ac.uk/resource/anatomicalentity>
+    PREFIX anatomicalentity_label: <http://rdf.ebi.ac.uk/resource/anatomicalentity_label>
+    PREFIX anatomicalentity_description: <http://rdf.ebi.ac.uk/resource/anatomicalentity_description>
+    PREFIX gene: <http://rdf.ebi.ac.uk/resource/gene>
+    PREFIX gene_seealso: <http://rdf.ebi.ac.uk/resource/gene_seealso>
+    PREFIX gene_description: <http://rdf.ebi.ac.uk/resource/gene_description>
+    SELECT DISTINCT ?anatomicalentity_label ?anatomicalentity_description ?anatomicalentity ?gene ?gene_seealso ?gene_description WHERE { 
+		?anatomicalentity a anatomicalentity .
+		?anatomicalentity rdfs:label ?anatomicalentity_label .
+		?anatomicalentity rdfs:seeAlso ?anatomicalentity .
+		?anatomicalentity <http://rdfs.org/rs/label> ?anatomicalentity_description.
+		?gene a gene .
+		?gene rdfs:label "APOC1" .
+		?gene <http://www.w3.org/2000/01/rdf-schema#seeAlso> ?gene_seealso.
+		?gene <http://purl.org/dc/terms/description> ?gene_description.
+	} ORDER BY DESC(?anatomicalentity)
+
+--
+
+85:
+thood?
+	?x a efo:EFO_0005135.
+	?x rdfs:label "post-juvenile" .
+	?x sf:inSynthesisOf ?y .
+	?y a efo:EFO_0005135.
+	?y rdfs:label "gene" .
+	?y sf:inSynthesisOf ?z .
+	?z a efo:EFO_0005135.
+	?z rdfs:label "anatomical entity" .
+	?z sf:inSynthesisOf ?x .
+	?x a anat:AnatomicalEntity .
+	?x rdfs:label "human" .
+	?x sf:inSynthesisOf ?y .
+	?y a anat:AnatomicalEntity .
+	?y rdfs:label "gene" .
+	?y sf:inSynthesisOf ?z .
+	?z a anat:AnatomicalEntity .
+	?z rdfs:label "anatomical entity" .
+	?z sf:inSynthesisOf ?x .
+	?x a efo:EFO_0005135 .
+	?x rdfs:label "post-juvenile" .
+	?x sf:inSynthesisOf ?y .
+	?y a efo:EFO_0005135 .
+	?y rdfs:label "gene" .
+	?y sf:inSynthesisOf ?z .
+	?z a efo:EFO_0005135 .
+	?z rdfs:label "anatomical entity" .
+	?z sf:inSynthesisOf ?x .
+	?x a anat:AnatomicalEntity .
+	?x rdfs:label "human" .
+	?x sf:inSynthesisOf ?y .
+	?y a anat:AnatomicalEntity .
+	?y rdfs:label "gene" .
+	?y sf:inSynthesisOf ?z .
+	?z a anat:AnatomicalEntity .
+	?z rdfs:label "anatomical entity" .
+	?z sf:inSynthesisOf ?x .
+	?x a efo:EFO_0005135 .
+	?x rdfs:label "post-juvenile" .
+	?x sf:inSynthesisOf ?y .
+	?y a efo:EFO_0005135 .
+	?y rdfs:label "gene" .
+	?y sf:inSynthesisOf ?z .
+	?z a efo:EFO_0005135 .
+	?z rdfs:label "anatomical entity" .
+	?z sf:inSynthesisOf ?x .
+	?x a anat:AnatomicalEntity .
+	?x rdfs:label "human" .
+	?x sf:inSynthesisOf ?y .
+	?y a anat:AnatomicalEntity .
+	?y rdfs:label "gene" .
+	?y sf:inSynthesisOf ?z .
+	?z a anat:AnatomicalEntity .
+	?z rdfs:label "anatomical entity" .
+	?z sf:inSynthesisOf ?x .
+	?x a efo:EFO_0005135 .
+	?x rdfs:label "post-juvenile" .
+	?x sf:inSynthesisOf ?y .
+	?y a efo:EFO_0005135 .
+	?y rdfs:label "gene" .
+	?y sf:inSynthesisOf ?z .
+	?z a efo:EFO_0005135 .
+	?z rdfs:label "anatomical entity" .
+	?z sf:inSynthesisOf ?x .
+	?x a anat:AnatomicalEntity .
+	?x rdfs:label "human" .
+	?x sf:inSynthesisOf ?y .
+	?y a anat:AnatomicalEntity .
+	?y rdfs:label "gene" .
+	?
+
+--
+
+86:
+orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up-protein:<http://purl.uniprot.org/uniprot/>
+PREFIX lscr: <http://purl.org/lscr#>
+SELECT DISTINCT ?anatomicalentity_label ?anatomicalentity_description ?anatomicalentity ?anatomicalentityName ?gene ?gene_seealso ?gene_description WHERE { 
+	?gene a orth:Gene .
+	?gene genex:isExpressedIn ?anatomicalentity .
+	?gene lscr:xrefUniprot up-protein:P02654 .
+	?anatomicalentity a genex:AnatomicalEntity .
+	?anatomicalentity rdfs:label ?anatomicalentityName .
+	?anatomicalentity <http://www.w3.org/2000/01/rdf-schema#label> ?anatomicalentity_label.
+	?anatomicalentity <http://purl.org/dc/terms/description> ?anatomicalentity_description.
+	?gene <http://www.w3.org/2000/01/rdf-schema#seeAlso> ?gene_seealso.
+	?gene <http://purl.org/dc/terms/description> ?gene_description.
+} ORDER BY DESC(?anatomicalentityName)
+
+--
+
+87:
+orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up: <http://purl.uniprot.org/core/>
+SELECT DISTINCT ?cellType ?efo_0000399_label ?expressioncondition ?organism ?taxon ?anatomicalentity_label ?anatomicalentity_description ?anatomicalentity ?anatomicalentityName ?cellTypeName ?expression_hasexpressionlevelscore ?efo_0000399 ?score ?expression ?taxon_scientificname ?efo_0000399_description ?gene ?taxon_commonname ?gene_label WHERE { 
+	?gene a orth:Gene .
+	?expression a genex:Expression .
+	?expression genex:hasExpressionCondition ?expressioncondition .
+	?expression genex:hasExpressionLevel ?score .
+	?expression genex:hasSequenceUnit ?gene .
+	?gene rdfs:label "APOC1" .
+	?expressioncondition a genex:ExpressionCondition.
+	?expressioncondition genex:hasAnatomicalEntity ?anatomicalentity .
+	?anatomicalentity a genex:AnatomicalEntity.
+	?anatomicalentity rdfs:label ?anatomicalentityName .
+	?expressioncondition genex:hasAnatomicalEntity ?cellType .
+	?cellType rdfs:label ?cellTypeName .
+	?expressioncondition genex:hasDevelopmentalStage ?efo_0000399 .
+	?efo_0000399 rdf:type efo:EFO_0000399 .
+	?efo_0000399 rdfs:label "post-juvenile" .
+	?gene orth:organism ?organism .
+	?organism obo:RO_0002162  ?taxon .
+	?taxon a up:Taxon .
+	?taxon up:commonName "human" .
+	?taxon <http://purl.uniprot.org/core/scientificName> ?taxon_scientificname.
+	?taxon <http://purl.uniprot.org/core/commonName> ?taxon_commonname.
+	?efo_0000399 <http://www.w3.org/2000/01/rdf-schema#label> ?efo_0000399_label.
+	?efo_0000399 <http://purl.org/dc/terms/description> ?efo_0000399_description.
+	?anatomicalentity <http://www.w3.org/2000/01/rdf-schema#label> ?anatomicalentity_label.
+	?anatomicalentity <http://purl.org/dc/terms/description> ?anatomicalentity_description.
+	?expression <http://purl.org/genex#hasExpressionLevel> ?expression_hasexpressionlevelscore.
+	?gene <http://www.w3.org/2000/01/rdf-schema#label> ?gene_label.
+	FILTER(                ?anatomicalentity !=  obo:GO_0005575                )
+	FILTER(                ?anatomicalentity != ?cellType                )
+} ORDER BY DESC(?score)
+
+--
+
+88:
+orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up: <http://purl.uniprot.org/core/>
+PREFIX up-taxon:<http://purl.uniprot.org/taxonomy/>
+PREFIX lscr: <http://purl.org/lscr#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+SELECT DISTINCT ?expressioncondition ?anatomicalentity ?anatomicalentityName ?expression ?score ?efo_0005135 ?gene ?gene_seealso WHERE { 
+	?gene a orth:Gene .
+	?expression a genex:Expression .
+	?expression genex:hasExpressionCondition ?expressioncondition .
+	?expression genex:hasExpressionLevel ?score .
+	?expression genex:hasSequenceUnit ?gene .
+	?gene dcterms:identifier "118030125" .
+	?expressioncondition a genex:ExpressionCondition.
+	?expressioncondition genex:hasAnatomicalEntity ?anatomicalentity .
+	?anatomicalentity a genex:AnatomicalEntity.
+	?anatomicalentity rdfs:label ?anatomicalentityName .
+	?expressioncondition genex:hasDevelopmentalStage ?efo_0005135 .
+	?efo_0005135 a efo:EFO_0005135.
+	?efo_0005135 rdfs:label "wild-type" .
+	?expressioncondition genex:hasSex "any".
+	?expressioncondition genex:hasStrain ?lscr_strain .
+	?lscr_strain a lscr:Strain.
+	?lscr_strain rdfs:label "wild-type" .
+	?gene <http://www.w3.org/2000/01/rdf-schema#seeAlso> ?gene_seealso.
+	FILTER(  ?anatomicalentity !=  obo:GO_0005575  )
+} ORDER BY DESC(?score)
+
+--
+
+89:
+orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up: <http://purl.uniprot.org/core/>
+SELECT DISTINCT ?expressioncondition ?organism ?taxon ?strain ?anatomicalentity_label ?anatomicalentity_description ?anatomicalentity ?anatomicalentityName ?expression_hasexpressionlevelscore ?expression ?score ?taxon_scientificname ?stage ?gene ?gene_seealso ?expression_hasfalsediscoveryratep_value ?taxon_commonname ?gene_identifier WHERE { 
+	?gene a orth:Gene .
+	?expression a genex:Expression .
+	?expression genex:hasExpressionCondition ?expressioncondition .
+	?expression genex:hasExpressionLevel ?score .
+	?expression genex:hasSequenceUnit ?gene .
+	?gene rdfs:label "APOC1" .
+	?expressioncondition a genex:ExpressionCondition.
+	?expressioncondition genex:hasAnatomicalEntity ?anatomicalentity .
+	?expressioncondition genex:hasAnatomicalEntity obo:GO_0005575 .
+	?anatomicalentity a genex:AnatomicalEntity.
+	?anatomicalentity rdfs:label ?anatomicalentityName .
+	?expressioncondition genex:hasDevelopmentalStage ?stage .
+	?stage rdfs:label "post-juvenile" .
+	?expressioncondition genex:hasSex "any".
+	?expressioncondition genex:hasStrain ?strain .
+	?strain rdfs:label "wild-type" .
+	?gene orth:organism ?organism .
+	?organism obo:RO_0002162  ?taxon .
+	?taxon a up:Taxon .
+	?taxon up:commonName "human" .
+	?taxon <http://purl.uniprot.org/core/scientificName> ?taxon_scientificname.
+	?taxon <http://purl.uniprot.org/core/commonName> ?taxon_commonname.
+	?anatomicalentity <http://www.w3.org/2000/01/rdf-schema#label> ?anatomicalentity_label.
+	?anatomicalentity <http://purl.org/dc/terms/description> ?anatomicalentity_description.
+	?expression <http://purl.org/genex#hasExpressionLevel> ?expression_hasexpressionlevelscore.
+	?expression <http://purl.org/genex#hasFDRpvalue> ?expression_hasfalsediscoveryratep_value.
+	?gene <http://www.w3.org/2000/01/rdf-schema#seeAlso> ?gene_seealso.
+	?gene <http://purl.org/dc/terms/identifier> ?gene_identifier.
+	FILTER(                  ?anatomicalentity !=  obo:GO_0005575                  )
+} ORDER BY DESC(?score)
+
+--
+
+90:
+thood?cellType?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression?expression
+
+--
+
+91:
+orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up: <http://purl.uniprot.org/core/>
+SELECT DISTINCT ?expressioncondition ?organism ?taxon ?strain ?anatomicalentity_label ?anatomicalentity_description ?anatomicalentity ?anatomicalentityName ?expression_hasexpressionlevelscore ?expression ?score ?taxon_scientificname ?stage ?gene ?expression_hasfalsediscoveryratep_value ?taxon_commonname ?gene_seealso WHERE { 
+	?gene a orth:Gene .
+	?expression a genex:Expression .
+	?expression genex:hasExpressionCondition ?expressioncondition .
+	?expression genex:hasExpressionLevel ?score .
+	?expression genex:hasSequenceUnit ?gene .
+	?gene rdfs:label "APOC1" .
+	?expressioncondition a genex:ExpressionCondition.
+	?expressioncondition genex:hasAnatomicalEntity ?anatomicalentity .
+	?expressioncondition genex:hasAnatomicalEntity obo:GO_0005575 .
+	?anatomicalentity a genex:AnatomicalEntity.
+	?anatomicalentity rdfs:label ?anatomicalentityName .
+	?expressioncondition genex:hasDevelopmentalStage ?stage .
+	?stage rdfs:label "post-juvenile" .
+	?expressioncondition genex:hasSex "any".
+	?expressioncondition genex:hasStrain ?strain .
+	?strain rdfs:label "wild-type" .
+	?gene orth:organism ?organism .
+	?organism obo:RO_0002162  ?taxon .
+	?taxon a up:Taxon .
+	?taxon up:commonName "human" .
+	?taxon <http://purl.uniprot.org/core/scientificName> ?taxon_scientificname.
+	?taxon <http://purl.uniprot.org/core/commonName> ?taxon_commonname.
+	?anatomicalentity <http://www.w3.org/2000/01/rdf-schema#label> ?anatomicalentity_label.
+	?anatomicalentity <http://purl.org/dc/terms/description> ?anatomicalentity_description.
+	?expression <http://purl.org/genex#hasExpressionLevel> ?expression_hasexpressionlevelscore.
+	?expression <http://purl.org/genex#hasFDRpvalue> ?expression_hasfalsediscoveryratep_value.
+	?gene <http://www.w3.org/2000/01/rdf-schema#seeAlso> ?gene_seealso.
+	FILTER(              ?anatomicalentity !=  obo:GO_0005575              )
+} ORDER BY DESC(?score)
+
+--
+
+92:
+thood?
+	?x a efo:EFO_0005135.
+	?x rdfs:label "human" .
+	?x rdfs:seeAlso ?human .
+	?human a wikidata:WikiProject_Human_Anatomy_and_Physiology_WikiProjectHumanAnatomyandPhysiology .
+	?human rdfs:label "Human" .
+	?gene a efo:EFO_0005135.
+	?gene rdfs:label "APOC1" .
+	?anatomicalentity a efo:EFO_0005135.
+	?anatomicalentity rdfs:label ?anatomicalentityName .
+	?anatomicalentity <http://www.w3.org/2000/01/rdf-schema#description> ?anatomicalentityDescription.
+	OPTIONAL { ?x <http://purl.org/dc/terms/description> ?geneDescription . } 
+	FILTER(  ?anatomicalentity != obo:GO_0005575  )
+	FILTER(  ?anatomicalentity != ?human  )
+	FILTER(  ?anatomicalentity != ?none  )
+	FILTER(  ?anatomicalentityName !=  "brain"  )
+	FILTER(  ?anatomicalentityName !=  "eye"  )
+	FILTER(  ?anatomicalentityName !=  "heart"  )
+	FILTER(  ?anatomicalentityName !=  "leave"  )
+	FILTER(  ?anatomicalentityName !=  "muscle"  )
+	FILTER(  ?anatomicalentityName !=  "skeleton"  )
+	FILTER(  ?anatomicalentityName !=  "other"  )
+	FILTER(  ?anatomicalentityDescription =  "The anatomical entity where the gene is expressed."  )
+	ORDER BY DESC(?anatomicalentityName)
+	LIMIT 1
+
+--
+
+93:
+orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up: <http://purl.uniprot.org/core/>
+SELECT DISTINCT ?expressioncondition ?organism ?taxon ?anatomicalentity ?anatomicalentityName ?efo_0000399 ?taxon_scientificname ?gene ?taxon_commonname ?anatomicalentity_label WHERE { 
+	?gene a orth:Gene .
+	?gene genex:hasExpressionCondition ?expressioncondition.
+	?gene rdfs:label "APOC1" .
+	?expressioncondition a genex:ExpressionCondition.
+	?expressioncondition genex:hasAnatomicalEntity ?anatomicalentity .
+	?anatomicalentity a genex:AnatomicalEntity.
+	?anatomicalentity rdfs:label ?anatomicalentityName .
+	?expressioncondition genex:hasAnatomicalEntity obo:GO_0005575 .
+	?expressioncondition genex:hasDevelopmentalStage ?efo_0000399 .
+	?efo_0000399 a efo:EFO_0000399.
+	?efo_0000399 rdfs:label "post-juvenile" .
+	?gene orth:organism ?organism .
+	?organism obo:RO_0002162  ?taxon .
+	?taxon a up:Taxon .
+	?taxon up:commonName "human" .
+	?taxon <http://purl.uniprot.org/core/scientificName> ?taxon_scientificname.
+	?taxon <http://purl.uniprot.org/core/commonName> ?taxon_commonname.
+	?anatomicalentity <http://www.w3.org/2000/01/rdf-schema#label> ?anatomicalentity_label.
+} ORDER BY DESC(?efo_0000399)
+
+--
+
+94:
+opponens apoc1 efo_anatomicalentity efo_celltype ?cellType ?expression ?organism ?taxon ?anatomicalentity ?anatomicalentityName ?cellTypeName ?expression_score ?stage ?label ?efo_anatomicalentity_label ?taxon_scientificname ?gene ?efo_celltype_label ?taxon_commonname ?expression_hasfalsediscoveryratep_value WHERE { 
+	?gene a apoc:Gene .
+	?expression a pto:Expression .
+	?expression pto:hasExpressionCondition ?condition .
+	?expression pto:hasExpressionLevel ?expression_level .
+	?expression pto:hasSequenceUnit ?sequenceUnit .
+	?sequenceUnit a pto:SequenceUnit.
+	?sequenceUnit pto:hasIdentifier "118301025" .
+	?condition a pto:ExpressionCondition.
+	?condition pto:hasAnatomicalEntity ?anatomicalentity .
+	?anatomicalentity a efo:AnatomicalEntity.
+	?anatomicalentity rdfs:label ?anatomicalentityName .
+	?condition pto:hasDevelopmentalStage ?stage .
+	?stage rdfs:label "post-juvenile" .
+	?condition pto:hasSex "any".
+	?condition pto:hasStrain ?strain .
+	?strain rdfs:label "wild-type" .
+	?gene rdfs:label "APOC1" .
+	?taxon a nct:Taxon .
+	?taxon nct:commonName "human" .
+	?taxon <http://purl.org/dc/terms/scientificName> ?taxon_scientificname.
+	?taxon <http://purl.org/dc/terms/commonName> ?taxon_commonname.
+	?efo_anatomicalentity <http://www.ebi.ac.uk/efo/EFO_0000309> ?efo_anatomicalentity_label.
+	?expression <http://purl.org/pto/hasFDRpvalue> ?expression_hasfalsediscoveryratep_value.
+	FILTER(        ?anatomicalentity !=  efo_celltype        )
+	FILTER(        ?anatomicalentity !=  -1          )
+}
+ORDER BY DESC(?expression_level)
+
+--
+
+95:
+up: <http://purl.uniprot.org/core/>
+PREFIX up-taxon:<http://purl.uniprot.org/taxonomy/>
+PREFIX up-species:<http://purl.uniprot.org/species/>
+SELECT DISTINCT ?common_name ?sci_name WHERE { 
+	?taxon a up-taxon .
+	?taxon up-species ?species .
+	?species a up-species .
+	?species up-taxon ?taxon .
+	?taxon rdfs:label ?common_name .
+	?species rdfs:label ?sci_name .
+}
+ORDER BY DESC(?sci_name)
+
+--
+
+96:
+thood  cell type.
+
+--
+
+97:
+opponens longus? provide also the strain label and the developmental stage label and the developmental stage description and the anatomical entity label and the anatomical entity description and the gene expression has expression level score and the gene description.
+
+--
+
+98:
+orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up: <http://purl.uniprot.org/core/>
+SELECT DISTINCT ?cellType ?efo_0000399_description ?expression ?score ?expressioncondition ?anatomicalentity_description ?efo_0000399 ?taxon_scientificname ?expression_hasfalsediscoveryratep_value ?organism ?anatomicalentity_label ?expression_hasexpressionlevelscore ?efo_0000399_label ?taxon ?anatomicalentity ?anatomicalentityName ?cellTypeName ?gene ?taxon_commonname ?gene_seealso WHERE { 
+	?gene a orth:Gene .
+	?expression a genex:Expression .
+	?expression genex:hasExpressionCondition ?expressioncondition .
+	?expression genex:hasExpressionLevel ?score .
+	?expression genex:hasSequenceUnit ?gene .
+	?gene rdfs:label "APOC1" .
+	?expressioncondition a genex:ExpressionCondition.
+	?expressioncondition genex:hasAnatomicalEntity ?anatomicalentity .
+	?anatomicalentity a genex:AnatomicalEntity.
+	?anatomicalentity rdfs:label ?anatomicalentityName .
+	?expressioncondition genex:hasAnatomicalEntity ?cellType .
+	?cellType rdfs:label ?cellTypeName .
+	?expressioncondition genex:hasDevelopmentalStage ?efo_0000399 .
+	?efo_0000399 rdf:type efo:EFO_0000399 .
+	?efo_0000399 rdfs:label "post-juvenile" .
+	?gene orth:organism ?organism .
+	?organism obo:RO_0002162  ?taxon .
+	?taxon a up:Taxon .
+	?taxon up:commonName "human" .
+	?taxon <http://purl.uniprot.org/core/scientificName> ?taxon_scientificname.
+	?taxon <http://purl.uniprot.org/core/commonName> ?taxon_commonname.
+	?efo_0000399 <http://www.w3.org/2000/01/rdf-schema#label> ?efo_0000399_label.
+	?efo_0000399 <http://purl.org/dc/terms/description> ?efo_0000399_description.
+	?anatomicalentity <http://www.w3.org/2000/01/rdf-schema#label> ?anatomicalentity_label.
+	?anatomicalentity <http://purl.org/dc/terms/description> ?anatomicalentity_description.
+	?expression <http://purl.org/genex#hasExpressionLevel> ?expression_hasexpressionlevelscore.
+	?expression <http://purl.org/genex#hasFDRpvalue> ?expression_hasfalsediscoveryratep_value.
+	?gene <http://www.w3.org/2000/01/rdf-schema#seeAlso> ?gene_seealso.
+	FILTER(                  ?anatomicalentity !=  obo:GO_0005575                  )
+	FILTER(                  ?anatomicalentity != ?cellType                  )
+} ORDER BY DESC(?score)
+
+--
+
+99:
+thood?
+
+--
+
+100:
+thood?apoc1?post-juvenile?human?taxon?scientific name?common name?efg?anatomical entity?anatomical entity name?gene?taxon scientific name?taxon common name?efg?anatomical entity?anatomical entity name?gene?taxon scientific name?taxon common name?efg?anatomical entity?anatomical entity name?gene?taxon scientific name?taxon common name?efg?anatomical entity?anatomical entity name?gene?taxon scientific name?taxon common name?efg?anatomical entity?anatomical entity name?gene?taxon scientific name?taxon common name?efg?anatomical entity?anatomical entity name?gene?taxon scientific name?taxon common name?efg?anatomical entity?anatomical entity name?gene?taxon scientific name?taxon common name?efg?anatomical entity?anatomical entity name?gene?taxon scientific name?taxon common name?efg?anatomical entity?anatomical entity name?gene?taxon scientific name?taxon common name?efg?anatomical entity?anatomical entity name?gene?taxon scientific name?taxon common name?efg?anatomical entity?anatomical entity name?gene?taxon scientific name?taxon common name?efg?anatomical entity?anatomical entity name?gene?taxon scientific name?taxon common name?efg?anatomical entity?anatomical entity name?gene?taxon scientific name?taxon common name?efg?anatomical entity?anatomical entity name?gene?taxon scientific name?taxon common name?efg?anatomical entity?anatomical entity name?gene?taxon scientific name?taxon common name?efg?anatomical entity?anatomical entity name?gene?taxon scientific name?taxon common name?efg?anatomical entity?anatomical entity name?gene?taxon scientific name?taxon common name?efg?anatomical entity?anatomical entity name?gene?taxon scientific name?taxon common name?efg?anatomical entity?anatomical entity name?gene?taxon scientific name?taxon common name?efg?anatomical entity?anatomical entity name?gene?taxon scientific name?taxon common name?efg?anatomical entity?anatomical entity name?gene?taxon scientific name?taxon common name?efg?anatomical entity?anatomical entity name?gene?taxon scientific name?taxon common name?efg?anatomical entity?anatomical entity name?gene?taxon scientific name?taxon common name?efg?anatomical entity?anatomical entity name?gene?taxon scientific name?taxon common name?efg?anatomical entity?anatomical entity name?gene?taxon scientific name?taxon common name?efg?anatomical entity?anatomical entity name?gene?taxon scientific name?taxon common name?efg?anatomical entity?anatomical entity name?gene?taxon scientific name?taxon common name?efg?anatomical entity?anatomical entity name?gene?taxon scientific name?taxon common name?efg?anatomical entity?anatomical entity name?gene?taxon scientific name?taxon common name?efg?anatomical entity?anatomical entity name?gene?taxon scientific name?taxon common name?efg?anatomical entity?anatomical entity name?gene?taxon scientific name?taxon common name?efg?anatomical entity?anatomical entity name?gene?taxon scientific name?taxon common name?efg?anatomical entity?anatomical entity name?gene?taxon scientific name?taxon common name?efg?anatomical entity?anatomical entity name?gene?taxon scientific name?taxon common name?efg?anatomical entity?anatomical entity name?gene?taxon scientific name?taxon common name?efg?anatomical entity?anatomical entity name?gene?taxon scientific name?taxon common name?efg?anatomical entity?anatomical entity name?gene?taxon scientific name?taxon common name?ef
+
+--
+
+101:
+orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up: <http://purl.uniprot.org/core/>
+SELECT DISTINCT ?cellType ?expression ?score ?expressioncondition ?anatomicalentity_description ?taxon_scientificname ?efo_0005135_label ?expression_hasfalsediscoveryratep_value ?organism ?anatomicalentity_label ?expression_hasexpressionlevelscore ?stage ?taxon ?anatomicalentity ?anatomicalentityName ?cellTypeName ?gene_description ?efo_0005135 ?gene ?gene_seealso ?taxon_commonname ?gene_label WHERE { 
+	?gene a orth:Gene .
+	?expression a genex:Expression .
+	?expression genex:hasExpressionCondition ?expressioncondition .
+	?expression genex:hasExpressionLevel ?score .
+	?expression genex:hasSequenceUnit ?gene .
+	?gene rdfs:label "APOC1" .
+	?expressioncondition a genex:ExpressionCondition.
+	?expressioncondition genex:hasAnatomicalEntity ?anatomicalentity .
+	?anatomicalentity a genex:AnatomicalEntity.
+	?anatomicalentity rdfs:label ?anatomicalentityName .
+	?expressioncondition genex:hasAnatomicalEntity ?cellType .
+	?cellType rdfs:label ?cellTypeName .
+	?expressioncondition genex:hasDevelopmentalStage ?stage .
+	?stage rdfs:label "post-juvenile" .
+	?expressioncondition genex:hasSex "any".
+	?expressioncondition genex:hasStrain ?efo_0005135 .
+	?efo_0005135 a efo:EFO_0005135.
+	?efo_0005135 rdfs:label "wild-type" .
+	?gene orth:organism ?organism .
+	?organism obo:RO_0002162  ?taxon .
+	?taxon a up:Taxon .
+	?taxon up:commonName "human" .
+	?taxon <http://purl.uniprot.org/core/scientificName> ?taxon_scientificname.
+	?taxon <http://purl.uniprot.org/core/commonName> ?taxon_commonname.
+	?efo_0005135 <http://www.w3.org/2000/01/rdf-schema#label> ?efo_0005135_label.
+	?anatomicalentity <http://www.w3.org/2000/01/rdf-schema#label> ?anatomicalentity_label.
+	?anatomicalentity <http://purl.org/dc/terms/description> ?anatomicalentity_description.
+	?expression <http://purl.org/genex#hasExpressionLevel> ?expression_hasexpressionlevelscore.
+	?expression <http://purl.org/genex#hasFDRpvalue> ?expression_hasfalsediscoveryratep_value.
+	?gene <http://www.w3.org/2000/01/rdf-schema#seeAlso> ?gene_seealso.
+	?gene <http://purl.org/dc/terms/description> ?gene_description.
+	?gene <http://www.w3.org/2000/01/rdf-schema#label> ?gene_label.
+	FILTER(                  ?anatomicalentity != obo:GO_0005575                  )
+	FILTER(                  ?anatomicalentity != ?cellType                  )
+}
+ORDER BY DESC(?score)
+
+--
+
+102:
+orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up: <http://purl.uniprot.org/core/>
+PREFIX up-taxon:<http://purl.uniprot.org/taxonomy/>
+PREFIX lscr: <http://purl.org/lscr#>
+SELECT DISTINCT ?expressioncondition ?efo_0000399_label ?anatomicalentity_label ?anatomicalentity_description ?anatomicalentity ?anatomicalentityName ?expression_hasexpressionlevelscore ?efo_0000399 ?score ?efo_0005135 ?efo_0005135_label ?expression ?efo_0000399_description ?gene ?gene_description ?gene_seealso ?expression_hasfalsediscoveryratep_value ?gene_identifier ?gene_label WHERE { 
+	?gene a orth:Gene .
+	?expression a genex:Expression .
+	?expression genex:hasExpressionCondition ?expressioncondition .
+	?expression genex:hasExpressionLevel ?score .
+	?expression genex:hasSequenceUnit ?gene .
+	?gene lscr:xrefNCBIGene <https://www.ncbi.nlm.nih.gov/gene/118230125> .
+	?expressioncondition genex:hasAnatomicalEntity ?anatomicalentity .
+	?anatomicalentity a genex:AnatomicalEntity.
+	?anatomicalentity rdfs:label ?anatomicalentityName .
+	?expressioncondition a genex:ExpressionCondition.
+	?expressioncondition genex:hasDevelopmentalStage ?efo_0000399 .
+	?efo_0000399 rdf:type efo:EFO_0000399 .
+	?expressioncondition genex:hasSex "any".
+	?expressioncondition genex:hasStrain ?efo_0005135 .
+	?efo_0005135 a efo:EFO_0005135.
+	?efo_0005135 rdfs:label "wild-type" .
+	?efo_0005135 <http://www.w3.org/2000/01/rdf-schema#label> ?efo_0005135_label.
+	?efo_0000399 <http://www.w3.org/2000/01/rdf-schema#label> ?efo_0000399_label.
+	?efo_0000399 <http://purl.org/dc/terms/description> ?efo_0000399_description.
+	?anatomicalentity <http://www.w3.org/2000/01/rdf-schema#label> ?anatomicalentity_label.
+	?anatomicalentity <http://purl.org/dc/terms/description> ?anatomicalentity_description.
+	?expression <http://purl.org/genex#hasExpressionLevel> ?expression_hasexpressionlevelscore.
+	?expression <http://purl.org/genex#hasFDRpvalue> ?expression_hasfalsediscoveryratep_value.
+	?gene <http://www.w3.org/2000/01/rdf-schema#seeAlso> ?gene_seealso.
+	?gene <http://purl.org/dc/terms/description> ?gene_description.
+	?gene <http://purl.org/dc/terms/identifier> ?gene_identifier.
+	?gene <http://www.w3.org/2000/01/rdf-schema#label> ?gene_label.
+	FILTER(                ?anatomicalentity != obo:GO_0005575                )
+} ORDER BY DESC(?score)
+
+--
+

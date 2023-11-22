@@ -1,0 +1,6 @@
+# What are the species present in Bgee?
+
+PREFIX up: <http://purl.uniprot.org/core/>
+SELECT ?species {
+	?species a up:Taxon .}
+    

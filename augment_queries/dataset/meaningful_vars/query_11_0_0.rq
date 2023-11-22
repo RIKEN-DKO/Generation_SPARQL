@@ -1,0 +1,9 @@
+# What are the developmental stages present in Bgee?
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX efo: <http://www.ebi.ac.uk/efo/EFO_0000399>
+SELECT DISTINCT ?efo_0000399 ?efo_0000399Name ?efo_0000399Description WHERE { 
+	?efo_0000399 rdf:type efo:EFO_0000399 .
+	?efo_0000399 rdfs:label ?efo_0000399Name .
+	?efo_0000399 dcterms:description ?efo_0000399Description .
+	FILTER( CONTAINS(?efo_0000399Name,"post-juvenile" )
+}

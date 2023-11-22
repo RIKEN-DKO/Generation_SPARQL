@@ -1,0 +1,404 @@
+### INSTRUCTION:
+Please convert the following context into an SPARQL query.
+
+### CONTEXT:
+Retrieve all species from Bgee.
+
+### STEPS:
+1. Recognize that all species are defined as a `up:Taxon`.
+2. Use the prefix `up:` which stands for `http://purl.uniprot.org/core/`, representing the UniProtKB core ontology.
+3. Query for all entities that are of type `up:Taxon`.
+
+### SPARQL:
+PREFIX up: <http://purl.uniprot.org/core/>
+SELECT ?species {
+	?species a up:Taxon .
+}
+
+
+### INSTRUCTION:
+Please convert the following context into an SPARQL query.
+
+### CONTEXT:
+Retrieve all species from Bgee along with their direct attributes: scientific name, common name (if available), and rank.
+
+### STEPS:
+1. Recognize that all species are defined as a `up:Taxon` in Bgee.
+2. Use the prefix `up:` which stands for `http://purl.uniprot.org/core/`, representing the UniProtKB core ontology.
+3. Query for all entities that are of type `up:Taxon`.
+4. Retrieve the mandatory attributes `up:scientificName` and `up:rank` for each species.
+5. Optionally retrieve the `up:commonName` attribute if it exists.
+
+### SPARQL:
+PREFIX up: <http://purl.uniprot.org/core/>
+SELECT ?species ?sci_name ?common_name {
+	?species a up:Taxon .
+	?species up:scientificName ?sci_name .
+	?species up:rank up:Species .
+    OPTIONAL {?species up:commonName ?common_name .}
+}
+
+
+
+### INSTRUCTION:
+Please convert the following context into an SPARQL query.
+
+### CONTEXT:
+Where is the "APOC1" gene expressed in terms of anatomical entities?
+
+### STEPS:
+1. Identify the gene of interest, in this case, the “APOC1” gene.
+2. Use the relation `genex:isExpressedIn` to determine where the gene is expressed. Alternatively, the relation `obo:RO_0002206` can also be used.
+3. Query for the anatomical entities where the gene is expressed.
+
+### SPARQL:
+PREFIX orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+SELECT DISTINCT ?anat ?anatName {
+	?seq a orth:Gene .
+	?seq genex:isExpressedIn ?anat .
+	?seq rdfs:label "APOC1" .
+	?anat a genex:AnatomicalEntity .
+	?anat rdfs:label ?anatName . 
+}
+
+
+### INSTRUCTION:
+Please convert the following context into an SPARQL query.
+
+### CONTEXT:
+Where is the "APOC1" gene from Homo sapiens expressed in terms of anatomical entities?
+
+### STEPS:
+1. Identify the gene of interest, in this case, the “APOC1” gene.
+2. Use the relation `genex:isExpressedIn` to determine where the gene is expressed.
+3. Query for the anatomical entities where the gene is expressed.
+4. Specify the species as "Homo sapiens" to avoid ambiguities among gene names in different species.
+
+### SPARQL:
+PREFIX orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up: <http://purl.uniprot.org/core/>
+
+SELECT DISTINCT ?anat ?anatName {
+	?seq a orth:Gene .
+	?seq genex:isExpressedIn ?anat.
+	?seq rdfs:label "APOC1" .
+	?anat a genex:AnatomicalEntity .
+	?anat rdfs:label ?anatName . 
+        ### Specifying species:
+        ?seq orth:organism ?organism .
+        ?organism obo:RO_0002162  ?species . #in taxon
+        ?species a up:Taxon .
+        ?species up:scientificName "Homo sapiens" .
+}
+
+
+
+### INSTRUCTION:
+Please convert the following context into an SPARQL query.
+
+### CONTEXT:
+Where is the "APOC1" gene expressed in terms of anatomical entities, considering all experimental conditions in the Bgee knowledge base? This includes conditions such as anatomical entity, developmental stage, sex, strain, and cell type.
+
+### STEPS:
+1. Identify the gene of interest, in this case, the “APOC1” gene.
+2. Use the relation `genex:isExpressedIn` to determine under which conditions the gene is expressed.
+3. Retrieve the anatomical entity where the gene is expressed using `genex:hasAnatomicalEntity`.
+4. Specify that the gene expression is being assessed in any developmental stage, sex, and strain.
+5. Ensure that the anatomical entity is a cellular component, using the Gene Ontology term `obo:GO_0005575` which is the root of all cell types.
+
+### SPARQL:
+PREFIX orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+
+SELECT DISTINCT ?anat ?anatName {
+	?seq a orth:Gene .
+	?seq genex:isExpressedIn ?condition.
+	?seq rdfs:label "APOC1" .
+	?condition genex:hasAnatomicalEntity ?anat .
+   	?condition genex:hasAnatomicalEntity obo:GO_0005575 . 
+	?anat rdfs:label ?anatName . 
+        ?condition genex:hasDevelopmentalStage ?stage .
+	?stage rdfs:label "life cycle" .
+  	?condition genex:hasSex "any".
+   	?condition genex:hasStrain ?strain .
+        ?strain rdfs:label "wild-type" .
+}
+
+
+### INSTRUCTION:
+Please convert the following context into an SPARQL query.
+
+### CONTEXT:
+Where is the "APOC1" gene from humans expressed in terms of anatomical entities, considering all experimental conditions in the Bgee knowledge base? This includes conditions such as anatomical entity and developmental stage. The strain should be considered as "wild-type" if not specified, ensuring the gene is expressed independently of the strain type. Similarly, if the sex is stated as 'any', it means the gene is expressed in any sex type.
+
+### STEPS:
+1. Identify the gene of interest, in this case, the “APOC1” gene.
+2. Use the relation `genex:isExpressedIn` to determine under which conditions the gene is expressed.
+3. Retrieve the anatomical entity where the gene is expressed using `genex:hasAnatomicalEntity`.
+4. Specify that the gene expression is being assessed in the "post-juvenile" developmental stage.
+5. Ensure that the anatomical entity is a cellular component, using the Gene Ontology term `obo:GO_0005575` which is the root of all cell types.
+6. Specify the species as "human".
+
+### SPARQL:
+PREFIX orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up: <http://purl.uniprot.org/core/>
+
+SELECT DISTINCT ?anat ?anatName ?stage {
+	?seq a orth:Gene .
+	?seq genex:isExpressedIn ?condition.
+	?seq rdfs:label "APOC1" .
+	?condition genex:hasAnatomicalEntity ?anat .
+	?anat rdfs:label ?anatName .
+    ?condition genex:hasAnatomicalEntity obo:GO_0005575 .
+        ?condition genex:hasDevelopmentalStage ?stage .
+	?stage rdfs:label "post-juvenile" .
+        ### Specifying the species:
+        ?seq orth:organism ?organism .
+        ?organism obo:RO_0002162  ?species . #in taxon
+        ?species a up:Taxon .
+        ?species up:commonName "human" .
+}
+
+
+### INSTRUCTION:
+Please convert the following context into an SPARQL query.
+
+### CONTEXT:
+Where is the human gene "APOC1" expressed in terms of anatomical entities, and what is its expression score? The expression score indicates the level of gene expression for a given experimental condition, with a higher score indicating higher expression.
+
+### STEPS:
+1. Identify the gene of interest, in this case, the “APOC1” gene.
+2. Use the `genex:Expression` concept to determine the expression level of the gene.
+3. Retrieve the anatomical entity where the gene is expressed using `genex:hasAnatomicalEntity`.
+4. Retrieve the expression score of the gene using `genex:hasExpressionLevel`.
+5. Specify that the gene expression is being assessed in the "post-juvenile" developmental stage, any sex, and the "wild-type" strain.
+6. Specify the species as "human".
+7. Exclude results where the anatomical entity is a cellular component, using the Gene Ontology term `obo:GO_0005575`.
+8. Order the results by expression score in descending order.
+
+### SPARQL:
+PREFIX orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up: <http://purl.uniprot.org/core/>
+
+SELECT DISTINCT ?anat ?anatName ?score ?stage {
+	?seq a orth:Gene .
+        ?expression a genex:Expression .
+        ?expression genex:hasExpressionCondition ?condition .
+        ?expression genex:hasExpressionLevel ?score .
+	?expression genex:hasSequenceUnit ?seq .
+	?seq rdfs:label "APOC1" .
+	?condition genex:hasAnatomicalEntity ?anat .
+        ?anat rdfs:label ?anatName .
+        ?condition genex:hasDevelopmentalStage ?stage .
+	?stage rdfs:label "post-juvenile" .
+  	?condition genex:hasSex "any".
+   	?condition genex:hasStrain ?strain .
+        ?strain rdfs:label "wild-type" .
+        ### Specifying the species:
+        ?seq orth:organism ?organism .
+        ?organism obo:RO_0002162  ?species . #in taxon
+        ?species a up:Taxon .
+        ?species up:commonName "human" .
+FILTER (?anat !=  obo:GO_0005575)
+} ORDER BY DESC(?score)
+
+
+### INSTRUCTION:
+Please convert the following context into an SPARQL query.
+
+### CONTEXT:
+Where is the human gene "APOC1" expressed in terms of anatomical entities, and what is its expression score? Consider all experimental conditions in the Bgee knowledge base, including anatomical entity, developmental stage, strain, and sex. The expression score indicates the level of gene expression, with higher scores indicating higher expression levels.
+
+### STEPS:
+1. Identify the gene of interest, in this case, the “APOC1” gene.
+2. Use the `genex:Expression` concept to determine the expression level of the gene.
+3. Retrieve the anatomical entity where the gene is expressed using `genex:hasAnatomicalEntity`.
+4. Retrieve the expression score of the gene using `genex:hasExpressionLevel`.
+5. Specify that the gene expression is being assessed in the "post-juvenile" developmental stage.
+6. Ensure that the anatomical entity is not a generic "cellular component" using the FILTER expression.
+7. Specify the species as "human".
+8. Order the results by expression scores in descending order.
+
+### SPARQL:
+PREFIX orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up: <http://purl.uniprot.org/core/>
+
+SELECT DISTINCT ?anat ?anatName ?score ?stage {
+	?seq a orth:Gene .
+        ?expression a genex:Expression .
+        ?expression genex:hasExpressionCondition ?condition .
+        ?expression genex:hasExpressionLevel ?score .
+	?expression genex:hasSequenceUnit ?seq .
+	?seq rdfs:label "APOC1" .
+	?condition genex:hasAnatomicalEntity ?anat .
+        ?anat rdfs:label ?anatName .
+        ?condition genex:hasDevelopmentalStage ?stage .
+	?stage rdfs:label "post-juvenile" .
+  	?condition genex:hasSex "any".
+   	?condition genex:hasStrain ?strain .
+        ?strain rdfs:label "wild-type" .
+        ### Specifying the species:
+        ?seq orth:organism ?organism .
+        ?organism obo:RO_0002162  ?species . #in taxon
+        ?species a up:Taxon .
+        ?species up:commonName "human" .
+FILTER (?anat !=  obo:GO_0005575)
+} ORDER BY DESC(?score)
+
+
+### INSTRUCTION:
+Please convert the following context into an SPARQL query.
+
+### CONTEXT:
+Where is the human gene "APOC1" expressed in terms of anatomical entities and specific cell types, and what is its expression score? This query aims to provide more accuracy by considering not just the organ or tissue where the gene is expressed, but also the specific cell type within that organ or tissue. The expression score indicates the level of gene expression, with higher scores indicating higher expression levels.
+
+### STEPS:
+1. Identify the gene of interest, in this case, the “APOC1” gene.
+2. Use the `genex:Expression` concept to determine the expression level of the gene.
+3. Retrieve the anatomical entity where the gene is expressed using `genex:hasAnatomicalEntity`.
+4. Retrieve the specific cell type within the anatomical entity where the gene is expressed.
+5. Retrieve the expression score of the gene using `genex:hasExpressionLevel`.
+6. Specify that the gene expression is being assessed in the "post-juvenile" developmental stage.
+7. Ensure that the anatomical entity is not a generic "cellular component" using the FILTER expression.
+8. Ensure that the anatomical entity and cell type are not the same using the FILTER expression.
+9. Specify the species as "human".
+10. Order the results by expression scores in descending order.
+
+### SPARQL:
+PREFIX orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up: <http://purl.uniprot.org/core/>
+
+SELECT DISTINCT ?anat ?cellType ?anatName ?cellTypeName ?score ?stage {
+	?seq a orth:Gene .
+        ?expression a genex:Expression .
+        ?expression genex:hasExpressionCondition ?condition .
+        ?expression genex:hasExpressionLevel ?score .
+	?expression genex:hasSequenceUnit ?seq .
+	?seq rdfs:label "APOC1" .
+	?condition genex:hasAnatomicalEntity ?anat .
+    ?anat rdfs:label ?anatName .
+   	?condition genex:hasAnatomicalEntity ?cellType .
+    ?cellType rdfs:label ?cellTypeName .
+        ?condition genex:hasDevelopmentalStage ?stage .
+	?stage rdfs:label "post-juvenile" .
+  	?condition genex:hasSex "any".
+   	?condition genex:hasStrain ?strain .
+        ?strain rdfs:label "wild-type" .
+        ### Specifying the species:
+        ?seq orth:organism ?organism .
+        ?organism obo:RO_0002162  ?species . #in taxon
+        ?species a up:Taxon .
+        ?species up:commonName "human" .
+FILTER (?anat !=  obo:GO_0005575)
+FILTER (?anat != ?cellType)
+} ORDER BY DESC(?score)
+
+
+### INSTRUCTION:
+Please convert the following context into an SPARQL query.
+
+### CONTEXT:
+Where is the human gene "APOC1" expressed in terms of anatomical entities and specific cell types, and what is its expression score? This query aims to provide more accuracy by considering not just the organ or tissue where the gene is expressed, but also the specific cell type within that organ or tissue. The expression score indicates the level of gene expression, with higher scores indicating higher expression levels. This optimized query omits patterns related to sex and strain for efficiency.
+
+### STEPS:
+1. Identify the gene of interest, in this case, the “APOC1” gene.
+2. Use the `genex:Expression` concept to determine the expression level of the gene.
+3. Retrieve the anatomical entity where the gene is expressed using `genex:hasAnatomicalEntity`.
+4. Retrieve the specific cell type within the anatomical entity where the gene is expressed.
+5. Retrieve the expression score of the gene using `genex:hasExpressionLevel`.
+6. Specify that the gene expression is being assessed in the "post-juvenile" developmental stage.
+7. Ensure that the anatomical entity is not a generic "cellular component" using the FILTER expression.
+8. Ensure that the anatomical entity and cell type are not the same using the FILTER expression.
+9. Specify the species as "human".
+10. Order the results by expression scores in descending order.
+
+### SPARQL:
+PREFIX orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up: <http://purl.uniprot.org/core/>
+
+SELECT DISTINCT ?anat ?cellType ?anatName ?cellTypeName ?score ?stage {
+	?seq a orth:Gene .
+        ?expression a genex:Expression .
+        ?expression genex:hasExpressionCondition ?condition .
+        ?expression genex:hasExpressionLevel ?score .
+	?expression genex:hasSequenceUnit ?seq .
+	?seq rdfs:label "APOC1" .
+	?condition genex:hasAnatomicalEntity ?anat .
+        ?anat rdfs:label ?anatName .
+   	?condition genex:hasAnatomicalEntity ?cellType .
+        ?cellType rdfs:label ?cellTypeName .
+        ?condition genex:hasDevelopmentalStage ?stage .
+	?stage rdfs:label "post-juvenile" .
+        ### Specifying the species:
+        ?seq orth:organism ?organism .
+        ?organism obo:RO_0002162  ?species . #in taxon
+        ?species a up:Taxon .
+        ?species up:commonName "human" .
+FILTER (?anat !=  obo:GO_0005575)
+FILTER (?anat != ?cellType)
+} ORDER BY DESC(?score)
+
+
+### INSTRUCTION:
+Please convert the following context into an SPARQL query.
+
+### CONTEXT:
+Where is the human gene "APOC1" (with Ensembl identifier ENSG00000130208) expressed in terms of anatomical entities and specific cell types, and what is its expression score? This query aims to provide more accuracy by considering not just the organ or tissue where the gene is expressed, but also the specific cell type within that organ or tissue. The expression score indicates the level of gene expression, with higher scores indicating higher expression levels. This query uses controlled vocabularies and specific IRIs to represent taxa, anatomical entities, and developmental stages.
+
+### STEPS:
+1. Identify the gene of interest using its Ensembl identifier.
+2. Use the `genex:Expression` concept to determine the expression level of the gene.
+3. Retrieve the anatomical entity where the gene is expressed using `genex:hasAnatomicalEntity`.
+4. Retrieve the specific cell type within the anatomical entity where the gene is expressed.
+5. Retrieve the expression score of the gene using `genex:hasExpressionLevel`.
+6. Specify that the gene expression is being assessed in the "post-juvenile" developmental stage using its Uberon identifier.
+7. Ensure that the anatomical entity is not a generic "cellular component" using the FILTER expression.
+8. Ensure that the anatomical entity and cell type are not the same using the FILTER expression.
+9. Specify the species as "human" using its NCBI taxonomy identifier.
+10. Order the results by expression scores in descending order.
+
+### SPARQL:
+PREFIX orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up: <http://purl.uniprot.org/core/>
+PREFIX up-taxon:<http://purl.uniprot.org/taxonomy/>
+PREFIX ensembl: <http://rdf.ebi.ac.uk/resource/ensembl/>
+PREFIX lscr: <http://purl.org/lscr#>
+
+SELECT DISTINCT ?anat ?cellType ?anatName ?cellTypeName ?score  {
+	?seq a orth:Gene .
+        ?expression a genex:Expression .
+        ?expression genex:hasExpressionCondition ?condition .
+        ?expression genex:hasExpressionLevel ?score .
+	?expression genex:hasSequenceUnit ?seq .
+        ?seq lscr:xrefEnsemblGene ensembl:ENSG00000130208 .
+	?condition genex:hasAnatomicalEntity ?anat .
+        ?anat rdfs:label ?anatName .
+   	?condition genex:hasAnatomicalEntity ?cellType .
+        ?cellType rdfs:label ?cellTypeName .
+        ?condition genex:hasDevelopmentalStage obo:UBERON_0000113 .
+  	?condition genex:hasSex "any".
+   	?condition genex:hasStrain ?strain .
+        ?strain rdfs:label "wild-type" .
+        ?seq orth:organism ?organism .
+        ?organism obo:RO_0002162  up-taxon:9606 .
+FILTER (?anat !=  obo:GO_0005575)
+FILTER (?anat != ?cellType)
+} ORDER BY DESC(?score)
+

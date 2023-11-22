@@ -1,0 +1,27 @@
+# What are the anatomical entities where the human gene APOC1 is expressed in the post-juvenile stage along with its expression score independently of the strain, sex, and cell type? Provide also the gene label.
+PREFIX orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up: <http://purl.uniprot.org/core/>
+PREFIX up-taxon:<http://purl.uniprot.org/taxonomy/>
+PREFIX ensembl: <http://rdf.ebi.ac.uk/resource/ensembl/>
+PREFIX lscr: <http://purl.org/lscr#>
+SELECT DISTINCT ?expressioncondition ?anatomicalentity ?anatomicalentityName ?expression ?score ?efo_0005135 ?gene ?gene_label WHERE { 
+	?gene a orth:Gene .
+	?expression a genex:Expression .
+	?expression genex:hasExpressionCondition ?expressioncondition .
+	?expression genex:hasExpressionLevel ?score .
+	?expression genex:hasSequenceUnit ?gene .
+	?gene lscr:xrefEnsemblGene ensembl:ENSG00000130208 .
+	?expressioncondition a genex:ExpressionCondition.
+	?expressioncondition genex:hasAnatomicalEntity ?anatomicalentity .
+	?anatomicalentity a genex:AnatomicalEntity.
+	?anatomicalentity rdfs:label ?anatomicalentityName .
+	?expressioncondition genex:hasDevelopmentalStage obo:UBERON_0000113 .
+	?expressioncondition genex:hasSex "any".
+	?expressioncondition genex:hasStrain ?efo_0005135 .
+	?efo_0005135 a efo:EFO_0005135.
+	?efo_0005135 rdfs:label "wild-type" .
+	?gene <http://www.w3.org/2000/01/rdf-schema#label> ?gene_label.
+	FILTER(   ?anatomicalentity !=  obo:GO_0005575   )
+}

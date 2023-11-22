@@ -1,0 +1,26 @@
+# What are the anatomical entities where the APOC1 gene is expressed independently of the developmental stage, sex, strain and cell type? Provide also the developmental stage label and the developmental stage description and the anatomical entity label and the anatomical entity description and the gene see also.
+PREFIX orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX efo: <http://www.ebi.ac.uk/efo/>
+SELECT DISTINCT ?expressioncondition ?efo_0000399_label ?strain ?anatomicalentity_label ?anatomicalentity_description ?anatomicalentity ?anatomicalentityName ?efo_0000399 ?efo_0000399_description ?gene ?gene_seealso WHERE { 
+	?gene a orth:Gene .
+	?gene genex:isExpressedIn ?expressioncondition. # is expressed in
+	?expressioncondition a genex:ExpressionCondition.
+	?gene rdfs:label "APOC1" .
+	?expressioncondition genex:hasAnatomicalEntity ?anatomicalentity . # has anatomical entity
+	?anatomicalentity a genex:AnatomicalEntity.
+	?expressioncondition genex:hasAnatomicalEntity obo:GO_0005575 . # has anatomical entity
+	?anatomicalentity rdfs:label ?anatomicalentityName .
+	?expressioncondition genex:hasDevelopmentalStage ?efo_0000399 . # has a developmental stage
+	?efo_0000399 a efo:EFO_0000399 .
+	?efo_0000399 rdfs:label "life cycle" .
+	?expressioncondition genex:hasSex "any".
+	?expressioncondition genex:hasStrain ?strain . # has strain
+	?strain rdfs:label "wild-type" .
+	?efo_0000399 <http://www.w3.org/2000/01/rdf-schema#label> ?efo_0000399_label.
+	?efo_0000399 <http://purl.org/dc/terms/description> ?efo_0000399_description.
+	?anatomicalentity <http://www.w3.org/2000/01/rdf-schema#label> ?anatomicalentity_label.
+	?anatomicalentity <http://purl.org/dc/terms/description> ?anatomicalentity_description.
+	?gene <http://www.w3.org/2000/01/rdf-schema#seeAlso> ?gene_seealso.
+}

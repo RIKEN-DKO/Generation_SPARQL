@@ -1,0 +1,29 @@
+# What are the anatomical entities including cell types, if any, where the human gene APOC1 is expressed at the post-juvenile stage along with its expression score independently of the strain and sex? Provide also the gene label.
+PREFIX orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up: <http://purl.uniprot.org/core/>
+SELECT DISTINCT ?organism ?expressioncondition ?taxon ?anatomicalentity ?score ?expression ?anatomicalentityName ?cellType ?gene_label ?cellTypeName ?gene ?efo_0000399 WHERE { 
+	?gene a orth:Gene .
+	?expression a genex:Expression .
+	?expression genex:hasExpressionCondition ?expressioncondition . # has an expression condition
+	?expression genex:hasExpressionLevel ?score .
+	?expression genex:hasSequenceUnit ?gene . # has sequence unit
+	?gene rdfs:label "APOC1" .
+	?expressioncondition a genex:ExpressionCondition.
+	?expressioncondition genex:hasAnatomicalEntity ?anatomicalentity . # has anatomical entity
+	?anatomicalentity a genex:AnatomicalEntity.
+	?anatomicalentity rdfs:label ?anatomicalentityName .
+	?expressioncondition genex:hasAnatomicalEntity ?cellType . # has anatomical entity
+	?cellType rdfs:label ?cellTypeName .
+	?expressioncondition genex:hasDevelopmentalStage ?efo_0000399 . # has a developmental stage
+	?efo_0000399 rdf:type efo:EFO_0000399 .
+	?efo_0000399 rdfs:label "post-juvenile" .
+	?gene orth:organism ?organism . # in organism
+	?organism obo:RO_0002162  ?taxon . # in taxon
+	?taxon a up:Taxon .
+	?taxon up:commonName "human" .
+	?gene <http://www.w3.org/2000/01/rdf-schema#label> ?gene_label.
+	FILTER(   ?anatomicalentity !=  obo:GO_0005575   )
+	FILTER(   ?anatomicalentity != ?cellType   )
+}

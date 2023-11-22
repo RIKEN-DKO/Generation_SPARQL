@@ -1,0 +1,34 @@
+# What are the anatomical entities where the human gene APOC1 is expressed in the post-juvenile stage along with its expression score independently of the strain, sex, and cell type? Provide also the strain label and the anatomical entity label and the anatomical entity description and the gene expression has expression level score and the gene expression has false discovery rate p-value and the gene see also and the gene description and the gene identifier.
+PREFIX orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up: <http://purl.uniprot.org/core/>
+PREFIX up-taxon:<http://purl.uniprot.org/taxonomy/>
+PREFIX ensembl: <http://rdf.ebi.ac.uk/resource/ensembl/>
+PREFIX lscr: <http://purl.org/lscr#>
+SELECT DISTINCT ?expressioncondition ?anatomicalentity_label ?anatomicalentity_description ?anatomicalentity ?anatomicalentityName ?expression_hasexpressionlevelscore ?expression ?score ?efo_0005135 ?efo_0005135_label ?gene_description ?gene ?gene_seealso ?expression_hasfalsediscoveryratep_value ?gene_identifier WHERE { 
+	?gene a orth:Gene .
+	?expression a genex:Expression .
+	?expression genex:hasExpressionCondition ?expressioncondition . # has an expression condition
+	?expression genex:hasExpressionLevel ?score .
+	?expression genex:hasSequenceUnit ?gene . # has sequence unit
+	?gene lscr:xrefEnsemblGene ensembl:ENSG00000130208 .
+	?expressioncondition a genex:ExpressionCondition.
+	?expressioncondition genex:hasAnatomicalEntity ?anatomicalentity . # has anatomical entity
+	?anatomicalentity a genex:AnatomicalEntity.
+	?anatomicalentity rdfs:label ?anatomicalentityName .
+	?expressioncondition genex:hasDevelopmentalStage obo:UBERON_0000113 . # has a developmental stage
+	?expressioncondition genex:hasSex "any".
+	?expressioncondition genex:hasStrain ?efo_0005135 . # has strain
+	?efo_0005135 a efo:EFO_0005135.
+	?efo_0005135 rdfs:label "wild-type" .
+	?efo_0005135 <http://www.w3.org/2000/01/rdf-schema#label> ?efo_0005135_label.
+	?anatomicalentity <http://www.w3.org/2000/01/rdf-schema#label> ?anatomicalentity_label.
+	?anatomicalentity <http://purl.org/dc/terms/description> ?anatomicalentity_description.
+	?expression <http://purl.org/genex#hasExpressionLevel> ?expression_hasexpressionlevelscore.
+	?expression <http://purl.org/genex#hasFDRpvalue> ?expression_hasfalsediscoveryratep_value.
+	?gene <http://www.w3.org/2000/01/rdf-schema#seeAlso> ?gene_seealso.
+	?gene <http://purl.org/dc/terms/description> ?gene_description.
+	?gene <http://purl.org/dc/terms/identifier> ?gene_identifier.
+	FILTER(                  ?anatomicalentity !=  obo:GO_0005575                  )
+}

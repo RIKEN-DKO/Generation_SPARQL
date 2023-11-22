@@ -1,0 +1,33 @@
+{
+    "results": {
+        "UnigramRecall": 0.5590622028071307,
+        "UnigramPrecision": 0.5792857588468707,
+        "SP-UnigramRecall": 0.5504843513836709,
+        "SP-UnigramPrecision": 0.5669779838689114,
+        "1GramDiversity": 0.38256308688698504,
+        "2GramDiversity": 0.5008149699840252,
+        "3GramDiversity": 0.566158579861172,
+        "4GramDiversity": 0.6197351255504145,
+        "Corpus1GramDiversity": 0.009409324832936477,
+        "Corpus2GramDiversity": 0.027267839311775097,
+        "Corpus3GramDiversity": 0.047872340425531915,
+        "Corpus4GramDiversity": 0.0651931791996313,
+        "BLEU": 0.4353673945896014,
+        "SP-BLEU": 0.42424557326908485,
+        "METEOR": 0.5004341261308806,
+        "ROUGE": 0.7027711156495013,
+        "f1": 0.5689943379442137,
+        "sp_f1": 0.5586094454420277,
+        "num_none_queries": 0
+    },
+    "arguments": {
+        "batch_size": 10,
+        "chunk": 1000,
+        "max_new_tokens": 1024,
+        "device_map": "auto",
+        "output_dir": "assets/models/wikidata_BGEE_original_augmented_augmented/checkpoint-2000",
+        "dataset": "data/bgee_augment/original_augmented_augmented_test.json",
+        "model_id": "openlm-research/open_llama_7b_v2",
+        "prompt_type": "plainbgee"
+    }
+}

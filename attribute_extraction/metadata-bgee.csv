@@ -1,0 +1,16 @@
+class,classLabel,property,propertyLabel
+http://purl.org/genex#Expression,gene expression,http://purl.org/genex#hasFDRpvalue,has false discovery rate p-value
+http://purl.org/genex#Expression,gene expression,http://purl.org/genex#hasExpressionLevel,has expression level score
+http://purl.org/genex#AbsenceExpression,absence of gene expression,http://purl.org/genex#hasFDRpvalue,has false discovery rate p-value
+http://purl.org/genex#AbsenceExpression,absence of gene expression,http://purl.org/genex#hasExpressionLevel,has expression level score
+http://purl.org/genex#AnatomicalEntity,Anatomical entity,http://purl.org/dc/terms/description,Description
+http://purl.org/genex#AnatomicalEntity,Anatomical entity,http://www.w3.org/2000/01/rdf-schema#label,
+http://purl.org/net/orth#Gene,Gene,http://www.w3.org/2000/01/rdf-schema#label,
+http://purl.org/net/orth#Gene,Gene,http://purl.org/dc/terms/identifier,Identifier
+http://purl.org/net/orth#Gene,Gene,http://purl.org/dc/terms/identifier,identifier
+http://purl.org/net/orth#Gene,Gene,http://www.w3.org/2000/01/rdf-schema#seeAlso,see also
+http://purl.uniprot.org/core/Taxon,Taxon,http://purl.uniprot.org/core/commonName,common name
+http://purl.uniprot.org/core/Taxon,Taxon,http://purl.uniprot.org/core/scientificName,scientific name
+http://www.ebi.ac.uk/efo/EFO_0000399,developmental stage,http://purl.org/dc/terms/description,Description
+http://www.ebi.ac.uk/efo/EFO_0000399,developmental stage,http://www.w3.org/2000/01/rdf-schema#label,
+http://www.ebi.ac.uk/efo/EFO_0005135,strain,http://www.w3.org/2000/01/rdf-schema#label,

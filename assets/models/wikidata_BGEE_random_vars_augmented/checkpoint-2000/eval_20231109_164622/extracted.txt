@@ -1,0 +1,1754 @@
+0:
+iconductor_common_name"json"."x1"."x6"."x7"."x4"."x5"."x1e"."x9"."x8"."x3"."x4"."x2"."x0"."x0_identifier"
+
+--
+
+1:
+etownscientist_human_gene_expression_postjuvenile_anatomicalentity.
+
+--
+
+2:
+condition:<http://purl.org/dc/terms/condition>
+PREFIX gene:<http://purl.org/dc/terms/gene>
+PREFIX expression:<http://purl.org/dc/terms/expression>
+PREFIX x1:<http://purl.org/x1/generation/condition/individual/>
+SELECT DISTINCT ?x6 ?x4 ?x2 ?x0 ?x1_hasexpression_hasfalsediscoveryratep_value ?x5 ?x4Name ?x2Name WHERE { 
+	?x0 a condition:Condition .
+	?x1 a expression:Expression .
+	?x1 condition:hasExpressionCondition ?x2 .
+	?x1 condition:hasExpressionLevel ?x3 .
+	?x1 condition:hasSequenceUnit ?x0 .
+	?x0 gene:GENERATES ?x4 .
+	?x4 a efo:EFO_0005152 .
+	?x4 rdfs:label ?x4Name .
+	?x1 condition:hasAnatomicalEntity ?x2 .
+	?x2 rdfs:label ?x2Name .
+	?x1 condition:hasAnatomicalEntityCondition ?x5 .
+	?x5 a condition:AnatomicalEntityCondition.
+	?x5 condition:hasAnatomicalEntityType ?x6 .
+	?x6 a condition:AnatomicalEntityType.
+	?x1 condition:hasDevelopmentalStage ?x1_hasexpression_hasfalsediscoveryratep_value .
+	?x1_hasexpression_hasfalsediscoveryratep_value a condition:ExpressionCondition.
+	?x1_hasexpression_hasfalsediscoveryratep_value condition:hasAnatomicalEntity ?x7 .
+	?x7 rdfs:label ?x7_x1hasexpression_hasfalsediscoveryratep_valueAnatomicalEntity .
+	?x7 <http://purl.org/dc/terms/scientificName> ?x7_x1hasexpression_hasfalsediscoveryratep_valueAnatomicalEntityScientificName .
+	FILTER(             ?x2 != condition:CellType .
+	FILTER(             ?x2 != condition:Strain .
+	FILTER(             ?x2 != condition:Individual .
+	FILTER(             ?x4 != efo:EFO_0005151 .
+	FILTER(             ?x4 != "human" .
+	FILTER(             ?x2 <http://purl.org/dc/terms/scientificName> ?x2_x2Name .
+	FILTER(             ?x0 <http://purl.org/dc/terms/identifier> ?x0_x0 .
+	FILTER(             ?x0 <http://purl.org/dc/terms/identifier> fp:url .
+	FILTER(             ?x0 <http://purl.org/dc/terms/identifier> ?x0_x0 .
+	?x0 <http://purl.org/dc/terms/identifier> ?x0_x0 .
+	?x0 <http://purl.org/dc/terms/identifier> ?x0_x0 .
+	?x0 <http://purl.org/dc/terms/identifier> ?x0_x0 .
+	?x0 <http://purl.org/dc/terms/identifier> ?x0_x0 .
+	?x0 <http://purl.org/dc/terms/identifier> ?x0_x0 .
+	?x0 <http://purl.org/dc/terms/identifier
+
+--
+
+3:
+etown?
+
+--
+
+4:
+iconductor.ebi.ac.uk/sparql#
+
+--
+
+5:
+iconductor_xdeveloper_xjena_xquery_xone_x1_xget_xanatomical_xentity_xby_xapoc1_xuntil_xds_xdescription_xlabel_xand_xthe_xdevelopmental_xstage_xis_x
+
+--
+
+6:
+iconductorruleroapoc1conditionpostjuvenileDevelopmentalStagelabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabel
+
+--
+
+7:
+orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up: <http://purl.uniprot.org/core/>
+SELECT DISTINCT ?x6 ?x1condition ?x9 ?x10 ?x4 ?x4Name ?x6Name ?x8 ?x3 ?x1 ?x0 ?x10_commonname WHERE { 
+	?x0 a orth:Gene .
+	?x1 a genex:Expression .
+	?x1 genex:hasExpressionCondition ?x1condition .
+	?x1 genex:hasExpressionLevel ?x3 .
+	?x1 genex:hasSequenceUnit ?x0 .
+	?x0 rdfs:label "APOC1" .
+	?x1condition a genex:ExpressionCondition.
+	?x1condition genex:hasAnatomicalEntity ?x4 .
+	?x4 a genex:AnatomicalEntity.
+	?x4 rdfs:label ?x4Name .
+	?x1condition genex:hasAnatomicalEntity ?x6 .
+	?x6 rdfs:label ?x6Name .
+	?x1condition genex:hasDevelopmentalStage ?x8 .
+	?x8 rdf:type efo:EFO_0000399 .
+	?x8 rdfs:label "post-juvenile" .
+	?x0 orth:organism ?x9 .
+	?x9 obo:RO_0002162  ?x10 .
+	?x10 a up:Taxon .
+	?x10 up:commonName "human" .
+	?x10 <http://purl.uniprot.org/core/commonName> ?x10_commonname.
+	FILTER(   ?x4 !=  obo:GO_0005575   )
+	FILTER(   ?x4 != ?x6   )
+}
+
+--
+
+8:
+orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up: <http://purl.uniprot.org/core/>
+SELECT DISTINCT ?x1condition ?x8 ?x9 ?x7 ?x4_label ?x4_description ?x4 ?x4Name ?x1_hasexpressionlevelscore ?x1 ?x3 ?x9_scientificname ?x0 ?x0_seealso ?x6 ?x9_commonname WHERE { 
+	?x0 a orth:Gene .
+	?x1 a genex:Expression .
+	?x1 genex:hasExpressionCondition ?x1condition .
+	?x1 genex:hasExpressionLevel ?x3 .
+	?x1 genex:hasSequenceUnit ?x0 .
+	?x0 rdfs:label "APOC1" .
+	?x1condition a genex:ExpressionCondition.
+	?x1condition genex:hasAnatomicalEntity ?x4 .
+	?x1condition genex:hasAnatomicalEntity obo:GO_0005575 .
+	?x4 a genex:AnatomicalEntity.
+	?x4 rdfs:label ?x4Name .
+	?x1condition genex:hasDevelopmentalStage ?x6 .
+	?x6 rdfs:label "post-juvenile" .
+	?x1condition genex:hasSex "any".
+	?x1condition genex:hasStrain ?x7 .
+	?x7 rdfs:label "wild-type" .
+	?x0 orth:organism ?x8 .
+	?x8 obo:RO_0002162  ?x9 .
+	?x9 a up:Taxon .
+	?x9 up:commonName "human" .
+	?x9 <http://purl.uniprot.org/core/scientificName> ?x9_scientificname.
+	?x9 <http://purl.uniprot.org/core/commonName> ?x9_commonname.
+	?x4 <http://www.w3.org/2000/01/rdf-schema#label> ?x4_label.
+	?x4 <http://purl.org/dc/terms/description> ?x4_description.
+	?x1 <http://purl.org/genex#hasExpressionLevel> ?x1_hasexpressionlevelscore.
+	?x1 <http://purl.org/genex#hasFDRpvalue> ?x1_fdrpvalue.
+	?x0 <http://www.w3.org/2000/01/rdf-schema#seeAlso> ?x0_seealso.
+	?x0 <http://www.w3.org/2000/01/rdf-schema#label> ?x0_label.
+	FILTER(                 ?x4 !=  obo:GO_0005575                 )
+}
+
+--
+
+9:
+iconductorXDevelopmentalStage00051_41011_111000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+--
+
+10:
+iconductorDescriptionDevelopmentalStage_10000105000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+--
+
+11:
+iconductor.human.genes.apoc1.expression.post-juvenile.anatomicalentity((<http://purl.org/dc/terms/CommonName> "post-juvenile" ).label
+
+--
+
+12:
+genetic_condition: <http://purl.org/genetic_condition/core#>
+PREFIX   xdeveloper: <http://purl.org/xdeveloper#>
+PREFIX   xacml: <http://purl.org/xacml#>
+PREFIX   xgenetic_condition: <http://purl.org/xgenetic_condition/core#>
+SELECT   DISTINCT ?x1 ?x4_label ?x5 ?x6 ?x2_label ?x2_description ?x2 ?x2Name ?x4 ?x4_description ?x6_label ?x0 ?x0_seealso ?x0_label WHERE { 
+	?x0 a genetic_condition:Gene .
+	?x0 xdeveloper:xindicates ?x1 .
+	?x1 a xacml:Expression .
+	?x0 xdeveloper:hasExpressionLevel ?x2 .
+	?x2 a xacml:ExpressionLevel .
+	?x2 xdeveloper:hasAnatomicalEntity ?x2Name .
+	?x2Name rdfs:label ?x2Name_label .
+	?x2 xdeveloper:hasAnatomicalEntity genetic_condition:AnatomicalEntity .
+	?x2 genetic_condition:hasDevelopmentalStage ?x4 .
+	?x4 a efo:EFO_0000399 .
+	?x4 rdfs:label "life cycle" .
+	?x2 genetic_condition:hasSex ?x5 .
+	?x5 a efo:EFO_0000399 .
+	?x5 rdfs:label "any" .
+	?x2 genetic_condition:hasStrain ?x6 .
+	?x6 a efo:EFO_0005135 .
+	?x6 rdfs:label "wild type" .
+	?x4 <http://www.w3.org/2000/01/rdf-schema#label> ?x4_label.
+	?x4 <http://purl.org/dc/terms/description> ?x4_description.
+	?x2 <http://www.w3.org/2000/01/rdf-schema#label> ?x2_label.
+	?x2 <http://purl.org/dc/terms/description> ?x2_description.
+	?x0 <http://www.w3.org/2000/01/rdf-schema#seeAlso> ?x0_seealso.
+	?x0 <http://www.w3.org/2000/01/rdf-schema#label> ?x0_label.
+}
+ORDER BY ?x2Name_label
+
+--
+
+13:
+orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up: <http://purl.uniprot.org/core/>
+SELECT DISTINCT ?x6 ?x8_description ?x1 ?x3 ?x1condition ?x4_description ?x8 ?x10_scientificname ?x1_hasfalsediscoveryratep_value ?x9 ?x4_label ?x1_hasexpressionlevelscore ?x0_description ?x8_label ?x10 ?x4 ?x4Name ?x6Name ?x0 ?x10_commonname WHERE { 
+	?x0 a orth:Gene .
+	?x1 a genex:Expression .
+	?x1 genex:hasExpressionCondition ?x1condition .
+	?x1 genex:hasExpressionLevel ?x3 .
+	?x1 genex:hasSequenceUnit ?x0 .
+	?x0 rdfs:label "APOC1" .
+	?x1condition a genex:ExpressionCondition.
+	?x1condition genex:hasAnatomicalEntity ?x4 .
+	?x4 a genex:AnatomicalEntity.
+	?x4 rdfs:label ?x4Name .
+	?x1condition genex:hasAnatomicalEntity ?x6 .
+	?x6 rdfs:label ?x6Name .
+	?x1condition genex:hasDevelopmentalStage ?x8 .
+	?x8 rdf:type efo:EFO_0000399 .
+	?x8 rdfs:label "post-juvenile" .
+	?x0 orth:organism ?x9 .
+	?x9 obo:RO_0002162  ?x10 .
+	?x10 a up:Taxon .
+	?x10 up:commonName "human" .
+	?x10 <http://purl.uniprot.org/core/scientificName> ?x10_scientificname.
+	?x10 <http://purl.uniprot.org/core/commonName> ?x10_commonname.
+	?x8 <http://www.w3.org/2000/01/rdf-schema#label> ?x8_label.
+	?x8 <http://purl.org/dc/terms/description> ?x8_description.
+	?x4 <http://www.w3.org/2000/01/rdf-schema#label> ?x4_label.
+	?x4 <http://purl.org/dc/terms/description> ?x4_description.
+	?x1 <http://purl.org/genex#hasExpressionLevel> ?x1_hasexpressionlevelscore.
+	?x1 <http://purl.org/genex#hasFDRpvalue> ?x1_hasfalsediscoveryratep_value.
+	?x0 <http://purl.org/dc/terms/description> ?x0_description.
+	FILTER(                 ?x4 !=  obo:GO_0005575                 )
+	FILTER(                 ?x4 != ?x6                 )
+}
+
+--
+
+14:
+etown?
+
+--
+
+15:
+iconductorX11Linkage.x11.applications.ExpressionQueryApplication.convert_expression_query_into_sparql_query(context)
+
+--
+
+16:
+iconductor_common_name"json"["x1"."x6"."x4"."x1"."x0"."x2"."x4_label"."x1"."x0"."x1"."x3"."x4"."x6"."x2"."x0"."x4"."x0"."x2"."x3"."x1"."x4"."x0"."x4"."x2"."x1"."x3"."x0"."x4"."x4"."x2"."x4"."x1"."x3"."x4"."x0"."x2"."x0"."x4"."x2"."x0"."x1"."x4"."x2"."x2"."x4"."x0"."x4"."x0"."x0"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."x4"."
+
+--
+
+17:
+iconductor: euc1000299_g1_i1_l1?x1?x1_label?x5?x5_label?x1_description?x0?x0_identifier
+
+--
+
+18:
+iconductor_common_name
+
+--
+
+19:
+iconductorX19_Expression_PostJuvenile_AnatomicalEntity_x1__x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f_x5f
+
+--
+
+20:
+iconductor:sparql_query
+	. <http://www.ebi.ac.uk/macros/fibo.html>
+	. <http://www.uniprot.org/uniprot>
+	. <http://purl.org/dc/terms/expressionLevel>
+	. <http://purl.org/dc/terms/falseDiscoveryRatePValue>
+	. <http://purl.org/dc/terms/hasExpressionLevel>
+	. <http://purl.org/dc/terms/hasIdentifier>
+	. <http://purl.org/dc/terms/hasLabel>
+	. <http://purl.org/dc/terms/hasExpressionLevel>
+	. <http://purl.org/dc/terms/hasReference>
+	. <http://purl.org/dc/terms/reference>
+	. <http://purl.org/dc/terms/description>
+	. <http://purl.org/dc/terms/label>
+	. <http://www.bioassayontology.org/bao#curator_label>
+	. <http://purl.org/dc/terms/developer>
+	. <EMAIL>
+	. <http://www.ebi.ac.uk/media/ebi-media-1.0.xsd>
+	. <http://purl.org/dc/terms/format>
+	. <http://purl.org/dc/terms/identifier>
+	. <http://www.uniprot.org/uniprot/<EMAIL>>
+	. <http://purl.org/dc/terms/title>
+	. <http://purl.org/dc/terms/description>
+	. <http://purl.org/dc/terms/hasPart>
+	. <http://purl.org/dc/terms/isPartOf>
+	. <http://purl.org/dc/terms/identifier>
+	. <http://purl.org/dc/terms/identifier>
+	. <http://purl.org/dc/terms/identifier>
+	. <http://purl.org/dc/terms/identifier>
+	. <http://purl.org/dc/terms/identifier>
+	. <http://purl.org/dc/terms/identifier>
+	. <http://purl.org/dc/terms/identifier>
+	. <http://purl.org/dc/terms/identifier>
+	. <http://purl.org/dc/terms/identifier>
+	. <http://purl.org/dc/terms/identifier>
+	. <http://purl.org/dc/terms/identifier>
+	. <http://purl.org/dc/terms/identifier>
+	. <http://purl.org/dc/terms/identifier>
+	. <http://purl.org/dc/terms/identifier>
+	. <http://purl.org/dc/terms/identifier>
+	. <http://purl.org/dc/terms/identifier>
+	. <http://purl.org/dc/terms/identifier>
+	. <http://purl.org/dc/terms/identifier>
+	. <http://purl.org/dc/terms/identifier>
+	. <http://purl.org/dc/terms/identifier>
+	. <http://purl.org/dc/terms/identifier>
+	. <http://purl.org/dc/terms/identifier>
+	. <http://purl.org/dc/terms/identifier>
+	. <http://purl.org/dc/terms/identifier>
+	. <http://purl.org/dc/terms/identifier>
+	. <http://purl.org/dc/terms/identifier>
+	. <http://purl.org/dc/terms/identifier>
+	. <http://purl.org/dc/terms/identifier>
+	. <http://purl.org/dc/terms/identifier>
+	. <http://purl.org/dc/terms/identifier>
+	. <http://purl.org/dc/terms/identifier>
+	. <http://purl.org/dc/
+
+--
+
+21:
+iconductor:human_gene_expression?x=apoc1&x1=post-juvenile&x2=independent&x3=unchecked&x4=human&x5=scientificname&x6=commonname&x7=strain_label&x8=anatomicalentity_label&x9=anatomicalentity_description&x10=expression_level_score&x11=false_discovery_rate_p_value&x12=seealso&x13=description&x14=individual&x15=unchecked&x16=unchecked&x17=unchecked&x18=unchecked&x19=unchecked&x20=unchecked&x21=unchecked&x22=unchecked&x23=unchecked&x24=unchecked&x25=unchecked&x26=unchecked&x27=unchecked&x28=unchecked&x29=unchecked&x30=unchecked&x31=unchecked&x32=unchecked&x33=unchecked&x34=unchecked&x35=unchecked&x36=unchecked&x37=unchecked&x38=unchecked&x39=unchecked&x40=unchecked&x41=unchecked&x42=unchecked&x43=unchecked&x44=unchecked&x45=unchecked&x46=unchecked&x47=unchecked&x48=unchecked&x49=unchecked&x50=unchecked&x51=unchecked&x52=unchecked&x53=unchecked&x54=unchecked&x55=unchecked&x56=unchecked&x57=unchecked&x58=unchecked&x59=unchecked&x60=unchecked&x61=unchecked&x62=unchecked&x63=unchecked&x64=unchecked&x65=unchecked&x66=unchecked&x67=unchecked&x68=unchecked&x69=unchecked&x70=unchecked&x71=unchecked&x72=unchecked&x73=unchecked&x74=unchecked&x75=unchecked&x76=unchecked&x77=unchecked&x78=unchecked&x79=unchecked&x80=unchecked&x81=unchecked&x82=unchecked&x83=unchecked&x84=unchecked&x85=unchecked&x86=unchecked&x87=unchecked&x88=unchecked&x89=unchecked&x90=unchecked&x91=unchecked&x92=unchecked&x93=unchecked&x94=unchecked&x95=unchecked&x96=unchecked&x97=unchecked&x98=unchecked&x99=unchecked&x100=unchecked&x101=unchecked&x102=unchecked&x103=unchecked&x104=unchecked&x105=unchecked&x106=unchecked&x107=unchecked&x108=unchecked&x109=unchecked&x110=unchecked&x111=unchecked&x112=unchecked&x113=unchecked&x114=unchecked&x115=unchecked&x116=unchecked&x117=unchecked&x118=unchecked&x119=unchecked&x120=unchecked&x121=unchecked&x122=unchecked&x123=unchecked&x124=unchecked&x125=unchecked&x126=unchecked&x127=unchecked&x128=unchecked&x129=unchecked&x130=unchecked&x131=unchecked&x132=unchecked&x133=unchecked&x134=unchecked&x135=unchecked&x136=unchecked&x137=
+
+--
+
+22:
+orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up: <http://purl.uniprot.org/core/>
+SELECT DISTINCT ?x6 ?x8_description ?x1 ?x3 ?x1condition ?x4_description ?x8 ?x10_scientificname ?x1_hasfalsediscoveryratep_value ?x9 ?x4_label ?x1_hasexpressionlevelscore ?x0_description ?x8_label ?x10 ?x4 ?x4Name ?x6Name ?x0_seealso ?x0 ?x10_commonname WHERE { 
+	?x0 a orth:Gene .
+	?x1 a genex:Expression .
+	?x1 genex:hasExpressionCondition ?x1condition .
+	?x1 genex:hasExpressionLevel ?x3 .
+	?x1 genex:hasSequenceUnit ?x0 .
+	?x0 rdfs:label "APOC1" .
+	?x1condition a genex:ExpressionCondition.
+	?x1condition genex:hasAnatomicalEntity ?x4 .
+	?x4 a genex:AnatomicalEntity.
+	?x4 rdfs:label ?x4Name .
+	?x1condition genex:hasAnatomicalEntity ?x6 .
+	?x6 rdfs:label ?x6Name .
+	?x1condition genex:hasDevelopmentalStage ?x8 .
+	?x8 rdf:type efo:EFO_0000399 .
+	?x8 rdfs:label "post-juvenile" .
+	?x0 orth:organism ?x9 .
+	?x9 obo:RO_0002162  ?x10 .
+	?x10 a up:Taxon .
+	?x10 up:commonName "human" .
+	?x10 <http://purl.uniprot.org/core/scientificName> ?x10_scientificname.
+	?x10 <http://purl.uniprot.org/core/commonName> ?x10_commonname.
+	?x8 <http://www.w3.org/2000/01/rdf-schema#label> ?x8_label.
+	?x8 <http://purl.org/dc/terms/description> ?x8_description.
+	?x4 <http://www.w3.org/2000/01/rdf-schema#label> ?x4_label.
+	?x4 <http://purl.org/dc/terms/description> ?x4_description.
+	?x1 <http://purl.org/genex#hasExpressionLevel> ?x1_hasexpressionlevelscore.
+	?x1 <http://purl.org/genex#hasFDRpvalue> ?x1_hasfalsediscoveryratep_value.
+	?x0 <http://www.w3.org/2000/01/rdf-schema#seeAlso> ?x0_seealso.
+	?x0 <http://purl.org/dc/terms/description> ?x0_description.
+	FILTER(                 ?x4 != obo:GO_0005575                 )
+	FILTER(                 ?x4 != ?x6                 )
+}
+
+--
+
+23:
+iconductor: http://rdf.ebi.ac.uk/rdf/terms#Include_x_as_an_annotation_of_x.
+
+<http://purl.org/dc/terms/description>
+<http://purl.org/dc/terms/description>
+[<http://purl.org/dc/terms/description>
+ "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>The APOC1 gene is expressed in the human anatomical entity brain.</p></div>".
+ <http://purl.org/dc/terms/description>
+ "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>The APOC1 gene is expressed in the human anatomical entity brain.</p></div>".
+ <http://purl.org/dc/terms/description>
+ "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>The APOC1 gene is expressed in the human anatomical entity brain.</p></div>".
+ <http://purl.org/dc/terms/description>
+ "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>The APOC1 gene is expressed in the human anatomical entity brain.</p></div>".
+ <http://purl.org/dc/terms/description>
+ "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>The APOC1 gene is expressed in the human anatomical entity brain.</p></div>".
+ <http://purl.org/dc/terms/description>
+ "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>The APOC1 gene is expressed in the human anatomical entity brain.</p></div>".
+ <http://purl.org/dc/terms/description>
+ "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>The APOC1 gene is expressed in the human anatomical entity brain.</p></div>".
+ <http://purl.org/dc/terms/description>
+ "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>The APOC1 gene is expressed in the human anatomical entity brain.</p></div>".
+ <http://purl.org/dc/terms/description>
+ "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>The APOC1 gene is expressed in the human anatomical entity brain.</p></div>".
+ <http://purl.org/dc/terms/description>
+ "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>The APOC1 gene is expressed in the human anatomical entity brain.</p></div>".
+ <http://purl.org/dc/terms/description>
+ "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>The APOC1 gene is expressed in the human anatomical entity brain.</p></div>".
+ <http://purl.org/dc/terms/description>
+ "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>The APOC1 gene is expressed in the human anatomical entity brain.</p></div>".
+ <http://purl.org/dc/terms/description>
+ "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>The APOC1 gene is expressed in the human anatomical entity brain.</p></div>".
+ <http://purl.org/dc/terms/description>
+ "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>The APOC1 gene is expressed in the human anatomical entity brain.</p></div>".
+ <http://purl.org/dc/terms/description>
+ "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>The APOC1 gene is expressed in the human anatomical entity brain.</p></div>".
+ <http://purl.org/dc/terms/description>
+ "<div xmlns=\"http://www
+
+--
+
+24:
+orth: <http://purl.org/net/orth#>
+
+--
+
+25:
+orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up: <http://purl.uniprot.org/core/>
+SELECT DISTINCT ?x1 ?x4_label ?x5 ?x6 ?x2_label ?x2_description ?x2 ?x2Name ?x4 ?x4_description ?x6_scientificName ?x0 ?x0_seeAlso ?x0_description ?x0_identifier WHERE { 
+	?x0 a orth:Gene .
+	?x0 genex:isExpressedIn ?x1.
+	?x0 rdfs:label "APOC1" .
+	?x1 a genex:ExpressionCondition.
+	?x1 genex:hasAnatomicalEntity ?x2 .
+	?x2 a genex:AnatomicalEntity.
+	?x2 rdfs:label ?x2Name .
+	?x1 genex:hasAnatomicalEntity obo:GO_0005575 .
+	?x1 genex:hasDevelopmentalStage ?x4 .
+	?x4 a efo:EFO_0000399 .
+	?x4 rdfs:label "pre-juvenile" .
+	?x0 orth:organism ?x5 .
+	?x5 obo:RO_0002162  ?x6 .
+	?x6 a up:Taxon .
+	?x6 up:commonName "human" .
+	?x6 <http://purl.org/dc/terms/scientificName> ?x6_scientificName.
+	?x6 <http://purl.org/dc/terms/commonName> ?x6_commonName.
+	?x4 <http://www.w3.org/2000/01/rdf-schema#label> ?x4_label.
+	?x4 <http://purl.org/dc/terms/description> ?x4_description.
+	?x2 <http://www.w3.org/2000/01/rdf-schema#label> ?x2_label.
+	?x2 <http://purl.org/dc/terms
+
+--
+
+26:
+etown?
+
+--
+
+27:
+iconductor:http://www.ebi.ac.uk/webservices/bioentity_v1_0#human&apoc1_exp_stage:post-juvenile&apoc1_anatomicalentity:all_continuous_tissue&apoc1_genename:APOC1&select:apoc1_identifier
+
+--
+
+28:
+orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up: <http://purl.uniprot.org/core/>
+SELECT DISTINCT ?x0 ?x1 ?x2 ?x3 ?x4 ?x5 ?x0_commonname ?x2_commonname ?x0_scientificname ?x4_label ?x0_label WHERE { 
+	?x0 a orth:Taxon .
+	?x0 genex:scientificName ?x1 .
+	?x0 genex:scientificName ?x2 .
+	?x0 genex:commonName ?x3 .
+	?x0 genex:commonName ?x4 .
+	?x0 <http://purl.org/dc/terms/identifier> ?x5 .
+	?x0 <http://purl.org/dc/terms/identifier> obo:GO_0005575 .
+	?x1 a xsd:string .
+	?x1 rdfs:label ?x1_scientificname .
+	?x2 a xsd:string .
+	?x2 rdfs:label ?x2_scientificname .
+	?x3inking:commonName .
+	?x4 <http://www.w3.org/2000/01/rdf-schema#label> ?x4_label.
+	?x0 <http://purl.org/dc/terms/commonName> ?x0_commonname.
+	?x4 <http://www.w3.org/2000/01/rdf-schema#label> ?x4_label.
+	?x0 <http://purl.org/dc/terms/identifier> ?x5.
+}
+
+--
+
+29:
+����������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������
+
+--
+
+30:
+iconductor_xref<http://purl.org/conductor/xref/A00552>	<http://purl.org/dc/terms/scientificName>	<http://purl.org/dc/terms/label>	<http://purl.org/dc/terms/description>	<http://purl.org/dc/terms/identifier>	<http://purl.org/dc/terms/source>	<http://purl.org/dc/terms/format>	<http://purl.org/dc/terms/language>	<http://purl.org/dc/terms/url>	<http://purl.org/dc/terms/relation>	<http://purl.org/dc/terms/identifier>	<http://purl.org/dc/terms/description>	<http://purl.org/dc/terms/format>	<http://purl.org/dc/terms/language>	<http://purl.org/dc/terms/url>	<http://purl.org/dc/terms/relation>	<http://purl.org/dc/terms/identifier>	<http://purl.org/dc/terms/description>	<http://purl.org/dc/terms/format>	<http://purl.org/dc/terms/language>	<http://purl.org/dc/terms/url>	<http://purl.org/dc/terms/relation>	<http://purl.org/dc/terms/identifier>	<http://purl.org/dc/terms/description>	<http://purl.org/dc/terms/format>	<http://purl.org/dc/terms/language>	<http://purl.org/dc/terms/url>	<http://purl.org/dc/terms/relation>	<http://purl.org/dc/terms/identifier>	<http://purl.org/dc/terms/description>	<http://purl.org/dc/terms/format>	<http://purl.org/dc/terms/language>	<http://purl.org/dc/terms/url>	<http://purl.org/dc/terms/relation>	<http://purl.org/dc/terms/identifier>	<http://purl.org/dc/terms/description>	<http://purl.org/dc/terms/format>	<http://purl.org/dc/terms/language>	<http://purl.org/dc/terms/url>	<http://purl.org/dc/terms/relation>	<http://purl.org/dc/terms/identifier>	<http://purl.org/dc/terms/description>	<http://purl.org/dc/terms/format>	<http://purl.org/dc/terms/language>	<http://purl.org/dc/terms/url>	<http://purl.org/dc/terms/relation>	<http://purl.org/dc/terms/identifier>	<http://purl.org/dc/terms/description>	<http://purl.org/dc/terms/format>	<http://purl.org/dc/terms/language>	<http://purl.org/dc/terms/url>	<http://purl.org/dc/terms/relation>	<http://purl.org/dc/terms/identifier>	<http://purl.org/dc/terms/description>	<http://purl.org/dc/terms/format>	<http://purl.org/dc/terms/language>	<http://purl.org/dc/terms/url>	<http://purl.org/dc/terms/relation>	<http://purl.org/dc/terms/identifier>	<http://purl.org/dc/terms/description>	<http://purl.org/dc/terms/format>	<http://purl.org/dc/terms/language>	<http://purl.org/dc/terms/url>	<http
+
+--
+
+31:
+orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up: <http://purl.uniprot.org/core/>
+SELECT DISTINCT ?x6 ?x1condition ?x9 ?x10 ?x4 ?x4Name ?x6Name ?x8 ?x3 ?x1 ?x0 ?x8_label WHERE { 
+	?x0 a orth:Gene .
+	?x1 a genex:Expression .
+	?x1 genex:hasExpressionCondition ?x1condition .
+	?x1 genex:hasExpressionLevel ?x3 .
+	?x1 genex:hasSequenceUnit ?x0 .
+	?x0 rdfs:label "APOC1" .
+	?x1condition a genex:ExpressionCondition.
+	?x1condition genex:hasAnatomicalEntity ?x4 .
+	?x4 a genex:AnatomicalEntity.
+	?x4 rdfs:label ?x4Name .
+	?x1condition genex:hasAnatomicalEntity ?x6 .
+	?x6 rdfs:label ?x6Name .
+	?x1condition genex:hasDevelopmentalStage ?x8 .
+	?x8 rdf:type efo:EFO_0000399 .
+	?x8 rdfs:label "pre-juvenile" .
+	?x0 orth:organism ?x9 .
+	?x9 obo:RO_0002162  ?x10 .
+	?x10 a up:Taxon .
+	?x10 up:commonName "human" .
+	?x8 <http://www.w3.org/2000/01/rdf-schema#label> ?x8_label.
+	FILTER(   ?x4 !=  obo:GO_0005575   )
+	FILTER(   ?x4 != ?x6   )
+}
+
+--
+
+32:
+ampionships
+
+--
+
+33:
+iconductor_x_hses_taxon_scientificname_x005fspecies_x005fcommonname.
+
+<pre>
+http://www.ebi.ac.uk/macro/repositories/homo_sapiens/genes/APOC1?x_hses=http://purl.org/dc/terms/taxon&x005fspecies=http://purl.org/dc/terms/scientificName&x005fcommonname=http://purl.org/dc/terms/commonName
+</pre>
+
+--
+
+34:
+orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up: <http://purl.uniprot.org/core/>
+SELECT DISTINCT ?x1 ?x6 ?x7 ?x2Name ?x4 ?x5 ?x2 ?x0 ?x0_identifier WHERE { 
+	?x0 a orth:Gene .
+	?x0 genex:isExpressedIn ?x1.
+	?x1 a genex:ExpressionCondition.
+	?x0 rdfs:label "APOC1" .
+	?x1 genex:hasAnatomicalEntity ?x2 .
+	?x2 rdfs:label ?x2Name .
+	?x1 genex:hasAnatomicalEntity obo:GO_0005575 .
+	?x1 genex:hasDevelopmentalStage ?x4 .
+	?x4 a efo:EFO_0000399 .
+	?x4 rdfs:label "post-juvenile" .
+	?x1 genex:hasSex "any".
+	?x1 genex:hasStrain ?x5 .
+	?x5 a efo:EFO_0005135.
+	?x5 rdfs:label "wild-type" .
+	?x0 orth:organism ?x6 .
+	?x6 obo:RO_0002162  ?x7 .
+	?x7 a up:Taxon .
+	?x7 up:commonName "human" .
+	?x0 <http://purl.org/dc/terms/identifier> ?x0_identifier.
+}
+
+--
+
+35:
+orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up: <http://purl.uniprot.org/core/>
+SELECT DISTINCT ?x1 ?x4_label ?x5 ?x6 ?x0_label ?x2_label ?x2_description ?x2 ?x2Name ?x4 ?x4_description ?x6_scientificname ?x0_description ?x0 ?x0_seealso ?x6_commonname WHERE { 
+	?x0 a orth:Gene .
+	?x0 genex:isExpressedIn ?x1.
+	?x0 rdfs:label "APOC1" .
+	?x1 a genex:ExpressionCondition.
+	?x1 genex:hasAnatomicalEntity ?x2 .
+	?x2 a genex:AnatomicalEntity.
+	?x2 rdfs:label ?x2Name .
+	?x1 genex:hasAnatomicalEntity obo:GO_0005575 .
+	?x1 genex:hasDevelopmentalStage ?x4 .
+	?x4 a efo:EFO_0000399 .
+	?x4 rdfs:label "post-juvenile" .
+	?x0 orth:organism ?x5 .
+	?x5 obo:RO_0002162  ?x6 .
+	?x6 a up:Taxon .
+	?x6 up:commonName "human" .
+	?x6 <http://purl.uniprot.org/core/scientificName> ?x6_scientificname.
+	?x6 <http://purl.uniprot.org/core/commonName> ?x6_commonname.
+	?x4 <http://www.w3.org/2000/01/rdf-schema#label> ?x4_label.
+	?x4 <http://purl.org/dc/terms/description> ?x4_description.
+	?x2 <http://www.w3.org/2000/01/rdf-schema#label> ?x2_label.
+	?x2 <http://purl.org/dc/terms/description> ?x2_description.
+	?x0 <http://www.w3.org/2000/01/rdf-schema#seeAlso> ?x0_seealso.
+	?x0 <http://purl.org/dc/terms/description> ?x0_description.
+	?x0 <http://purl.org/dc/terms/identifier> ?x0_identifier.
+	?x0 <http://www.w3.org/2000/01/rdf-schema#label> ?x0_label.
+}
+
+--
+
+36:
+orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+SELECT DISTINCT ?x0 ?x1 ?x2 ?x0_seealso ?x1Name WHERE { 
+	?x0 a orth:Gene .
+	?x0 genex:isExpressedIn ?x1 .
+	?x0 rdfs:label "APOC1" .
+	?x1 a genex:AnatomicalEntity .
+	?x1 rdfs:label ?x1Name .
+	?x0 <http://purl.org/dc/terms/description> ?x0_seealso .
+}
+
+--
+
+37:
+iconductor.sparql_client.SparqlClientException: An error occurred while executing the SPARQL query.
+
+--
+
+38:
+iconductor_x_hses_description_scientificname_x_commonname_x_anatomicalentity_description(context="http://www.ebi.ac.uk/efo/EFO_0000399", taxon_scientificname="Homo sapiens", taxon_commonname="human", anatomicalentity_description="")
+
+--
+
+39:
+orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up: <http://purl.uniprot.org/core/>
+SELECT DISTINCT ?x1 ?x6 ?x7 ?x2Name ?x4 ?x5 ?x5_label ?x2 ?x0 ?x7_scientificName ?x0_label ?x4_description ?x7_commonName WHERE { 
+	?x0 a orth:Gene .
+	?x0 genex:isExpressedIn ?x1.
+
+--
+
+40:
+ampionship
+<http://www.ncbi.nlm.nih.gov/nucleotide/130208?app=entrezgen&db=genome> <http://www.w3.org/2000/01/rdf-schema#seeAlso> ?x0 <http://purl.org/dc/terms/description> ?x1 <http://purl.org/dc/terms/identifier> ?x3 ?x4 ?x0_seealso ?x1_description ?x1_identifier.
+
+--
+
+41:
+iconductor##
+<http://www.w3.org/2000/01/rdf-schema#label> <http://purl.org/dc/terms/identifier> <http://www.bioassayontology.org/bao#APOC1_hsw> .
+<http://purl.org/dc/terms/scientificName> <http://purl.org/dc/terms/identifier> <http://purl.org/dc/terms/identifier> .
+<http://purl.org/dc/terms/description> <http://purl.org/dc/terms/identifier> <http://purl.org/dc/terms/description> .
+<http://purl.org/dc/terms/identifier> <http://purl.org/dc/terms/identifier> .
+<http://purl.org/dc/terms/identifier> <http://purl.org/dc/terms/identifier> .
+<http://purl.org/dc/terms/identifier> <http://purl.org/dc/terms/identifier> .
+<http://purl.org/dc/terms/identifier> <http://purl.org/dc/terms/identifier> .
+<http://purl.org/dc/terms/identifier> <http://purl.org/dc/terms/identifier> .
+<http://purl.org/dc/terms/identifier> <http://purl.org/dc/terms/identifier> .
+<http://purl.org/dc/terms/identifier> <http://purl.org/dc/terms/identifier> .
+<http://purl.org/dc/terms/identifier> <http://purl.org/dc/terms/identifier> .
+<http://purl.org/dc/terms/identifier> <http://purl.org/dc/terms/identifier> .
+<http://purl.org/dc/terms/identifier> <http://purl.org/dc/terms/identifier> .
+<http://purl.org/dc/terms/identifier> <http://purl.org/dc/terms/identifier> .
+<http://purl.org/dc/terms/identifier> <http://purl.org/dc/terms/identifier> .
+<http://purl.org/dc/terms/identifier> <http://purl.org/dc/terms/identifier> .
+<http://purl.org/dc/terms/identifier> <http://purl.org/dc/terms/identifier> .
+<http://purl.org/dc/terms/identifier> <http://purl.org/dc/terms/identifier> .
+<http://purl.org/dc/terms/identifier> <http://purl.org/dc/terms/identifier> .
+<http://purl.org/dc/terms/identifier> <http://purl.org/dc/terms/identifier> .
+<http://purl.org/dc/terms/identifier> <http://purl.org/dc/terms/identifier> .
+<http://purl.org/dc/terms/identifier> <http://purl.org/dc/terms/identifier> .
+<http://purl.org/dc/terms/identifier> <http://purl.org/dc/terms/identifier> .
+<http://purl.org/dc/terms/identifier> <http://purl.org/dc/terms/identifier> .
+<http://purl.org/dc/terms/identifier> <http://purl.org/dc/terms/identifier> .
+<http://purl.org/dc/terms/identifier> <http://purl.org/dc/terms/identifier> .
+<http://purl.org/dc/terms/identifier> <http://purl.org/dc/terms/identifier> .
+<http://purl.org/dc/terms/identifier> <http://purl.org/dc/terms/identifier> .
+<http://purl.org/dc/terms/identifier> <http://purl.org/dc/terms/identifier> .
+<http://purl.org/dc/terms/identifier> <http://purl.org/dc/
+
+--
+
+42:
+iconductorDescription?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?provinsi?
+
+--
+
+43:
+orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up: <http://purl.uniprot.org/core/>
+SELECT DISTINCT ?x3 ?x4 ?x1_label ?x1_description ?x1 ?x1Name ?x0_description ?x0 ?x0_seealso WHERE { 
+	?x0 a orth:Gene .
+	?x0 genex:isExpressedIn ?x1.
+	?x0 rdfs:label "APOC1" .
+	?x1 a genex:AnatomicalEntity .
+	?x1 rdfs:label ?x1Name .
+
+--
+
+44:
+orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up: <http://purl.uniprot.org/core/>
+SELECT DISTINCT ?x6 ?x1condition ?x9 ?x10 ?x4 ?x4Name ?x6Name ?x8 ?x3 ?x1 ?x0 ?x0_label ?x10_scientificname ?x10_commonname WHERE { 
+	?x0 a orth:Gene .
+	?x1 a genex:Expression .
+	?x1 genex:hasExpressionCondition ?x1condition .
+	?x1 genex:hasExpressionLevel ?x3 .
+	?x1 genex:hasSequenceUnit ?x0 .
+	?x0 rdfs:label "APOC1" .
+	?x1condition a genex:ExpressionCondition.
+	?x1condition genex:hasAnatomicalEntity ?x4 .
+	?x4 a genex:AnatomicalEntity.
+	?x4 rdfs:label ?x4Name .
+	?x1condition genex:hasAnatomicalEntity ?x6 .
+	?x6 rdfs:label ?x6Name .
+	?x1condition genex:hasDevelopmentalStage ?x8 .
+	?x8 rdf:type efo:EFO_0000232 .
+	?x8 rdfs:label "post-juvenile" .
+	?x0 orth:organism ?x9 .
+	?x9 obo:RO_0002162  ?x10 .
+	?x10 a up:Taxon .
+	?x10 up:commonName "human" .
+	?x10 <http://purl.uniprot.org/core/scientificName> ?x10_scientificname.
+	?x10 <http://purl.uniprot.org/core/commonName> ?x10_commonname.
+	?x0 <http://www.w3.org/2000/01/rdf-schema#label> ?x0_label.
+	FILTER(       ?x4 !=  obo:GO_0005575       )
+	FILTER(       ?x4 != ?x6       )
+}
+
+--
+
+45:
+iconductors.
+
+--
+
+46:
+orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up: <http://purl.uniprot.org/core/>
+SELECT DISTINCT ?x1condition ?x4_label ?x1 ?x3 ?x4 ?x1_seealso ?x0 ?x0_label WHERE { 
+	?x0 a orth:Gene .
+	?x1 a genex:Expression .
+	?x1 genex:hasExpressionCondition ?x1condition .
+	?x1 genex:hasExpressionLevel ?x3 .
+	?x1 genex:hasSequenceUnit ?x0 .
+	?x0 rdfs:label "APOC1" .
+	?x1condition a genex:ExpressionCondition.
+	?x1condition genex:hasAnatomicalEntity ?x4 .
+	?x4 a genex:AnatomicalEntity.
+	?x4 rdfs:label "post-juvenile" .
+	?x1condition genex:hasDevelopmentalStage ?x6 .
+	?x6 rdfs:label "juvenile" .
+	?x1condition genex:hasSex "any".
+	?x1condition genex:hasStrain ?x7 .
+	?x7 a efo:EFO_0005135.
+	?x7 rdfs:label
+
+--
+
+47:
+orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up: <http://purl.uniprot.org/core/>
+SELECT DISTINCT ?x6 ?x1 ?x3 ?x1condition ?x4_description ?x11_scientificname ?x9_label ?x1_hasfalsediscoveryratep_value ?x10 ?x4_label ?x1_hasexpressionlevelscore ?x8 ?x11 ?x4 ?x4Name ?x6Name ?x0_description ?x9 ?x0 ?x11_commonname WHERE { 
+	?x0 a orth:Gene .
+	?x1 a genex:Expression .
+	?x1 genex:hasExpressionCondition ?x1condition .
+	?x1 genex:hasExpressionLevel ?x3 .
+	?x1 genex:hasSequenceUnit ?x0 .
+	?x0 rdfs:label "APOC1" .
+	?x1condition a genex:ExpressionCondition.
+	?x1condition genex:hasAnatomicalEntity ?x4 .
+	?x4 a genex:AnatomicalEntity.
+	?x4 rdfs:label ?x4Name .
+	?x1condition genex:hasAnatomicalEntity ?x6 .
+	?x6 rdfs:label ?x6Name .
+	?x1condition genex:hasDevelopmentalStage ?x8 .
+	?x8 rdfs:label "post-juvenile" .
+	?x1condition genex:hasSex "any".
+	?x1condition genex:hasStrain ?x9 .
+	?x9 a efo:EFO_0005135.
+	?x9 rdfs:label "wild-type" .
+	?x0 orth:organism ?x10 .
+	?x10 obo:RO_0002162  ?x11 .
+	?x11 a up:Taxon .
+	?x11 up:commonName "human" .
+	?x11 <http://purl.uniprot.org/core/scientificName> ?x11_scientificname.
+	?x11 <http://purl.uniprot.org/core/commonName> ?x11_commonname.
+	?x9 <http://www.w3.org/2000/01/rdf-schema#label> ?x9_label.
+	?x4 <http://www.w3.org/2000/01/rdf-schema#label> ?x4_label.
+	?x4 <http://purl.org/dc/terms/description> ?x4_description.
+	?x1 <http://purl.org/genex#hasExpressionLevel> ?x1_hasexpressionlevelscore.
+	?x1 <http://purl.org/genex#hasFDRpvalue> ?x1_hasfalsediscoveryratep_value.
+	?x0 <http://purl.org/dc/terms/description> ?x0_description.
+	FILTER(                 ?x4 != obo:GO_0005575                 )
+	FILTER(                 ?x4 != ?x6                 )
+}
+
+--
+
+48:
+iconductor.sparql_client.sparql_client.QueryException: Invalid identifier: "apoc1".
+
+--
+
+49:
+iconductorDescription
+
+--
+
+50:
+iconductorDevelopmentalStageAverageAnatomicalEntityDescriptionGeneSeeAlso
+
+--
+
+51:
+iconductor:apoc1_expression
+
+--
+
+52:
+iconductor:eel_expression
+
+--
+
+53:
+iconductorDescription
+<http://purl.org/dc/terms/description> ?x0_1.
+
+--
+
+54:
+iconductor.sparql_client.core.exception.InvalidQueryException: Invalid number of selected variables. Expected 1, but got 0.
+
+--
+
+55:
+orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up: <http://purl.uniprot.org/core/>
+SELECT DISTINCT ?x1 ?x5 ?x6 ?x2 ?x2Name ?x4 ?x0_description ?x6_scientificname ?x0 ?x6_commonname WHERE { 
+	?x0 a orth:Gene .
+	?x0 genex:isExpressedIn ?x1.
+	?x0 rdfs:label "APOC1" .
+	?x1 a genex:ExpressionCondition.
+	?x1 genex:hasAnatomicalEntity ?x2 .
+	?x2 a genex:AnatomicalEntity.
+	?x2 rdfs:label ?x2Name .
+	?x1 genex:hasAnatomicalEntity obo:GO_0005575 .
+	?x1 genex:hasDevelopmentalStage ?x4 .
+	?x4 a efo:EFO_0000399 .
+	?x4 rdfs:label "pre-juvenile" .
+	?x0 orth:organism ?x5 .
+	?x5 obo:RO_0002162  ?x6 .
+	?x6 a up:Taxon .
+	?x6 up:commonName "human" .
+	?x6 <http://purl.uniprot.org/core/scientificName> ?x6_scientificname.
+	?x6 <http://purl.uniprot.org/core/commonName> ?x6_commonname.
+	?x0 <http://www.bioassayontology.org/bao#Lacerta_vivipara> ?x0_description.
+	FILTER(     ?x2 !=  obo:GO_0005575     )
+}
+
+--
+
+56:
+orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up: <http://purl.uniprot.org/core/>
+SELECT DISTINCT ?x6 ?x1condition ?x9 ?x10 ?x4 ?x4Name ?x6Name ?x1_hasexpressionlevelscore ?x8 ?x3 ?x1 ?x0 WHERE { 
+	?x0 a orth:Gene .
+	?x1 a genex:Expression .
+	?x1 genex:hasExpressionCondition ?x1condition .
+	?x1 genex:hasExpressionLevel ?x3 .
+	?x1 genex:hasSequenceUnit ?x0 .
+	?x0 rdfs:label "APOC1" .
+	?x1condition a genex:ExpressionCondition.
+	?x1condition genex:hasAnatomicalEntity ?x4 .
+	?x4 a genex:AnatomicalEntity.
+	?x4 rdfs:label ?x4Name .
+	?x1condition genex:hasAnatomicalEntity ?x6 .
+	?x6 rdfs:label ?x6Name .
+	?x1condition genex:hasDevelopmentalStage ?x8 .
+	?x8 rdf:type efo:EFO_0000399 .
+	?x8 rdfs:label "post-juvenile" .
+	?x0 orth:organism ?x9 .
+	?x9 obo:RO_0002162  ?x10 .
+	?x10 a up:Taxon .
+	?x10 up:commonName "human" .
+	?x1 <http://purl.org/genex#hasExpressionLevel> ?x1_hasexpressionlevelscore.
+	FILTER(   ?x4 !=  obo:GO_0005575   )
+	FILTER(   ?x4 != ?x6   )
+}
+
+--
+
+57:
+etown?
+
+--
+
+58:
+orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up: <http://purl.uniprot.org/core/>
+SELECT DISTINCT ?x1 ?x6 ?x7 ?x2Name ?x4 ?x5 ?x5_label ?x2 ?x3 ?x3_label ?x0 ?x4_scientificName ?x0_identifier WHERE { 
+	?x0 a orth:Gene .
+	?x0 genex:isExpressedIn ?x1.
+	?x1 a genex:ExpressionCondition.
+	?x0 rdfs:label "APOC1" .
+	?x1 genex:hasAnatomicalEntity ?x2 .
+	?x2 rdfs:label ?x2Name .
+	?x1 genex:hasAnatomicalEntity
+
+--
+
+59:
+orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up: <http://purl.uniprot.org/core/>
+SELECT DISTINCT ?x6 ?x8_label ?x1condition ?x9 ?x10 ?x4_label ?x4_description ?x4 ?x4Name ?x6Name ?x0 ?x0_seealso ?x8 ?x3 ?x1 ?x10_scientificname ?x8_description ?x0_individual ?x10_commonname WHERE { 
+	?x0 a orth:Gene .
+	?x1 a genex:Expression .
+	?x1 genex:hasExpressionCondition ?x1condition .
+	?x1 genex:hasExpressionLevel ?x3 .
+	?x1 genex:hasSequenceUnit ?x0 .
+	?x0 rdfs:label "APOC1" .
+	?x1condition a genex:ExpressionCondition.
+	?x1condition genex:hasAnatomicalEntity ?x4 .
+	?x4 a genex:AnatomicalEntity.
+	?x4 rdfs:label ?x4Name .
+	?x1condition genex:hasAnatomicalEntity ?x6 .
+	?x6 rdfs:label ?x6Name .
+	?x1condition genex:hasDevelopmentalStage ?x8 .
+	?x8 rdf:type efo:EFO_0000399 .
+	?x8 rdfs:label "post-juvenile" .
+	?x0 orth:organism ?x9 .
+	?x9 obo:RO_0002162  ?x10 .
+	?x10 a up:Taxon .
+	?x10 up:commonName "human" .
+	?x10 <http://purl.uniprot.org/core/scientificName> ?x10_scientificname.
+	?x10 <http://purl.uniprot.org/core/commonName> ?x10_commonname.
+	?x8 <http://www.w3.org/2000/01/rdf-schema#label> ?x8_label.
+	?x8 <http://purl.org/dc/terms/description> ?x8_description.
+	?x4 <http://www.w3.org/2000/01/rdf-schema#label> ?x4_label.
+	?x4 <http://purl.org/dc/terms/description> ?x4_description.
+	?x0 <http://www.w3.org/2000/01/rdf-schema#seeAlso> ?x0_seealso.
+	FILTER(               ?x4 !=  obo:GO_0005575               )
+	FILTER(               ?x4 != ?x6               )
+}
+
+--
+
+60:
+iconductor_human_gene_apoc1_expression_post-juvenile_anatomical_entity(anatomical_entity0, gene_label, gene_description, gene_see_also, gene_identifier, gene_label, developmental_stage_label, developmental_stage_description, strain_label, taxon_scientificname, taxon_commonname)
+
+--
+
+61:
+orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up: <http://purl.uniprot.org/core/>
+SELECT DISTINCT ?x6 ?x8_label ?x1condition ?x9 ?x10 ?x4 ?x4Name ?x6Name ?x8 ?x3 ?x1 ?x10_scientificname ?x8_description ?x0 ?x0_identifier WHERE { 
+	?x0 a orth:Gene .
+	?x1 a genex:Expression .
+	?x1 genex:hasExpressionCondition ?x1condition .
+	?x1 genex:hasExpressionLevel ?x3 .
+	?x1 genex:hasSequenceUnit ?x0 .
+	?x0 rdfs:label "APOC1" .
+	?x1condition a genex:ExpressionCondition.
+	?x1condition genex:hasAnatomicalEntity ?x4 .
+	?x4 a genex:AnatomicalEntity.
+	?x4 rdfs:label ?x4Name .
+	?x1condition genex:hasAnatomicalEntity ?x6 .
+	?x6 rdfs:label ?x6Name .
+	?x1condition genex:hasDevelopmentalStage ?x8 .
+	?x8 rdf:type efo:EFO_0000399 .
+	?x8 rdfs:label "post-juvenile" .
+	?x0 orth:organism ?x9 .
+	?x9 obo:RO_0002162  ?x10 .
+	?x10 a up:Taxon .
+	?x10 up:commonName "human" .
+	?x10 <http://purl.uniprot.org/core/scientificName> ?x10_scientificname.
+	?x10 <http://purl.uniprot.org/core/commonName> ?x10_commonname.
+	?x8 <http://www.w3.org/2000/01/rdf-schema#label> ?x8_label.
+	?x8 <http://purl.org/dc/terms/description> ?x8_description.
+	?x0 <http://purl.org/dc/terms/identifier> ?x0_identifier.
+	FILTER(         ?x4 !=  obo:GO_0005575         )
+	FILTER(         ?x4 != ?x6         )
+}
+
+--
+
+62:
+iconductorXK19
+
+--
+
+63:
+orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up: <http://purl.uniprot.org/core/>
+SELECT DISTINCT ?x6 ?x1condition ?x9 ?x10 ?x4 ?x4Name ?x6Name ?x8 ?x3 ?x1 ?x0 ?x0_label ?x10_scientificname ?x10_commonname WHERE { 
+	?x0 a orth:Gene .
+	?x1 a genex:Expression .
+	?x1 genex:hasExpressionCondition ?x1condition .
+	?x1 genex:hasExpressionLevel ?x3 .
+	?x1 genex:hasSequenceUnit ?x0 .
+	?x0 rdfs:label "APOC1" .
+	?x1condition a genex:ExpressionCondition.
+	?x1condition genex:hasAnatomicalEntity ?x4 .
+	?x4 a genex:AnatomicalEntity.
+	?x4 rdfs:label ?x4Name .
+	?x1condition genex:hasAnatomicalEntity ?x6 .
+	?x6 rdfs:label ?x6Name .
+	?x1condition genex:hasDevelopmentalStage ?x8 .
+	?x8 rdf:type efo:EFO_0000399 .
+	?x8 rdfs:label "post-juvenile" .
+	?x0 orth:organism ?x9 .
+	?x9 obo:RO_0002162  ?x10 .
+	?x10 a up:Taxon .
+	?x10 up:commonName "human" .
+	?x10 <http://purl.uniprot.org/core/scientificName> ?x10_scientificname.
+	?x10 <http://purl.uniprot.org/core/commonName> ?x10_commonname.
+	?x0 <http://www.w3.org/2000/01/rdf-schema#label> ?x0_label.
+	FILTER(       ?x4 !=  obo:GO_0005575       )
+	FILTER(       ?x4 != ?x6       )
+}
+</code>
+</pre>
+
+--
+
+64:
+iconductor.eu:3000#human_gene_expression#1000001050000#post-juvenile#?#arnow#uniprot#human#apoc1#label#description#<http://purl.org/dc/terms/scientificName>#<http://purl.org/dc/terms/commonName>#<http://www.w3.org/2000/01/rdf-schema#label>#<http://purl.org/dc/terms/description>#<http://purl.org/dc/terms/description>
+
+--
+
+65:
+iconductor.eucers.org/sparql
+
+--
+
+66:
+orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up: <http://purl.uniprot.org/core/>
+PREFIX up-taxon:<http://purl.uniprot.org/taxonomy/>
+PREFIX ensembl: <http://rdf.ebi.ac.uk/resource/ensembl/>
+PREFIX lscr: <http://purl.org/lscr#>
+SELECT DISTINCT ?x1condition ?x4_label ?x4_description ?x4 ?x4Name ?x1_hasexpressionlevelscore ?x1 ?x3 ?x6 ?x6_label ?x0_description ?x0 ?x0_seealso ?x1_hasfalsediscoveryratep_value WHERE { 
+	?x0 a orth:Gene .
+	?x1 a genex:Expression .
+	?x1 genex:hasExpressionCondition ?x1condition .
+	?x1 genex:hasExpressionLevel ?x3 .
+	?x1 genex:hasSequenceUnit ?x0 .
+	?x0 lscr:xrefEnsemblGene ensembl:ENSG00000130208 .
+	?x1condition a genex:ExpressionCondition.
+	?x1condition genex:hasAnatomicalEntity ?x4 .
+	?x4 a genex:AnatomicalEntity.
+	?x4 rdfs:label ?x4Name .
+	?x1condition genex:hasDevelopmentalStage obo:UBERON_0000113 .
+	?x1condition genex:hasSex "any".
+	?x1condition genex:hasStrain ?x6 .
+	?x6 a efo:EFO_0005135.
+	?x6 rdfs:label "wild-type" .
+	?x6 <http://www.w3.org/2000/01/rdf-schema#label> ?x6_label.
+	?x4 <http://www.w3.org/2000/01/rdf-schema#label> ?x4_label.
+	?x4 <http://purl.org/dc/terms/description> ?x4_description.
+	?x1 <http://purl.org/genex#hasExpressionLevel> ?x1_hasexpressionlevelscore.
+	?x1 <http://purl.org/genex#hasFDRpvalue> ?x1_hasfalsediscoveryratep_value.
+	?x0 <http://www.w3.org/2000/01/rdf-schema#seeAlso> ?x0_seealso.
+	?x0 <http://purl.org/dc/terms/description> ?x0_description.
+	FILTER(               ?x4 !=  obo:GO_0005575               )
+}
+ORDER BY ?x4 ?x4Name
+
+--
+
+67:
+orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up: <http://purl.uniprot.org/core/>
+SELECT DISTINCT ?x6 ?x8_label ?x1condition ?x9 ?x10 ?x4_description ?x4 ?x4Name ?x6Name ?x8 ?x3 ?x1 ?x10_scientificname ?x8_description ?x0 ?x10_commonname WHERE { 
+	?x0 a orth:Gene .
+	?x1 a genex:Expression .
+	?x1 genex:hasExpressionCondition ?x1condition .
+	?x1 genex:hasExpressionLevel ?x3 .
+	?x1 genex:hasSequenceUnit ?x0 .
+	?x0 rdfs:label "APOC1" .
+	?x1condition a genex:ExpressionCondition.
+	?x1condition genex:hasAnatomicalEntity ?x4 .
+	?x4 a genex:AnatomicalEntity.
+	?x4 rdfs:label ?x4Name .
+	?x1condition genex:hasAnatomicalEntity ?x6 .
+	?x6 rdfs:label ?x6Name .
+	?x1condition genex:hasDevelopmentalStage ?x8 .
+	?x8 rdf:type efo:EFO_0000399 .
+	?x8 rdfs:label "post-juvenile" .
+	?x0 orth:organism ?x9 .
+	?x9 obo:RO_0002162  ?x10 .
+	?x10 a up:Taxon .
+	?x10 up:commonName "human" .
+	?x10 <http://purl.uniprot.org/core/scientificName> ?x10_scientificname.
+	?x10 <http://purl.uniprot.org/core/commonName> ?x10_commonname.
+	?x8 <http://www.w3.org/2000/01/rdf-schema#label> ?x8_label.
+	?x8 <http://purl.org/dc/terms/description> ?x8_description.
+	?x4 <http://purl.org/dc/terms/description> ?x4_description.
+	FILTER(           ?x4 !=  obo:GO_0005575           )
+	FILTER(           ?x4 != ?x6           )
+}
+
+--
+
+68:
+iconductorcors_expression_common_condition_anatomical_entity_description(common_condition_anatomical_entity_description)
+
+--
+
+69:
+orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up: <http://purl.uniprot.org/core/>
+SELECT DISTINCT ?x6 ?x1condition ?x9 ?x10 ?x4_description ?x4 ?x4Name ?x6Name ?x8 ?x3 ?x1 ?x0 ?x1_hasfalsediscoveryp_value WHERE { 
+	?x0 a orth:Gene .
+	?x1 a genex:Expression .
+	?x1 genex:hasExpressionCondition ?x1condition .
+	?x1 genex:hasExpressionLevel ?x3 .
+	?x1 genex:hasSequenceUnit ?x0 .
+	?x0 rdfs:label "APOC1" .
+	?x1condition a genex:ExpressionCondition.
+	?x1condition genex:hasAnatomicalEntity ?x4 .
+	?x4 a genex:AnatomicalEntity.
+	?x4 rdfs:label ?x4Name .
+	?x1condition genex:hasAnatomicalEntity ?x6 .
+	?x6 rdfs:label ?x6Name .
+	?x1condition genex:hasDevelopmentalStage ?x8 .
+	?x8 rdf:type efo:EFO_0000399 .
+	?x8 rdfs:label "post-juvenile" .
+	?x0 orth:organism ?x9 .
+	?x9 obo:RO_0002162  ?x10 .
+	?x10 a up:Taxon .
+	?x10 up:commonName "human" .
+	?x1 <http://purl.org/genex#hasExpressionLevel> ?x1_hasfalsediscoveryp_value.
+	FILTER(   ?x4 !=  obo:GO_0005575   )
+	FILTER(   ?x4 != ?x6   )
+}
+ORDER BY ?x4Name ?x6Name
+
+--
+
+70:
+ES = {
+    # Common prefixes used for anatomical entities.
+    "a": "http://purl.org/dc/terms/",
+    "x": "http://purl.org/dc/terms/",
+    "c": "http://purl.org/dc/terms/",
+    "o": "http://purl.org/dc/terms/",
+    "f": "http://purl.org/dc/terms/",
+    "h": "http://purl.org/dc/terms/",
+    "i": "http://purl.org/dc/terms/",
+    "k": "http://purl.org/dc/terms/",
+    "se": "http://purl.org/dc/terms/",
+    "xse": "http://purl.org/dc/terms/",
+    "s": "http://purl.org/dc/terms/",
+    "t": "http://purl.org/dc/terms/",
+    "u": "http://purl.org/dc/terms/",
+    "c_": "http://purl.org/dc/terms/",
+    "o_": "http://purl.org/dc/terms/",
+    "f_": "http://purl.org/dc/terms/",
+    "h_": "http://purl.org/dc/terms/",
+    "i_": "http://purl.org/dc/terms/",
+    "k_": "http://purl.org/dc/terms/",
+    "se_": "http://purl.org/dc/terms/",
+    "xse_": "http://purl.org/dc/terms/",
+    "s_": "http://purl.org/dc/terms/",
+    "t_": "http://purl.org/dc/terms/",
+    "u_": "http://purl.org/dc/terms/",
+    "c_": "http://purl.org/dc/terms/",
+    "o_": "http://purl.org/dc/terms/",
+    "f_": "http://purl.org/dc/terms/",
+    "h_": "http://purl.org/dc/terms/",
+    "i_": "http://purl.org/dc/terms/",
+    "k_": "http://purl.org/dc/terms/",
+    "se_": "http://purl.org/dc/terms/",
+    "xse_": "http://purl.org/dc/terms/",
+    "s_": "http://purl.org/dc/terms/",
+    "t_": "http://purl.org/dc/terms/",
+    "u_": "http://purl.org/dc/terms/",
+    "c_": "http://purl.org/dc/terms/",
+    "o_": "http://purl.org/dc/terms/",
+    "f_": "http://purl.org/dc/terms/",
+    "h_": "http://purl.org/dc/terms/",
+    "i_": "http://purl.org/dc/terms/",
+    "k_": "http://purl.org/dc/terms/",
+    "se_": "http://purl.org/dc/terms/",
+    "xse_": "http://purl.org/dc/terms/",
+    "s_": "http://purl.org/dc/terms/",
+    "t_": "http://purl.org/dc/terms/",
+    "u_": "http://purl.org/dc/terms/",
+    "c_": "http://purl.org/dc/terms/",
+
+--
+
+71:
+orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up: <http://purl.uniprot.org/core/>
+SELECT DISTINCT ?x3 ?x4 ?x1 ?x1Name ?x0 ?x0_identifier WHERE { 
+	?x0 a orth:Gene .
+	?x0 genex:isExpressedIn ?x1.
+	?x1 a genex:ExpressionCondition.
+	?x0 rdfs:label "APOC1" .
+	?x1 genex:hasAnatomicalEntity ?x3 .
+	?x3 rdfs:label ?x1Name .
+	?x1 genex:hasAnatomicalEntity obo:GO_0005575 .
+	?x1 genex:hasDevelopmentalStage ?x4 .
+	?x4 a efo:EFO_0000399 .
+	?x4 rdfs:label "post-juvenile" .
+	?x0 orth:organism ?x6 .
+	?x6 obo:RO_0002162  ?x7 .
+	?x7 a up:Taxon .
+	?x7 up:commonName "human" .
+	?x0 <http://purl.org/dc/terms/identifier> ?x0_identifier.
+	FILTER(   ?x3 !=  obo:GO_0005575   )
+}
+
+--
+
+72:
+iconductor_x_homologues_x_human.json
+
+--
+
+73:
+orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up: <http://purl.uniprot.org/core/>
+SELECT DISTINCT ?x1_label ?x1_description ?x1 ?x1Name ?x0_description ?x0 ?x0_see_also ?x0_identifier WHERE { 
+	?x0 a orth:Gene .
+	?x0 genex:isExpressedIn ?x1 .
+	?x0 rdfs:label "APOC1" .
+	?x1 a genex:ExpressionCondition.
+	?x1 genex:hasAnatomicalEntity ?x1_object .
+	?x1 genex:hasAnatomicalEntity obo:GO_0005575 .
+	?x1 genex:hasDevelopmentalStage ?x0 .
+	?x0 a efo:EFO_0005132.
+	?x0 rdfs:label "developmental stage" .
+	?x1 genex:hasSex "any".
+	?x1 genex:hasStrain ?x2 .
+	?x2 rdfs:label "wild type" .
+	?x1 <http://www.w3.org/2000/01/rdf-schema#label> ?x1_label.
+	?x1 <http://purl.org/dc/terms/description> ?x1_description.
+	?x1 <http://purl.org/dc/terms/seeAlso> ?x0_see_also.
+	?x0 <http://purl.org/dc/terms/description> ?x0_description.
+	?x0 <http://purl.org/dc/terms/identifier> ?x0_identifier.
+}
+
+--
+
+74:
+orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX efo: <http://www.ebi.ac.uk/efo/>
+SELECT DISTINCT ?x1_label ?x1_description ?x5 ?x4 ?x2_description ?x2 ?x2Name ?x0 WHERE { 
+	?x0 a orth:Gene .
+	?x0 genex:isExpressedIn ?x1.
+	?x1 a genex:ExpressionCondition.
+	?x0 rdfs:label "APOC1" .
+	?x1 genex:hasAnatomicalEntity ?x2 .
+	?x2 a genex:AnatomicalEntity.
+	?x1 genex:hasAnatomicalEntity obo:GO_0005575 .
+	?x2 rdfs:label ?x2Name .
+	?x1 genex:hasDevelopmentalStage ?x4 .
+	?x4 a efo:EFO_0000399 .
+	?x4 rdfs:label "life cycle" .
+	?x1 genex:hasSex "any".
+	?x1 genex:hasStrain ?x5 .
+	?x5 rdfs:label "wild-type" .
+	?x4 <http://www.w3.org/2000/01/rdf-schema#label> ?x4_label.
+	?x4 <http://purl.org/dc/terms/description> ?x4_description.
+	?x2 <http://purl.org/dc/terms/description> ?x2_description.
+}
+
+--
+
+75:
+iconductor_x_4_0_0_1.
+
+--
+
+76:
+iconductorcors_1c1c3c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1
+
+--
+
+77:
+orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up: <http://purl.uniprot.org/core/>
+PREFIX up-taxon:<http://purl.uniprot.org/taxonomy/>
+PREFIX lscr: <http://purl.org/lscr#>
+SELECT DISTINCT ?x1condition ?x6_label ?x4_label ?x4_description ?x4 ?x4Name ?x1_hasexpressionlevelscore ?x6 ?x3 ?x7 ?x7_label ?x1 ?x6_description ?x0 ?x0_identifier WHERE { 
+	?x0 a orth:Gene .
+	?x1 a genex:Expression .
+	?x1 genex:hasExpressionCondition ?x1condition .
+	?x1 genex:hasExpressionLevel ?x3 .
+	?x1 genex:hasSequenceUnit ?x0 .
+	?x0 lscr:xrefNCBIGene <https://www.ncbi.nlm.nih.gov/gene/118201125> .
+	?x1condition genex:hasAnatomicalEntity ?x4 .
+	?x4 a genex:AnatomicalEntity.
+	?x4 rdfs:label ?x4Name .
+	?x1condition a genex:ExpressionCondition.
+	?x1condition genex:hasDevelopmentalStage ?x6 .
+	?x6 rdf:type efo:EFO_0000399 .
+	?x1condition genex:hasSex "any".
+	?x1condition genex:hasStrain ?x7 .
+	?x7 a efo:EFO_0005135.
+	?x7 rdfs:label "wild type" .
+	?x7 <http://www.w3.org/2000/01/rdf-schema#label> ?x7_label.
+	?x6 <http://www.w3.org/2000/01/rdf-schema#label> ?x6_label.
+	?x6 <http://purl.org/dc/terms/description> ?x6_description.
+	?x4 <http://www.w3.org/2000/01/rdf-schema#label> ?x4_label.
+	?x4 <http://purl.org/dc/terms/description> ?x4_description.
+	?x1 <http://purl.org/genex#hasExpressionLevel> ?x1_hasexpressionlevelscore.
+	?x0 <http://purl.org/dc/terms/identifier> ?x0_identifier.
+	FILTER(               ?x4 != obo:GO_0005575               )
+}
+
+--
+
+78:
+orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up: <http://purl.uniprot.org/core/>
+SELECT DISTINCT ?x6 ?x1condition ?x9 ?x10 ?x4 ?x4Name ?x6Name ?x8 ?x3 ?x1 ?x0 ?x0_seealso WHERE { 
+	?x0 a orth:Gene .
+	?x1 a genex:Expression .
+	?x1 genex:hasExpressionCondition ?x1condition .
+	?x1 genex:hasExpressionLevel ?x3 .
+	?x1 genex:hasSequenceUnit ?x0 .
+	?x0 rdfs:label "APOC1" .
+	?x1condition a genex:ExpressionCondition.
+	?x1condition genex:hasAnatomicalEntity ?x4 .
+	?x4 a genex:AnatomicalEntity.
+	?x4 rdfs:label ?x4Name .
+	?x1condition genex:hasAnatomicalEntity ?x6 .
+	?x6 rdfs:label ?x6Name .
+	?x1condition genex:hasDevelopmentalStage ?x8 .
+	?x8 rdf:type efo:EFO_0000399 .
+	?x8 rdfs:label "post-juvenile" .
+	?x0 orth:organism ?x9 .
+	?x9 obo:RO_0002162  ?x10 .
+	?x10 a up:Taxon .
+	?x10 up:commonName "human" .
+	?x0 <http://www.w3.org/2000/01/rdf-schema#seeAlso> ?x0_seealso.
+	FILTER(   ?x4 !=  obo:GO_0005575   )
+	FILTER(   ?x4 != ?x6   )
+}
+
+--
+
+79:
+orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up: <http://purl.uniprot.org/core/>
+SELECT DISTINCT ?x1 ?x5 ?x6 ?x2_description ?x2 ?x2Name ?x4 ?x6_scientificname ?x0 WHERE { 
+	?x0 a orth:Gene .
+	?x0 genex:isExpressedIn ?x1.
+	?x0 rdfs:label "APOC1" .
+	?x1 a genex:ExpressionCondition.
+	?x1 genex:hasAnatomicalEntity ?x2 .
+	?x2 a genex:AnatomicalEntity.
+	?x2 rdfs:label ?x2Name .
+	?x1 genex:hasAnatomicalEntity obo:GO_0005575 .
+	?x1 genex:hasDevelopmentalStage ?x4 .
+	?x4 a efo:EFO_0000399 .
+	?x4 rdfs:label "post-juvenile" .
+	?x0 orth:organism ?x5 .
+	?x5 obo:RO_0002162  ?x6 .
+	?x6 a up:Taxon .
+	?x6 up:commonName "human" .
+	?x6 <http://purl.uniprot.org/core/scientificName> ?x6_scientificname.
+	?x2 <http://purl.org/dc/terms/description> ?x2_description.
+}
+ORDER BY ?x2 ?x2Name
+
+--
+
+80:
+ampionship0##
+<http://www.w3.org/2000/01/rdf-schema#label> ?x0_label ?x0_description ?x0 ?x1 .
+?x0 ?x0_label ?x1_label ?x0_description ?x1 ?x1 .
+?x0 <http://purl.org/dc/terms/identifier> ?x2 .
+?x2 <http://www.w3.org/2000/01/rdf-schema#label> ?x0_label .
+?x2 <http://purl.org/dc/terms/description> ?x0_description .
+
+--
+
+81:
+etownscientist_taxon_scientificname
+
+--
+
+82:
+etown?
+
+--
+
+83:
+iconductor_xdeveloper_xacml_x3_x11_xgenetic_xcondition.xhtml
+
+--
+
+84:
+iconductor_xref="APOC1"
+
+--
+
+85:
+iances=1&anatomicalentitylabel=human&anatomicalentitylabelprefix=http://www.ebi.ac.uk/efo/EFO_0005503&apoc1&email=<EMAIL>&field=http://purl.org/dc/terms/identifier&format=json&function=http://www.ebi.ac.uk/rembrandt/function/expression&id=Rembrandt-Expression-190&literal=false&literal_format=json&logintime=&page=1&rank=rid&rid=O15101 &rdf=1&rdfs=1&role=http://www.w3.org/2000/01/rdf-schema#label&rpp=10&scientificname=Homo+sapiens&select=id,x1,x4,x6,x10,x11,x8,x9,x6_label,x1_label,x0&x0_id=APOC1&x1_labelprefix=http://www.ebi.ac.uk/efo/EFO_0005503&x8_is_obsolete=false&x9_label=human&x10_label=anatomicalentity&x11_label=anatomicalentity_description&x6_label=x6&x8=x4&x1=x0&x0_label=gene&x11=x11_label&x6=x6_label
+
+--
+
+86:
+iconductor.kibana.internal/
+
+--
+
+87:
+orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up: <http://purl.uniprot.org/core/>
+SELECT DISTINCT ?x6 ?x1 ?x3 ?x8_description ?x1condition ?x4_description ?x8 ?x10_scientificname ?x9 ?x4_label ?x1_hasexpressionlevelscore ?x8_label ?x10 ?x4 ?x4Name ?x6Name ?x0 ?x0_label ?x10_commonname WHERE { 
+	?x0 a orth:Gene .
+	?x1 a genex:Expression .
+	?x1 genex:hasExpressionCondition ?x1condition .
+	?x1 genex:hasExpressionLevel ?x3 .
+	?x1 genex:hasSequenceUnit ?x0 .
+	?x0 rdfs:label "APOC1" .
+	?x1condition a genex:ExpressionCondition.
+	?x1condition genex:hasAnatomicalEntity ?x4 .
+	?x4 a genex:AnatomicalEntity.
+	?x4 rdfs:label ?x4Name .
+	?x1condition genex:hasAnatomicalEntity ?x6 .
+	?x6 rdfs:label ?x6Name .
+	?x1condition genex:hasDevelopmentalStage ?x8 .
+	?x8 rdf:type efo:EFO_0000399 .
+	?x8 rdfs:label "post-juvenile" .
+	?x0 orth:organism ?x9 .
+	?x9 obo:RO_0002162  ?x10 .
+	?x10 a up:Taxon .
+	?x10 up:commonName "human" .
+	?x10 <http://purl.uniprot.org/core/scientificName> ?x10_scientificname.
+	?x10 <http://purl.uniprot.org/core/commonName> ?x10_commonname.
+	?x8 <http://www.w3.org/2000/01/rdf-schema#label> ?x8_label.
+	?x8 <http://purl.org/dc/terms/description> ?x8_description.
+	?x4 <http://www.w3.org/2000/01/rdf-schema#label> ?x4_label.
+	?x4 <http://purl.org/dc/terms/description> ?x4_description.
+	?x1 <http://purl.org/genex#hasExpressionLevel> ?x1_hasexpressionlevelscore.
+	?x0 <http://www.w3.org/2000/01/rdf-schema#label> ?x0_label.
+	FILTER(                 ?x4 != obo:GO_0005575                 )
+	FILTER(                 ?x4 != ?x6                 )
+}
+
+--
+
+88:
+iconductor00001_4
+
+--
+
+89:
+orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up: <http://purl.uniprot.org/core/>
+SELECT DISTINCT ?x1condition ?x8 ?x9 ?x0_identifier ?x7 ?x4_label ?x4_description ?x4 ?x4Name ?x1_hasexpressionlevelscore ?x1 ?x3 ?x9_scientificname ?x6 ?x0 ?x0_seealso ?x1_hasfalsediscoveryratep_value ?x9_commonname WHERE { 
+	?x0 a orth:Gene .
+	?x1 a genex:Expression .
+	?x1 genex:hasExpressionCondition ?x1condition .
+	?x1 genex:hasExpressionLevel ?x3 .
+	?x1 genex:hasSequenceUnit ?x0 .
+	?x0 rdfs:label "APOC1" .
+	?x1condition a genex:ExpressionCondition.
+	?x1condition genex:hasAnatomicalEntity ?x4 .
+	?x1condition genex:hasAnatomicalEntity obo:GO_0005575 .
+	?x4 a genex:AnatomicalEntity.
+	?x4 rdfs:label ?x4Name .
+	?x1condition genex:hasDevelopmentalStage ?x6 .
+	?x6 rdfs:label "post-juvenile" .
+	?x1condition genex:hasSex "any".
+	?x1condition genex:hasStrain ?x7 .
+	?x7 a efo:EFO_0005135.
+	?x7 rdfs:label "wild-type" .
+	?x0 orth:organism ?x8 .
+	?x8 obo:RO_0002162  ?x9 .
+	?x9 a up:Taxon .
+	?x9 up:commonName "human" .
+	?x9 <http://purl.uniprot.org/core/scientificName> ?x9_scientificname.
+	?x9 <http://purl.uniprot.org/core/commonName> ?x9_commonname.
+	?x4 <http://www.w3.org/2000/01/rdf-schema#label> ?x4_label.
+	?x4 <http://purl.org/dc/terms/description> ?x4_description.
+	?x1 <http://purl.org/genex#hasExpressionLevel> ?x1_hasexpressionlevelscore.
+	?x1 <http://purl.org/genex#hasFDRpvalue> ?x1_hasfalsediscoveryratep_value.
+	?x0 <http://www.w3.org/2000/01/rdf-schema#seeAlso> ?x0_seealso.
+	?x0 <http://purl.org/dc/terms/identifier> ?x0_identifier.
+	FILTER(                 ?x4 !=  obo:GO_0005575                 )
+}
+
+--
+
+90:
+orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up: <http://purl.uniprot.org/core/>
+SELECT DISTINCT ?x6 ?x1condition ?x9 ?x10 ?x4 ?x4Name ?x6Name ?x8 ?x3 ?x1 ?x10_scientificname ?x0 ?x1_hasexpressionlevelscore ?x10_commonname WHERE { 
+	?x0 a orth:Gene .
+	?x1 a genex:Expression .
+	?x1 genex:hasExpressionCondition ?x1condition .
+	?x1 genex:hasExpressionLevel ?x3 .
+	?x1 genex:hasSequenceUnit ?x0 .
+	?x0 rdfs:label "APOC1" .
+	?x1condition a genex:ExpressionCondition.
+	?x1condition genex:hasAnatomicalEntity ?x4 .
+	?x4 a genex:AnatomicalEntity.
+	?x4 rdfs:label ?x4Name .
+	?x1condition genex:hasAnatomicalEntity ?x6 .
+	?x6 rdfs:label ?x6Name .
+	?x1condition genex:hasDevelopmentalStage ?x8 .
+	?x8 rdf:type efo:EFO_0000399 .
+	?x8
+
+--
+
+91:
+dc:
+http://purl.org/dc/terms/
+
+--
+
+92:
+iconductor:
+<http://purl.org/net/apoc1>
+<http://purl.org/dc/terms/identifier>
+<http://bio2rdf.org/homo_sapiens/NCBIGene_x95113>
+<http://purl.org/dc/terms/description>
+<http://purl.org/dc/terms/description>
+<http://purl.org/dc/terms/description>
+<http://purl.org/dc/terms/description>
+<http://purl.org/dc/terms/description>
+<http://purl.org/dc/terms/description>
+<http://purl.org/dc/terms/description>
+<http://purl.org/dc/terms/description>
+<http://purl.org/dc/terms/description>
+<http://purl.org/dc/terms/description>
+<http://purl.org/dc/terms/description>
+<http://purl.org/dc/terms/description>
+<http://purl.org/dc/terms/description>
+<http://purl.org/dc/terms/description>
+<http://purl.org/dc/terms/description>
+<http://purl.org/dc/terms/description>
+<http://purl.org/dc/terms/description>
+<http://purl.org/dc/terms/description>
+<http://purl.org/dc/terms/description>
+<http://purl.org/dc/terms/description>
+<http://purl.org/dc/terms/description>
+<http://purl.org/dc/terms/description>
+<http://purl.org/dc/terms/description>
+<http://purl.org/dc/terms/description>
+<http://purl.org/dc/terms/description>
+<http://purl.org/dc/terms/description>
+<http://purl.org/dc/terms/description>
+<http://purl.org/dc/terms/description>
+<http://purl.org/dc/terms/description>
+<http://purl.org/dc/terms/description>
+<http://purl.org/dc/terms/description>
+<http://purl.org/dc/terms/description>
+<http://purl.org/dc/terms/description>
+<http://purl.org/dc/terms/description>
+<http://purl.org/dc/terms/description>
+<http://purl.org/dc/terms/description>
+<http://purl.org/dc/terms/description>
+<http://purl.org/dc/terms/description>
+<http://purl.org/dc/terms/description>
+<http://purl.org/dc/terms/description>
+<http://purl.org/dc/terms/description>
+<http://purl.org/dc/terms/description>
+<http://purl.org/dc/terms/description>
+<http://purl.org/dc/terms/description>
+<http://purl.org/dc/terms/description>
+<http://purl.org/dc/terms/description>
+<http://purl.org/dc/terms/description>
+<http://purl.org/dc/terms/description>
+<http://purl.org/dc/terms/description>
+<http://purl.org/dc/terms/description>
+<http://purl.org/dc/terms/description>
+<http://purl.org/dc/terms/description>
+<http://purl.org/dc/terms/description>
+<http://purl.org/dc/terms/description>
+<http://purl.org/dc/terms/description>
+<http://purl.org/dc/terms/description>
+<http://purl.org/dc/terms/description>
+<http://purl.org/dc/terms/description>
+<http://purl.org/dc/terms/description>
+<http://purl.org/dc/terms/description
+
+--
+
+93:
+iconductorDescription
+
+--
+
+94:
+iconductorX2
+
+--
+
+95:
+iconductor:bgee_core_taxon()##
+
+--
+
+96:
+iconductorXGenExpress_4.0.0_distinct_expression_post_juvenile_stage.json?anatomical_entity=cell%20type&anatomical_entity_label=cell%20type&condition_id=416&file_extension="csv"&genetic_strain=wild-type&individual_id=111&locus_tag=APOC1&expression_score_id=649&expression_type=raw&uniprot_id=APOC1&wild_type_label=wild-type&xenobiotics_induction_score=0&xenobiotics_strain=wild-type&y_coordinate=1&y_unit=strain&obsolete_condition_id=415&relevant_expression_level_label=any_level&genetic_strain_label=genetic_strain&xenobiotics_strain_label=xenobiotics_strain&anatomical_entity_label_label=anatomical_entity_label&condition_label=condition_label&uniprot_label=uniprot_id&orderby_label=locus_tag&rank_label=rank&file_name=APOC1.all.csv&search_rank=0&x_coordinate=0&x_unit=strand&false_discovery_rate_p_value=0.00&true_label=condition&false_label=none&genetic_strain_label2=common_name&xenobiotics_strain_label2=common_name&anatomical_entity_label2=anatomical_entity&condition_label2=condition&uniprot_label2=uniprot&orderby_label2=locus_tag&rank_label2=rank&file_name2=APOC1.all.csv&search_rank2=0&x_coordinate2=1&x_unit2=strand&false_discovery_rate_p_value2=0.00
+
+--
+
+97:
+iconductorcucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucucuc
+
+--
+
+98:
+orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up: <http://purl.uniprot.org/core/>
+SELECT DISTINCT ?x6 ?x8_description ?x1 ?x3 ?x1condition ?x4_description ?x8 ?x10_scientificname ?x1_hasfalsediscoveryratep_value ?x9 ?x4_label ?x1_hasexpressionlevelscore ?x0_seealso ?x8_label ?x10 ?x4 ?x4Name ?x6Name ?x0 ?x10_commonname WHERE { 
+	?x0 a orth:Gene .
+	?x1 a genex:Expression .
+	?x1 genex:hasExpressionCondition ?x1condition .
+	?x1 genex:hasExpressionLevel ?x3 .
+	?x1 genex:hasSequenceUnit ?x0 .
+	?x0 rdfs:label "APOC1" .
+	?x1condition a genex:ExpressionCondition.
+	?x1condition genex:hasAnatomicalEntity ?x4 .
+	?x4 a genex:AnatomicalEntity.
+	?x4 rdfs:label ?x4Name .
+	?x1condition genex:hasAnatomicalEntity ?x6 .
+	?x6 rdfs:label ?x6Name .
+	?x1condition genex:hasDevelopmentalStage ?x8 .
+	?x8 rdf:type efo:EFO_0000399 .
+	?x8 rdfs:label "post-juvenile" .
+	?x0 orth:organism ?x9 .
+	?x9 obo:RO_0002162  ?x10 .
+	?x10 a up:Taxon .
+	?x10 up:commonName "human" .
+	?x10 <http://purl.uniprot.org/core/scientificName> ?x10_scientificname.
+	?x10 <http://purl.uniprot.org/core/commonName> ?x10_commonname.
+	?x8 <http://www.w3.org/2000/01/rdf-schema#label> ?x8_label.
+	?x8 <http://purl.org/dc/terms/description> ?x8_description.
+	?x4 <http://www.w3.org/2000/01/rdf-schema#label> ?x4_label.
+	?x4 <http://purl.org/dc/terms/description> ?x4_description.
+	?x1 <http://purl.org/genex#hasExpressionLevel> ?x1_hasexpressionlevelscore.
+	?x1 <http://purl.org/genex#hasFDRpvalue> ?x1_hasfalsediscoveryratep_value.
+	?x0 <http://www.w3.org/2000/01/rdf-schema#seeAlso> ?x0_seealso.
+	FILTER(                 ?x4 !=  obo:GO_0005575                 )
+	FILTER(                 ?x4 != ?x6                 )
+}
+ORDER BY ?x4 ?x4Name ?x0 ?x1 ?x1condition ?x4_label ?x8 ?x0_seealso ?x4_description ?x8_scientificname ?x1_hasexpressionlevelscore ?x1_hasfalsediscoveryratep_value ?x4 ?x4Name
+
+--
+
+99:
+iconductor:
+<http://purl.org/dc/terms/developmentalStage> <http://purl.org/dc/terms/description> <http://purl.org/dc/terms/identifier> <http://purl.org/dc/terms/label> <http://purl.org/dc/terms/reference> <http://purl.org/dc/terms/species> <http://purl.org/dc/terms/title> <http://purl.org/dc/terms/type> <http://purl.org/dc/terms/url> <http://purl.org/dc/terms/description> <http://purl.org/dc/terms/identifier> <http://purl.org/dc/terms/label> <http://purl.org/dc/terms/reference> <http://purl.org/dc/terms/species> <http://purl.org/dc/terms/title> <http://purl.org/dc/terms/type> <http://purl.org/dc/terms/url> <http://purl.org/dc/terms/description> <http://purl.org/dc/terms/identifier> <http://purl.org/dc/terms/label> <http://purl.org/dc/terms/reference> <http://purl.org/dc/terms/species> <http://purl.org/dc/terms/title> <http://purl.org/dc/terms/type> <http://purl.org/dc/terms/url> <http://purl.org/dc/terms/description> <http://purl.org/dc/terms/identifier> <http://purl.org/dc/terms/label> <http://purl.org/dc/terms/reference> <http://purl.org/dc/terms/species> <http://purl.org/dc/terms/title> <http://purl.org/dc/terms/type> <http://purl.org/dc/terms/url> <http://purl.org/dc/terms/description> <http://purl.org/dc/terms/identifier> <http://purl.org/dc/terms/label> <http://purl.org/dc/terms/reference> <http://purl.org/dc/terms/species> <http://purl.org/dc/terms/title> <http://purl.org/dc/terms/type> <http://purl.org/dc/terms/url> <http://purl.org/dc/terms/description> <http://purl.org/dc/terms/identifier> <http://purl.org/dc/terms/label> <http://purl.org/dc/terms/reference> <http://purl.org/dc/terms/species> <http://purl.org/dc/terms/title> <http://purl.org/dc/terms/type> <http://purl.org/dc/terms/url> <http://purl.org/dc/terms/description> <http://purl.org/dc/terms/identifier> <http://purl.org/dc/terms/label> <http://purl.org/dc/terms/reference> <http://purl.org/dc/terms/species> <http://purl.org/dc/terms/title> <http://purl.org/dc/terms/type> <http://purl.org/dc/terms/url> <http://purl.org/dc/terms/description> <http://purl.org/dc/terms/identifier> <http://purl.org/dc/terms/label> <http://purl.org/dc/terms/reference> <http://purl.org/dc/terms/species> <http://purl.org/dc/terms/title> <http://purl.org/dc/terms/type> <http://purl.org/dc/terms/url> <http://purl.org/dc/terms/description> <http://purl.org/dc/terms/identifier> <http://purl
+
+--
+
+100:
+iconductor:
+<http://www.humanconnectome.org/cgi-bin/sparql?query=SELECT DISTINCT %0A%09%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E
+
+--
+
+101:
+orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up: <http://purl.uniprot.org/core/>
+SELECT DISTINCT ?x6 ?x1 ?x3 ?x1condition ?x4_description ?x11_scientificname ?x9_label ?x1_hasfalsediscoveryratep_value ?x10 ?x4_label ?x1_hasexpressionlevelscore ?x8 ?x0_label ?x11 ?x4 ?x4Name ?x6Name ?x0_description ?x9 ?x0 ?x0_seealso ?x11_commonname WHERE { 
+	?x0 a orth:Gene .
+	?x1 a genex:Expression .
+	?x1 genex:hasExpressionCondition ?x1condition .
+	?x1 genex:hasExpressionLevel ?x3 .
+	?x1 genex:hasSequenceUnit ?x0 .
+	?x0 rdfs:label "APOC1" .
+	?x1condition a genex:ExpressionCondition.
+	?x1condition genex:hasAnatomicalEntity ?x4 .
+	?x4 a genex:AnatomicalEntity.
+	?x4 rdfs:label ?x4Name .
+	?x1condition genex:hasAnatomicalEntity ?x6 .
+	?x6 rdfs:label ?x6Name .
+	?x1condition genex:hasDevelopmentalStage ?x8 .
+	?x8 rdfs:label "post-juvenile" .
+	?x1condition genex:hasSex "any".
+	?x1condition genex:hasStrain ?x9 .
+	?x9 a efo:EFO_0005135.
+	?x9 rdfs:label "wild-type" .
+	?x0 orth:organism ?x10 .
+	?x10 obo:RO_0002162  ?x11 .
+	?x11 a up:Taxon .
+	?x11 up:commonName "human" .
+	?x11 <http://purl.uniprot.org/core/scientificName> ?x11_scientificname.
+	?x11 <http://purl.uniprot.org/core/commonName> ?x11_commonname.
+	?x9 <http://www.w3.org/2000/01/rdf-schema#label> ?x9_label.
+	?x4 <http://www.w3.org/2000/01/rdf-schema#label> ?x4_label.
+	?x4 <http://purl.org/dc/terms/description> ?x4_description.
+	?x1 <http://purl.org/genex#hasExpressionLevel> ?x1_hasexpressionlevelscore.
+	?x1 <http://purl.org/genex#hasFDRpvalue> ?x1_hasfalsediscoveryratep_value.
+	?x0 <http://www.w3.org/2000/01/rdf-schema#seeAlso> ?x0_seealso.
+	?x0 <http://purl.org/dc/terms/description> ?x0_description.
+	?x0 <http://www.w3.org/2000/01/rdf-schema#label> ?x0_label.
+	FILTER(                     ?x4 != obo:GO_0005575                     )
+	FILTER(                     ?x4 != ?x6                     )
+}
+
+--
+
+102:
+iconductor:apoc1_expression_all_true_false_independent_of_genetype_true_false_independent_of_strain_true_false_independent_of_sex_true_false_independent_of_celltype_true. provide also the strain label, the developmental stage label, the developmental stage description, the anatomical entity label, the anatomical entity description, the gene expression has expression level score, the gene expression has false discovery rate p-value, the gene see also, the gene description, the gene identifier, the gene label.
+
+--
+

@@ -1,0 +1,34 @@
+# What are the anatomical entities including cell types, if any, where the human gene APOC1 is expressed at the post-juvenile stage along with its expression score independently of the strain and sex? Provide also the taxon scientific name and the taxon common name and the developmental stage label and the developmental stage description and the anatomical entity label and the gene expression has expression level score.
+PREFIX orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up: <http://purl.uniprot.org/core/>
+SELECT DISTINCT ?organism ?expressioncondition ?taxon_commonname ?efo_0000399_label ?anatomicalentity ?efo_0000399 ?score ?expression ?anatomicalentityName ?cellType ?efo_0000399_description ?anatomicalentity_label ?taxon_scientificname ?cellTypeName ?gene ?expression_hasexpressionlevelscore ?taxon WHERE { 
+	?gene a orth:Gene .
+	?expression a genex:Expression .
+	?expression genex:hasExpressionCondition ?expressioncondition . # has an expression condition
+	?expression genex:hasExpressionLevel ?score .
+	?expression genex:hasSequenceUnit ?gene . # has sequence unit
+	?gene rdfs:label "APOC1" .
+	?expressioncondition a genex:ExpressionCondition.
+	?expressioncondition genex:hasAnatomicalEntity ?anatomicalentity . # has anatomical entity
+	?anatomicalentity a genex:AnatomicalEntity.
+	?anatomicalentity rdfs:label ?anatomicalentityName .
+	?expressioncondition genex:hasAnatomicalEntity ?cellType . # has anatomical entity
+	?cellType rdfs:label ?cellTypeName .
+	?expressioncondition genex:hasDevelopmentalStage ?efo_0000399 . # has a developmental stage
+	?efo_0000399 rdf:type efo:EFO_0000399 .
+	?efo_0000399 rdfs:label "post-juvenile" .
+	?gene orth:organism ?organism . # in organism
+	?organism obo:RO_0002162  ?taxon . # in taxon
+	?taxon a up:Taxon .
+	?taxon up:commonName "human" .
+	?taxon <http://purl.uniprot.org/core/scientificName> ?taxon_scientificname.
+	?taxon <http://purl.uniprot.org/core/commonName> ?taxon_commonname.
+	?efo_0000399 <http://www.w3.org/2000/01/rdf-schema#label> ?efo_0000399_label.
+	?efo_0000399 <http://purl.org/dc/terms/description> ?efo_0000399_description.
+	?anatomicalentity <http://www.w3.org/2000/01/rdf-schema#label> ?anatomicalentity_label.
+	?expression <http://purl.org/genex#hasExpressionLevel> ?expression_hasexpressionlevelscore.
+	FILTER(             ?anatomicalentity !=  obo:GO_0005575             )
+	FILTER(             ?anatomicalentity != ?cellType             )
+}

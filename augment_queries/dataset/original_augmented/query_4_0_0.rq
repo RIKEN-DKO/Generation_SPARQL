@@ -1,0 +1,19 @@
+# What are the anatomical entities where the APOC1 Homo sapiens gene is expressed?
+
+PREFIX orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up: <http://purl.uniprot.org/core/>
+
+SELECT DISTINCT ?anat ?anatName {
+	?seq a orth:Gene .
+	?seq genex:isExpressedIn ?anat.
+	?seq rdfs:label "APOC1" .
+	?anat a genex:AnatomicalEntity .
+	?anat rdfs:label ?anatName .
+		### Specifying species:
+		?seq orth:organism ?organism .
+		?organism obo:RO_0002162  ?species .
+		?species a up:Taxon .
+		?species up:scientificName "Homo sapiens" .
+}

@@ -1,0 +1,26 @@
+# What are the anatomical entities where the human gene APOC1 is expressed in the post-juvenile stage along with its expression score independently of the strain, sex, and cell type?
+PREFIX orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up: <http://purl.uniprot.org/core/>
+PREFIX up-taxon:<http://purl.uniprot.org/taxonomy/>
+PREFIX ensembl: <http://rdf.ebi.ac.uk/resource/ensembl/>
+PREFIX lscr: <http://purl.org/lscr#>
+SELECT DISTINCT ?x6 ?x0 ?x1 ?x4Name ?x3 ?x4 ?x2 WHERE { 
+	?x0 a orth:Gene .
+	?x1 a genex:Expression .
+	?x1 genex:hasExpressionCondition ?x2 .
+	?x1 genex:hasExpressionLevel ?x3 .
+	?x1 genex:hasSequenceUnit ?x0 .
+	?x0 lscr:xrefEnsemblGene ensembl:ENSG00000130208 .
+	?x2 a genex:ExpressionCondition.
+	?x2 genex:hasAnatomicalEntity ?x4 .
+	?x4 a genex:AnatomicalEntity.
+	?x4 rdfs:label ?x4Name .
+	?x2 genex:hasDevelopmentalStage obo:UBERON_0000113 .
+	?x2 genex:hasSex "any".
+	?x2 genex:hasStrain ?x6 .
+	?x6 a efo:EFO_0005135.
+	?x6 rdfs:label "wild-type" .
+	FILTER( ?x4 !=  obo:GO_0005575 )
+}

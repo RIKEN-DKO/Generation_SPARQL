@@ -1,0 +1,37 @@
+# What are the anatomical entities including cell types, if any, where the human gene APOC1 is expressed at the post-juvenile stage along with its expression score independently of the strain and sex? Provide also the taxon scientific name and the taxon common name and the developmental stage label and the developmental stage description and the anatomical entity label and the anatomical entity description and the gene expression has expression level score and the gene expression has false discovery rate p-value and the gene description.
+PREFIX orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up: <http://purl.uniprot.org/core/>
+SELECT DISTINCT ?x6 ?x8_description ?x1 ?x3 ?x1condition ?x4_description ?x8 ?x10_scientificname ?x1_hasfalsediscoveryratep_value ?x9 ?x4_label ?x1_hasexpressionlevelscore ?x8_label ?x10 ?x4 ?x4Name ?x6Name ?x0_description ?x0 ?x10_commonname WHERE { 
+	?x0 a orth:Gene .
+	?x1 a genex:Expression .
+	?x1 genex:hasExpressionCondition ?x1condition .
+	?x1 genex:hasExpressionLevel ?x3 .
+	?x1 genex:hasSequenceUnit ?x0 .
+	?x0 rdfs:label "APOC1" .
+	?x1condition a genex:ExpressionCondition.
+	?x1condition genex:hasAnatomicalEntity ?x4 .
+	?x4 a genex:AnatomicalEntity.
+	?x4 rdfs:label ?x4Name .
+	?x1condition genex:hasAnatomicalEntity ?x6 .
+	?x6 rdfs:label ?x6Name .
+	?x1condition genex:hasDevelopmentalStage ?x8 .
+	?x8 rdf:type efo:EFO_0000399 .
+	?x8 rdfs:label "post-juvenile" .
+	?x0 orth:organism ?x9 .
+	?x9 obo:RO_0002162  ?x10 .
+	?x10 a up:Taxon .
+	?x10 up:commonName "human" .
+	?x10 <http://purl.uniprot.org/core/scientificName> ?x10_scientificname.
+	?x10 <http://purl.uniprot.org/core/commonName> ?x10_commonname.
+	?x8 <http://www.w3.org/2000/01/rdf-schema#label> ?x8_label.
+	?x8 <http://purl.org/dc/terms/description> ?x8_description.
+	?x4 <http://www.w3.org/2000/01/rdf-schema#label> ?x4_label.
+	?x4 <http://purl.org/dc/terms/description> ?x4_description.
+	?x1 <http://purl.org/genex#hasExpressionLevel> ?x1_hasexpressionlevelscore.
+	?x1 <http://purl.org/genex#hasFDRpvalue> ?x1_hasfalsediscoveryratep_value.
+	?x0 <http://purl.org/dc/terms/description> ?x0_description.
+	FILTER(                   ?x4 !=  obo:GO_0005575                   )
+	FILTER(                   ?x4 != ?x6                   )
+}

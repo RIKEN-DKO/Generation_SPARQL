@@ -1,0 +1,22 @@
+# What are the anatomical entities where the human gene APOC1 is expressed in the post-juvenile stage?
+PREFIX orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up: <http://purl.uniprot.org/core/>
+SELECT DISTINCT ?organism ?stage ?anatName ?species ?condition ?seq ?anat WHERE { 
+	?seq a orth:Gene .
+	?seq genex:isExpressedIn ?condition. # is expressed in
+	?seq rdfs:label "APOC1" .
+	?condition a genex:ExpressionCondition.
+	?condition genex:hasAnatomicalEntity ?anat . # has anatomical entity
+	?anat a genex:AnatomicalEntity.
+	?anat rdfs:label ?anatName .
+	?condition genex:hasAnatomicalEntity obo:GO_0005575 . # has anatomical entity
+	?condition genex:hasDevelopmentalStage ?stage . # has a developmental stage
+	?stage a efo:EFO_0000399 .
+	?stage rdfs:label "post-juvenile" .
+	?seq orth:organism ?organism . # in organism
+	?organism obo:RO_0002162  ?species . # in taxon
+	?species a up:Taxon .
+	?species up:commonName "human" .
+}

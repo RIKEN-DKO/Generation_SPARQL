@@ -1,0 +1,14 @@
+# What are the anatomical entities where the P02654 gene is expressed? Note that P02654 is a UniProtKB identifier of the APOC1 human gene. Provide also the gene description.
+PREFIX orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up-protein:<http://purl.uniprot.org/uniprot/>
+PREFIX lscr: <http://purl.org/lscr#>
+SELECT DISTINCT ?gene ?anatomicalentity ?anatomicalentityName ?gene_description WHERE { 
+	?gene a orth:Gene .
+	?gene genex:isExpressedIn ?anatomicalentity .
+	?gene lscr:xrefUniprot up-protein:P02654 .
+	?anatomicalentity a genex:AnatomicalEntity .
+	?anatomicalentity rdfs:label ?anatomicalentityName .
+	?gene <http://purl.org/dc/terms/description> ?gene_description.
+}

@@ -1,0 +1,27 @@
+# What are the anatomical entities where the human gene APOC1 is expressed in the post-juvenile stage? Provide also the taxon scientific name and the strain label.
+PREFIX orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up: <http://purl.uniprot.org/core/>
+SELECT DISTINCT ?expressioncondition ?organism ?taxon ?efo_0000399 ?anatName ?efo_0005135 ?taxon_scientificname ?anat ?gene ?efo_0005135_label WHERE { 
+	?gene a orth:Gene .
+	?gene genex:isExpressedIn ?expressioncondition.
+	?expressioncondition a genex:ExpressionCondition.
+	?gene rdfs:label "APOC1" .
+	?expressioncondition genex:hasAnatomicalEntity ?anat .
+	?anat rdfs:label ?anatName .
+	?expressioncondition genex:hasAnatomicalEntity obo:GO_0005575 .
+	?expressioncondition genex:hasDevelopmentalStage ?efo_0000399 .
+	?efo_0000399 a efo:EFO_0000399 .
+	?efo_0000399 rdfs:label "post-juvenile" .
+	?expressioncondition genex:hasSex "any".
+	?expressioncondition genex:hasStrain ?efo_0005135 .
+	?efo_0005135 a efo:EFO_0005135.
+	?efo_0005135 rdfs:label "wild-type" .
+	?gene orth:organism ?organism .
+	?organism obo:RO_0002162  ?taxon .
+	?taxon a up:Taxon .
+	?taxon up:commonName "human" .
+	?taxon <http://purl.uniprot.org/core/scientificName> ?taxon_scientificname.
+	?efo_0005135 <http://www.w3.org/2000/01/rdf-schema#label> ?efo_0005135_label.
+}

@@ -1,0 +1,5 @@
+# What are the species present in Bgee?
+PREFIX up: <http://purl.uniprot.org/core/>
+SELECT DISTINCT ?taxon WHERE { 
+	?taxon a up:Taxon .
+}

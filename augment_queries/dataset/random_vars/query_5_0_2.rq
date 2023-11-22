@@ -1,0 +1,22 @@
+# What are the anatomical entities where the APOC1 gene is expressed independently of the developmental stage, sex, strain and cell type? Provide also the gene identifier.
+PREFIX orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX efo: <http://www.ebi.ac.uk/efo/>
+SELECT DISTINCT ?x1 ?x5 ?x2 ?x2Name ?x4 ?x0 ?x0_identifier WHERE { 
+	?x0 a orth:Gene .
+	?x0 genex:isExpressedIn ?x1.
+	?x1 a genex:ExpressionCondition.
+	?x0 rdfs:label "APOC1" .
+	?x1 genex:hasAnatomicalEntity ?x2 .
+	?x2 a genex:AnatomicalEntity.
+	?x1 genex:hasAnatomicalEntity obo:GO_0005575 .
+	?x2 rdfs:label ?x2Name .
+	?x1 genex:hasDevelopmentalStage ?x4 .
+	?x4 a efo:EFO_0000399 .
+	?x4 rdfs:label "life cycle" .
+	?x1 genex:hasSex "any".
+	?x1 genex:hasStrain ?x5 .
+	?x5 rdfs:label "wild-type" .
+	?x0 <http://purl.org/dc/terms/identifier> ?x0_identifier.
+}

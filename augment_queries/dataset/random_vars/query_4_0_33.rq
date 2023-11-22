@@ -1,0 +1,23 @@
+# What are the anatomical entities where the APOC1 Homo sapiens gene is expressed? Provide also the taxon scientific name and the taxon common name and the anatomical entity label and the anatomical entity description and the gene see also and the gene description.
+PREFIX orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up: <http://purl.uniprot.org/core/>
+SELECT DISTINCT ?x3 ?x4 ?x1_label ?x1_description ?x1 ?x1Name ?x0_description ?x4_scientificname ?x0 ?x0_seealso ?x4_commonname WHERE { 
+	?x0 a orth:Gene .
+	?x0 genex:isExpressedIn ?x1.
+	?x0 rdfs:label "APOC1" .
+	?x1 a genex:AnatomicalEntity .
+	?x1 rdfs:label ?x1Name .
+	### Specifying species:
+	?x0 orth:organism ?x3 .
+	?x3 obo:RO_0002162  ?x4 .
+	?x4 a up:Taxon .
+	?x4 up:scientificName "Homo sapiens" .
+	?x4 <http://purl.uniprot.org/core/scientificName> ?x4_scientificname.
+	?x4 <http://purl.uniprot.org/core/commonName> ?x4_commonname.
+	?x1 <http://www.w3.org/2000/01/rdf-schema#label> ?x1_label.
+	?x1 <http://purl.org/dc/terms/description> ?x1_description.
+	?x0 <http://www.w3.org/2000/01/rdf-schema#seeAlso> ?x0_seealso.
+	?x0 <http://purl.org/dc/terms/description> ?x0_description.
+}

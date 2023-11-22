@@ -1,0 +1,9 @@
+# What are the species present in Bgee and their scientific and common names? Provide also the taxon scientific name.
+PREFIX up: <http://purl.uniprot.org/core/>
+SELECT DISTINCT ?taxon_scientificname ?taxon ?sci_name ?common_name WHERE { 
+	?taxon a up:Taxon .
+	?taxon up:scientificName ?sci_name .
+	?taxon up:rank up:Species .
+	?taxon <http://purl.uniprot.org/core/scientificName> ?taxon_scientificname.
+	OPTIONAL { ?taxon up:commonName ?common_name . } 
+}

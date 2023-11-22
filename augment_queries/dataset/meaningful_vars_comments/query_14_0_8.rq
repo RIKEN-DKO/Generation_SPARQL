@@ -1,0 +1,19 @@
+# What is all the metadata related to the ENSG00000130208 gene, where ENSG00000130208 is the identifier of the APOC1 human gene.  Provide also the gene see also and the gene description and the gene label.
+PREFIX orth: <http://purl.org/net/orth#>
+PREFIX lscr: <http://purl.org/lscr#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+SELECT DISTINCT ?ncbi ?organism ?symbol ?description ?id ?ensembl ?gene_description ?links ?gene ?gene_seealso ?uniprot ?gene_label WHERE { 
+	?gene a orth:Gene .
+	?gene rdfs:label ?symbol .
+	?gene rdfs:seeAlso ?links .
+	?gene dcterms:description ?description .
+	?gene dcterms:identifier ?id .
+	?gene orth:organism ?organism . # in organism
+	?gene <http://www.w3.org/2000/01/rdf-schema#seeAlso> ?gene_seealso.
+	?gene <http://purl.org/dc/terms/description> ?gene_description.
+	?gene <http://www.w3.org/2000/01/rdf-schema#label> ?gene_label.
+	OPTIONAL { ?gene lscr:xrefUniprot ?uniprot . } 
+	OPTIONAL { ?gene lscr:xrefEnsemblGene ?ensembl . } 
+	OPTIONAL { ?gene lscr:xrefNCBIGene ?ncbi . } 
+	FILTER(        ?id = "ENSG00000130208"        )
+}

@@ -1,0 +1,33 @@
+{
+    "results": {
+        "UnigramRecall": 0.0009590530936458208,
+        "UnigramPrecision": 0.003278001282224145,
+        "SP-UnigramRecall": 0.0012046827157859343,
+        "SP-UnigramPrecision": 0.003759017754367861,
+        "1GramDiversity": 0.5053766048283589,
+        "2GramDiversity": 0.5002753244712306,
+        "3GramDiversity": 0.017067430079125985,
+        "4GramDiversity": 0.012915648003367293,
+        "Corpus1GramDiversity": 0.017057131113851213,
+        "Corpus2GramDiversity": 0.03740238388820386,
+        "Corpus3GramDiversity": 0.054048499794492395,
+        "Corpus4GramDiversity": 0.058569667077681874,
+        "BLEU": 2.1323835009002108e-158,
+        "SP-BLEU": 2.761125601871803e-82,
+        "METEOR": 0.01800881351499436,
+        "ROUGE": 0.07726380972902588,
+        "f1": 0.001483944736983246,
+        "sp_f1": 0.0018246160275980996,
+        "num_none_queries": 1
+    },
+    "arguments": {
+        "batch_size": 20,
+        "chunk": 1000,
+        "max_new_tokens": 256,
+        "device_map": "auto",
+        "output_dir": "assets/models/wikidata_OpenLlama_nofinetune",
+        "dataset": "data/kqapro_lcquad_test.json",
+        "model_id": "openlm-research/open_llama_7b_v2",
+        "prompt_type": "plain"
+    }
+}

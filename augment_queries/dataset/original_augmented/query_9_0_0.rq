@@ -1,0 +1,33 @@
+# What are the anatomical entities including cell types, if any, where the human gene APOC1 is expressed at the post-juvenile stage along with its expression score independently of the strain and sex?
+
+PREFIX orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up: <http://purl.uniprot.org/core/>
+
+SELECT DISTINCT ?anat ?cellType ?anatName ?cellTypeName ?score ?stage {
+	?seq a orth:Gene .
+	?expression a genex:Expression .
+	?expression genex:hasExpressionCondition ?condition .
+	?expression genex:hasExpressionLevel ?score .
+	?expression genex:hasSequenceUnit ?seq .
+	?seq rdfs:label "APOC1" .
+    ?condition a genex:ExpressionCondition.
+	?condition genex:hasAnatomicalEntity ?anat .
+    ?anat a genex:AnatomicalEntity.
+	?anat rdfs:label ?anatName .
+	?condition genex:hasAnatomicalEntity ?cellType .
+	?cellType rdfs:label ?cellTypeName .
+	?condition genex:hasDevelopmentalStage ?stage .
+	?stage rdfs:label "post-juvenile" .
+	?condition genex:hasSex "any".
+	?condition genex:hasStrain ?strain .
+    ?strain a efo:EFO_0005135.
+	?strain rdfs:label "wild-type" .
+	?seq orth:organism ?organism .
+	?organism obo:RO_0002162  ?species .
+	?species a up:Taxon .
+	?species up:commonName "human" .
+    FILTER (?anat != obo:GO_0005575)
+    FILTER (?anat != ?cellType)
+} ORDER BY DESC(?score)

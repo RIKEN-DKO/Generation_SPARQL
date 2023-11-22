@@ -1,0 +1,28 @@
+# What are the anatomical entities where the human gene APOC1 is expressed in the post-juvenile stage? Provide also the taxon scientific name and the taxon common name and the developmental stage label.
+PREFIX orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up: <http://purl.uniprot.org/core/>
+SELECT DISTINCT ?x1 ?x4_label ?x6 ?x7 ?x2Name ?x4 ?x5 ?x7_scientificname ?x2 ?x0 ?x7_commonname WHERE { 
+	?x0 a orth:Gene .
+	?x0 genex:isExpressedIn ?x1.
+	?x1 a genex:ExpressionCondition.
+	?x0 rdfs:label "APOC1" .
+	?x1 genex:hasAnatomicalEntity ?x2 .
+	?x2 rdfs:label ?x2Name .
+	?x1 genex:hasAnatomicalEntity obo:GO_0005575 .
+	?x1 genex:hasDevelopmentalStage ?x4 .
+	?x4 a efo:EFO_0000399 .
+	?x4 rdfs:label "post-juvenile" .
+	?x1 genex:hasSex "any".
+	?x1 genex:hasStrain ?x5 .
+	?x5 a efo:EFO_0005135.
+	?x5 rdfs:label "wild-type" .
+	?x0 orth:organism ?x6 .
+	?x6 obo:RO_0002162  ?x7 .
+	?x7 a up:Taxon .
+	?x7 up:commonName "human" .
+	?x7 <http://purl.uniprot.org/core/scientificName> ?x7_scientificname.
+	?x7 <http://purl.uniprot.org/core/commonName> ?x7_commonname.
+	?x4 <http://www.w3.org/2000/01/rdf-schema#label> ?x4_label.
+}

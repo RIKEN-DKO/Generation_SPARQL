@@ -1,0 +1,32 @@
+# What are the anatomical entities including cell types, if any, where the human gene APOC1 is expressed at the post-juvenile stage along with its expression score independently of the strain and sex? Provide also the gene identifier.
+PREFIX orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX up: <http://purl.uniprot.org/core/>
+SELECT DISTINCT ?x6 ?x1condition ?x10 ?x11 ?x4 ?x4Name ?x6Name ?x1 ?x3 ?x9 ?x8 ?x0 ?x0_identifier WHERE { 
+	?x0 a orth:Gene .
+	?x1 a genex:Expression .
+	?x1 genex:hasExpressionCondition ?x1condition .
+	?x1 genex:hasExpressionLevel ?x3 .
+	?x1 genex:hasSequenceUnit ?x0 .
+	?x0 rdfs:label "APOC1" .
+	?x1condition a genex:ExpressionCondition.
+	?x1condition genex:hasAnatomicalEntity ?x4 .
+	?x4 a genex:AnatomicalEntity.
+	?x4 rdfs:label ?x4Name .
+	?x1condition genex:hasAnatomicalEntity ?x6 .
+	?x6 rdfs:label ?x6Name .
+	?x1condition genex:hasDevelopmentalStage ?x8 .
+	?x8 rdfs:label "post-juvenile" .
+	?x1condition genex:hasSex "any".
+	?x1condition genex:hasStrain ?x9 .
+	?x9 a efo:EFO_0005135.
+	?x9 rdfs:label "wild-type" .
+	?x0 orth:organism ?x10 .
+	?x10 obo:RO_0002162  ?x11 .
+	?x11 a up:Taxon .
+	?x11 up:commonName "human" .
+	?x0 <http://purl.org/dc/terms/identifier> ?x0_identifier.
+	FILTER(   ?x4 != obo:GO_0005575   )
+	FILTER(   ?x4 != ?x6   )
+}

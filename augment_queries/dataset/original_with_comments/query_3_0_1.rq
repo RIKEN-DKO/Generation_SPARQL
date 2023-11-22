@@ -1,0 +1,12 @@
+# What are the anatomical entities where the APOC1 gene is expressed? Provide also the gene label.
+PREFIX orth: <http://purl.org/net/orth#>
+PREFIX genex: <http://purl.org/genex#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+SELECT DISTINCT ?gene_label ?anatomicalentityName ?gene ?anatomicalentity WHERE { 
+	?gene a orth:Gene .
+	?gene genex:isExpressedIn ?anatomicalentity . # is expressed in
+	?gene rdfs:label "APOC1" .
+	?anatomicalentity a genex:AnatomicalEntity .
+	?anatomicalentity rdfs:label ?anatomicalentityName .
+	?gene <http://www.w3.org/2000/01/rdf-schema#label> ?gene_label.
+}
